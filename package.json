@@ -4,7 +4,8 @@
   "description": "The global style of cloud.gov",
   "main": "dist/index.js",
   "scripts": {
-    "build": "node-sass src/css/main.scss -o dist/css",
+    "clean": "rm css/cg_style.css",
+    "build": "npm run clean && node-sass css/cg_style.scss -o css",
     "test": "npm run test"
   },
   "repository": {
