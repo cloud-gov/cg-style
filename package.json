@@ -4,8 +4,11 @@
   "description": "The global style of cloud.gov",
   "main": "dist/index.js",
   "scripts": {
-    "clean": "rm css/cg_style.css",
-    "build": "npm run clean && node-sass css/cg_style.scss -o css",
+    "clean": "rm css/cg_style.css || true && rm -rf img/* && rm -rf font/*",
+    "build": "npm run clean && npm run copy && node-sass css/cg_style.scss -o css",
+    "copy": "npm run copy-img && npm run copy-font",
+    "copy-img": "cp -r node_modules/uswds/assets/img/* img/",
+    "copy-font": "cp node_modules/uswds/assets/fonts/* font/",
     "test": "npm run test"
   },
   "repository": {
