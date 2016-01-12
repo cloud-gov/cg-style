@@ -1,56 +1,40 @@
 
-$width-nav-sidebar:  250px;
+$width-nav-sidebar:  300px;
 $color-grid-dark:    #727272;
 $color-grid-light:   #e3e4e5;
 $site-top:           124px;
 
-.sidenav {
-  position: fixed;
-  top: $site-top;
-  bottom: 0;
-  left: 0;
-  width: $width-nav-sidebar;
-  border-right: 1px solid $color-gray-light;
-  padding: 5rem 3rem 3rem 3rem;
-  overflow: auto;
-  display: none;
-  z-index: -1;
-  
-  .lt-ie9 & {
-    width: 25%;
-  }
+.sidenav-parent {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  max-width: $site-max-width;
+}
 
-  .usa-sidenav-sub_list {
-    display: none;
-  }
+.sidenav {
+  align-self: auto;
+  flex-grow: 0; 
+  padding: 0;
+  width: $width-nav-sidebar;
 
   @include media($medium-screen + $width-nav-sidebar) {
     display: block;
   }
 }
 
-.sidenav-main_content {
-  @include media($medium-screen) {
-    top: $site-top;
-  }
-  position: absolute;
-  top: 4rem;
-  bottom: 0;
-  right: 0;
+.sidenav-main {
+  align-self: auto;
+  flex-grow: 1;
+  margin-bottom: 5em;
+  padding: 0 2em 2em 0;
   width: 100%;
-  padding: {
-    bottom: 0;
-    top: 1em;
-  }
-  z-index: -1;
-  .lt-ie9 & {
-    width: 75%;
-  }
 
   @include media($medium-screen + $width-nav-sidebar) {
     width: calc(100% - #{$width-nav-sidebar});
-    .lt-ie9 & {
-      width: 75%;
-    }
   }
 }
+
+.sidenav-sub_list {
+  display: none;
+}
+
