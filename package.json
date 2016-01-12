@@ -9,7 +9,8 @@
     "copy": "npm run copy-img && npm run copy-font",
     "copy-img": "cp -r node_modules/uswds/assets/img/* img/",
     "copy-font": "cp node_modules/uswds/assets/fonts/* font/",
-    "test": "npm run test"
+    "test": "npm run test",
+    "watch": "watch 'npm run build' ./src"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
     "uswds": "git+https://git@github.com/18F/web-design-standards.git#v0.9.x"
   },
   "devDependencies": {
-    "node-sass": "^3.4.2"
+    "node-sass": "^3.4.2",
+    "watch": "^0.17.1"
   }
 }

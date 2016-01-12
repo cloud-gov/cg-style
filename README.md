@@ -21,5 +21,5 @@ here on an actual cloud.gov site. This has already been started with [cg-docs](h
 5. In the companion site repo, run sass to build the *cg-style* repo into the
    css. This is best done through a script in package.json: `"build": "node-sass static_src/main.scss static/css/main.css"`
 
-When writing styling code, make changes in the *cg-style* repo, run `npm run build` in the *cg-style* repo, run `npm run build` in the companion site repo, and changes should be built.
+When writing styling code, make changes in the *cg-style* repo, run `npm run build` in the *cg-style* repo, run `npm run build` in the companion site repo, and changes should be built. Alternatively, both repos have a watch task which can be run with `npm run watch` to allow changes to propegate automatically.
 
