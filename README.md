@@ -23,3 +23,7 @@ here on an actual cloud.gov site. This has already been started with [cg-docs](h
 
 When writing styling code, make changes in the *cg-style* repo, run `npm run build` in the *cg-style* repo, run `npm run build` in the companion site repo, and changes should be built. Alternatively, both repos have a watch task which can be run with `npm run watch` to allow changes to propegate automatically.
 
+There is a coding standards document that dictates standards and suggestions for
+how to write code: [documentation/frontend_standards.md](documentation/frontend_standards.md).
+
+Run `npm run lint` to lint the codebase for style problems.
