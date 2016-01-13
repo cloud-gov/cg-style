@@ -5,10 +5,14 @@
   "main": "dist/index.js",
   "scripts": {
     "clean": "rm css/cg_style.css || true && rm -rf img/* && rm -rf font/*",
-    "build": "npm run clean && npm run copy && node-sass css/cg_style.scss -o css",
+    "build": "npm run build-css",
+    "build-css": "npm run build-sass && npm run build-prefix",
+    "build-sass": "npm run clean && npm run copy && node-sass css/cg_style.scss -o css",
+    "build-prefix": "postcss --use autoprefixer css/cg_style.css -d css",
     "copy": "npm run copy-img && npm run copy-font",
     "copy-img": "cp -r node_modules/uswds/assets/img/* img/",
     "copy-font": "cp node_modules/uswds/assets/fonts/* font/",
+    "lint": "scss-lint -c t .scss-lint.yml",
     "test": "npm run test",
     "watch": "watch 'npm run build' ./src"
   },
@@ -26,6 +30,7 @@
   },
   "devDependencies": {
     "node-sass": "^3.4.2",
+    "sass-lint": "^1.4.0",
     "watch": "^0.17.1"
   }
 }
