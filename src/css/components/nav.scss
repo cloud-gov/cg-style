@@ -1,0 +1,30 @@
+
+.nav {
+  @include unstyled-list;
+
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+
+  @include media($medium-screen) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.nav-link {
+  color: $color-gray;
+  font-size: 1.4em;
+  padding-bottom: .2em;
+  padding-top: .2em;
+  text-transform: uppercase;
+
+  a {
+    color: $color-gray;
+  }
+
+  @include media($medium-screen) {
+    font-size: inherit;
+    padding: 0;
+  }
+}
