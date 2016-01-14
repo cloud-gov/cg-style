@@ -49,7 +49,8 @@ be given easy to understand names.
 ```
 /base
 /components
-/modules/
+/modules
+/layout
 /overrides
 ```
 - CSS: will be imported in this grouped order: base, components, modules,
@@ -60,7 +61,8 @@ be given easy to understand names.
 - HTML: components should be accessible by default.
 - JS: components should work (display all data) without JS by default.
 - CSS: components should not define their own layout. Use of margins should be kept to a minimum.
-- Spacing between components will be done with adjacent sibling selector `{selector} + {selector}`
+- CSS: spacing between components will be done with adjacent sibling selector `{selector} + {selector}`.
+- CSS: complicated layout should be done in layout classes.
 
 ## Libraries
 - JS: jQuery will not be used.
