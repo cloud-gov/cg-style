@@ -10,7 +10,7 @@
     "build-sass": "npm run clean && npm run copy && node-sass css/cg_style.scss -o css",
     "build-prefix": "postcss --use autoprefixer css/cg_style.css -d css",
     "copy": "npm run copy-img && npm run copy-font",
-    "copy-img": "cp -r node_modules/uswds/assets/img/* img/",
+    "copy-img": "cp -r node_modules/uswds/assets/img/* img/ && cp ./src/img/* ./img",
     "copy-font": "cp node_modules/uswds/assets/fonts/* font/",
     "lint": "scss-lint -c t .scss-lint.yml",
     "test": "npm run test",
@@ -29,7 +29,10 @@
     "uswds": "git+https://git@github.com/18F/web-design-standards.git#v0.9.x"
   },
   "devDependencies": {
+    "autoprefixer": "^6.2.3",
     "node-sass": "^3.4.2",
+    "postcss": "^5.0.14",
+    "postcss-cli": "^2.3.3",
     "sass-lint": "^1.4.0",
     "watch": "^0.17.1"
   }
