@@ -59,6 +59,8 @@ be given easy to understand names.
 - CSS: module code should be classes nested no more then 2 levels deep.
 - HTML: components should be accessible by default.
 - JS: components should work (display all data) without JS by default.
+- CSS: components should not define their own layout. Use of margins should be kept to a minimum.
+- Spacing between components will be done with adjacent sibling selector `{selector} + {selector}`
 
 ## Libraries
 - JS: jQuery will not be used.
