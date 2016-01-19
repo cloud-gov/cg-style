@@ -2269,6 +2269,7 @@ body {
   src: url("../fonts/merriweather-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-italic-webfont.woff2") format("woff2"), url("../fonts/merriweather-italic-webfont.woff") format("woff"), url("../fonts/merriweather-italic-webfont.ttf") format("truetype"); }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
   font-weight: 300;
   margin: 0; }
   h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p {
@@ -2442,3 +2443,17 @@ p + h5 {
 
 .sidenav-sub_list {
   display: none; }
+
+.title_bar {
+  margin: 0 auto;
+  padding: .40rem .5rem .40rem 0;
+  width: 1040px; }
+  .title_bar > * {
+    display: inline-block;
+    margin-left: 1em; }
+    .title_bar > *:first-child {
+      margin-left: 0; }
+
+.title_bar-title {
+  color: #ffffff;
+  font-size: 1rem; }
