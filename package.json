@@ -11,7 +11,7 @@
     "build-prefix": "postcss --use autoprefixer css/cg_style.css -d css",
     "copy": "npm run copy-img && npm run copy-font",
     "copy-img": "cp -r node_modules/uswds/assets/img/* img/ && cp ./src/img/* ./img",
-    "copy-font": "cp node_modules/uswds/assets/fonts/* font/",
+    "copy-font": "cp node_modules/uswds/assets/fonts/* font/ && cp ./src/font/* ./font",
     "lint": "scss-lint -c t .scss-lint.yml",
     "test": "npm run test",
     "watch": "watch 'npm run build' ./src"
