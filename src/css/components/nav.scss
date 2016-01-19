@@ -6,6 +6,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   list-style: none;
+  margin-top: .6em;
 
   @include media($medium-screen) {
     flex-direction: row;
