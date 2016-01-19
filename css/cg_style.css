@@ -2275,12 +2275,18 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 0.5rem; }
 
 h1 {
-  font-size: 2.75rem; }
+  font-size: 2rem; }
+  @media screen and (min-width: 600px) {
+    h1 {
+      font-size: 2.75rem; } }
   h1 + p {
     margin-top: 2rem; }
 
 h2 {
-  font-size: 2.125rem; }
+  font-size: 1.85rem; }
+  @media screen and (min-width: 600px) {
+    h2 {
+      font-size: 2.125rem; } }
 
 h3 {
   font-size: 1.5rem; }
