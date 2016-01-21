@@ -1,12 +1,12 @@
 
-$width-nav-sidebar:               300px;
-$color-grid-dark:                 #727272;
-$color-grid-light:                #e3e4e5;
-$site-top:                        124px;
-$color-light-font:                #ffffff;
-$color-sidenav-item-level-1-bg:   #2c3e50;
-$color-sidenav-item-level-2-bg:   #1f2b38;
-$color-sidenav-item-level-3-bg:   #595959;
+$width-nav-sidebar: 300px;
+$color-grid-dark:   #727272;
+$color-grid-light:  #e3e4e5;
+$site-top:          124px;
+$color-light-font:  #ffffff;
+$color-level-1-bg:  #2c3e50;
+$color-level-2-bg:  #1f2b38;
+$color-level-3-bg:  #595959;
 
 .sidenav-parent {
   display: flex;
@@ -38,56 +38,33 @@ $color-sidenav-item-level-3-bg:   #595959;
   }
 }
 
-.sidenav-sub_list {
-  width: 100%;
-  display: none;
+.sidenav-list {
+  a{
+    width: 100%;
+    color: $color-light-font;
+    word-wrap: break-word;
+  }
   li {
     border-top: 0;
-    background-color: #1f2b38;
-    > a {
-      padding-left: 2em;
-    }
-    > a:hover {
-      padding-left: 2.5em;
-    }
   }
 }
 
-.sidenav-sub_sub_list {
+.sidenav-level-one {
   width: 100%;
-  display: none;
+  background-color: $color-level-1-bg;
+}
+
+.sidenav-level-two {
+  width: 100%;
+  background-color: $color-level-2-bg;
+}
+
+.sidenav-level-three {
+  width: 100%;
+  background-color: $color-level-3-bg;
+  /* Removes weird margin in list */
   margin-top: 0;
   margin-bottom: 0;
-  > li {
-    border-top: 0;
-    background-color: #595959;
-    > a {
-      padding-left: 4em;
-    }
-    > a:hover {
-      padding-left: 4.5em;
-    }
-  }
-}
-
-
-.sidenav-list {
-  border-top: 0;
-  width: 100%;
-  color: $color-light-font;
-  word-wrap: break-word;
-}
-
-.sidenav-level-one-item {
-  background-color: $color-sidenav-item-level-1-bg;
-}
-
-.sidenav-level-two-item {
-  background-color: $color-sidenav-item-level-2-bg;
-}
-
-.sidenav-level-three-item {
-  background-color: $color-sidenav-item-level-3-bg;
 }
 
 .sidenav-arrow {

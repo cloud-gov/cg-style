@@ -2275,44 +2275,28 @@ main:before {
     .sidenav-main {
       width: calc(100% - 300px); } }
 
-.sidenav-sub_list {
-  width: 100%;
-  display: none; }
-  .sidenav-sub_list li {
-    border-top: 0;
-    background-color: #1f2b38; }
-    .sidenav-sub_list li > a {
-      padding-left: 2em; }
-    .sidenav-sub_list li > a:hover {
-      padding-left: 2.5em; }
-
-.sidenav-sub_sub_list {
-  width: 100%;
-  display: none;
-  margin-top: 0;
-  margin-bottom: 0; }
-  .sidenav-sub_sub_list > li {
-    border-top: 0;
-    background-color: #595959; }
-    .sidenav-sub_sub_list > li > a {
-      padding-left: 4em; }
-    .sidenav-sub_sub_list > li > a:hover {
-      padding-left: 4.5em; }
-
-.sidenav-list {
-  border-top: 0;
+.sidenav-list a {
   width: 100%;
   color: #ffffff;
   word-wrap: break-word; }
 
-.sidenav-level-one-item {
+.sidenav-list li {
+  border-top: 0; }
+
+.sidenav-level-one {
+  width: 100%;
   background-color: #2c3e50; }
 
-.sidenav-level-two-item {
+.sidenav-level-two {
+  width: 100%;
   background-color: #1f2b38; }
 
-.sidenav-level-three-item {
-  background-color: #595959; }
+.sidenav-level-three {
+  width: 100%;
+  background-color: #595959;
+  /* Removes weird margin in list */
+  margin-top: 0;
+  margin-bottom: 0; }
 
 .sidenav-arrow {
   float: right; }
