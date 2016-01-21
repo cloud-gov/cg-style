@@ -2297,3 +2297,9 @@ main:before {
 
 .sidenav-arrow {
   float: right; }
+
+.sidenav-active {
+  background-color: #f1f1f1;
+  text-decoration: none; }
+  .sidenav-active a {
+    color: #277CB2; }

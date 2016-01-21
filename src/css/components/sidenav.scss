@@ -67,3 +67,11 @@ $color-level-3-bg:  #595959;
 .sidenav-arrow {
   float: right;
 }
+
+.sidenav-active {
+  background-color: $color-gray-lightest;
+  text-decoration: none;
+  a {
+    color: $color-primary;
+  }
+}
