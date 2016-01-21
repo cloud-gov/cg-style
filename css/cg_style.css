@@ -2275,28 +2275,25 @@ main:before {
     .sidenav-main {
       width: calc(100% - 300px); } }
 
-.sidenav-list a {
-  width: 100%;
-  color: #ffffff;
-  word-wrap: break-word; }
-
-.sidenav-list li {
-  border-top: 0; }
+.sidenav-list {
+  width: 100%; }
+  .sidenav-list a {
+    color: #ffffff;
+    word-wrap: break-word; }
+  .sidenav-list li {
+    border-top: 0; }
 
 .sidenav-level-one {
-  width: 100%;
   background-color: #2c3e50; }
 
 .sidenav-level-two {
-  width: 100%;
   background-color: #1f2b38; }
 
 .sidenav-level-three {
-  width: 100%;
   background-color: #595959;
-  /* Removes weird margin in list */
-  margin-top: 0;
-  margin-bottom: 0; }
+  /* Removes weird margin in list for third level */
+  margin-bottom: 0;
+  margin-top: 0; }
 
 .sidenav-arrow {
   float: right; }

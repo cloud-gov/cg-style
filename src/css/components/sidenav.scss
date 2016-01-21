@@ -39,8 +39,8 @@ $color-level-3-bg:  #595959;
 }
 
 .sidenav-list {
-  a{
-    width: 100%;
+  width: 100%;
+  a {
     color: $color-light-font;
     word-wrap: break-word;
   }
@@ -50,21 +50,18 @@ $color-level-3-bg:  #595959;
 }
 
 .sidenav-level-one {
-  width: 100%;
   background-color: $color-level-1-bg;
 }
 
 .sidenav-level-two {
-  width: 100%;
   background-color: $color-level-2-bg;
 }
 
 .sidenav-level-three {
-  width: 100%;
   background-color: $color-level-3-bg;
-  /* Removes weird margin in list */
-  margin-top: 0;
+  /* Removes weird margin in list for third level */
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 .sidenav-arrow {
