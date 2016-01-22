@@ -2308,6 +2308,30 @@ p + h4,
 p + h5 {
   margin-top: 2rem; }
 
+.billboard {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  float: none;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto; }
+  .billboard:last-child {
+    margin-right: 0; }
+  .billboard:last-child {
+    margin-right: auto; }
+
+.billboard-display_text {
+  font-size: 4.5rem;
+  line-height: 4.875rem; }
+  .billboard-display_text + .billboard-second_text {
+    margin-top: 1.1rem; }
+
+.billboard-second_text {
+  font-size: 2.125rem;
+  line-height: 2.4375rem; }
+
 .header {
   background: #ffffff;
   min-height: 6.875rem; }
@@ -2443,6 +2467,20 @@ p + h5 {
 
 .sidenav-sub_list {
   display: none; }
+
+.section {
+  padding-bottom: 4.5rem;
+  padding-top: 4.5rem; }
+
+.section-middle {
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem; }
+
+.section-dark {
+  color: #ffffff; }
+
+.section-light {
+  background: #ffffff; }
 
 .title_bar {
   margin: 0 auto;
