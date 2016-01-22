@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/18F/cg-style#readme",
   "dependencies": {
-    "uswds": "git+https://git@github.com/18F/web-design-standards.git#v0.9.x"
+    "uswds": "git+https://git@github.com/18F/web-design-standards.git#952-override_variables"
   },
   "devDependencies": {
     "autoprefixer": "^6.2.3",
