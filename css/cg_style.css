@@ -2476,6 +2476,20 @@ p + h5 {
   padding-bottom: 1.5rem;
   padding-top: 1.5rem; }
 
+.section-content {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  float: none;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto; }
+  .section-content:last-child {
+    margin-right: 0; }
+  .section-content:last-child {
+    margin-right: auto; }
+
 .section-dark {
   color: #ffffff; }
 
