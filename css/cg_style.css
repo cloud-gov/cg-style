@@ -2401,6 +2401,7 @@ p + h5 {
 
 .nav_toggle {
   background: #2C3E50;
+  cursor: pointer;
   padding-bottom: .35rem;
   padding-top: .35rem;
   text-align: center;
@@ -2427,6 +2428,7 @@ p + h5 {
   -webkit-align-self: auto;
       -ms-flex-item-align: auto;
           align-self: auto;
+  display: none;
   -webkit-box-flex: 0;
   -webkit-flex-grow: 0;
       -ms-flex-positive: 0;
@@ -2436,6 +2438,8 @@ p + h5 {
   @media screen and (min-width: 900px) {
     .sidenav {
       display: block; } }
+  .sidenav.active {
+    display: block; }
 
 .sidenav-main {
   -webkit-align-self: auto;
@@ -2450,7 +2454,11 @@ p + h5 {
   width: 100%; }
   @media screen and (min-width: 900px) {
     .sidenav-main {
-      width: calc(100% - 300px); } }
+      width: calc(100% - 300px); }
+      .sidenav-main.active {
+        width: calc(100% - 300px); } }
+  .sidenav-main.active {
+    width: 70%; }
 
 .sidenav-list {
   width: 100%; }

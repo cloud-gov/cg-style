@@ -17,11 +17,16 @@ $color-level-3-bg:  #595959;
 
 .sidenav {
   align-self: auto;
+  display: none;
   flex-grow: 0;
   padding: 0;
   width: $width-nav-sidebar;
 
   @include media($medium-screen + $width-nav-sidebar) {
+    display: block;
+  }
+
+  &.active {
     display: block;
   }
 }
@@ -35,6 +40,14 @@ $color-level-3-bg:  #595959;
 
   @include media($medium-screen + $width-nav-sidebar) {
     width: calc(100% - #{$width-nav-sidebar});
+
+    &.active {
+      width: calc(100% - #{$width-nav-sidebar});
+    }
+  }
+
+  &.active {
+    width: 70%;
   }
 }
 
