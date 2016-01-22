@@ -1,0 +1,57 @@
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-sans;
+  font-weight: 300;
+  margin: 0;
+
+  & + p {
+    margin-top: 0.5rem;
+  }
+}
+
+h1 {
+  font-size: 2rem;
+
+  @include media($medium-screen) {
+    font-size: 2.75rem;
+  }
+
+  & + p {
+    margin-top: 2rem;
+  }
+}
+
+h2 {
+  font-size: 1.85rem;
+
+  @include media($medium-screen) {
+    font-size: 2.125rem;
+  }
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.1875rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+body {
+  font-weight: 300;
+  line-height: 1.7333333;
+}
+
+p {
+
+  & + h2,
+  & + h3,
+  & + h4,
+  & + h5 {
+    margin-top: 2rem;
+  }
+}
