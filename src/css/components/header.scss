@@ -1,22 +1,22 @@
 
 .header {
   background: $color-white;
-  min-height: 6.875em;
+  min-height: 6.875rem;
 }
 
 .header-wrap {
   @include clearfix;
   margin: 0 auto;
   max-width: $site-max-width;
-  padding-bottom: 1em;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 1.875em;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1.875rem;
 }
 
 .header-title {
   float: left;
-  margin-bottom: .6em;
+  margin-bottom: .6rem;
 }
 
 .header-side {

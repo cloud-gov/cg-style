@@ -1,0 +1,20 @@
+
+.title_bar {
+  margin: 0 auto;
+  padding: .40rem .5rem .40rem 0;
+  width: 1040px;
+
+  & > * {
+    display: inline-block;
+    margin-left: 1em;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.title_bar-title {
+  color: $color-white;
+  font-size: 1rem;
+}

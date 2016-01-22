@@ -6,7 +6,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   list-style: none;
-  margin-top: .6em;
+  margin-top: .6rem;
 
   @include media($medium-screen) {
     flex-direction: row;
@@ -16,10 +16,10 @@
 
 .nav-link {
   color: $color-gray;
-  font-size: 1.1em;
+  font-size: 1.1rem;
   font-weight: 600;
-  padding-bottom: .2em;
-  padding-top: .2em;
+  padding-bottom: .2rem;
+  padding-top: .2rem;
   text-transform: uppercase;
 
   a {
@@ -29,8 +29,8 @@
   @include media($medium-screen) {
     font-size: inherit;
     padding-bottom: 0;
-    padding-left: .2em;
-    padding-right: .2em;
+    padding-left: .2rem;
+    padding-right: .2rem;
     padding-top: 0;
   }
 }
