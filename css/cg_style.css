@@ -2447,7 +2447,8 @@ p + h5 {
     color: #ffffff;
     word-wrap: break-word; }
   .sidenav-list li {
-    border-top: 0; }
+    border-top: 0;
+    font-size: 0.9rem; }
 
 .sidenav-level-one {
   background-color: #2c3e50; }

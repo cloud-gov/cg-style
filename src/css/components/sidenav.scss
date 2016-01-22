@@ -40,12 +40,14 @@ $color-level-3-bg:  #595959;
 
 .sidenav-list {
   width: 100%;
+
   a {
     color: $color-light-font;
     word-wrap: break-word;
   }
   li {
     border-top: 0;
+    font-size: 0.9rem;
   }
 }
 
