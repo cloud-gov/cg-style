@@ -2332,6 +2332,25 @@ p + h5 {
   font-size: 2.125rem;
   line-height: 2.4375rem; }
 
+.four_up:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+@media screen and (min-width: 600px) {
+  .four_up-part {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%; }
+    .four_up-part:last-child {
+      margin-right: 0; } }
+
+.section-content + .four_up {
+  margin-top: 3rem; }
+
 .header {
   background: #ffffff;
   min-height: 6.875rem; }
@@ -2509,6 +2528,25 @@ p + h5 {
 .title_bar-title {
   color: #ffffff;
   font-size: 1rem; }
+
+.three_up:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+@media screen and (min-width: 600px) {
+  .three_up-part {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    .three_up-part:last-child {
+      margin-right: 0; } }
+
+.section-content + .three_up {
+  margin-top: 3rem; }
 
 .usa-disclaimer {
   font-size: 0.9rem; }
