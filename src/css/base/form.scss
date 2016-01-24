@@ -1,0 +1,23 @@
+
+form {
+  max-width: none;
+}
+
+legend {
+  font-size: 1.2rem;
+  margin-bottom: .5rem;
+}
+
+label {
+  margin-top: 0;
+}
+
+input[type="email"] {
+  font-size: 1rem;
+  padding: .7rem 0.7em;
+}
+
+form button[type="submit"], 
+form input[type="submit"] {
+  margin-top: 1.5rem;
+}
