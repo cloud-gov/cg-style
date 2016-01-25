@@ -1,0 +1,30 @@
+
+.section {
+  padding-bottom: 4.5rem;
+  padding-top: 4.5rem;
+}
+
+.section-middle {
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.section-content {
+  @include span-columns(8);
+  float: none;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  &:last-child {
+    margin-right: auto;
+  }
+}
+
+.section-dark {
+  color: $color-white;
+}
+
+.section-light {
+  background: $color-white;
+}

@@ -1,0 +1,26 @@
+
+.billboard {
+  @include span-columns(8);
+  float: none;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  &:last-child {
+    margin-right: auto;
+  }
+}
+
+.billboard-display_text {
+  font-size: 4.5rem;
+  line-height: 4.875rem;
+
+  & + .billboard-second_text {
+    margin-top: 1.1rem;
+  }
+}
+
+.billboard-second_text {
+  font-size: 2.125rem;
+  line-height: 2.4375rem;
+}
