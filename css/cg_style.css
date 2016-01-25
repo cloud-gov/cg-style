@@ -2518,22 +2518,32 @@ blockquote {
       -ms-flex-direction: row;
           flex-direction: row;
   margin: 0 auto;
-  max-width: 1040px; }
+  max-width: 1040px;
+  position: relative; }
 
 .sidenav {
-  -webkit-align-self: auto;
-      -ms-flex-item-align: auto;
-          align-self: auto;
+  -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
+          align-self: stretch;
+  bottom: 0;
   display: none;
   -webkit-box-flex: 0;
   -webkit-flex-grow: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  height: 100%;
   padding: 0;
-  width: 300px; }
+  position: absolute;
+  top: 0;
+  width: 300px;
+  z-index: 1; }
   @media screen and (min-width: 900px) {
     .sidenav {
-      display: block; } }
+      display: block;
+      position: static; } }
   .sidenav.active {
     display: block; }
 
@@ -2545,18 +2555,16 @@ blockquote {
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  margin-bottom: 5em;
-  padding: 0 2em 2em 0;
+  padding: 0;
   width: 100%; }
   @media screen and (min-width: 900px) {
     .sidenav-main {
       width: calc(100% - 300px); }
       .sidenav-main.active {
         width: calc(100% - 300px); } }
-  .sidenav-main.active {
-    width: 70%; }
 
 .sidenav-list {
+  height: 100%;
   width: 100%; }
   .sidenav-list a {
     color: #ffffff;
@@ -2623,7 +2631,7 @@ blockquote {
 .title_bar {
   margin: 0 auto;
   padding: 0 .5rem 0 0;
-  width: 1040px; }
+  max-width: 1040px; }
   .title_bar > * {
     display: inline-block;
     margin-left: 1em; }
@@ -2666,3 +2674,25 @@ blockquote {
 
 .usa-button {
   font-size: 1.2rem; }
+
+.usa-sidenav-list a {
+  padding: 1rem 1rem 1rem 1rem; }
+  .usa-sidenav-list a:hover, .usa-sidenav-list a:active, .usa-sidenav-list a.usa-current {
+    padding: 1rem 1rem 1rem 1rem; }
+
+@media screen and (min-width: 600px) {
+  .usa-sidenav-list a {
+    padding: 1rem 1rem 1rem 1.8rem; }
+    .usa-sidenav-list a:hover, .usa-sidenav-list a.usa-current, .usa-sidenav-list a:active {
+      padding: 1rem 1rem 1rem 1.8rem; } }
+
+.usa-sidenav-sub_list a {
+  padding-left: 2rem; }
+  .usa-sidenav-sub_list a:hover, .usa-sidenav-sub_list a.usa-current, .usa-sidenav-sub_list a:active {
+    padding-left: 2rem; }
+
+@media screen and (min-width: 600px) {
+  .usa-sidenav-sub_list a {
+    padding-left: 2.8rem; }
+    .usa-sidenav-sub_list a:hover, .usa-sidenav-sub_list a.usa-current, .usa-sidenav-sub_list a:active {
+      padding-left: 2.8rem; } }
