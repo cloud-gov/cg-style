@@ -2495,6 +2495,18 @@ blockquote {
       padding-right: .2rem;
       padding-top: 0; } }
 
+.nav_toggle {
+  background: #2C3E50;
+  cursor: pointer;
+  padding-bottom: .35rem;
+  padding-top: .35rem;
+  text-align: center;
+  width: 2.6rem; }
+
+.nav_toggle-icon {
+  color: white;
+  font-size: 1.375rem; }
+
 .sidenav-parent {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2512,6 +2524,7 @@ blockquote {
   -webkit-align-self: auto;
       -ms-flex-item-align: auto;
           align-self: auto;
+  display: none;
   -webkit-box-flex: 0;
   -webkit-flex-grow: 0;
       -ms-flex-positive: 0;
@@ -2521,6 +2534,8 @@ blockquote {
   @media screen and (min-width: 900px) {
     .sidenav {
       display: block; } }
+  .sidenav.active {
+    display: block; }
 
 .sidenav-main {
   -webkit-align-self: auto;
@@ -2535,10 +2550,41 @@ blockquote {
   width: 100%; }
   @media screen and (min-width: 900px) {
     .sidenav-main {
-      width: calc(100% - 300px); } }
+      width: calc(100% - 300px); }
+      .sidenav-main.active {
+        width: calc(100% - 300px); } }
+  .sidenav-main.active {
+    width: 70%; }
 
-.sidenav-sub_list {
-  display: none; }
+.sidenav-list {
+  width: 100%; }
+  .sidenav-list a {
+    color: #ffffff;
+    word-wrap: break-word; }
+  .sidenav-list li {
+    border-top: 0;
+    font-size: 0.9rem; }
+
+.sidenav-level-one {
+  background-color: #2c3e50; }
+
+.sidenav-level-two {
+  background-color: #1f2b38; }
+
+.sidenav-level-three {
+  background-color: #595959;
+  /* Removes weird margin in list for third level */
+  margin-bottom: 0;
+  margin-top: 0; }
+
+.sidenav-arrow {
+  float: right; }
+
+.sidenav-active {
+  background-color: #f1f1f1;
+  text-decoration: none; }
+  .sidenav-active a {
+    color: #277CB2; }
 
 .section {
   padding-bottom: 4.5rem;
@@ -2576,7 +2622,7 @@ blockquote {
 
 .title_bar {
   margin: 0 auto;
-  padding: .40rem .5rem .40rem 0;
+  padding: 0 .5rem 0 0;
   width: 1040px; }
   .title_bar > * {
     display: inline-block;
