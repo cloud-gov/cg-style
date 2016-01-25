@@ -2246,7 +2246,7 @@ label {
 
 input[type="email"] {
   font-size: 1rem;
-  padding: .7rem 0.7em; }
+  padding: 0.7rem 0.7rem; }
 
 form button[type="submit"],
 form input[type="submit"] {
@@ -2292,7 +2292,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0; }
   h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p {
     margin-top: 0.5rem; }
-  h1 + .push, h2 + .push, h3 + .push, h4 + .push, h5 + .push, h6 + .push {
+  h1 + .text_block, h2 + .text_block, h3 + .text_block, h4 + .text_block, h5 + .text_block, h6 + .text_block {
     margin-top: 1.5rem; }
 
 h1 {
