@@ -2332,29 +2332,43 @@ p + h4,
 p + h5 {
   margin-top: 2rem; }
 
+blockquote {
+  margin-left: 0;
+  margin-right: 0; }
+
 .billboard {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 65.88078%;
-  float: none;
-  margin-top: 0;
-  margin-left: auto;
-  margin-right: auto; }
-  .billboard:last-child {
-    margin-right: 0; }
-  .billboard:last-child {
-    margin-right: auto; }
+  margin-top: 0; }
+  @media screen and (min-width: 600px) {
+    .billboard {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%;
+      float: none;
+      margin-left: auto;
+      margin-right: auto; }
+      .billboard:last-child {
+        margin-right: 0; }
+      .billboard:last-child {
+        margin-right: auto; } }
 
 .billboard-display_text {
-  font-size: 4.5rem;
-  line-height: 4.875rem; }
+  font-size: 2.6rem;
+  line-height: 3rem; }
+  @media screen and (min-width: 600px) {
+    .billboard-display_text {
+      font-size: 4.5rem;
+      line-height: 4.875rem; } }
   .billboard-display_text + .billboard-second_text {
     margin-top: 1.1rem; }
 
 .billboard-second_text {
-  font-size: 2.125rem;
-  line-height: 2.4375rem; }
+  font-size: 1.8rem;
+  line-height: 2.2rem; }
+  @media screen and (min-width: 600px) {
+    .billboard-second_text {
+      font-size: 2.125rem;
+      line-height: 2.4375rem; } }
 
 .footer {
   padding-bottom: 3rem;
@@ -2531,25 +2545,31 @@ p + h5 {
   padding-top: 4.5rem; }
 
 .section-middle {
-  padding-bottom: 1.5rem;
-  padding-top: 1.5rem; }
+  padding-bottom: 2.5rem;
+  padding-top: 2.5rem; }
 
 .section-content {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 65.88078%;
-  float: none;
-  margin-top: 0;
-  margin-left: auto;
-  margin-right: auto; }
-  .section-content:last-child {
-    margin-right: 0; }
+  margin-top: 0; }
   .section-content:last-child {
     margin-right: auto; }
+  @media screen and (min-width: 600px) {
+    .section-content {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%;
+      float: none;
+      margin-left: auto;
+      margin-right: auto; }
+      .section-content:last-child {
+        margin-right: 0; }
+      .section-content:last-child {
+        margin-right: auto; } }
 
 .section-dark {
   color: #ffffff; }
+  .section-dark a {
+    color: #3498DB; }
 
 .section-light {
   background: #ffffff; }
@@ -2586,6 +2606,14 @@ p + h5 {
 
 .section-content + .three_up {
   margin-top: 3rem; }
+
+.usa-grid {
+  padding-left: 2rem;
+  padding-right: 2rem; }
+  @media screen and (min-width: 600px) {
+    .usa-grid {
+      padding-left: 3rem;
+      padding-right: 3rem; } }
 
 .usa-disclaimer {
   font-size: 0.9rem; }
