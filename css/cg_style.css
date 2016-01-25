@@ -2595,6 +2595,7 @@ blockquote {
     color: #277CB2; }
 
 .section {
+  overflow: hidden;
   padding-bottom: 4.5rem;
   padding-top: 4.5rem; }
 
@@ -2624,6 +2625,25 @@ blockquote {
   color: #ffffff; }
   .section-dark a {
     color: #3498DB; }
+
+.section-bg-parent {
+  position: relative; }
+
+.section-bg {
+  background-color: transparent; }
+  .section-bg:before {
+    background-image: url("../img/cg-bg-b.png");
+    background-repeat: no-repeat;
+    content: '';
+    height: 44.3rem;
+    left: -23rem;
+    position: absolute;
+    top: -160px;
+    width: 39.85rem;
+    z-index: -1; }
+    @media screen and (min-width: 600px) {
+      .section-bg:before {
+        left: -12rem; } }
 
 .section-light {
   background: #ffffff; }
