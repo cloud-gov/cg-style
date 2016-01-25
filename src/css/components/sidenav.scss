@@ -13,17 +13,25 @@ $color-level-3-bg:  #595959;
   flex-direction: row;
   margin: 0 auto;
   max-width: $site-max-width;
+  position: relative;
 }
 
 .sidenav {
-  align-self: auto;
+  align-self: stretch;
+  bottom: 0;
   display: none;
   flex-grow: 0;
+  flex-shrink:0;
+  height: 100%;
   padding: 0;
+  position: absolute;
+  top: 0;
   width: $width-nav-sidebar;
+  z-index: 1;
 
   @include media($medium-screen + $width-nav-sidebar) {
     display: block;
+    position: static;
   }
 
   &.active {
@@ -34,8 +42,7 @@ $color-level-3-bg:  #595959;
 .sidenav-main {
   align-self: auto;
   flex-grow: 1;
-  margin-bottom: 5em;
-  padding: 0 2em 2em 0;
+  padding: 0;
   width: 100%;
 
   @include media($medium-screen + $width-nav-sidebar) {
@@ -45,13 +52,10 @@ $color-level-3-bg:  #595959;
       width: calc(100% - #{$width-nav-sidebar});
     }
   }
-
-  &.active {
-    width: 70%;
-  }
 }
 
 .sidenav-list {
+  height: 100%;
   width: 100%;
 
   a {

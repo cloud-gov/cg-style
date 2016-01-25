@@ -1,0 +1,41 @@
+
+.section {
+  padding-bottom: 4.5rem;
+  padding-top: 4.5rem;
+}
+
+.section-middle {
+  padding-bottom: 2.5rem;
+  padding-top: 2.5rem;
+}
+
+.section-content {
+  margin-top: 0;
+
+  &:last-child {
+    margin-right: auto;
+  }
+
+  @include media($medium-screen) {
+    @include span-columns(8);
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:last-child {
+      margin-right: auto;
+    }
+  }
+}
+
+.section-dark {
+  color: $color-white;
+
+  a {
+    color: $color-primary-alt;
+  }
+}
+
+.section-light {
+  background: $color-white;
+}

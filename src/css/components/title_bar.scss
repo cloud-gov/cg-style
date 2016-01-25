@@ -2,7 +2,7 @@
 .title_bar {
   margin: 0 auto;
   padding: 0 .5rem 0 0;
-  width: 1040px;
+  max-width: $site-max-width;
 
   & > * {
     display: inline-block;

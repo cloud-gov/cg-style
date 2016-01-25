@@ -1,0 +1,14 @@
+
+.four_up {
+  @include clearfix;
+}
+
+.four_up-part {
+  @include media($medium-screen) {
+    @include span-columns(3);
+  }
+}
+
+.section-content + .four_up {
+  margin-top: 3rem;
+}

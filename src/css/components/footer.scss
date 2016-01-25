@@ -1,0 +1,14 @@
+
+.footer {
+  @include clearfix;
+  padding-bottom: 3rem;
+  padding-top: 2rem;
+}
+
+.footer-links {
+  text-align: right;
+
+  a {
+    color: $color-white;
+  }
+}
