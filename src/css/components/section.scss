@@ -61,6 +61,13 @@
   }
 }
 
+.section-bg-far-r {
+  background-image: url("../img/cg-bg-c.png");
+  background-repeat: no-repeat;
+  background-position-x: 108%;
+  background-position-y: 5vh; 
+}
+
 .section-light {
   background: $color-white;
 }
