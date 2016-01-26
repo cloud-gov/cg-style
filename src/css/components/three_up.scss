@@ -4,8 +4,19 @@
 }
 
 .three_up-part {
+  margin-top: 4rem;
+
   @include media($medium-screen) {
     @include span-columns(4);
+    margin-top: 0;
+  }
+
+  .hex_icon {
+    margin: 0 auto 2rem auto;
+  }
+
+  .icon-container {
+    margin-bottom: 1rem;
   }
 }
 
