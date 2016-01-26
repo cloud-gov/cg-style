@@ -1,5 +1,6 @@
 
 .section {
+  overflow: hidden;
   padding-bottom: 4.5rem;
   padding-top: 4.5rem;
 }
@@ -34,6 +35,37 @@
   a {
     color: $color-primary-alt;
   }
+}
+
+.section-bg-parent {
+  position: relative;
+}
+
+.section-bg {
+  background-color: transparent;
+
+  &:before {
+    background-image: url("../img/cg-bg-b.png");
+    background-repeat: no-repeat;
+    content: '';
+    height: 44.3rem;
+    left: -23rem;
+    position: absolute;
+    top: -160px;
+    width: 39.85rem;
+    z-index: -1;
+
+    @include media($medium-screen) {
+      left: -12rem;
+    }
+  }
+}
+
+.section-bg-far-r {
+  background-image: url("../img/cg-bg-c.png");
+  background-repeat: no-repeat;
+  background-position-x: 108%;
+  background-position-y: 5vh; 
 }
 
 .section-light {
