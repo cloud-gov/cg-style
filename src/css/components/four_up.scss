@@ -7,6 +7,14 @@
   @include media($medium-screen) {
     @include span-columns(3);
   }
+
+  .hex_icon {
+    margin: 0 auto 2rem auto;
+  }
+
+  .icon-container {
+    margin-bottom: 1rem;
+  }
 }
 
 .section-content + .four_up {
