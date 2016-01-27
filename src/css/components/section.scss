@@ -6,8 +6,8 @@
 }
 
 .section-middle {
-  padding-bottom: 2.5rem;
-  padding-top: 2.5rem;
+  padding-bottom: 4.5rem;
+  padding-top: 4.5rem;
 }
 
 .section-content {
@@ -34,10 +34,6 @@
 
   a {
     color: $color-primary-alt;
-  }
-
-  .section-icon {
-    margin-top: 1.5rem;
   }
 }
 
@@ -78,6 +74,7 @@
 
 .section-icon {
   left: 50%;
-  margin-left: -4.9rem;
+  margin-left: -2.4375rem;
+  margin-top: 1.7rem;
   position: absolute;
 }

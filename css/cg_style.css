@@ -2644,8 +2644,8 @@ blockquote {
   padding-top: 4.5rem; }
 
 .section-middle {
-  padding-bottom: 2.5rem;
-  padding-top: 2.5rem; }
+  padding-bottom: 4.5rem;
+  padding-top: 4.5rem; }
 
 .section-content {
   margin-top: 0; }
@@ -2669,8 +2669,6 @@ blockquote {
   color: #ffffff; }
   .section-dark a {
     color: #3498DB; }
-  .section-dark .section-icon {
-    margin-top: 1.5rem; }
 
 .section-bg-parent {
   position: relative; }
@@ -2702,7 +2700,8 @@ blockquote {
 
 .section-icon {
   left: 50%;
-  margin-left: -4.9rem;
+  margin-left: -2.4375rem;
+  margin-top: 1.7rem;
   position: absolute; }
 
 .title_bar {
