@@ -2669,6 +2669,8 @@ blockquote {
   color: #ffffff; }
   .section-dark a {
     color: #3498DB; }
+  .section-dark .section-icon {
+    margin-top: 1.5rem; }
 
 .section-bg-parent {
   position: relative; }
@@ -2697,6 +2699,11 @@ blockquote {
 
 .section-light {
   background: #ffffff; }
+
+.section-icon {
+  left: 50%;
+  margin-left: -4.9rem;
+  position: absolute; }
 
 .title_bar {
   margin: 0 auto;

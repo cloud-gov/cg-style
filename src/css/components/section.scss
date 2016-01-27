@@ -35,6 +35,10 @@
   a {
     color: $color-primary-alt;
   }
+
+  .section-icon {
+    margin-top: 1.5rem;
+  }
 }
 
 .section-bg-parent {
@@ -70,4 +74,10 @@
 
 .section-light {
   background: $color-white;
+}
+
+.section-icon {
+  left: 50%;
+  margin-left: -4.9rem;
+  position: absolute;
 }
