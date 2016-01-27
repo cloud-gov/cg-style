@@ -2296,7 +2296,8 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 1.5rem; }
 
 h1 {
-  font-size: 2rem; }
+  font-size: 2rem;
+  line-height: 1.18; }
   @media screen and (min-width: 600px) {
     h1 {
       font-size: 2.75rem; } }
@@ -2354,7 +2355,7 @@ blockquote {
 
 .billboard-display_text {
   font-size: 2.6rem;
-  line-height: 3rem; }
+  line-height: 2.8rem; }
   @media screen and (min-width: 600px) {
     .billboard-display_text {
       font-size: 4.5rem;
