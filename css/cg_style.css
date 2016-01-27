@@ -2286,6 +2286,116 @@ form input[type="submit"] {
   src: url("../fonts/merriweather-italic-webfont.eot");
   src: url("../fonts/merriweather-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-italic-webfont.woff2") format("woff2"), url("../fonts/merriweather-italic-webfont.woff") format("woff"), url("../fonts/merriweather-italic-webfont.ttf") format("truetype"); }
 
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+  table tbody {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    @media screen and (min-width: 600px) {
+      table tbody {
+        display: table; } }
+    table tbody tr {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-flex-flow: column wrap;
+          -ms-flex-flow: column wrap;
+              flex-flow: column wrap;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+      table tbody tr:last-child td {
+        border-left-width: 0; }
+        @media screen and (min-width: 600px) {
+          table tbody tr:last-child td {
+            border-left-width: 1px; } }
+      @media screen and (min-width: 600px) {
+        table tbody tr {
+          display: table-row; } }
+    table tbody th {
+      border-right-width: 0;
+      border-bottom-width: 0;
+      border-bottom: 0;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      height: 21rem;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin: 0;
+      width: 0; }
+      table tbody th:last-child {
+        border-bottom-width: 1px;
+        border-style: solid; }
+      table tbody th span {
+        margin-top: 3rem;
+        -webkit-transform: rotate(-90deg);
+                transform: rotate(-90deg);
+        display: block;
+        line-height: 1; }
+        @media screen and (min-width: 600px) {
+          table tbody th span {
+            display: inline;
+            line-height: initial;
+            margin-top: 0;
+            -webkit-transform: initial;
+                    transform: initial; } }
+      @media screen and (min-width: 600px) {
+        table tbody th {
+          border-width: 1px;
+          display: table-cell;
+          height: inherit;
+          width: 25%; } }
+    table tbody td {
+      border-bottom-width: 0;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      height: 21rem;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      table tbody td:last-child {
+        border-bottom-width: 1px;
+        border-style: solid; }
+      @media screen and (min-width: 600px) {
+        table tbody td {
+          border-width: 1px;
+          display: table-cell;
+          height: inherit; } }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
   font-weight: 300;
