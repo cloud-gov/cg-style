@@ -1,0 +1,94 @@
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  tbody {
+    display: flex;
+
+    @include media($medium-screen) {
+      display: table;
+    }
+
+    tr {
+      display: flex;
+      flex-direction: column;
+      flex-flow: column wrap;
+      flex-wrap: wrap;
+
+      &:last-child {
+        td {
+          border-left-width: 0;
+
+          @include media($medium-screen) {
+            border-left-width: 1px;
+          }
+        }
+      }
+
+      @include media($medium-screen) {
+        display: table-row;
+      }
+    }
+
+    th {
+      border-right-width: 0;
+      border-bottom-width: 0;
+      border-bottom: 0;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      height: 21rem;
+      justify-content: center;
+      margin: 0;
+      width: 0;
+
+      &:last-child {
+        border-bottom-width: 1px;
+        border-style: solid;
+      }
+
+      span {
+        margin-top: 3rem;
+        transform: rotate(-90deg);
+        display: block;
+        line-height: 1;
+
+        @include media($medium-screen) {
+          display: inline;
+          line-height: initial;
+          margin-top: 0;
+          transform: initial;
+        }
+      }
+
+      @include media($medium-screen) {
+        border-width: 1px;
+        display: table-cell;
+        height: inherit;
+        width: 25%;
+      }
+    }
+
+    td {
+      border-bottom-width: 0;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      height: 21rem;
+      justify-content: center;
+
+      &:last-child {
+        border-bottom-width: 1px;
+        border-style: solid;
+      }
+
+      @include media($medium-screen) {
+        border-width: 1px;
+        display: table-cell;
+        height: inherit;
+      }
+    }
+  }
+}
+
