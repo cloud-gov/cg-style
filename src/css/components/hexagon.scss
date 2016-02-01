@@ -1,0 +1,43 @@
+
+$primary-color: $color-primary-alt;
+$alt-color: $color-secondary;
+
+.hexagon {
+  background: $primary-color;
+  height: .65em;
+  position: relative;
+  width: 1em;
+}
+
+.hexagon:before,
+.hexagon:after {
+  border-left: .5em solid transparent;
+  border-right: .5em solid transparent;
+  content: "";
+  height: 0;
+  left: 0;
+  position: absolute;
+  width: 0;
+}
+
+.hexagon:before {
+  border-bottom: .25em solid $primary-color;
+  top: -.25em;
+}
+
+.hexagon:after {
+  border-top: .25em solid $primary-color;
+  bottom: -.25em;
+}
+	
+.hexagon-alt {
+  background: $alt-color;
+
+  &:before {
+    border-bottom-color: $alt-color;
+  }
+
+  &:after {
+    border-top-color: $alt-color;
+  }
+}
