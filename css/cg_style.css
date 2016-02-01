@@ -2557,27 +2557,23 @@ blockquote {
   position: relative;
   width: 1em; }
 
-.hexagon:before {
-  border-left: .5em solid transparent;
-  border-right: .5em solid transparent;
-  border-bottom: 0.25em solid #3498DB;
-  content: "";
-  position: absolute;
-  top: -.25em;
-  left: 0;
-  width: 0;
-  height: 0; }
-
+.hexagon:before,
 .hexagon:after {
   border-left: .5em solid transparent;
   border-right: .5em solid transparent;
-  border-top: 0.25em solid #3498DB;
   content: "";
-  position: absolute;
-  bottom: -.25em;
+  height: 0;
   left: 0;
-  width: 0;
-  height: 0; }
+  position: absolute;
+  width: 0; }
+
+.hexagon:before {
+  border-bottom: 0.25em solid #3498DB;
+  top: -.25em; }
+
+.hexagon:after {
+  border-top: 0.25em solid #3498DB;
+  bottom: -.25em; }
 
 .hexagon-alt {
   background: #E74C3C; }
@@ -2638,8 +2634,8 @@ blockquote {
       -ms-flex-negative: 1;
           flex-shrink: 1;
   font-size: 12px;
-  margin-left: 1em;
-  margin-right: 1em;
+  margin-left: 1rem;
+  margin-right: 1rem;
   -webkit-box-ordinal-group: 3;
   -webkit-order: 2;
       -ms-flex-order: 2;
