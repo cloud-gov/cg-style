@@ -1,0 +1,84 @@
+
+.section {
+  overflow: hidden;
+  padding-bottom: 4.5rem;
+  padding-top: 4.5rem;
+}
+
+.section-middle {
+  padding-bottom: 4.5rem;
+  padding-top: 4.5rem;
+}
+
+.section-content {
+  margin-top: 0;
+
+  &:last-child {
+    margin-right: auto;
+  }
+
+  @include media($medium-screen) {
+    @include span-columns(8);
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:last-child {
+      margin-right: auto;
+    }
+  }
+}
+
+.section-dark {
+  color: $color-white;
+
+  a {
+    color: $color-primary-alt;
+  }
+}
+
+.section-bg-parent {
+  position: relative;
+}
+
+.section-bg {
+  background-color: transparent;
+
+  &:before {
+    background-image: url("../img/cg-bg-b.png");
+    background-repeat: no-repeat;
+    content: '';
+    height: 44.3rem;
+    left: -23rem;
+    position: absolute;
+    top: -160px;
+    width: 39.85rem;
+    z-index: -1;
+
+    @include media($medium-screen) {
+      left: -12rem;
+    }
+  }
+}
+
+.section-bg-far-r {
+  background-image: url("../img/cg-bg-c.png");
+  background-repeat: no-repeat;
+  background-position-x: 278%;
+  background-position-y: 5vh; 
+
+  @include media($medium-screen) {
+    background-position-x: 108%;
+  }
+}
+
+.section-light {
+  background: $color-white;
+}
+
+.section-icon {
+  left: 50%;
+  margin-left: -2.4375rem;
+  margin-top: 1.7rem;
+  position: absolute;
+}

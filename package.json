@@ -4,11 +4,11 @@
   "description": "The global style of cloud.gov",
   "main": "dist/index.js",
   "scripts": {
-    "clean": "rm css/cg_style.css || true && rm -rf img/* && rm -rf font/*",
+    "clean": "rm -rf css/*.css && rm -rf img/* && rm -rf font/* && rm -rf js/*",
     "build": "npm run build-css",
-    "build-css": "npm run build-sass && npm run build-prefix",
-    "build-sass": "npm run clean && npm run copy && node-sass css/cg_style.scss -o css",
-    "build-prefix": "postcss --use autoprefixer css/cg_style.css -d css",
+    "build-css": "node-sass ./src/css/main.scss ./css/cg_style.css && npm run build-prefix",
+    "build-prefix": "postcss --use autoprefixer css/cg_style.css -o ./css/cg_style.css",
+    "compile-css": "cleancss ./css/cg_style.css -o ./css/cg_style-min.css",
     "copy": "npm run copy-img && npm run copy-font",
     "copy-img": "cp -r node_modules/uswds/assets/img/* img/ && cp ./src/img/* ./img",
     "copy-font": "cp node_modules/uswds/assets/fonts/* font/ && cp ./src/font/* ./font",
@@ -30,6 +30,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^6.2.3",
+    "clean-css": "^3.4.9",
     "node-sass": "^3.4.2",
     "postcss": "^5.0.14",
     "postcss-cli": "^2.3.3",

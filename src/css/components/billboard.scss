@@ -1,0 +1,39 @@
+
+.billboard {
+  margin-top: 0;
+
+  @include media($medium-screen) {
+    @include span-columns(8);
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:last-child {
+      margin-right: auto;
+    }
+  }
+}
+
+.billboard-display_text {
+  font-size: 2.6rem;
+  line-height: 2.8rem;
+
+  @include media($medium-screen) {
+    font-size: 4.5rem;
+    line-height: 4.875rem;
+  }
+
+  & + .billboard-second_text {
+    margin-top: 1.1rem;
+  }
+}
+
+.billboard-second_text {
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+
+  @include media($medium-screen) {
+    font-size: 2.125rem;
+    line-height: 2.4375rem;
+  }
+}
