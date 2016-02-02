@@ -117,14 +117,6 @@
     }
   }
 
-  /*
-  &:not(:first-child) {
-    &:before {
-      display: none !important;
-    }
-  }
-  */
-
   &:after {
     background-image: url("../img/chevron-bottom-inverse.svg");
     background-repeat: no-repeat;
