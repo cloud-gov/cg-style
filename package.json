@@ -33,6 +33,7 @@
     "node-sass": "^3.4.2",
     "postcss": "^5.0.14",
     "postcss-cli": "^2.3.3",
+    "postcss-copy-assets": "^0.3.0",
     "sass-lint": "^1.4.0",
     "watch": "^0.17.1"
   }
