@@ -1,4 +1,6 @@
 
+$chevron_size: 4.865rem;
+
 .section {
   padding-bottom: 12.5rem;
   padding-top: 2.75rem;
@@ -39,11 +41,12 @@
   &:before {
     background-image: url("../img/chevron-top.svg");
     background-repeat: no-repeat;
+    background-size: 100% 100%;
     content: '';
     display: block;
-    height: 5rem;
+    height: $chevron_size;
     position: absolute;
-    top: -5rem;
+    top: -$chevron_size;
     width: 100%;
   }
 }
@@ -92,11 +95,12 @@
   &:before {
     background-image: url("../img/chevron-bottom.svg");
     background-repeat: no-repeat;
+    background-size: 100% 100%;
     content: '';
     display: block;
-    height: 5rem;
+    height: $chevron_size;
     position: absolute;
-    top: -5rem;
+    top: -$chevron_size;
     width: 100%;
   }
 }
@@ -107,23 +111,24 @@
   &:not(.section-first) {
     background-color: $color-primary-darkest;
     margin-top: -4.5rem;
-    padding-top: 5rem;
+    padding-top: $chevron_size;
   }
 
   &:not(.section-first) {
     &:before {
       background-image: url("../img/chevron-top-inverse.svg");
-      top: -5rem;
+      top: -$chevron_size;
     }
   }
 
   &:after {
     background-image: url("../img/chevron-bottom-inverse.svg");
     background-repeat: no-repeat;
+    background-size: 100% 100%;
     bottom: 0rem;
     content: '';
     display: block;
-    height: 5rem;
+    height: $chevron_size;
     position: absolute;
     width: 100%;
   }

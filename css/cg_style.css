@@ -2286,6 +2286,10 @@ form input[type="submit"] {
   src: url("../fonts/merriweather-italic-webfont.eot");
   src: url("../fonts/merriweather-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-italic-webfont.woff2") format("woff2"), url("../fonts/merriweather-italic-webfont.woff") format("woff"), url("../fonts/merriweather-italic-webfont.ttf") format("truetype"); }
 
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
 table {
   border-collapse: collapse;
   border-spacing: 0; }
@@ -2883,11 +2887,12 @@ blockquote {
   .section-dark:before {
     background-image: url("../img/chevron-top.svg");
     background-repeat: no-repeat;
+    background-size: 100% 100%;
     content: '';
     display: block;
-    height: 5rem;
+    height: 4.865rem;
     position: absolute;
-    top: -5rem;
+    top: -4.865rem;
     width: 100%; }
 
 .section-bg-parent {
@@ -2924,36 +2929,31 @@ blockquote {
   .section-light:before {
     background-image: url("../img/chevron-bottom.svg");
     background-repeat: no-repeat;
+    background-size: 100% 100%;
     content: '';
     display: block;
-    height: 5rem;
+    height: 4.865rem;
     position: absolute;
-    top: -5rem;
+    top: -4.865rem;
     width: 100%; }
 
 .section-chevron_alt.section-chevron_alt {
-  padding-bottom: 6.5rem;
-  /*
-  &:not(:first-child) {
-    &:before {
-      display: none !important;
-    }
-  }
-  */ }
+  padding-bottom: 6.5rem; }
   .section-chevron_alt.section-chevron_alt:not(.section-first) {
     background-color: #1F2C38;
     margin-top: -4.5rem;
-    padding-top: 5rem; }
+    padding-top: 4.865rem; }
   .section-chevron_alt.section-chevron_alt:not(.section-first):before {
     background-image: url("../img/chevron-top-inverse.svg");
-    top: -5rem; }
+    top: -4.865rem; }
   .section-chevron_alt.section-chevron_alt:after {
     background-image: url("../img/chevron-bottom-inverse.svg");
     background-repeat: no-repeat;
+    background-size: 100% 100%;
     bottom: 0rem;
     content: '';
     display: block;
-    height: 5rem;
+    height: 4.865rem;
     position: absolute;
     width: 100%; }
   .section-chevron_alt.section-chevron_alt + .section-middle {
