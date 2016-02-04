@@ -8,8 +8,7 @@ main {
 }
 
 main:before {
-  background-image: url("../img/cg-bg-a.png");
-  background-repeat: no-repeat;
+  background: url("../img/cg-bg-a.png") no-repeat 0 0;
   content: '';
   height: 19.3rem;
   right: 100%;

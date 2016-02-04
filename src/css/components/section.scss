@@ -60,8 +60,7 @@ $chevron_size: 4.865rem;
   background-color: transparent;
 
   &:before {
-    background-image: url("../img/cg-bg-b.png");
-    background-repeat: no-repeat;
+    background: url("../img/cg-bg-b.png") no-repeat 0 0;
     content: '';
     height: 44.3rem;
     left: -23rem;
@@ -77,10 +76,7 @@ $chevron_size: 4.865rem;
 }
 
 .section-bg-far-r {
-  background-image: url("../img/cg-bg-c.png");
-  background-repeat: no-repeat;
-  background-position-x: 278%;
-  background-position-y: 5vh; 
+  background: url("../img/cg-bg-c.png") no-repeat 278% 5vh;
 
   @include media($medium-screen) {
     background-position-x: 108%;
