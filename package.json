@@ -9,7 +9,7 @@
     "build-css": "mkdir -p ./css && node-sass ./src/css/main.scss ./css/cg_style.css && npm run build-prefix",
     "build-font": "npm run copy-font",
     "build-prefix": "postcss --use autoprefixer css/cg_style.css -o ./css/cg_style.css",
-    "build-img": "mkdir -p ./img && npm run copy-img && node ./build/img_spriting.js",
+    "build-img": "mkdir -p ./img && npm run copy-img && npm run svg",
     "compile-css": "cleancss ./css/cg_style.css -o ./css/cg_style-min.css",
     "copy-img": "cp -r node_modules/uswds/assets/img/*  img/ && cp ./src/img/*.png ./img",
     "copy-font": "mkdir -p ./font && cp node_modules/uswds/assets/fonts/* font/ && cp ./src/font/* ./font",
