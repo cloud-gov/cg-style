@@ -1,19 +1,32 @@
 {
   "name": "cg-style",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "The global style of cloud.gov",
   "main": "dist/index.js",
   "scripts": {
-    "clean": "rm -rf css/*.css && rm -rf img/* && rm -rf font/* && rm -rf js/*",
-    "build": "npm run build-css && npm run build-font && npm run build-img",
+    "clean": "rm -rf css/*.css && rm -rf img/* && rm -rf font/* && rm -rf js/* && npm run gem-clean",
+    "build": "npm run build-css && npm run build-font && npm run build-img && npm run build-js && npm run gem",
     "build-css": "mkdir -p ./css && node-sass ./src/css/main.scss ./css/cg_style.css && npm run build-prefix",
     "build-font": "npm run copy-font",
+    "build-js": "mkdir -p ./js && browserify ./src/js/main.js -o ./js/cg-style.js",
     "build-prefix": "postcss --use autoprefixer css/cg_style.css -o ./css/cg_style.css",
     "build-img": "mkdir -p ./img && npm run copy-img && npm run svg",
     "compile-css": "cleancss ./css/cg_style.css -o ./css/cg_style-min.css",
-    "copy-img": "cp -r node_modules/uswds/assets/img/*  img/ && cp ./src/img/*.png ./img",
-    "copy-font": "mkdir -p ./font && cp node_modules/uswds/assets/fonts/* font/ && cp ./src/font/* ./font",
+    "copy-img": "cp -r node_modules/uswds/dist/img/*  img/ && cp ./src/img/*.png ./img",
+    "copy-font": "mkdir -p ./font && cp node_modules/uswds/dist/fonts/* font/ && cp ./src/font/* ./font",
+    "gem": "npm run gem-clone && npm run gem-dirs && npm run gem-copy && npm run gem-commit && npm run gem-push",
+    "gem-clean": "rm -rf ./gem",
+    "gem-clone": "npm run gem-clean && git clone git@github.com:18F/cg-style-gem.git gem",
+    "gem-copy": "npm run gem-copy-css && npm run gem-copy-js && npm run gem-copy-font && npm run gem-copy-img",
+    "gem-copy-css": "echo ./gem/assets/css ./gem/app/assets/stylesheets | xargs -n 1 cp -R ./css/*",
+    "gem-copy-js": "echo ./gem/assets/js ./gem/app/assets/javascript | xargs -n 1 cp -R ./js/*",
+    "gem-copy-font": "echo ./gem/assets/fonts ./gem/app/assets/fonts | xargs -n 1 cp -R ./font/*",
+    "gem-copy-img": "echo ./gem/assets/img ./gem/app/assets/images | xargs -n 1 cp -R ./img/*",
+    "gem-dirs": "mkdir -p ./gem/assets/{css,js,fonts,img} && mkdir -p ./gem/app/assets/{stylesheets,javascript,fonts,images}",
+    "gem-commit": "cd ./gem && git add . && git commit -m 'Updated with latest cg-style assets' && cd ../",
+    "gem-push": "cd ./gem && git push origin master && cd ../",
     "lint": "scss-lint -c t .scss-lint.yml",
+    "prepublish": "npm run clean && npm run build",
     "svg": "gulp --gulpfile build/gulpfile.js svg-sprite",
     "test": "npm run test",
     "watch": "watch 'npm run build' ./src"
@@ -23,6 +36,7 @@
     "url": "git+https://github.com/18F/cg-style.git"
   },
   "author": "18F",
+  "license": "SEE LICENSE in LICENSE.md",
   "bugs": {
     "url": "https://github.com/18F/cg-style/issues"
   },
@@ -32,6 +46,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^6.2.3",
+    "browserify": "^13.0.0",
     "clean-css": "^3.4.9",
     "gulp": "^3.9.0",
     "gulp-cli": "^1.2.0",
