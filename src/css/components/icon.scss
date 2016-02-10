@@ -2,14 +2,26 @@
 .icon-container {
   height: 3.125rem;
   width: 3.9rem;
+
+  .icon {
+    max-height: 3.1rem;
+    max-width: none;
+  }
 }
 
 .icon {
-  max-height: 3.1rem;
+  display: inline-block;
+  height: 100%;
+  fill: transparent;
+  max-height: 2rem;
+  max-width: 2rem;
+  stroke: currentColor;
+  position: relative;
+  top: -0.0625em;
+  vertical-align: middle;
+  width: 100%;
 }
 
 .icon-alt {
-  .cls-1 {
-    stroke: $color-primary-alt-light;
-  }
+  stroke: $color-primary-alt-light;
 }
