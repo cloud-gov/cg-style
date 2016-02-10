@@ -1,3 +1,7 @@
+/*
+ * A postcss task to create a sprite of all CSS background images and update
+ * the references to them in the CSS.
+ */
 
 var fs = require('fs');
 var postcss = require('postcss');

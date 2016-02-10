@@ -13,6 +13,7 @@ var config = {
   }
 };
 
+// Build an svg-sprite with svg <symbol>s out of all the svg images.
 gulp.task('svg-sprite', function() {
   return gulp.src(base + './src/img/**/*.svg')
     .pipe(svgSprite(config))
@@ -20,7 +21,7 @@ gulp.task('svg-sprite', function() {
 });
 
 gulp.task('default', function() {
-  // place code for your default task here
+  // Will perform any build tasks that require the gulp build system.
   gulp.start('svg-sprite');
 });
 
