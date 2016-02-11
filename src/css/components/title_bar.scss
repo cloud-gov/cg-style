@@ -1,8 +1,9 @@
 
 .title_bar {
+  background-color: $color-primary-darkest;
   margin: 0 auto;
-  padding: 0 .5rem 0 0;
   max-width: $site-max-width;
+  padding: 0 .5rem 0 0;
 
   & > * {
     display: inline-block;
