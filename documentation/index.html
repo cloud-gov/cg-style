@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+{% for component in site.components %}
+  <article class="component">
+    <h3 class="usa-heading">Component - {{ component.title }}</h3>
+    <div class="example">
+      {{ component.content }}
+    </div>
+  </article>
+{% endfor %}

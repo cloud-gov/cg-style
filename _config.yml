@@ -1,0 +1,35 @@
+# Markdown config
+markdown: redcarpet
+highlighter: rouge
+
+name: Cloud.gov style
+
+source: documentation
+
+version: 0.1.0
+
+exclude:
+- Gemfile
+- Gemfile.lock
+- README.md
+- LICENSE.md
+- CONTRIBUTING.md
+- ".sass-cache"
+- ".ruby-version"
+- src
+
+permalink: pretty
+
+repos:
+- name: Cloud.gov style
+  description: The global style of cloud.gov.
+  url: https://github.com/18F/cg-style
+
+sass:
+  sass_dir: documentation/assets/css
+#  style: :compressed
+
+collections:
+  components:
+    output: true
+    permalink: /:path/
