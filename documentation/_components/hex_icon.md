@@ -21,3 +21,38 @@ title: Hex icons
     </svg>
   </i>
 </div>
+
+<div class="force-inline">
+  <i class="hex_icon hex_icon-alt">
+    <svg class="icon">
+      <use xlink:href="{{ '/assets/img/icons.svg#i-checked' |
+         prepend: site.baseurl }}"/>
+    </svg>
+  </i>
+</div>
+
+<div class="force-inline">
+  <i class="hex_icon hex_icon-primary">
+    <svg class="icon">
+      <use xlink:href="{{ '/assets/img/icons.svg#i-court' |
+         prepend: site.baseurl }}"/>
+    </svg>
+  </i>
+</div>
+
+<pre>
+  <code>
+    &lt;i class="hex_icon hex_icon-primary">
+      &lt;svg class="icon">
+        &lt;use xlink:href="{{ '/assets/img/icons.svg#i-court' |
+           prepend: site.baseurl }}"/>
+      &lt;/svg>
+    &lt;/i>
+    &lt;i class="hex_icon hex_icon-alt">
+      &lt;svg class="icon">
+        &lt;use xlink:href="{{ '/assets/img/icons.svg#i-court' |
+           prepend: site.baseurl }}"/>
+      &lt;/svg>
+    &lt;/i>
+  </code>
+</pre>

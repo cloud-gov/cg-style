@@ -14,7 +14,7 @@
     "compile-css": "cleancss ./css/cg_style.css -o ./css/cg_style-min.css",
     "copy-img": "cp -r node_modules/uswds/dist/img/*  img/ && cp ./src/img/* ./img",
     "copy-font": "mkdir -p ./font && cp node_modules/uswds/dist/fonts/* font/ && cp ./src/font/* ./font",
-    "gem": "npm run gem-clone && npm run gem-dirs && npm run gem-copy && npm run gem-commit && npm run gem-push",
+    "gem": "npm run gem-clone && npm run gem-dirs && npm run gem-copy",
     "gem-clean": "rm -rf ./gem",
     "gem-clone": "npm run gem-clean && git clone git@github.com:18F/cg-style-gem.git gem",
     "gem-copy": "npm run gem-copy-css && npm run gem-copy-js && npm run gem-copy-font && npm run gem-copy-img",
