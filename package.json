@@ -16,7 +16,7 @@
     "copy-font": "mkdir -p ./font && cp node_modules/uswds/dist/fonts/* font/ && cp ./src/font/* ./font",
     "gem": "npm run gem-clone && npm run gem-dirs && npm run gem-copy",
     "gem-clean": "rm -rf ./gem",
-    "gem-clone": "npm run gem-clean && git clone git@github.com:18F/cg-style-gem.git gem",
+    "gem-clone": "npm run gem-clean && git clone https://github.com/18F/cg-style-gem.git",
     "gem-copy": "npm run gem-copy-css && npm run gem-copy-js && npm run gem-copy-font && npm run gem-copy-img",
     "gem-copy-css": "echo ./gem/assets/css ./gem/app/assets/stylesheets | xargs -n 1 cp -R ./css/*",
     "gem-copy-js": "echo ./gem/assets/js ./gem/app/assets/javascript | xargs -n 1 cp -R ./js/*",
