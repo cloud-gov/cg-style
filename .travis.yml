@@ -2,6 +2,7 @@ language: ruby
 rvm:
 - 2.2.3
 before_install:
+- nvm install 4.2.3
 - npm install
 - npm install gulp-cli
 - cd ./node_modules/uswds && npm install && gulp no-test build && cd ../../
