@@ -20,8 +20,7 @@ title: Logo
     &lt;h2 class="header-title">
       &lt;a href="/" class="logo" title="Home">
         &lt;svg class="logo">
-          &lt;use xlink:href="{{ '/assets/img/icons.svg#logo' |
-             prepend: site.baseurl }}"/>
+          &lt;use xlink:href="/assets/img/icons.svg#logo" />
         &lt;/svg>
       &lt;/a>
     &lt;/h2>

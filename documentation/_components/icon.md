@@ -134,8 +134,7 @@ title: Icons
   <code>
     &lt;div class="icon-container">
       &lt;svg class="icon icon-alt">
-        &lt;use xlink:href="{{ '/assets/img/icons.svg#i-user_researched' |
-           prepend: site.baseurl }}"/>
+        &lt;use xlink:href="/assets/img/icons.svg#i-user_researched" />
       &lt;/svg>
     &lt;/div>
   </code>

@@ -44,14 +44,12 @@ title: Hex icons
   <code>
     &lt;i class="hex_icon hex_icon-primary">
       &lt;svg class="icon">
-        &lt;use xlink:href="{{ '/assets/img/icons.svg#i-court' |
-           prepend: site.baseurl }}"/>
+        &lt;use xlink:href="/assets/img/icons.svg#i-court" />
       &lt;/svg>
     &lt;/i>
     &lt;i class="hex_icon hex_icon-alt">
       &lt;svg class="icon">
-        &lt;use xlink:href="{{ '/assets/img/icons.svg#i-court' |
-           prepend: site.baseurl }}"/>
+        &lt;use xlink:href="/assets/img/icons.svg#i-court" />
       &lt;/svg>
     &lt;/i>
   </code>
