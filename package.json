@@ -2,7 +2,7 @@
   "name": "cg-style",
   "version": "0.1.0",
   "description": "The global style of cloud.gov",
-  "main": "dist/index.js",
+  "main": "js/cg-style.js",
   "scripts": {
     "clean": "rm -rf css/*.css && rm -rf img/* && rm -rf font/* && rm -rf js/* && npm run gem-clean",
     "build": "npm run build-css && npm run build-font && npm run build-img && npm run build-js && npm run gem",
