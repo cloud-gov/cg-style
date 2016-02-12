@@ -1,6 +1,6 @@
 {
   "name": "cg-style",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "The global style of cloud.gov",
   "main": "js/cg-style.js",
   "scripts": {
