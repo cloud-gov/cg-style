@@ -22,7 +22,7 @@
     "gem-copy-js": "echo ./gem/assets/js ./gem/app/assets/javascript | xargs -n 1 cp -R ./js/*",
     "gem-copy-font": "echo ./gem/assets/fonts ./gem/app/assets/fonts | xargs -n 1 cp -R ./font/*",
     "gem-copy-img": "echo ./gem/assets/img ./gem/app/assets/images | xargs -n 1 cp -R ./img/*",
-    "gem-dirs": "mkdir -p ./gem/assets/{css,js,fonts,img} && mkdir -p ./gem/app/assets/{stylesheets,javascript,fonts,images}",
+    "gem-dirs": "mkdir -p ./gem/assets/{css,js,fonts,img} && mkdir -p ./gem/app/assets/{stylesheets,javascript,fonts,images} && mkdir -p ./gem/assets/fonts && mkdir -p ./gem/app/assets/fonts",
     "gem-commit": "cd ./gem && git add . && git commit -m 'Updated with latest cg-style assets' && cd ../",
     "gem-push": "cd ./gem && git push origin master && cd ../",
     "lint": "scss-lint -c t .scss-lint.yml",
