@@ -7,5 +7,5 @@ gem 'redcarpet'
 gem 'sass'
 
 group :jekyll_plugins do
-  gem 'cloudgov-style', :path => "./gem"
+  gem 'cloudgov-style'
 end
