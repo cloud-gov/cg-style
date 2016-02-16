@@ -15,14 +15,9 @@ script: bundle exec jekyll build
 after_script:
 - gem install percy-cli
 - percy snapshot _site/
-branches:
-  only:
-  - master
-  - 18f-pages
 deploy:
   provider: npm
   on:
-    branch: master
     tags: true
   api_key:
     secure: oyOysSf8T5ueZpaY0+HOqx6Suq/LONSoWI51qagw7Mjacn7KVn/vZtL5DtFn/E1SuXuPDmcTlkHZbDZhh52Kp0uWwB3YVcTKyps71glV9b2KUbKXa8J00Ml3sgK6sjVS9d68/rAUWfKET1+KJm5mQp352//Zuy+cnCX5bcDqzKh6qYOqoiWlKykc0QvoGu8FibeDvKwKUZCrFzecreX+EyWwAi8SvIZz7pgx8X/Q7i6UZAEmSSdY1zZw8mysf13Fk+xza7pJ5pHC++lOQ1RKEmiZSwa6DfSRQfpwxJuydNK2dZv/4b4gaya0/nW50Icpl/1NlPM7AG1lHKrUELOW886yeJ8TWy4kC3MjZD/zXQQNhwiBiH2XKNiUb7RNq/wyTmSJ4WdrxPAVWp1bItLoWNKYnPxc1uf+iGdAIsYsD8dtm2N38R63J+OaUfg3p93/042j3SOUN9HqSv+x2OnICT8t1ziPBEwzcT+BwSa4JXzCXABTMaoERSZOy9rXDCxVkIf/KKf0FajqcOAkEMQj+O/lnJ16qGKVVd9PAcUDW19RLdhtgV6I9qBkgbdCZLY4Bajil4G6UylpYcZpnYxKUMlL1QGYxSeoARe9qP7VKJ3Lsw7mRhBXUo/t1BTolIICi3xx2NWuwDqxWN9OKObHhs+vWLLuhhFOLBxnqJKykxA=
