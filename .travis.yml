@@ -17,6 +17,7 @@ after_script:
 - percy snapshot _site/
 deploy:
   provider: npm
+  email: msegreto@miceover.com
   on:
     tags: true
   api_key:
