@@ -21,6 +21,7 @@ branches:
   - 18f-pages
 deploy:
   provider: npm
+  email: msegreto@miceover.com
   on:
     branch: master
     tags: true
