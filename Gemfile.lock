@@ -1,5 +1,7 @@
-PATH
-  remote: ./gem
+GIT
+  remote: git://github.com/18F/cloudgov-style.git
+  revision: e8c9cdd74a30a4730ccaa749f1be543d934b2046
+  branch: master
   specs:
     cloudgov-style (0.0.1)
       sass (~> 3.4)

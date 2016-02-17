@@ -10,7 +10,8 @@ title: Header
     <h2 class="header-title">
       <a href="https://cloud.gov" class="logo" title="Home">
         <svg class="logo">
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/img/icons.svg#logo"></use>
+          <use xmlns:xlink="http://www.w3.org/1999/xlink"
+          xlink:href="/assets/img/cloudgov-sprite.svg#logo"></use>
         </svg>
       </a>
     </h2>
@@ -48,7 +49,8 @@ title: Header
         &lt;h2 class="header-title">
           &lt;a href="https://cloud.gov" class="logo" title="Home">
             &lt;svg class="logo">
-              &lt;use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/img/icons.svg#logo"></use>
+              &lt;use xmlns:xlink="http://www.w3.org/1999/xlink"
+              xlink:href="/assets/img/cloudgov-sprite.svg#logo"></use>
             &lt;/svg>
           &lt;/a>
         &lt;/h2>
