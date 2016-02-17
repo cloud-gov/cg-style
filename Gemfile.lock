@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/18F/cloudgov-style.git
+  remote: git://github.com/18F/cg-style.git
   revision: e8c9cdd74a30a4730ccaa749f1be543d934b2046
   branch: master
   specs:
