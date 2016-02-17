@@ -5,18 +5,19 @@
   "main": "js/cloudgov-style.js",
   "scripts": {
     "clean": "rm -rf css/*.css && rm -rf img/* && rm -rf font/* && rm -rf js/* && npm run gem-clean",
-    "build": "npm run build-css && npm run build-font && npm run build-img && npm run compile-js && npm run build-js && npm run gem",
+    "build": "npm run build-css && npm run build-font && npm run build-img && npm run compile-css && npm run build-js && npm run compile-js && npm run gem",
     "build-css": "mkdir -p ./css && node-sass ./src/css/main.scss ./css/cloudgov-style.css && npm run build-prefix",
     "build-font": "npm run copy-font",
     "build-js": "mkdir -p ./js && browserify ./src/js/main.js -o ./js/cloudgov-style.js",
     "build-prefix": "postcss --use autoprefixer css/cloudgov-style.css -o ./css/cloudgov-style.css",
     "build-img": "mkdir -p ./img && npm run copy-img && npm run svg",
     "compile-css": "cleancss ./css/cloudgov-style.css -o ./css/cloudgov-style-min.css",
+    "compile-js": "uglifyjs ./js/cloudgov-style.js -o ./js/cloudgov-style-min.js",
     "copy-img": "cp -r node_modules/uswds/dist/img/*  img/ && cp ./src/img/* ./img",
     "copy-font": "mkdir -p ./font && cp node_modules/uswds/dist/fonts/* font/ && cp ./src/font/* ./font",
     "gem": "npm run gem-clone && npm run gem-dirs && npm run gem-copy",
     "gem-clean": "rm -rf ./gem",
-    "gem-clone": "npm run gem-clean && git clone git@github.com:18F/cg-style-gem.git ./gem",
+    "gem-clone": "npm run gem-clean && git clone https://github.com/18F/cg-style-gem.git ./gem",
     "gem-copy": "npm run gem-copy-css && npm run gem-copy-js && npm run gem-copy-font && npm run gem-copy-img",
     "gem-copy-css": "echo ./gem/assets/css ./gem/app/assets/stylesheets | xargs -n 1 cp -R ./css/*",
     "gem-copy-js": "echo ./gem/assets/js ./gem/app/assets/javascript | xargs -n 1 cp -R ./js/*",
@@ -56,6 +57,7 @@
     "postcss-copy-assets": "^0.3.0",
     "postcss-sprites": "^3.0.3",
     "sass-lint": "^1.4.0",
+    "uglify-js": "^2.6.1",
     "watch": "^0.17.1"
   }
 }
