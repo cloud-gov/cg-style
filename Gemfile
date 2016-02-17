@@ -7,5 +7,5 @@ gem 'redcarpet'
 gem 'sass'
 
 group :jekyll_plugins do
-  gem 'cloudgov-style'
+  gem 'cloudgov-style', :github => '18F/cg-style', :branch => 'master'
 end
