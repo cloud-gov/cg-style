@@ -2,7 +2,7 @@
   "name": "cloudgov-style",
   "version": "0.3.0",
   "description": "The global style of cloud.gov",
-  "main": "js/cloudgov-style.js",
+  "main": "src/js/main.js",
   "scripts": {
     "clean": "rm -rf css/*.css && rm -rf img/* && rm -rf font/* && rm -rf js/* && npm run gem-clean",
     "build": "npm run build-css && npm run build-font && npm run build-img && npm run compile-css && npm run build-js && npm run compile-js && npm run gem",
