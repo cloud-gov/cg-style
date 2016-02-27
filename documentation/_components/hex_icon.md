@@ -50,15 +50,13 @@ title: Hex icons
 
 <pre>
   <code>
-    &lt;i class="hex_icon hex_icon-primary">
+  &lt;i class="hexagon hexagon-alt hex_icon">
+    &lt;div class="hexagon-content">
       &lt;svg class="icon">
-        &lt;use xlink:href="/assets/img/cloudgov-sprite.svg#i-court" />
+        &lt;use xlink:href="{{ '/assets/img/cloudgov-sprite.svg#i-checked' |
+          prepend: site.baseurl }}"/>
       &lt;/svg>
-    &lt;/i>
-    &lt;i class="hex_icon hex_icon-alt">
-      &lt;svg class="icon">
-        &lt;use xlink:href="/assets/img/cloudgov-sprite.svg#i-court" />
-      &lt;/svg>
-    &lt;/i>
+   &lt;/div>
+  &lt;/i>
   </code>
 </pre>
