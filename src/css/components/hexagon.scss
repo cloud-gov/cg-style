@@ -5,6 +5,8 @@ $alt-color: $color-secondary;
 .hexagon {
   background: $primary-color;
   height: .65em;
+  margin-bottom: .5em;
+  margin-top: .51em;
   position: relative;
   width: 1em;
 }
@@ -22,14 +24,14 @@ $alt-color: $color-secondary;
 
 .hexagon:before {
   border-bottom: .25em solid $primary-color;
-  top: -.25em;
+  top: -.244em;
 }
 
 .hexagon:after {
   border-top: .25em solid $primary-color;
-  bottom: -.25em;
+  bottom: -.244em;
 }
-	
+
 .hexagon-alt {
   background: $alt-color;
 
@@ -40,4 +42,12 @@ $alt-color: $color-secondary;
   &:after {
     border-top-color: $alt-color;
   }
+}
+
+.hexagon-content {
+  position: absolute;
+  text-align: center;
+  top: -100%;
+  width: 100%;
+  z-index: 1;
 }

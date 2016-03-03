@@ -4,7 +4,7 @@ type: component
 title: Hexagon
 ---
 
-<div class="force-inline" style="font-size: 40px">
+<div class="force-inline" style="font-size: 78:px">
   <div class="hexagon"></div>
   <div class="hexagon hexagon-alt"></div>
 </div>
