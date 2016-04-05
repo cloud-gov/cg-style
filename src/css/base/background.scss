@@ -8,7 +8,7 @@ main {
 }
 
 main:before {
-  background: url("../img/cg-bg-a.png") no-repeat 0 0;
+  background: url("#{$static-img-path}/img/cg-bg-a.png") no-repeat 0 0;
   content: '';
   height: 19.3rem;
   right: 100%;
