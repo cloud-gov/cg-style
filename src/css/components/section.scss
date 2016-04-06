@@ -39,7 +39,7 @@ $chevron_size: 4.865rem;
   }
 
   &:before {
-    background-image: url("#{$static-img-path}/img/chevron-top.svg");
+    background-image: url("#{$static-img-path}/chevron-top.svg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     content: '';
@@ -60,7 +60,7 @@ $chevron_size: 4.865rem;
   background-color: transparent;
 
   &:before {
-    background: url("#{$static-img-path}/img/cg-bg-b.png") no-repeat 0 0;
+    background: url("#{$static-img-path}/cg-bg-b.png") no-repeat 0 0;
     content: '';
     height: 44.3rem;
     left: -23rem;
@@ -76,7 +76,7 @@ $chevron_size: 4.865rem;
 }
 
 .section-bg-far-r {
-  background: url("#{$static-img-path}/img/cg-bg-c.png") no-repeat 278% 5vh;
+  background: url("#{$static-img-path}/cg-bg-c.png") no-repeat 278% 5vh;
 
   @include media($medium-screen) {
     background-position-x: 108%;
@@ -88,7 +88,7 @@ $chevron_size: 4.865rem;
   position: relative;
 
   &:before {
-    background-image: url("#{$static-img-path}/img/chevron-bottom.svg");
+    background-image: url("#{$static-img-path}/chevron-bottom.svg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     content: '';
@@ -111,13 +111,13 @@ $chevron_size: 4.865rem;
 
   &:not(.section-first) {
     &:before {
-      background-image: url("#{$static-img-path}/img/chevron-top-inverse.svg");
+      background-image: url("#{$static-img-path}/chevron-top-inverse.svg");
       top: -$chevron_size;
     }
   }
 
   &:after {
-    background-image: url("#{$static-img-path}/img/chevron-bottom-inverse.svg");
+    background-image: url("#{$static-img-path}/chevron-bottom-inverse.svg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     bottom: 0rem;
