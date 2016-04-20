@@ -5,7 +5,7 @@
   "main": "src/js/main.js",
   "scripts": {
     "clean": "rm -rf css/*.css && rm -rf img/* && rm -rf font/* && rm -rf js/* && npm run gem-clean",
-    "build": "npm run build-css && npm run build-font && npm run build-img && npm run compile-css && npm run build-js && npm run compile-js && npm run gem",
+    "build": "npm run build-css && npm run build-css-components && npm run build-font && npm run build-img && npm run compile-css && npm run build-js && npm run compile-js && npm run gem",
     "build-css": "mkdir -p ./css && node-sass ./src/css/main.scss ./css/cloudgov-style.css && npm run build-prefix",
     "build-css-components": "mkdir -p ./css/components && node-sass ./src/css/components -o ./css/components && node-sass ./src/css/base.scss ./css/base.css",
     "build-font": "npm run copy-font",
