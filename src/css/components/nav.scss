@@ -1,4 +1,7 @@
 
+@import "../core.scss";
+@import "../../../node_modules/uswds/src/stylesheets/core/utilities.scss";
+
 .nav {
   @include unstyled-list;
 
