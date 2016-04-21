@@ -30,6 +30,9 @@ sass:
 #  style: :compressed
 
 collections:
+  base:
+    output: true
+    permalink: /:path/
   components:
     output: true
     permalink: /:path/
