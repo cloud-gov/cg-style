@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/18F/cg-style-gem.git
-  revision: 7b36f67f581904859eb453c6ac1ce9690edb0f0e
+  revision: 761630be9129ba1ccc7d9ca7dbbf444448ed99a4
   branch: master
   specs:
     cloudgov-style (0.3.0)
@@ -94,3 +94,6 @@ DEPENDENCIES
   jekyll
   redcarpet
   sass
+
+BUNDLED WITH
+   1.10.6
