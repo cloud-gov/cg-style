@@ -4,7 +4,7 @@
   "description": "The global style of cloud.gov",
   "main": "src/js/main.js",
   "scripts": {
-    "clean": "rm -rf css/*.css && rm -rf img/* && rm -rf font/* && rm -rf js/* && npm run gem-clean",
+    "clean": "rm -rf css && rm -rf img && rm -rf font && rm -rf js && npm run gem-clean",
     "build": "npm run build-css && npm run build-css-components && npm run build-font && npm run build-img && npm run compile-css && npm run build-js && npm run compile-js && npm run gem",
     "build-css": "mkdir -p ./css && node-sass ./src/css/main.scss ./css/cloudgov-style.css && npm run build-prefix",
     "build-css-components": "mkdir -p ./css/components && node-sass ./src/css/components -o ./css/components && node-sass ./src/css/base.scss ./css/base.css",
@@ -15,7 +15,12 @@
     "compile-css": "cleancss ./css/cloudgov-style.css -o ./css/cloudgov-style-min.css",
     "compile-js": "uglifyjs ./js/cloudgov-style.js -o ./js/cloudgov-style-min.js",
     "copy-img": "cp -r node_modules/uswds/dist/img/*  img/ && cp ./src/img/* ./img",
-    "copy-font": "mkdir -p ./font && cp node_modules/uswds/dist/fonts/* font/ && cp ./src/font/* ./font",
+    "copy-font": "mkdir -p ./font &&  npm run copy-uswds-font && npm run copy-fontawesome",
+    "copy-src-font": "cp ./src/font/* ./font",
+    "copy-uswds-font": "cp node_modules/uswds/dist/fonts/* font/ && cp ./src/font/* ./font",
+    "copy-fontawesome": "npm run copy-fontawesome-css && npm run copy-fontawesome-font",
+    "copy-fontawesome-css": "cat node_modules/font-awesome/css/font-awesome.min.css | sed 's;/fonts/;/font/;g' > ./css/font-awesome.min.css",
+    "copy-fontawesome-font": "cp node_modules/font-awesome/fonts/font* font/ && cp ./src/font/* ./font",
     "gem": "npm run gem-clone && npm run gem-dirs && npm run gem-copy",
     "gem-clean": "rm -rf ./gem",
     "gem-clone": "npm run gem-clean && git clone https://github.com/18F/cg-style-gem.git ./gem",
@@ -43,6 +48,7 @@
   },
   "homepage": "https://github.com/18F/cg-style#readme",
   "dependencies": {
+    "font-awesome": "^4.6.1",
     "uswds": "git+https://git@github.com/18F/web-design-standards.git#1007-var_for_asset_paths"
   },
   "devDependencies": {
