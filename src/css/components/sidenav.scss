@@ -85,7 +85,20 @@ $color-level-3-bg:  #595959;
 }
 
 .sidenav-arrow {
+  border: 1px solid white;
+  border-left-color: transparent;
+  border-top-color: transparent;
   float: right;
+  height: .6em;
+  width: .6em;
+}
+
+.sidenav-arrow-right {
+  transform: rotate(-45deg);
+}
+
+.sidenav-arrow-down {
+  transform: rotate(45deg);
 }
 
 .sidenav-active {
