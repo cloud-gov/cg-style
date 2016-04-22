@@ -5,7 +5,7 @@ The purpose of cg-style is to provide the assets such as CSS, SCSS, JS, images a
 
 ## Install and use
 ### node/npm
-The best way to install cg-style is with the node package manager or [npm](https://www.npmjs.com/). Run the following command on a computer with node/npm installed to install cg-style into your project
+The best way to install cg-style is with the node package manager or [npm](https://www.npmjs.com/). If you haven't already cloned the `cg-style` [repository for development use](#development, run the following command on a computer with node/npm installed to install cg-style into your project
 
 ```
 npm install cloudgov-style --save
@@ -58,6 +58,7 @@ Images that are part of the cg-style project are available as one central svg sp
   </svg>
 ```
 
+<a name="development" id="development"></a>
 ## Development and contributing setup
 These instructions explain how to develop the cloudgov style while using it on another (companion) site. This allows to see the result of the style changes on an actual site. This has already been started with [cg-docs](https://github.com/18F/cg-docs/tree/style-initial_setup).
 
