@@ -9,19 +9,19 @@ title: Sidenav
     <li class="sub-menu">
       <a href="javascript:;" class="">
         <span>Introduction</span>
-        <span class="menu-arrow sidenav-arrow fa fa-angle-right"></span>
+        <span class="menu-arrow sidenav-arrow sidenav-arrow-right"></span>
       </a>
     </li>     
     <li class="sub-menu">
       <a href="javascript:;" class="">
         <span>Documentation</span>
-        <span class="menu-arrow sidenav-arrow fa fa-angle-right"></span>
+        <span class="menu-arrow sidenav-arrow sidenav-arrow-right"></span>
       </a>
     </li>
     <li class="sub-menu">
       <a href="javascript:;" class="">
         <span>Another link</span>
-        <span class="menu-arrow sidenav-arrow fa fa-angle-right"></span>
+        <span class="menu-arrow sidenav-arrow sidenav-arrow-right"></span>
       </a>
     </li>
   </ul>
