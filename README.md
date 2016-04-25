@@ -5,13 +5,13 @@ The purpose of cg-style is to provide the assets such as CSS, SCSS, JS, images a
 
 ## Install and use
 ### node/npm
-The best way to install cg-style is with the node package manager or [npm](https://www.npmjs.com/). Run the following command on a computer with node/npm installed to install cg-style into your project
+The best way to install cg-style is with the node package manager or [npm](https://www.npmjs.com/). If you haven't already cloned the `cg-style` [repository for development use](#development, run the following command on a computer with node/npm installed to install cg-style into your project
 
 ```
 npm install cloudgov-style --save
 ```
 
-Once installed, all the assets from cg-style have to be consumed by your project. This can be done in multiple ways depending on what assets and your project setup. For example, a simple site could copy over the relevant assets with build commands and include them from the html with link tags. 
+Once installed, all the assets from cg-style have to be consumed by your project. This can be done in multiple ways depending on what assets and your project setup. For example, a simple site could copy over the relevant assets with build commands and include them from the html with link tags.
 
 ```
 # build commands
@@ -32,7 +32,7 @@ cp -R ./node_modules/cloudgov-style/font/**/* ./public/font
   <svg class="logo">
     <use xlink:href="/public/img/cloudgov-sprite.svg#logo"/>
   </svg>
-  
+
   <script src="/public/js/cloudgov-style.js"></script>
 </body>
 ```
@@ -58,20 +58,23 @@ Images that are part of the cg-style project are available as one central svg sp
   </svg>
 ```
 
+<a name="development" id="development"></a>
 ## Development and contributing setup
 These instructions explain how to develop the cloudgov style while using it on another (companion) site. This allows to see the result of the style changes on an actual site. This has already been started with [cg-docs](https://github.com/18F/cg-docs/tree/style-initial_setup).
 
 0. Ensure npm is installed.
+0. Run `git clone git@github.com:18F/cg-style.git cloudgov-style` if you haven't done so already.
+0. Enter the project directory with `cd cloudgov-style`.
+0. Run `npm install` in the `cloudgov-style` repo.
+0. Run `npm run build` in the `cloudgov-style` repo.
+0. In the *cloudgov-style* repo, link the current module by running `npm link` in the root of the repo.
+0. In the companion site repo, link the *cloudgov-style* repo by running `npm link cloudgov-style` in the root of the repo.
 
-1. In the *cloudgov-style* repo, link the current module by running `npm link` in the root of the repo.
-
-2. In the companion site repo, link the *cloudgov-style* repo by running `npm link cloudgov-style` in the root of the repo.
-   
    - Confirm that the cg-style folder exists in `node_modules` folder.
 
-3. In the *cloudgov-style* repo, complete the build by running `npm install && npm run build`.
-4. In the companion site repo, import cg style into the main sass file: `@import "../node_modules/cloudgov-style/css/cg_style.scss";`.
-5. In the companion site repo, run sass to build the *cg-style* repo into the css. This is best done through a script in package.json: `"build": "node-sass static_src/main.scss static/css/main.css"`
+0. In the *cloudgov-style* repo, complete the build by running `npm install && npm run build`.
+0. In the companion site repo, import cg style into the main sass file: `@import "../node_modules/cloudgov-style/css/cg_style.scss";`.
+0. In the companion site repo, run sass to build the *cg-style* repo into the css. This is best done through a script in package.json: `"build": "node-sass static_src/main.scss static/css/main.css"`
 
 When writing styling code, make changes in the *cloudgov-style* repo, run `npm run build` in the *cloudgov-style* repo, run `npm run build` in the companion site repo, and changes should be built. Alternatively, both repos have a watch task which can be run with `npm run watch` to allow changes to propegate automatically.
 
@@ -86,4 +89,3 @@ The styleguide allows you to see changes to components from the cloudgov-style p
 - Install ruby gems by running `bundle install`
 - Configure jekyll to use the local gem by running `bundle config local.cloudgov-style ./gem/`
 - Build and run the jekyll server by running `bundle exec jekyll serve`
-
