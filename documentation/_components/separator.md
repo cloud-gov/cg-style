@@ -1,11 +1,17 @@
 ---
 layout: component
 type: component
-title: Separator 
+title: Separator
 ---
 
 <div class="separator separator-alt">
   <div class="separator-center_piece">
+  </div>
+</div>
+
+<div class="separator separator-alt">
+  <div class="separator-center_piece">
+    <div class="hexagon hexagon-alt"></div>
   </div>
 </div>
 

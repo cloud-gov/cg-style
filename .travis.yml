@@ -1,0 +1,27 @@
+language: ruby
+rvm:
+- 2.2.3
+before_install:
+- nvm install 4.2.3
+- npm install
+- npm install gulp-cli
+- cd node_modules/uswds && gem install scss-lint && npm install && gulp no-test copy-vendor-sass && cd ../../
+- npm run build
+- bundle config local.cloudgov-style ./gem/
+install:
+- bundle install
+- bundle config local.cloudgov-style ./gem/
+script: bundle exec jekyll build
+after_script:
+- gem install percy-cli
+- percy snapshot _site/
+deploy:
+  provider: npm
+  email: msegreto@miceover.com
+  on:
+    tags: true
+  api_key:
+    secure: avWNC3KYWTHPcweQ68TslNDz3CQfRD8aSCbg1UkySeBVfbfh/7bCCtFfQNAl3Z8ZUEZHs44RGYcCQaYuUkAFWJuwCZKLFRy/VM4T26SfZTVVBdDFIWgtkdYsAhd9NxhPIceXpnyYwcLFFzEZybiKD5D+npWFIVxNvY1pkD1GPQWEZtt0PjBUMlhYlpaKNEaKY2qEuICK80JU0U+PqihM48Aq4/IoczVW/VTv9T19I1og76MqfGEfApzb1W1RBdCmspgimkTjgSrKDhLIBc8KRcMitAM4bCIiR+pKygrJTgpUi70vJftR7TcN5ClG3Cf0YhF83VERTpfv9l55+EkEuQYd/djIUr8rB/DiLSHVBU8XkLwlmJhQCBxfSDm55RXibmQhrHvqC0VaRWuQ7Qo/VbI9nxchp9Iy2wsyV4/eO8UochiF+U2Hg/b8h/JKu9SetuvuFjTXjH7yGtb6pCacTC4bJKdLQH8t2RKVS4cdQN/cYf8u65smDkO5YMTaXFyWpufgrndKTvaTgU9J5oOdlU2ZNQL87lHZhVRWfKR9CE7DiOukwr+KD4KnirG702Bnn5lU07UnsiRHD2qyvPSxoz2QrW1n3+GsQ1vNZ9Si2Eaer+Q5MT3ESIsDxvElsHnjaHCAl7DwwAT3ddK0Y1ZLRsYAJ7G5CIsEiQyOyZUu0Ic=
+env:
+  global:
+    secure: NjAkBaViz8sUM0ChzQG5lR9ty7e6xYA3arFeQ3gVrlXwLMNJG6oN3dUKu2LjCHNIm4eTpM9EtR1ra+HwVt3BK7OGl+ebbHcROLPot1mCL8w8NW/bREW0KfZ1oq7wFdzSpinDZOS1ezfVMW+hah+rDVHNsiHoMq9wCNyThBiGGx55MOIkBmwJuJDBjuTTePmwOiRsFT6YWe5e3M5Z8xlzQjzaPN8PmxUv+kI8TXDUiFJ1018CZK7hUwQEXvcAQYlhvzPJ3FxnzIqdcF7UoGU8AFeqRZMy0DcWkNI5rMcWq0iqR0Jm5eUbB30S3WVko8wBYpwGKhQZl3lROzNj0eAwj0KwSeahDpfzJ+9SA5WDJDJ+IS0peed6n82DwuW39hVLf/aJo6SQEBY/QMklZ0LrDmq5AGl9vrSfE0nuxEs2TUyz9mkeTkrkMe6QhIe09NTrPBSN64gtg+oGl7Il1sut+xqJbBU2jvDMDmj+7nk3kA2ziX+LhWY/62ZQvljyntUIhKVhxkxBR55K09dSVZGZtx8OX/L3kWK527HUW5vYcb4fZhnmm1+v2aPpWr64me+RIUwddJLwDY0l+Ui22TwpcdO5TpnUKDLSOs4vRUuBpjRsu2WrEhwZPx2fxRLX4ZZhvQkSl5BlcXJ13lJjwVBc9jW2RouFdkQR3R0I1gePiW4=

@@ -33,6 +33,29 @@ pre {
   margin-top: 2em;
   margin-bottom: 2em;
   padding: 1em 3rem;
+
+  // Attempt a very clean test environment for visual regression testing
+  &.testable {
+    pre {
+      display: none;
+    }
+
+    .example {
+      margin-top: 0;
+    }
+
+    .force-inline {
+      display: initial; 
+      margin-bottom: 0;
+      margin-right: 0;
+      text-align: initial;
+
+      & > .hexagon {
+        display: block;
+        margin-right: 0;
+      }
+    }
+  }
 }
 
 .example {
@@ -69,3 +92,4 @@ pre {
   background-color: #1F2C38;
   margin-top: 6rem
 }
+

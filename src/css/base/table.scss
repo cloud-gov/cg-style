@@ -1,4 +1,6 @@
 
+@import "../core.scss";
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -7,7 +9,7 @@ table {
     display: flex;
 
     @include media($medium-screen) {
-      display: table;
+      display: table-row-group;
     }
 
     tr {
@@ -66,7 +68,7 @@ table {
         border-width: 1px;
         display: table-cell;
         height: inherit;
-        width: 25%;
+        width: auto;
       }
     }
 
@@ -90,5 +92,9 @@ table {
       }
     }
   }
+}
+
+td table {
+  margin: 0;
 }
 

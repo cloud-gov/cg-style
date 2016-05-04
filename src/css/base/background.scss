@@ -1,14 +1,18 @@
 
+@import "../override_vars.scss";
+@import "../vars.scss";
+
 body {
   background-color: $color-primary-darkest;
 }
 
 main {
+  background-color: white;
   position: relative;
 }
 
 main:before {
-  background: url("../img/cg-bg-a.png") no-repeat 0 0;
+  background: url("#{$static-img-path}/cg-bg-a.png") no-repeat 0 0;
   content: '';
   height: 19.3rem;
   right: 100%;

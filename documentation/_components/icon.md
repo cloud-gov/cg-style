@@ -6,7 +6,7 @@ title: Icons
 <div class="force-inline">
   <div class="icon-container">
     <svg class="icon icon-alt">
-      <use xlink:href="{{ '/assets/img/icons.svg#i-agreement' |
+      <use xlink:href="{{ '/assets/img/cloudgov-sprite.svg#i-agreement' |
          prepend: site.baseurl }}"/>
     </svg>
   </div>
@@ -15,7 +15,7 @@ title: Icons
 <div class="force-inline">
   <div class="icon-container">
     <svg class="icon icon-alt">
-      <use xlink:href="{{ '/assets/img/icons.svg#i-checked' |
+      <use xlink:href="{{ '/assets/img/cloudgov-sprite.svg#i-checked' |
          prepend: site.baseurl }}"/>
     </svg>
   </div>
@@ -24,7 +24,7 @@ title: Icons
 <div class="force-inline">
   <div class="icon-container">
     <svg class="icon icon-alt">
-      <use xlink:href="{{ '/assets/img/icons.svg#i-compass' |
+      <use xlink:href="{{ '/assets/img/cloudgov-sprite.svg#i-compass' |
          prepend: site.baseurl }}"/>
     </svg>
   </div>
@@ -33,7 +33,7 @@ title: Icons
 <div class="force-inline">
   <div class="icon-container">
     <svg class="icon icon-alt">
-      <use xlink:href="{{ '/assets/img/icons.svg#i-court' |
+      <use xlink:href="{{ '/assets/img/cloudgov-sprite.svg#i-court' |
          prepend: site.baseurl }}"/>
     </svg>
   </div>
@@ -42,7 +42,7 @@ title: Icons
 <div class="force-inline">
   <div class="icon-container">
     <svg class="icon icon-alt">
-      <use xlink:href="{{ '/assets/img/icons.svg#i-double_arrow' |
+      <use xlink:href="{{ '/assets/img/cloudgov-sprite.svg#i-double_arrow' |
          prepend: site.baseurl }}"/>
     </svg>
   </div>
@@ -51,7 +51,7 @@ title: Icons
 <div class="force-inline">
   <div class="icon-container">
     <svg class="icon icon-alt">
-      <use xlink:href="{{ '/assets/img/icons.svg#i-download' |
+      <use xlink:href="{{ '/assets/img/cloudgov-sprite.svg#i-download' |
          prepend: site.baseurl }}"/>
     </svg>
   </div>
@@ -60,7 +60,7 @@ title: Icons
 <div class="force-inline">
   <div class="icon-container">
     <svg class="icon icon-alt">
-      <use xlink:href="{{ '/assets/img/icons.svg#i-export' |
+      <use xlink:href="{{ '/assets/img/cloudgov-sprite.svg#i-export' |
          prepend: site.baseurl }}"/>
     </svg>
   </div>
@@ -69,7 +69,7 @@ title: Icons
 <div class="force-inline">
   <div class="icon-container">
     <svg class="icon icon-alt">
-      <use xlink:href="{{ '/assets/img/icons.svg#i-locked' |
+      <use xlink:href="{{ '/assets/img/cloudgov-sprite.svg#i-locked' |
          prepend: site.baseurl }}"/>
     </svg>
   </div>
@@ -78,7 +78,7 @@ title: Icons
 <div class="force-inline">
   <div class="icon-container">
     <svg class="icon icon-alt">
-      <use xlink:href="{{ '/assets/img/icons.svg#i-paperwork' |
+      <use xlink:href="{{ '/assets/img/cloudgov-sprite.svg#i-paperwork' |
          prepend: site.baseurl }}"/>
     </svg>
   </div>
@@ -87,7 +87,7 @@ title: Icons
 <div class="force-inline">
   <div class="icon-container">
     <svg class="icon icon-alt">
-      <use xlink:href="{{ '/assets/img/icons.svg#i-plan' |
+      <use xlink:href="{{ '/assets/img/cloudgov-sprite.svg#i-plan' |
          prepend: site.baseurl }}"/>
     </svg>
   </div>
@@ -96,7 +96,7 @@ title: Icons
 <div class="force-inline">
   <div class="icon-container">
     <svg class="icon icon-alt">
-      <use xlink:href="{{ '/assets/img/icons.svg#i-power' |
+      <use xlink:href="{{ '/assets/img/cloudgov-sprite.svg#i-power' |
          prepend: site.baseurl }}"/>
     </svg>
   </div>
@@ -105,7 +105,7 @@ title: Icons
 <div class="force-inline">
   <div class="icon-container">
     <svg class="icon icon-alt">
-      <use xlink:href="{{ '/assets/img/icons.svg#i-shipping' |
+      <use xlink:href="{{ '/assets/img/cloudgov-sprite.svg#i-shipping' |
          prepend: site.baseurl }}"/>
     </svg>
   </div>
@@ -114,7 +114,7 @@ title: Icons
 <div class="force-inline">
   <div class="icon-container">
     <svg class="icon icon-alt">
-      <use xlink:href="{{ '/assets/img/icons.svg#i-user' |
+      <use xlink:href="{{ '/assets/img/cloudgov-sprite.svg#i-user' |
          prepend: site.baseurl }}"/>
     </svg>
   </div>
@@ -123,7 +123,7 @@ title: Icons
 <div class="force-inline">
   <div class="icon-container">
     <svg class="icon icon-alt">
-      <use xlink:href="{{ '/assets/img/icons.svg#i-user_researched' |
+      <use xlink:href="{{ '/assets/img/cloudgov-sprite.svg#i-user_researched' |
          prepend: site.baseurl }}"/>
     </svg>
   </div>
@@ -134,7 +134,7 @@ title: Icons
   <code>
     &lt;div class="icon-container">
       &lt;svg class="icon icon-alt">
-        &lt;use xlink:href="/assets/img/icons.svg#i-user_researched" />
+        &lt;use xlink:href="/assets/img/cloudgov-sprite.svg#i-user_researched" />
       &lt;/svg>
     &lt;/div>
   </code>

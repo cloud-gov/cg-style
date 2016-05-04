@@ -8,7 +8,7 @@ var config = {
   mode: {
     symbol: {
       dest: '', 
-      sprite: 'icons.svg'
+      sprite: 'cloudgov-sprite.svg'
     }
   }
 };

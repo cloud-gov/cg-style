@@ -15,7 +15,7 @@
     <h3 class="header-title">
       <a href="/" class="logo" title="Home">
         <svg class="logo">
-          <use xlink:href="{{ '/assets/img/icons.svg#logo' |
+          <use xlink:href="{{ '/assets/img/cloudgov-sprite.svg#logo' |
              prepend: site.baseurl }}"/>
         </svg>
       </a>
@@ -26,14 +26,12 @@
     <!-- start top navigation -->
     <nav class="header-side">
       <ul class="nav">
-        {% for my_page in site.components %}
-          {% if my_page.title %}
-          <li class="nav-link">
-            <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">
-            {{ my_page.title }}</a>
-          {% endif %}
-          </li>
-        {% endfor %}
+        <li class="nav-link">
+          <a class="page-link" href="{{ '/base' | prepend: site.baseurl }}">Base Styles</a>
+        </li>
+        <li class="nav-link">
+          <a class="page-link" href="{{ '/components' | prepend: site.baseurl }}">Component Styles</a>
+        </li>
       </ul>
     </nav>
     <!-- end top navigation -->
