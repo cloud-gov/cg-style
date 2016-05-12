@@ -5,6 +5,7 @@ form {
 
 legend {
   font-size: 1.2rem;
+  font-weight: 300;
   margin-bottom: .5rem;
 }
 
@@ -17,7 +18,7 @@ input[type="email"] {
   padding: 0.7rem 0.7rem;
 }
 
-form button[type="submit"], 
+form button[type="submit"],
 form input[type="submit"] {
   margin-top: 1.5rem;
 }
