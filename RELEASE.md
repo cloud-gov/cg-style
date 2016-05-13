@@ -3,12 +3,18 @@ Follow the steps outlined in this document to release a new version of `cloudgov
 
 ### Blah blah
 - Releases should follow [semantic versioning](http://semver.org/).
+- The Github tags for the release should just be the number, no `v` before.
 
 ## Steps
 
 ### Preparation
 1. Decide on a "main idea" for the release, what the release is being done for. Look at previous releases for examples.
 2. Decide on whether the release should be a patch, minor or major version update, based on semver.
+3. Create a new release on the Github Releases page.
+  1. Title the release with `{version number} - {main idea}`.
+  2. Use the tag version of the release version number.
+  3. Write a list of changes for the release.
+  4. Create a link titled `Changelog` that uses the Github compare url to compare the current release tag with the last, such as `/compare/0.3.4...0.4.0`.
 
 ### Npm something
 1. Ensure the `master` branch is up to date with all code to release.
