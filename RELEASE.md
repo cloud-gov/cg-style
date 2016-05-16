@@ -4,6 +4,7 @@ Follow the steps outlined in this document to release a new version of `cloudgov
 ### Blah blah
 - Releases should follow [semantic versioning](http://semver.org/).
 - The Github tags for the release should just be the number, no `v` before.
+- The project will be pushed to [npm](https://www.npmjs.com/package/cloudgov-style) and [RubyGems](https://rubygems.org/gems/cloudgov-style).
 
 ## Steps
 
