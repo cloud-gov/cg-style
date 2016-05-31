@@ -1,7 +1,7 @@
 ---
 collection: components
 layout: collection
-permalink: components
+permalink: components/
 title: Component Styles
 ---
 
