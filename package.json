@@ -30,7 +30,8 @@
     "lint": "scss-lint -c t .scss-lint.yml",
     "svg": "gulp --gulpfile build/gulpfile.js svg-sprite",
     "test": "npm run test",
-    "watch": "watch 'npm run build' ./src"
+    "watch": "watch 'npm run build' ./src",
+    "release": "node ./scripts/release.js"
   },
   "repository": {
     "type": "git",
