@@ -1,41 +1,34 @@
-# Release
+# Releasing cloudgov-style
 Follow the steps outlined in this document to release a new version of `cloudgov-style`.
 
-### Blah blah
+## Principles
 - Releases should follow [semantic versioning](http://semver.org/).
 - The Github tags for the release should just be the number, no `v` before.
 - The project will be pushed to [npm](https://www.npmjs.com/package/cloudgov-style) and [RubyGems](https://rubygems.org/gems/cloudgov-style).
 
 ## Steps
+0. Decide on a "main idea" for the release, what the release is being done for. Look at previous releases for examples.
+0. Decide on whether the release should be a patch, minor or major version update, based on [semver](http://semver.org/#summary).
+0. Run `npm run release`. Provide the version number you decided on from above and the "main idea" when prompted. Try and keep it short and sweet, say under 60 characters. If you are curious, here is more [documentation](#how-the-release-script-works) about what the `release` script is doing.
+0. There will now be tags in both the [18f/cg-style](https://github.com/18F/cg-style/tags) and [18f/cg-style-gem](https://github.com/18F/cg-style-gem/tags) repos. Edit the tag you just created and provide a bit more context for the release. Make sure to clearly articulate what has changed and why. Create a link titled `Changelog` that uses the Github compare url to compare the current release tag with the last, such as `/compare/0.3.4...0.4.0`.
+0. Open pull requests in both repos from the release branch back into `master`. Remember, the version number should be the only thing that changed.
+0. When the PR is merged, Travis notices that there is a tag on the commit and publishes the node module and ruby gem.
 
-### Preparation
-1. Decide on a "main idea" for the release, what the release is being done for. Look at previous releases for examples.
-2. Decide on whether the release should be a patch, minor or major version update, based on semver.
-3. Create a new release on the Github Releases page.
-  1. Title the release with `{version number} - {main idea}`.
-  2. Use the tag version of the release version number.
-  3. Write a list of changes for the release.
-  4. Create a link titled `Changelog` that uses the Github compare url to compare the current release tag with the last, such as `/compare/0.3.4...0.4.0`.
+### How the release script works
+Automation is important, and following checklists is hard so this script should do most of the work for you. `npm run release` simply calls `/scripts/release.js`.
 
-### Npm something
-1. Ensure the `master` branch is up to date with all code to release.
-2. Checkout a new `release-x.x` branch with the major and minor numbers of the new release version number.
-  - This release branch should have all the changes to be put into the release.
-  - This branch should be cut from `master`.
-3. Update the `package.json` version number to the release version number.
-4. Commit the changes to the package.json file.
-5. Tag the commit with the release version number in the following format: `git tag -a x.x.x -m 'vx.x.x - Main idea of release`.
-6. Push the release branch to github.
+The script does the following things in order:
+0. Prompt you for the new release version number and main idea.
+0. Update the `package.json` with the version number from above.
+0. Checkout the `master` branch and cut a release branch from there. The release branch name will be the version number preceded by "release-".
+0. Commit the `package.json` version bump.
+0. Tag that commit with a tag that is just the release version.
+0. Push that branch and tag to Github.
 
-### Ruby gem something
-1. On the release branch, build the gem by running `npm run gem`.
-2. In the `./gem` directory create a branch for the release.
-3. Update the version number in `lib/cloudgov-style/version.rb` to the release version number.
-4. Tag the commit with the release version number in the following format: `git tag -a x.x.x -m 'vx.x.x - Main idea of release`.
-5. Commit the changes and push the branch with the tags.
-
-### blahblah
-1. Merge the main cg-style release branch to `master`.
-  - Ensure the travis build successfully completes and the new version is deployed to npm.
-2. Merge the `cg-style-gem` release branch to `master`.
-  - Ensure the travis build successfully completes and the new version is deployed to rubygems.
+It also handles updating [18f/cg-style-gem](/18f/cg-style-gem) by executing the following steps:
+0. While on the release branch, build the gem by running `npm run gem`.
+0. Update `lib/cloudgov-style/version.rb` with the release version number.
+0. Cut a new release branch from the `master` branch of the gem repo. The release branch name will be the version number preceded by "release-".
+0. Commit the `version.rb` version bump.
+0. Tag the commit.
+0. Push the branch and tag to Github.
