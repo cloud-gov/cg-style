@@ -1,7 +1,7 @@
 ---
 collection: base
 layout: collection
-permalink: base
+permalink: base/
 title: Base Styles
 ---
 
