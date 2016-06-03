@@ -135,8 +135,8 @@ promptForValues(values)
   return release;
 })
 .then(function(release) {
-  console.log('First we\'ll publish a release to the npm registry');
   var packageJson = updatePackageJson({ version: release.version });
+  console.log('First we\'ll publish a release to the npm registry');
 
   return checkoutJSReleaseBranch(release)
     .then(function() {
@@ -152,10 +152,11 @@ promptForValues(values)
   return release;
 })
 .then(function(release) {
+  var gemCmd = 'npm run gem-clone-ssh && npm run gem-dirs && npm run gem-copy';
   console.log('Next we\'ll publish a release to ruby gems');
   console.log('Cloning the gem repository into the project');
 
-  return exec('npm run gem').then(function(){
+  return exec(gemCmd).then(function(){
     return checkoutGemReleaseBranch(release);
   }).then(function() {
     writeGemVersion(release.version);
