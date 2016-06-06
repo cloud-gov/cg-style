@@ -5,6 +5,23 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 
+  th, 
+  td {
+    padding: .25em;
+    padding-left: 0px;
+    border: none;
+    border-top: 1px solid;
+  }
+  
+  thead tr {
+    background-color: transparent;
+  }
+  
+  thead th {
+    border-top: none;
+    border-bottom: 3px solid;
+  }
+
   tbody {
     display: flex;
 
@@ -44,9 +61,7 @@ table {
       justify-content: center;
       margin: 0;
       width: 0;
-
       &:last-child {
-        border-bottom-width: 1px;
         border-style: solid;
       }
 
@@ -65,7 +80,6 @@ table {
       }
 
       @include media($medium-screen) {
-        border-width: 1px;
         display: table-cell;
         height: inherit;
         width: auto;
@@ -80,13 +94,7 @@ table {
       height: 21rem;
       justify-content: center;
 
-      &:last-child {
-        border-bottom-width: 1px;
-        border-style: solid;
-      }
-
       @include media($medium-screen) {
-        border-width: 1px;
         display: table-cell;
         height: inherit;
       }
