@@ -16,9 +16,10 @@
     "compile-js": "uglifyjs ./js/cloudgov-style.js -o ./js/cloudgov-style-min.js",
     "copy-img": "cp -r node_modules/uswds/dist/img/*  img/ && cp ./src/img/* ./img",
     "copy-font": "mkdir -p ./font && cp node_modules/uswds/dist/fonts/* font/ && cp ./src/font/* ./font",
-    "gem": "npm run gem-clone && npm run gem-dirs && npm run gem-copy",
+    "gem": "npm run gem-clone-https && npm run gem-dirs && npm run gem-copy",
     "gem-clean": "rm -rf ./gem",
-    "gem-clone": "npm run gem-clean && git clone https://github.com/18F/cg-style-gem.git ./gem",
+    "gem-clone-https": "npm run gem-clean && git clone https://github.com/18F/cg-style-gem.git ./gem",
+    "gem-clone-ssh": "npm run gem-clean && git clone git@github.com:18F/cg-style-gem.git ./gem",
     "gem-copy": "npm run gem-copy-css && npm run gem-copy-js && npm run gem-copy-font && npm run gem-copy-img",
     "gem-copy-css": "echo ./gem/assets/css ./gem/app/assets/stylesheets | xargs -n 1 cp -R ./css/*",
     "gem-copy-js": "echo ./gem/assets/js ./gem/app/assets/javascript | xargs -n 1 cp -R ./js/*",
@@ -30,7 +31,8 @@
     "lint": "scss-lint -c t .scss-lint.yml",
     "svg": "gulp --gulpfile build/gulpfile.js svg-sprite",
     "test": "npm run test",
-    "watch": "watch 'npm run build' ./src"
+    "watch": "watch 'npm run build' ./src",
+    "release": "node ./scripts/release.js"
   },
   "repository": {
     "type": "git",
