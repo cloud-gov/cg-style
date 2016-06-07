@@ -41,19 +41,18 @@
 
 // triage tab treatment
 
-$color-lightgray: #bababa;
 $border-highlight: 3px;
 $padding-highlight: 4px;
 $size-xsmall: .8rem;
 
 .nav-tabs {
+  color: $color-lightgray;
   display: flex;
   flex-direction: row;
-  margin-top: 1rem;
-  font-size: $size-xsmall;
-  text-transform: uppercase;
+  font-size: .8rem;
   letter-spacing: .1em;
-  color: $color-lightgray;
+  margin-top: 1rem;
+  text-transform: uppercase;
 }
 
 .nav-tabs li {
@@ -65,21 +64,21 @@ $size-xsmall: .8rem;
 
 // gettin deep
 .nav-tabs a {
-  display: block;
-  width: auto;
-  padding-bottom: ($padding-highlight + $border-highlight - 1);
   border-bottom: 1px solid $color-lightgray;
-  text-align: center;
-  font-weight: 600;
   color: $color-lightgray;
+  display: block;
+  font-weight: 600;
+  padding-bottom: $padding-highlight + $border-highlight - 1;
+  text-align: center;
+  width: auto;
 }
 
 .nav-tabs .active a,
 .nav-tabs a:hover {
-    padding-bottom: $padding-highlight;
-    border-bottom: $border-highlight solid $color-primary; 
-    text-decoration: none;
-    color: $color-primary;
+  border-bottom: $border-highlight solid $color-primary; 
+  color: $color-primary;
+  padding-bottom: $padding-highlight;
+  text-decoration: none;
 } 
 
 // secondary tabs
