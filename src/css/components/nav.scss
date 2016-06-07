@@ -38,3 +38,55 @@
     padding-top: 0;
   }
 }
+
+// triage tab treatment
+
+$color-lightgray: #bababa;
+$border-highlight: 3px;
+$padding-highlight: 4px;
+
+.nav-tabs {
+  display: flex;
+  flex-direction: row;
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: $color-lightgray;
+  margin-top: 1rem;
+}
+
+.nav-tabs li {
+  flex: 1;
+  &:before {
+    display: none;
+  }
+}
+
+// gettin deep
+.nav-tabs a {
+  display: block;
+  width: auto;
+  text-align: center;
+  color: $color-lightgray;
+  font-weight: 600;
+  border-bottom: 1px solid $color-lightgray;
+  padding-bottom: $padding-highlight + $border-highlight - 1;
+}
+
+.nav-tabs .active a,
+.nav-tabs a:hover {
+    color: $color-primary;
+    text-decoration: none;
+    padding-bottom: $padding-highlight;
+    border-bottom: $border-highlight solid $color-primary; 
+} 
+
+// secondary tabs
+
+.nav-tabs + div .nav-tabs {
+  .active a,
+  a:hover {
+    border-color: $color-secondary;
+    color: $color-secondary;
+  }
+}
