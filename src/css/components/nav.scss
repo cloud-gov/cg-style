@@ -52,9 +52,9 @@ $size-xsmall: .8rem;
   margin-top: 1rem;
   padding-bottom: 1rem;
   font-size: $size-xsmall;
-  text-transform: uppercase;
   letter-spacing: .1em;
-  color: $color-lightgray;
+  margin-top: 1rem;
+  text-transform: uppercase;
 }
 
 .nav-tabs li {
