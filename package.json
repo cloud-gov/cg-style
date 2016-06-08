@@ -30,6 +30,7 @@
     "gem-push": "cd ./gem && git push origin master && cd ../",
     "lint": "scss-lint -c t .scss-lint.yml",
     "svg": "gulp --gulpfile build/gulpfile.js svg-sprite",
+    "scss-lint": "gulp --gulpfile build/gulpfile.js scss:lint || true",
     "test": "npm run test",
     "watch": "watch 'npm run build' ./src",
     "release": "node ./scripts/release.js"
@@ -53,6 +54,7 @@
     "clean-css": "^3.4.9",
     "gulp": "^3.9.0",
     "gulp-cli": "^1.2.0",
+    "gulp-stylelint": "^2.0.2",
     "gulp-svg-sprite": "^1.2.19",
     "node-sass": "^3.4.2",
     "postcss": "^5.0.14",
@@ -60,6 +62,7 @@
     "postcss-copy-assets": "^0.3.0",
     "postcss-sprites": "^3.0.3",
     "sass-lint": "^1.4.0",
+    "stylelint-test-rule-tape": "^0.2.0",
     "uglify-js": "^2.6.1",
     "watch": "^0.17.1"
   }

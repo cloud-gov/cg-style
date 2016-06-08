@@ -1,13 +1,15 @@
 
 var gulp = require('gulp');
 var svgSprite = require('gulp-svg-sprite');
+var gulpStylelint = require('gulp-stylelint');
+var path = require('path');
 
 var base = '../';
 
 var config = {
   mode: {
     symbol: {
-      dest: '', 
+      dest: '',
       sprite: 'cloudgov-sprite.svg'
     }
   }
@@ -25,3 +27,15 @@ gulp.task('default', function() {
   gulp.start('svg-sprite');
 });
 
+gulp.task('scss:lint', function() {
+  return gulp
+    .src('../src/css/**/*.scss')
+    .pipe(gulpStylelint({
+      config: require('../stylelintrc.js'),
+      configBasedir: path.join(__dirname, '../', './lib'),
+      syntax: 'scss',
+      reporters: [
+        {formatter: 'verbose', console: true}
+      ]
+    }));
+});
