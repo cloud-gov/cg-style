@@ -7,3 +7,5 @@
 /css/
 /gem/
 /_site/
+
+.DS_Store
