@@ -4,28 +4,28 @@
 table {
   border-collapse: collapse;
   border-spacing: 0;
-  
+
   button,
   [type="button"] {
     padding: .5rem;
   }
 
-  th, 
+  th,
   td {
     padding: .5em 1.25em;
     padding-left: 0px;
     border: none;
     border-top: 1px solid;
   }
-  
+
   td:last-child {
     padding-right: 0;
   }
-  
+
   thead tr {
     background-color: transparent;
   }
-  
+
   thead th {
     border-top: none;
     border-bottom: 3px solid;
@@ -106,6 +106,13 @@ table {
         display: table-cell;
         height: inherit;
       }
+
+      input[type="checkbox"] {
+        display: inline-block;
+        margin-right: 0.5rem;
+        width: auto;
+      }
+
     }
   }
 }
@@ -130,4 +137,3 @@ td thead th {
 td [label="Actions"] {
   text-align: right;
 }
-
