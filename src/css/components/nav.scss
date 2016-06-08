@@ -44,15 +44,16 @@
 $color-lightgray: #bababa;
 $border-highlight: 3px;
 $padding-highlight: 4px;
+$size-xsmall: .8rem;
 
 .nav-tabs {
   display: flex;
   flex-direction: row;
-  font-size: .8rem;
+  margin-top: 1rem;
+  font-size: $size-xsmall;
   text-transform: uppercase;
   letter-spacing: .1em;
   color: $color-lightgray;
-  margin-top: 1rem;
 }
 
 .nav-tabs li {
@@ -66,19 +67,19 @@ $padding-highlight: 4px;
 .nav-tabs a {
   display: block;
   width: auto;
-  text-align: center;
-  color: $color-lightgray;
-  font-weight: 600;
+  padding-bottom: ($padding-highlight + $border-highlight - 1);
   border-bottom: 1px solid $color-lightgray;
-  padding-bottom: $padding-highlight + $border-highlight - 1;
+  text-align: center;
+  font-weight: 600;
+  color: $color-lightgray;
 }
 
 .nav-tabs .active a,
 .nav-tabs a:hover {
-    color: $color-primary;
-    text-decoration: none;
     padding-bottom: $padding-highlight;
     border-bottom: $border-highlight solid $color-primary; 
+    text-decoration: none;
+    color: $color-primary;
 } 
 
 // secondary tabs
