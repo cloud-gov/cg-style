@@ -112,11 +112,7 @@ td table {
   margin: 0;
 }
 
-// td .tableWrapper
-// this rule is outputting as `.base__tableWrapper___kwCST` in the final compiled sheet
-// why??
-// rewritten as:
-td div {
+td .tableWrapper {
   margin: 8px 0;
   border: 1px solid $color-primary;
   padding: 16px;
