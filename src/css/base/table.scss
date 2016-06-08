@@ -12,7 +12,7 @@ table {
 
   th, 
   td {
-    padding: .25em 1.25em;
+    padding: .5em 1.25em;
     padding-left: 0px;
     border: none;
     border-top: 1px solid;
@@ -29,6 +29,8 @@ table {
   thead th {
     border-top: none;
     border-bottom: 3px solid;
+    font-size: .8rem;
+    font-weight: 800;
   }
 
   tbody {
