@@ -1,0 +1,19 @@
+
+@import "../override_vars.scss";
+@import "../core.scss";
+
+// fake modal for now, but maybe real later?
+
+.modal {
+  padding: 3rem 2rem;
+  background-color: #ceffce;
+  margin: -2rem;
+}
+
+strong.inline-block {
+  display: inline-block;
+  border: 1px solid;
+  border-radius: 2px;
+  padding: 0.05em .25em .2em;
+  font-weight: 600;
+}
