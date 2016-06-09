@@ -15,32 +15,32 @@ label {
   font-weight: 600;
 }
 
-input[type="email"] {
+[type='email'] {
+  font-size: 1rem;
   padding: 0.7rem 0.7rem;
 }
 
-form button[type="submit"],
-form input[type="submit"] {
+form [type='submit'] {
   margin-top: 1.5rem;
 }
 
-input, 
-input[type="text"], 
-input[type="email"], 
-input[type="password"], 
-input[type="url"], 
-input[type="tel"], 
-input[type="number"], 
-input[type="search"], 
-input[type="file"], 
-input[type="date"], 
-input[type="datetime-local"], 
-input[type="month"], 
-input[type="time"], 
-input[type="week"], 
-textarea, 
+input,
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="url"],
+input[type="tel"],
+input[type="number"],
+input[type="search"],
+input[type="file"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+textarea,
 select {
-  font-size: 1rem;  
+  font-size: 1rem;
   font-weight: 600;
   line-height: 1.2;
 }

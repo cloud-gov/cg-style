@@ -11,7 +11,9 @@ before_install:
 install:
 - bundle install
 - bundle config local.cloudgov-style ./gem/
-script: bundle exec jekyll build
+script:
+- npm run test
+- bundle exec jekyll build
 after_script:
 - gem install percy-cli
 - percy snapshot _site/

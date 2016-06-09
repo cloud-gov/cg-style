@@ -1,5 +1,5 @@
 
-@import "../core.scss";
+@import '../core.scss';
 
 $primary-color: $color-primary-alt;
 $alt-color: $color-secondary;
@@ -17,7 +17,7 @@ $alt-color: $color-secondary;
 .hexagon:after {
   border-left: .5em solid transparent;
   border-right: .5em solid transparent;
-  content: "";
+  content: '';
   height: 0;
   left: 0;
   position: absolute;

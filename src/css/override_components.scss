@@ -31,6 +31,7 @@
   a {
     padding: 1rem 1rem 1rem 1rem;
 
+    /* stylelint-disable selector-no-qualifying-type */
     &:hover,
     &:active,
     &.usa-current {
@@ -71,20 +72,20 @@
       &:active {
         padding-left: 2.8rem;
       }
+      /* stylelint-enable */
     }
   }
 }
-
 
 .usa-button,
 .usa-button-primary,
 .usa-button:visited,
 .usa-button-primary:visited,
 button,
-[type="button"],
-[type="submit"],
-[type="reset"],
-[type="image"] {
+[type='button'],
+[type='submit'],
+[type='reset'],
+[type='image'] {
   font-size: inherit;
   padding: 1rem;
   border-radius: 2px;
