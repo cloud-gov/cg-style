@@ -1,6 +1,7 @@
 
 form {
   max-width: none;
+  margin-bottom: 0;
 }
 
 legend {
@@ -11,14 +12,73 @@ legend {
 
 label {
   margin-top: 0;
+  font-weight: 600;
 }
 
 input[type="email"] {
-  font-size: 1rem;
   padding: 0.7rem 0.7rem;
 }
 
 form button[type="submit"],
 form input[type="submit"] {
   margin-top: 1.5rem;
+}
+
+input, 
+input[type="text"], 
+input[type="email"], 
+input[type="password"], 
+input[type="url"], 
+input[type="tel"], 
+input[type="number"], 
+input[type="search"], 
+input[type="file"], 
+input[type="date"], 
+input[type="datetime-local"], 
+input[type="month"], 
+input[type="time"], 
+input[type="week"], 
+textarea, 
+select {
+  font-size: 1rem;  
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+textarea {
+  line-height: 1.45;
+}
+
+select {
+  background-size: 1rem;
+}
+
+fieldset div {
+  padding-top: .75rem;
+  padding-bottom: .25rem;
+}
+
+button.button-cancel {
+  color: $color-base;
+  background-color: transparent;
+  box-shadow: inset 0px 0px 0px 2px $color-base;
+  &:hover {
+    background-color: $color-base;
+    color: white;
+  }
+  &:active {
+    background-color: #000;
+    color: white;
+    box-shadow: none;
+  }
+  &:active:focus {
+    background-color: #000;
+    color: white;
+    box-shadow: none;
+  }
+  &:focus {
+    background-color: $color-base;
+    color: white;
+    box-shadow: 0px 0px 0px 4px rgba(255,221,0,0.55);
+  }
 }
