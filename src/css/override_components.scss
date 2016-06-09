@@ -89,3 +89,9 @@ button,
   padding: 1rem;
   border-radius: 2px;
 }
+
+a:focus,
+input:focus {
+  box-shadow: 0px 0px 0px 4px rgba(255,221,0,0.55);
+  outline: none;
+}
