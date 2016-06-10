@@ -156,3 +156,10 @@ $chevron_size: 4.865rem;
   position: absolute;
   z-index: 1;
 }
+
+section-card {
+  border: 1px solid $color-lightgray;
+  padding: 0 1rem;
+  margin: 1rem 0;
+  border-radius: 3px;
+}

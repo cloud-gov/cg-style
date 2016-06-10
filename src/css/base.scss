@@ -1,8 +1,10 @@
 
-// Override vars have to override uswds defaults so must be imported before it.
-@import "./override_vars.scss";
 @import "../../node_modules/uswds/src/stylesheets/all.scss";
 
 @import "vars.scss";
+// Previous: Override vars have to override uswds defaults so must be imported before it.
+// Actually, isn't that reversed? Overrides need to load after original USWDS vars...
+@import "./override_vars.scss";
+
 @import "base/all.scss";
 @import "override_components.scss"
