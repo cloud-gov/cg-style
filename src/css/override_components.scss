@@ -12,7 +12,15 @@
 .usa-disclaimer {
   // Requires being overridden because uswds sets a different root font-size on
   // <html> which effects all rem units.
+  color: $color-disclaimer-text;
   font-size: 0.9rem;
+
+  a,
+  a:active,
+  a:hover,
+  a:visited {
+    color: $color-disclaimer-link;
+  }
 }
 
 .usa-button {
