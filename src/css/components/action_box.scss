@@ -7,6 +7,8 @@
 .action_box {
   background-color: #ffffff;
   border: 2px solid $color-gray-light;
-  display: table;
+  clear: left;
+  display: block;
+  float: left;
   padding: 1rem;
 }
