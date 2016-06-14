@@ -1,5 +1,6 @@
 
 @import "../core.scss";
+@import "../override_vars.scss";
 
 .billboard {
   margin-top: 0;
@@ -43,7 +44,7 @@
 // testing
 
 .section-card {
-  border: 1px solid #bababa; // having trouble referencing $color-lightgray;
+  border: 1px solid $color-lightgray;
   padding: 0 1rem;
   margin: 1rem 0;
   border-radius: 3px;
