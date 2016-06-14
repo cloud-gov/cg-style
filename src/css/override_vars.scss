@@ -18,7 +18,8 @@ $color-secondary:            #E74C3C;
 $color-secondary-dark:       #B0392E;
 $color-secondary-darkest:    darken($color-secondary, 75%);
 $color-secondary-light:      #3498DB;
-$color-secondary-lightest:   lighten($color-secondary, 75%);
+//$color-secondary-lightest:   lighten($color-secondary, 75%); // not useful, displays as white
+$color-secondary-lightest:   #DEEEEF; // DEEF!
 
 $color-focus:                rgba(255,221,0,0.55);
 $color-visited:              #4c2c92;
