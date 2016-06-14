@@ -2,13 +2,14 @@
 @import "../override_vars.scss";
 @import "../core.scss";
 
-.actions {
+
+.actions-large {
   padding: 3rem 2rem;
   background-color: #DEEEEF; // DEEF!
   margin: -2rem;
 }
 
-strong.inline-block {
+.actions-callout-inline-block {
   display: inline-block;
   border: 1px solid;
   border-radius: 2px;
