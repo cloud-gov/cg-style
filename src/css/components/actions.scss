@@ -1,0 +1,29 @@
+
+@import "../override_vars.scss";
+@import "../core.scss";
+@import "../../../node_modules/uswds/src/stylesheets/core/utilities.scss";
+@import "../../../node_modules/uswds/src/stylesheets/core/defaults.scss";
+
+.actions-confirm {
+  background-color: #ffffff;
+  border: 2px solid $color-gray-light;
+  clear: left;
+  display: block;
+  float: left;
+  padding: 1rem;
+}
+
+.actions-large {
+  padding: 3rem 2rem;
+  background-color: #DEEEEF; // DEEF!
+  margin: -2rem;
+}
+
+.actions-callout-inline-block {
+  display: inline-block;
+  border: 1px solid;
+  border-radius: 2px;
+  padding: 0.05em .25em .2em;
+  font-weight: 600;
+  margin: 0 .25rem;
+}
