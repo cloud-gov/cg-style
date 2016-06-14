@@ -1,0 +1,14 @@
+
+@import "../override_vars.scss";
+@import "../core.scss";
+@import "../../../node_modules/uswds/src/stylesheets/core/utilities.scss";
+@import "../../../node_modules/uswds/src/stylesheets/core/defaults.scss";
+
+.action_box {
+  background-color: #ffffff;
+  border: 2px solid $color-gray-light;
+  clear: left;
+  display: block;
+  float: left;
+  padding: 1rem;
+}
