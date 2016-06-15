@@ -41,19 +41,19 @@
 
 // triage tab treatment
 
-$color-lightgray: #bababa;
 $border-highlight: 3px;
 $padding-highlight: 4px;
 $size-xsmall: .8rem;
 
 .nav-tabs {
+  color: $color-lightgray;
   display: flex;
   flex-direction: row;
   margin-top: 1rem;
+  padding-bottom: 1rem;
   font-size: $size-xsmall;
-  text-transform: uppercase;
   letter-spacing: .1em;
-  color: $color-lightgray;
+  text-transform: uppercase;
 }
 
 .nav-tabs li {
@@ -76,11 +76,11 @@ $size-xsmall: .8rem;
 
 .nav-tabs .active a,
 .nav-tabs a:hover {
-    padding-bottom: $padding-highlight;
-    border-bottom: $border-highlight solid $color-primary; 
-    text-decoration: none;
-    color: $color-primary;
-} 
+  padding-bottom: $padding-highlight;
+  border-bottom: $border-highlight solid $color-primary;
+  text-decoration: none;
+  color: $color-primary;
+}
 
 // secondary tabs
 
