@@ -1,5 +1,7 @@
 
 @import "../core.scss";
+@import "../override_vars.scss";
+@import "../vars.scss";
 
 .content {
   background: $color-white;
@@ -7,4 +9,8 @@
   padding-right: 2rem;
   padding-top: 2.3125rem;
   padding-bottom: 2rem;
+}
+
+.content-dashboard {
+  border-top: 2.0625rem solid $color-primary-darkest;
 }
