@@ -1,19 +1,19 @@
 
-@import "../core.scss";
+@import '../core.scss';
 
 table {
   border-collapse: collapse;
   border-spacing: 0;
 
   button,
-  [type="button"] {
+  [type='button'] {
     padding: .5rem;
   }
 
   th,
   td {
     padding: .5em 1.25em;
-    padding-left: 0px;
+    padding-left: 0;
     border: none;
     border-top: 1px solid;
   }
@@ -50,9 +50,11 @@ table {
         td {
           border-left-width: 0;
 
+          /* stylelint-disable max-nesting-depth */
           @include media($medium-screen) {
             border-left-width: 1px;
           }
+          /* stylelint-enable */
         }
       }
 
@@ -64,7 +66,6 @@ table {
     th {
       border-right-width: 0;
       border-bottom-width: 0;
-      border-bottom: 0;
       display: flex;
       flex-direction: column;
       flex-grow: 1;
@@ -82,7 +83,6 @@ table {
         @include media($medium-screen) {
           display: inline;
           line-height: initial;
-          margin-top: 0;
           transform: initial;
         }
       }
@@ -107,7 +107,7 @@ table {
         height: inherit;
       }
 
-      input[type="checkbox"] {
+      [type='checkbox'] {
         display: inline-block;
         margin-right: 0.5rem;
         width: auto;
@@ -134,6 +134,6 @@ td thead th {
   border-bottom: 1px solid $color-primary;
 }
 
-td [label="Actions"] {
+td [label='Actions'] {
   text-align: right;
 }

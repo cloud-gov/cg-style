@@ -1,5 +1,5 @@
 
-@import "../core.scss";
+@import '../core.scss';
 
 $width-nav-sidebar: 300px;
 $color-grid-dark:   #727272;
@@ -19,17 +19,19 @@ $color-level-3-bg:  #595959;
 }
 
 .sidenav {
+  /* stylelint-disable plugin/declaration-block-max-declarations */
   align-self: stretch;
   bottom: 0;
   display: none;
   flex-grow: 0;
-  flex-shrink:0;
+  flex-shrink: 0;
   height: 100%;
   padding: 0;
   position: absolute;
   top: 0;
   width: $width-nav-sidebar;
   z-index: 1;
+  /* stylelint-enable */
 
   @include media($medium-screen + $width-nav-sidebar) {
     display: block;
@@ -79,6 +81,7 @@ $color-level-3-bg:  #595959;
 
 .sidenav-level-three {
   background-color: $color-level-3-bg;
+
   /* Removes weird margin in list for third level */
   margin-bottom: 0;
   margin-top: 0;

@@ -28,9 +28,9 @@
     "gem-dirs": "mkdir -p ./gem/assets/font && mkdir -p ./gem/app/assets/font && mkdir -p ./gem/assets/img && mkdir -p ./gem/app/assets/images && mkdir -p ./gem/assets/js && mkdir -p ./gem/app/assets/javascript && mkdir -p ./gem/assets/css && mkdir -p ./gem/app/assets/stylesheets",
     "gem-commit": "cd ./gem && git add . && git commit -m 'Updated with latest cloudgov-style assets' && cd ../",
     "gem-push": "cd ./gem && git push origin master && cd ../",
-    "lint": "scss-lint -c t .scss-lint.yml",
+    "lint": "node node_modules/.bin/@18f/stylelint-rules './src/css/**/*.scss'",
     "svg": "gulp --gulpfile build/gulpfile.js svg-sprite",
-    "test": "npm run test",
+    "test": "npm run lint",
     "watch": "watch 'npm run build' ./src",
     "release": "node ./scripts/release.js"
   },
@@ -48,6 +48,7 @@
     "uswds": "git+https://git@github.com/18F/web-design-standards.git#1007-var_for_asset_paths"
   },
   "devDependencies": {
+    "@18f/stylelint-rules": "^1.0.2",
     "autoprefixer": "^6.2.3",
     "browserify": "^13.0.0",
     "clean-css": "^3.4.9",
@@ -63,7 +64,6 @@
     "postcss-copy-assets": "^0.3.0",
     "postcss-sprites": "^3.0.3",
     "prompt": "^1.0.0",
-    "sass-lint": "^1.4.0",
     "uglify-js": "^2.6.1",
     "watch": "^0.17.1"
   }
