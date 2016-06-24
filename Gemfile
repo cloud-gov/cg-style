@@ -7,5 +7,9 @@ gem 'redcarpet'
 gem 'sass'
 
 group :jekyll_plugins do
-  gem 'cloudgov-style', :github => '18F/cg-style-gem', :branch => 'master'
+  if ENV['USE_LOCAL_GEM']
+    gem 'cloudgov-style', path: './gem'
+  else
+    gem 'cloudgov-style'
+  end
 end
