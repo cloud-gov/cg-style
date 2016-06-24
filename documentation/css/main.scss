@@ -19,7 +19,7 @@ pre {
 }
 
 .header-title {
-  span { 
+  span {
     display: inline-block;
     margin-left: 10px;
     margin-top: 6px;
@@ -36,16 +36,12 @@ pre {
 
   // Attempt a very clean test environment for visual regression testing
   &.testable {
-    pre {
-      display: none;
-    }
-
     .example {
       margin-top: 0;
     }
 
     .force-inline {
-      display: initial; 
+      display: initial;
       margin-bottom: 0;
       margin-right: 0;
       text-align: initial;
@@ -92,4 +88,3 @@ pre {
   background-color: #1F2C38;
   margin-top: 6rem
 }
-
