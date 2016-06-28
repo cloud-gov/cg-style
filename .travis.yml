@@ -22,7 +22,7 @@ script:
 - wget https://s3-us-west-2.amazonaws.com/screener-files/screener-tunnel/screener-tunnel-client-linux-amd64.zip
 - unzip screener-tunnel-client-linux-amd64.zip
 - bundle exec jekyll serve &
-- ./screener-tunnel-client -apikey="$SCREENER_API_KEY" -host="ci.server:4000" &
+- ./screener-tunnel-client -apikey="$SCREENER_API_KEY" -host="localhost:4000" &
 - ./screener-ci.sh $SCREENER_API_KEY $SCREENER_GROUP_ID $TRAVIS_BUILD_NUM
 deploy:
   provider: npm
