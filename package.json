@@ -53,6 +53,7 @@
     "browserify": "^13.0.0",
     "clean-css": "^3.4.9",
     "cross-spawn": "^4.0.0",
+    "github-api": "^2.3.0",
     "gulp": "^3.9.0",
     "gulp-cli": "^1.2.0",
     "gulp-insert": "^0.5.0",
