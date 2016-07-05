@@ -1,14 +1,16 @@
 
 @import '../core.scss';
+@import '../override_vars.scss';
 
 $width-nav-sidebar: 300px;
-$color-grid-dark:   #727272;
-$color-grid-light:  #e3e4e5;
 $site-top:          124px;
 $color-light-font:  #ffffff;
-$color-level-1-bg:  #2c3e50;
-$color-level-2-bg:  #1f2b38;
-$color-level-3-bg:  #595959;
+$color-background:  $color-primary-darkest;
+$color-level-1-bg:  $color-background;
+$color-level-2-bg:  $color-primary-darker;
+$color-level-3-bg:  $color-primary-darker;
+$color-highlight:   $color-gold;
+$color-heading:     $color-primary-alt-light;
 
 .sidenav-parent {
   display: flex;
@@ -21,6 +23,7 @@ $color-level-3-bg:  #595959;
 .sidenav {
   /* stylelint-disable plugin/declaration-block-max-declarations */
   align-self: stretch;
+  background-color: $color-primary-darkest;
   bottom: 0;
   display: none;
   flex-grow: 0;
@@ -64,23 +67,75 @@ $color-level-3-bg:  #595959;
   a {
     color: $color-light-font;
     word-wrap: break-word;
+
+    &:hover {
+      background-color: $color-level-2-bg;
+      border-left: 4px solid $color-highlight;
+      color: $color-highlight;
+      font-weight: 800;
+      margin-left: -4px;
+    }
   }
+
   li {
     border-top: 0;
     font-size: 0.9rem;
   }
 }
 
+.sidenav-entity.sidenav-entity {
+  background-color: $color-background;
+  color: white;
+}
+
+.sidenav-header.sidenav-header {
+  background-color: $color-background;
+  border-top: 1px solid $color-level-2-bg;
+
+  > a {
+    background-color: $color-level-2-bg;
+    margin-bottom: 1px;
+    padding: 0;
+
+    &:hover {
+      background-color: $color-level-2-bg;
+      color: $color-highlight;
+    }
+  }
+}
+
+.sidenav-header-text {
+  color: $color-heading;
+  display: inline-block;
+  padding: 1rem 1rem 1rem 2.2rem;
+  text-transform: uppercase;
+}
+
 .sidenav-level-one {
-  background-color: $color-level-1-bg;
+  background-color: $color-background;
+
+  li {
+    background-color: $color-level-2-bg;
+    margin-bottom: .2rem;
+  }
 }
 
 .sidenav-level-two {
-  background-color: $color-level-2-bg;
+  background-color: $color-background;
+
+  li {
+    background-color: $color-level-2-bg;
+    margin-bottom: 1px;
+  }
 }
 
 .sidenav-level-three {
-  background-color: $color-level-3-bg;
+  background-color: $color-background;
+
+  li {
+    background-color: $color-level-3-bg;
+    margin-bottom: 1px;
+  }
 
   /* Removes weird margin in list for third level */
   margin-bottom: 0;
@@ -105,9 +160,18 @@ $color-level-3-bg:  #595959;
 }
 
 .sidenav-active {
-  background-color: $color-gray-lightest;
-  text-decoration: none;
-  a {
-    color: $color-primary;
+  background-color: $color-highlight;
+  color: $color-background;
+
+  > a {
+    color: $color-background;
+    background-color: $color-highlight;
+    font-weight: 800;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-background;
+      background-color: $color-highlight;
+    }
   }
 }

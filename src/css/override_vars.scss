@@ -11,17 +11,20 @@ $color-primary-darkest:      #1f2c38;
 $color-primary-alt:          #3498db;
 $color-primary-alt-dark:     darken($color-primary-alt, 40%);
 $color-primary-alt-darkest:  darken($color-primary-alt, 70%);
-$color-primary-alt-light:    #f3736e;
+$color-primary-alt-light:    #73b0f7;
 $color-primary-alt-lightest: lighten($color-primary-alt, 70%);
+
 
 $color-secondary:            #e74c3c;
 $color-secondary-dark:       #b0392e;
 $color-secondary-darkest:    darken($color-secondary, 75%);
-$color-secondary-light:      #3498db;
+$color-secondary-light:      #f3736e;
 $color-secondary-lightest:   #deeeef; // DEEF!
 
 $color-focus:                rgba(255, 221, 0, 0.55);
 $color-visited:              #4c2c92;
+
+$color-gold: #f8ba1c;
 
 $color-gray:                 #595959;
 $color-gray-dark:            darken($color-gray, 20%);
