@@ -29,24 +29,24 @@
 
 .usa-sidenav-list {
   a {
-    padding: 1rem 1rem 1rem 1rem;
+    padding: .85rem .85rem .85rem 1rem;
 
     /* stylelint-disable selector-no-qualifying-type */
     &:hover,
     &:active,
     &.usa-current {
-      padding: 1rem 1rem 1rem 1rem;
+      padding: .85rem .85rem .85rem 1rem;
     }
   }
 
   @include media($medium-screen) {
     a {
-      padding: 1rem 1rem 1rem 1.8rem;
+      padding: .85rem .85rem .85rem 1.8rem;
 
       &:hover,
       &.usa-current,
       &:active {
-        padding: 1rem 1rem 1rem 1.8rem;
+        padding: .85rem .85rem .85rem 1.8rem;
       }
     }
   }
@@ -65,12 +65,12 @@
 
   @include media($medium-screen) {
     a {
-      padding-left: 2.8rem;
+      padding-left: 3rem;
 
       &:hover,
       &.usa-current,
       &:active {
-        padding-left: 2.8rem;
+        padding-left: 3rem;
       }
       /* stylelint-enable */
     }

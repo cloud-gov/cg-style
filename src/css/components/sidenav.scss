@@ -65,15 +65,19 @@ $color-heading:     $color-primary-alt-light;
   width: 100%;
 
   a {
+    border-left: 4px solid transparent;
     color: $color-light-font;
+    line-height: 1.2;
     word-wrap: break-word;
 
     &:hover {
-      background-color: $color-level-2-bg;
+      background-color: transparent;
       border-left: 4px solid $color-highlight;
       color: $color-highlight;
-      font-weight: 800;
-      margin-left: -4px;
+      
+      .sidenav-arrow {
+        border-color: $color-highlight;
+      }
     }
   }
 
@@ -81,6 +85,7 @@ $color-heading:     $color-primary-alt-light;
     border-top: 0;
     font-size: 0.9rem;
   }
+  
 }
 
 .sidenav-entity.sidenav-entity {
@@ -91,11 +96,12 @@ $color-heading:     $color-primary-alt-light;
 .sidenav-header.sidenav-header {
   background-color: $color-background;
   border-top: 1px solid $color-level-2-bg;
+  margin-bottom: 0;
 
   > a {
     background-color: $color-level-2-bg;
     margin-bottom: 1px;
-    padding: 0;
+    padding: 0 0 0 1rem;
 
     &:hover {
       background-color: $color-level-2-bg;
@@ -105,36 +111,50 @@ $color-heading:     $color-primary-alt-light;
 }
 
 .sidenav-header-text {
+  border-left: 4px solid transparent;
   color: $color-heading;
   display: inline-block;
-  padding: 1rem 1rem 1rem 2.2rem;
+  font-size: .75rem;
+  letter-spacing: .15em;
+  line-height: 1;
+  padding: .85rem .85rem .85rem 1.8rem;
   text-transform: uppercase;
 }
 
 .sidenav-level-one {
   background-color: $color-background;
 
-  li {
+  > li {
     background-color: $color-level-2-bg;
-    margin-bottom: .2rem;
+    margin-bottom: 4px; //.2rem displaying inconsistently...
   }
 }
+
+
 
 .sidenav-level-two {
   background-color: $color-background;
 
-  li {
-    background-color: $color-level-2-bg;
-    margin-bottom: 1px;
+  > li {
+    background-color: $color-background;
+    margin-bottom: 0;
+    
+    a {
+      padding-left: 2rem;
+    }
   }
 }
 
 .sidenav-level-three {
   background-color: $color-background;
 
-  li {
+  > li {
     background-color: $color-level-3-bg;
     margin-bottom: 1px;
+    
+    a {
+      padding-left: 3rem;
+    }
   }
 
   /* Removes weird margin in list for third level */
@@ -143,19 +163,20 @@ $color-heading:     $color-primary-alt-light;
 }
 
 .sidenav-arrow {
-  border: 1px solid white;
-  border-left-color: transparent;
-  border-top-color: transparent;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
   float: right;
-  height: .6em;
-  width: .6em;
+  height: 8px; //.6em is inconsistent
+  width: 8px; //.6em is inconsistent
 }
 
 .sidenav-arrow-right {
+  margin-top: .3rem;
   transform: rotate(-45deg);
 }
 
 .sidenav-arrow-down {
+  margin-top: .2rem;
   transform: rotate(45deg);
 }
 
@@ -174,4 +195,12 @@ $color-heading:     $color-primary-alt-light;
       background-color: $color-highlight;
     }
   }
+  .sidenav-arrow {
+    border-color: $color-background !important; // prevents hover re-color when active
+  }
+}
+
+// extra specificity to override level 2 li bg
+li.marketplace {
+  background-color: $color-background;
 }
