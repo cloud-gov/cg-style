@@ -78,7 +78,7 @@
 }
 
 .usa-alert {
-  background-image: url('img/alert-info.svg');
+  background-image: url('#{$static-img-path}/alert-info.svg');
   background-position: 1rem 1rem;
   margin-top: 0;
 }
