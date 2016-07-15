@@ -74,7 +74,7 @@ $color-heading:     $color-primary-alt-light;
       background-color: transparent;
       border-left: 4px solid $color-highlight;
       color: $color-highlight;
-      
+
       .sidenav-arrow {
         border-color: $color-highlight;
       }
@@ -85,7 +85,7 @@ $color-heading:     $color-primary-alt-light;
     border-top: 0;
     font-size: 0.9rem;
   }
-  
+
 }
 
 .sidenav-entity.sidenav-entity {
@@ -106,6 +106,7 @@ $color-heading:     $color-primary-alt-light;
     &:hover {
       background-color: $color-level-2-bg;
       color: $color-highlight;
+      padding: 0 0 0 1rem;
     }
   }
 }
@@ -138,7 +139,7 @@ $color-heading:     $color-primary-alt-light;
   > li {
     background-color: $color-background;
     margin-bottom: 0;
-    
+
     a {
       padding-left: 2rem;
     }
@@ -151,7 +152,7 @@ $color-heading:     $color-primary-alt-light;
   > li {
     background-color: $color-level-3-bg;
     margin-bottom: 1px;
-    
+
     a {
       padding-left: 3rem;
     }
