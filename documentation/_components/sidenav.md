@@ -10,13 +10,13 @@ title: Sidenav
       <li class="sub-menu">
         <a href="javascript:;" class="">
           <span>Item 1</span>
-          <span class="menu-arrow sidenav-arrow fa fa-angle-right"></span>
+          <span class="menu-arrow sidenav-arrow sidenav-arrow-right"></span>
         </a>
         <ul class="usa-sidenav-sub_list sidenav-list sidenav-level-two nested-menu " style="display: none; ">
           <li class="sub-menu">
             <a href="javascript:;" class="">
               <span>Overview</span>
-              <span class="menu-arrow sidenav-arrow fa fa-angle-right"></span>
+              <span class="menu-arrow sidenav-arrow sidenav-arrow-right"></span>
             </a>
             <ul class="sidenav-list sidenav-level-three" style="display: none; ">
               <li><a href="/intro/overview/what-is-cloudgov/">What Is cloud.gov?</a></li>
@@ -29,13 +29,13 @@ title: Sidenav
       <li class="sub-menu">
         <a href="javascript:;" class="">
           <span>Item 2</span>
-          <span class="menu-arrow sidenav-arrow fa fa-angle-right"></span>
+          <span class="menu-arrow sidenav-arrow sidenav-arrow-right"></span>
         </a>
       </li>
       <li class="sub-menu">
         <a href="javascript:;" class="">
           <span>Item 3</span>
-          <span class="menu-arrow sidenav-arrow fa fa-angle-right"></span>
+          <span class="menu-arrow sidenav-arrow sidenav-arrow-right"></span>
         </a>
       </li>
     </ul>
@@ -49,13 +49,13 @@ title: Sidenav
         &lt;li class="sub-menu">
           &lt;a href="javascript:;" class="">
             &lt;span>Item 1&lt;/span>
-            &lt;span class="menu-arrow sidenav-arrow fa fa-angle-right">&lt;/span>
+            &lt;span class="menu-arrow sidenav-arrow sidenav-arrow-right">&lt;/span>
           &lt;/a>
           &lt;ul class="usa-sidenav-sub_list sidenav-list sidenav-level-two nested-menu " style="display: none; ">
             &lt;li class="sub-menu">
               &lt;a href="javascript:;" class="">
                 &lt;span>Overview&lt;/span>
-                &lt;span class="menu-arrow sidenav-arrow fa fa-angle-right">&lt;/span>
+                &lt;span class="menu-arrow sidenav-arrow sidenav-arrow-right">&lt;/span>
               &lt;/a>
               &lt;ul class="sidenav-list sidenav-level-three" style="display: none; ">
                 &lt;li>&lt;a href="/intro/overview/what-is-cloudgov/">What Is cloud.gov?&lt;/a>&lt;/li>
@@ -68,13 +68,13 @@ title: Sidenav
         &lt;li class="sub-menu">
           &lt;a href="javascript:;" class="">
             &lt;span>Item 2&lt;/span>
-            &lt;span class="menu-arrow sidenav-arrow fa fa-angle-right">&lt;/span>
+            &lt;span class="menu-arrow sidenav-arrow sidenav-arrow-right">&lt;/span>
           &lt;/a>
         &lt;/li>
         &lt;li class="sub-menu">
           &lt;a href="javascript:;" class="">
             &lt;span>Item 3&lt;/span>
-            &lt;span class="menu-arrow sidenav-arrow fa fa-angle-right">&lt;/span>
+            &lt;span class="menu-arrow sidenav-arrow sidenav-arrow-right">&lt;/span>
           &lt;/a>
         &lt;/li>
       &lt;/ul>
