@@ -26,13 +26,10 @@ title: Header
           <a href="/">Documentation</a>
         </li>
         <li class="nav-link">
-          <a href="https://cloud.gov/updates/">Updates</a>
-        </li>
-        <li class="nav-link">
           <a href="https://cloudgov.statuspage.io/">Status</a>
         </li>
         <li class="nav-link">
-          <a href="https://console.cloud.gov/">Deck</a>
+          <a href="https://dashboard.cloud.gov/">Dashboard</a>
         </li>
         <li class="nav-link">
           <a href="https://cloud.gov/#contact">Contact</a>
@@ -66,13 +63,10 @@ title: Header
               &lt;a href="/">Documentation</a>
             &lt;/li>
             &lt;li class="nav-link">
-              &lt;a href="https://cloud.gov/updates/">Updates</a>
-            &lt;/li>
-            &lt;li class="nav-link">
               <a href="https://cloudgov.statuspage.io/">Status</a>
             &lt;/li>
             &lt;li class="nav-link">
-              &lt;a href="https://console.cloud.gov/">Deck</a>
+              &lt;a href="https://dashboard.cloud.gov/">Dashboard</a>
             &lt;/li>
             &lt;li class="nav-link">
               <&lt;a href="https://cloud.gov/#contact">Contact</a>
