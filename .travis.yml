@@ -4,8 +4,6 @@ rvm:
 before_install:
 - nvm install 4.2.3
 - npm install
-- npm install gulp-cli
-- cd node_modules/uswds && gem install scss-lint && npm install && gulp no-test copy-vendor-sass && cd ../../
 - npm run build
 - export USE_LOCAL_GEM=true
 install:
