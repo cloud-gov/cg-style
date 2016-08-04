@@ -45,7 +45,7 @@
   },
   "homepage": "https://github.com/18F/cg-style#readme",
   "dependencies": {
-    "uswds": "git+https://git@github.com/18F/web-design-standards.git#1007-var_for_asset_paths"
+    "uswds": "~0.10.0"
   },
   "devDependencies": {
     "@18f/stylelint-rules": "^1.1.0",
