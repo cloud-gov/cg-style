@@ -1,9 +1,3 @@
-PATH
-  remote: ./gem
-  specs:
-    cloudgov-style (0.7.3)
-      sass (~> 3.4)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -18,6 +12,8 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     addressable (2.3.8)
+    cloudgov-style (0.6.1)
+      sass (~> 3.4)
     colorator (0.1)
     colored (1.2)
     ethon (0.9.0)
@@ -89,7 +85,7 @@ PLATFORMS
 
 DEPENDENCIES
   about_yml
-  cloudgov-style!
+  cloudgov-style
   html-proofer
   jekyll
   redcarpet
