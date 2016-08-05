@@ -14,6 +14,7 @@
   // <html> which effects all rem units.
   color: $color-disclaimer-text;
   font-size: 0.9rem;
+  padding-top: 4px;
 
   a,
   a:active,
@@ -23,8 +24,13 @@
   }
 }
 
+.usa-disclaimer-official img {
+  margin-top: 7px;
+  width: 1rem;
+}
+
 .usa-button {
-  font-size: 1.2rem;
+  font-size: 1.0rem;
 }
 
 .usa-sidenav-list {
@@ -93,7 +99,7 @@ button,
 [type='submit'],
 [type='reset'],
 [type='image'] {
-  font-size: 1.2rem;
+  font-size: 1.0rem;
   padding: 1rem;
   border-radius: 2px;
 }
