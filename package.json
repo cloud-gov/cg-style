@@ -29,7 +29,6 @@
     "gem-commit": "cd ./gem && git add . && git commit -m 'Updated with latest cloudgov-style assets' && cd ../",
     "gem-push": "cd ./gem && git push origin master && cd ../",
     "lint": "18f-stylelint-rules './src/css/**/*.scss'",
-    "lint": "node node_modules/.bin/@18f/stylelint-rules './src/css/**/*.scss'",
     "svg": "gulp --gulpfile build/gulpfile.js svg-sprite",
     "test": "npm run lint",
     "watch": "watch 'npm run build' ./src",
