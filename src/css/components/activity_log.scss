@@ -1,0 +1,52 @@
+
+.activity-log {
+  list-style-type: none;
+  margin-top: 1em;
+  width: 100%;
+}
+
+.activity-log-item {
+  align-items: center;
+  border-bottom: 2px solid #ccc;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.activity-log li:before {
+  content: '';
+}
+
+.activity-log li {
+  border-bottom: 2px solid #ccc;
+}
+
+.activity-log li:first-child {
+  border-top: 2px solid #ccc;
+}
+
+.activity-log-item-text,
+.activity-log-item-timestamp {
+  flex-grow: 1;
+}
+
+.activity-log-item-raw {
+  flex-grow: 2;
+  font-size: .8em;
+}
+
+.activity-log-item-raw pre {
+  background-color: #ccc;
+  padding: .8em;
+}
+
+.activity-log-item-timestamp {
+  cursor: pointer;
+  text-align: right;
+}
+
+.activity-log-item p,
+.activity-log-item-timestamp {
+  font-family: monospace;
+  margin: .25em 0;
+}
