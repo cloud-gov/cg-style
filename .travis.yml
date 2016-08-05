@@ -11,7 +11,6 @@ before_install:
 install:
 - bundle install
 script:
-- npm run debug
 - npm run test
 - bundle exec jekyll build
 deploy:
