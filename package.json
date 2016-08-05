@@ -16,6 +16,7 @@
     "compile-js": "uglifyjs ./js/cloudgov-style.js -o ./js/cloudgov-style-min.js",
     "copy-img": "cp -r node_modules/uswds/dist/img/*  img/ && cp ./src/img/* ./img",
     "copy-font": "mkdir -p ./font && cp node_modules/uswds/dist/fonts/* font/ && cp ./src/font/* ./font",
+    "debug": "echo $PATH && ls -al node_modules/.bin",
     "gem": "npm run gem-clone-https && npm run gem-dirs && npm run gem-copy",
     "gem-clean": "rm -rf ./gem",
     "gem-clone-https": "npm run gem-clean && git clone https://github.com/18F/cg-style-gem.git ./gem",
