@@ -18,9 +18,11 @@ table {
     border-top: 1px solid;
   }
 
-  th[scope="row"] {
+  /* stylelint-disable selector-no-qualifying-type */
+  th[scope='row'] {
     text-align: left;
   }
+  /* stylelint-enable */
 
   td:last-child {
     padding-right: 0;
@@ -79,9 +81,11 @@ table {
       margin: 0;
       width: 0;
 
-      &[scope="row"] {
+      /* stylelint-disable selector-no-qualifying-type */
+      &[scope='row'] {
         text-align: left;
       }
+      /* stylelint-enable */
 
       span {
         margin-top: 3rem;

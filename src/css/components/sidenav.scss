@@ -164,9 +164,12 @@ $color-heading:     $color-primary-alt-light;
       background-color: $color-highlight;
     }
   }
+
+  /* stylelint-disable declaration-no-important */
   .sidenav-arrow {
     border-color: $color-background !important; // prevents hover re-color when active
   }
+  /* stylelint-enable */
 }
 
 .sidenav-level-two {
@@ -204,7 +207,7 @@ $color-heading:     $color-primary-alt-light;
 }
 
 // extra specificity to override level 2 li bg
-li.marketplace {
+.marketplace {
   background-color: $color-background;
 
   > a {
