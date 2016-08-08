@@ -86,3 +86,13 @@ blockquote {
   margin-left: 0;
   margin-right: 0;
 }
+
+a {
+  text-decoration: none;
+}
+
+p {
+  a {
+    text-decoration: underline;
+  }
+}
