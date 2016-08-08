@@ -8,13 +8,17 @@
     padding-right: 3rem;
   }
 }
-
+//
 .usa-disclaimer {
   // Requires being overridden because uswds sets a different root font-size on
   // <html> which effects all rem units.
   color: $color-disclaimer-text;
   font-size: 0.9rem;
   padding-top: 4px;
+
+  .usa-disclaimer-stage {
+    margin-top: 0;
+  }
 
   a,
   a:active,
