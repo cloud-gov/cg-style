@@ -40,6 +40,10 @@
   },
   "author": "18F",
   "license": "SEE LICENSE in LICENSE.md",
+  "engines": {
+   "node": "6.x.x",
+   "npm": "3.x.x"
+ },
   "bugs": {
     "url": "https://github.com/18F/cg-style/issues"
   },
