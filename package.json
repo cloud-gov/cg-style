@@ -1,6 +1,6 @@
 {
   "name": "cloudgov-style",
-  "version": "0.7.3",
+  "version": "1.0.0",
   "description": "The global style of cloud.gov",
   "main": "src/js/main.js",
   "scripts": {
@@ -41,9 +41,9 @@
   "author": "18F",
   "license": "SEE LICENSE in LICENSE.md",
   "engines": {
-   "node": "6.x.x",
-   "npm": "3.x.x"
- },
+    "node": "6.x.x",
+    "npm": "3.x.x"
+  },
   "bugs": {
     "url": "https://github.com/18F/cg-style/issues"
   },
