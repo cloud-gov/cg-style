@@ -1,3 +1,8 @@
+.activity_log-container h1 {
+  font-size: 1.3em;
+  font-weight: 800;
+  text-transform: uppercase;
+}
 
 .activity_log {
   list-style-type: none;
@@ -7,21 +12,33 @@
 
 .activity_log-item {
   align-items: center;
-  background-size: 2em;
-  background-repeat: no-repeat;
-  background-position-y: 40%;
   border-bottom: 1px solid #ccc;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding-left: 2em;
+  padding-left: 1em;
   padding-top: .5em;
   padding-bottom: .5em;
   width: 100%;
 }
 
-.activity_log-item.usa-alert-error {
-  background-color: #e59393;
+.activity_log-item-error,
+.activity_log-item-warning,
+.activity_log-item-success {
+  border-left-width: 5px;
+  border-left-style: solid;
+}
+
+.activity_log-item-error {
+  border-left-color: #e31c3d;
+}
+
+.activity_log-item-warning {
+  border-left-color: #fdb81e;
+}
+
+.activity_log-item-success {
+  border-left-color: #2e8540;
 }
 
 .activity_log-item:before {
