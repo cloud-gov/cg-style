@@ -88,13 +88,13 @@ The Cloud.gov pattern library leverages Fractal, a static site framework for bui
 First, you'll perform a build step to create the site and test the build process:
 
 ```sh
-fractal build
+npm run build-library
 ```
 
 Now you can run you local server by running the following command:
 
 ```sh
-fractal start --sync
+npm run start
 ```
 
 Go to `localhost:3000` in your browser and you should be viewing a local instance of the Cloud.gov pattern library. The `--sync` flag indicates that you would like Fractal to watch any changes you make. When your file is saved, Fractal will reload the site automatically and you will be able to view those changes.
