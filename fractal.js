@@ -9,5 +9,5 @@ fractal.components.set('default.preview', '@preview');
 
 fractal.docs.set('path', __dirname + '/docs/src/docs');
 
-fractal.web.set('static.path', __dirname + '/docs/src/assets');
+fractal.web.set('static.path', __dirname + '/docs/assets');
 fractal.web.set('builder.dest', __dirname + '/docs/build');
