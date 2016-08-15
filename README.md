@@ -82,8 +82,16 @@ There is a coding standards document that dictates standards and suggestions for
 
 Run `npm run lint` to lint the codebase for style problems.
 
-# Running Cloud.gov pattern library locally
-The Cloud.gov pattern library leverages Fractal, a static site framework for building and documenting component libraies. Here are some instructions to view the library locally:
+## Running the styleguide
+The styleguide allows you to see changes to components from the cloudgov-style project rather then another site and is used for visual regression testing of components. To get the jekyll styleguide site working:
+
+- Ensure you have ruby and bundler installed
+- Install ruby gems by running `bundle install`
+- Configure jekyll to use the local gem by running `bundle config local.cloudgov-style ./gem/`
+- Build and run the jekyll server by running `bundle exec jekyll serve`
+
+## [WIP] Running Cloud.gov pattern library locally
+The Cloud.gov pattern library leverages Fractal, a static site framework for building and documenting component libraries. Here are some instructions to view the library locally:
 
 First, you'll perform a build step to create the site and test the build process:
 
@@ -100,4 +108,3 @@ npm run start
 Go to `localhost:3000` in your browser and you should be viewing a local instance of the Cloud.gov pattern library. The `--sync` flag indicates that you would like Fractal to watch any changes you make. When your file is saved, Fractal will reload the site automatically and you will be able to view those changes.
 
 Happy developing!
-
