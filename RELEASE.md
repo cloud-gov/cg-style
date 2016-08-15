@@ -18,6 +18,7 @@ Follow the steps outlined in this document to release a new version of `cloudgov
 Automation is important, and following checklists is hard so this script should do most of the work for you. `npm run release` simply calls `/scripts/release.js`.
 
 The script does the following things in order:
+
 0. Prompt you for the new release version number and main idea.
 0. Update the `package.json` with the version number from above.
 0. Checkout the `master` branch and cut a release branch from there. The release branch name will be the version number preceded by "release-".
@@ -26,6 +27,7 @@ The script does the following things in order:
 0. Push that branch and tag to Github.
 
 It also handles updating [18f/cg-style-gem](/18f/cg-style-gem) by executing the following steps:
+
 0. While on the release branch, build the gem by running `npm run gem`.
 0. Update `lib/cloudgov-style/version.rb` with the release version number.
 0. Cut a new release branch from the `master` branch of the gem repo. The release branch name will be the version number preceded by "release-".
