@@ -8,6 +8,9 @@ source: documentation
 
 version: 0.4.0
 
+include:
+-  _theme
+
 exclude:
 - Gemfile
 - Gemfile.lock
@@ -17,6 +20,7 @@ exclude:
 - ".sass-cache"
 - ".ruby-version"
 - src
+- fractal.js
 
 permalink: pretty
 

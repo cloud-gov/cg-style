@@ -12,6 +12,8 @@
     "build-js": "mkdir -p ./js && browserify ./src/js/main.js -o ./js/cloudgov-style.js",
     "build-prefix": "postcss --use autoprefixer css/cloudgov-style.css -o ./css/cloudgov-style.css",
     "build-img": "mkdir -p ./img && npm run copy-img && npm run svg",
+    "build-library-assets": "npm run clean && npm run build-css && npm run compile-css && cp ./css/cloudgov-style-min.css ./docs/assets/css && npm run copy-font && cp ./fonts/* ./docs/assets/fonts",
+    "build-library": "npm run build-library-assets && fractal build",
     "compile-css": "cleancss ./css/cloudgov-style.css -o ./css/cloudgov-style-min.css",
     "compile-js": "uglifyjs ./js/cloudgov-style.js -o ./js/cloudgov-style-min.js",
     "copy-img": "cp -r node_modules/uswds/dist/img/*  img/ && cp ./src/img/* ./img",
@@ -32,7 +34,8 @@
     "svg": "gulp --gulpfile build/gulpfile.js svg-sprite",
     "test": "npm run lint",
     "watch": "watch 'npm run build' ./src",
-    "release": "node ./scripts/release.js"
+    "release": "node ./scripts/release.js",
+    "start": "npm run build-library && fractal start --sync"
   },
   "repository": {
     "type": "git",
@@ -53,6 +56,7 @@
   },
   "devDependencies": {
     "@18f/stylelint-rules": "^1.1.0",
+    "@frctl/fractal": "^1.0.8",
     "autoprefixer": "^6.2.3",
     "browserify": "^13.0.0",
     "clean-css": "^3.4.9",
