@@ -22,6 +22,10 @@
   width: 100%;
 }
 
+.activity_log-item-console p {
+  font-family: monospace;
+}
+
 .activity_log-item-error,
 .activity_log-item-warning,
 .activity_log-item-success {
@@ -62,6 +66,7 @@
 .activity_log-item_raw {
   flex-grow: 2;
   font-size: .8em;
+  max-width: 890px;
 }
 
 .activity_log-item_raw pre {
