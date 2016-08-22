@@ -17,6 +17,7 @@
 .activity_log-item {
   align-items: center;
   border-bottom: 1px solid #ccc;
+  cursor: pointer;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
@@ -71,11 +72,12 @@
 .activity_log-item_raw {
   flex-grow: 2;
   font-size: .8rem;
-  max-width: 890px;
+  max-width: 60rem;
+  min-width: 50rem;
 }
 
 .activity_log-item_raw pre {
-  background-color: #ccc;
+  background-color: $color-gray-lightest;
   padding: .8rem;
 }
 
