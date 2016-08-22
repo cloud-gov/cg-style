@@ -25,6 +25,7 @@ form [type='submit'] {
 }
 
 // TODO remove extra specificity when WDS fixes theirs.
+/* stylelint-disable selector-no-qualifying-type */
 input,
 input[type='text'],
 input[type='email'],
@@ -47,6 +48,7 @@ select {
   line-height: 1.2;
   padding: .5rem 0.7em;
 }
+/* stylelint-enable */
 
 textarea {
   line-height: 1.45;
