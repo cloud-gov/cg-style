@@ -1,0 +1,23 @@
+machine:
+  node:
+    version: 6
+  environment:
+    USE_LOCAL_GEM: 1
+
+dependencies:
+  cache_directories:
+    - "/node_modules/"
+test:
+  pre:
+    - npm run build
+  override:
+    - npm run test
+
+deployment:
+  deploy:
+    branch: master
+    tag: /release-.*/
+    owner: 18F
+    commands:
+      - echo -e "$NPM_USERNAME\n$NPM_PASSWORD\n$NPM_EMAIL" | npm login
+      - npm run check-publish
