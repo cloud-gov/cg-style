@@ -1,13 +1,17 @@
 .activity_log-container h1 {
-  font-size: 1.3em;
+  font-size: 1.3re;
   font-weight: 800;
   text-transform: uppercase;
 }
 
 .activity_log {
   list-style-type: none;
-  margin-top: 1em;
+  margin-top: 1rem;
   width: 100%;
+
+  li::before {
+    display: none;
+  }
 }
 
 .activity_log-item {
@@ -16,9 +20,9 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding-left: 1em;
-  padding-top: .5em;
-  padding-bottom: .5em;
+  padding-left: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
   width: 100%;
 }
 
@@ -66,23 +70,23 @@
 
 .activity_log-item_raw {
   flex-grow: 2;
-  font-size: .8em;
+  font-size: .8rem;
   max-width: 890px;
 }
 
 .activity_log-item_raw pre {
   background-color: #ccc;
-  padding: .8em;
+  padding: .8rem;
 }
 
 .activity_log-item_timestamp {
   cursor: pointer;
   font-family: monospace;
-  padding-right: 1em;
+  padding-right: 1rem;
   text-align: right;
 }
 
 .activity_log-item p,
 .activity_log-item_timestamp {
-  margin: .25em 0;
+  margin: .25rem 0;
 }
