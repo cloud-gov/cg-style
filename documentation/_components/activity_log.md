@@ -4,23 +4,23 @@ type: component
 title: Activity log
 ---
 
-<ul class="activity-log">
+<ul class="activity_log">
   <li>
-    <div class="activity-log-item">
-      <div class="activity-log-item-text">
+    <div class="activity_log-item">
+      <div class="activity_log-item_text">
         The app crashed is text that might go here
       </div>
-      <div class="activity-log-item-timestamp">
+      <div class="activity_log-item_timestamp">
         <span>Timestamp</span>
       </div>
     </div>
   </li>
   <li>
-    <div class="activity-log-item">
-      <div class="activity-log-item-text">
+    <div class="activity_log-item">
+      <div class="activity_log-item_text">
         The app crashed is text that might go here
       </div>
-      <div class="activity-log-item-timestamp">
+      <div class="activity_log-item_timestamp">
         <span>Timestamp</span>
       </div>
     </div>
@@ -29,23 +29,23 @@ title: Activity log
 
 <pre>
   <code>
-    &lt;ul class="activity-log">
+    &lt;ul class="activity_log">
       &lt;li>
-        &lt;div class="activity-log-item">
-          &lt;div class="activity-log-item-text">
+        &lt;div class="activity_log-item">
+          &lt;div class="activity_log-item_text">
             The app crashed is text that might go here
           &lt;/div>
-          &lt;div class="activity-log-item-timestamp">
+          &lt;div class="activity_log-item_timestamp">
             &lt;span>Timestamp&lt;/span>
           &lt;/div>
         &lt;/div>
       &lt;/li>
       &lt;li>
-        &lt;div class="activity-log-item">
-          &lt;div class="activity-log-item-text">
+        &lt;div class="activity_log-item">
+          &lt;div class="activity_log-item_text">
             The app crashed is text that might go here
           &lt;/div>
-          &lt;div class="activity-log-item-timestamp">
+          &lt;div class="activity_log-item_timestamp">
             &lt;span>Timestamp&lt;/span>
           &lt;/div>
         &lt;/div>
