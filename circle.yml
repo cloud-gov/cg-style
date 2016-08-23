@@ -16,7 +16,6 @@ test:
 
 deployment:
   npm:
-    branch: master
     tag: /release-.*/
     owner: 18F
     commands:
