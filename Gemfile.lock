@@ -1,7 +1,7 @@
 PATH
   remote: ./gem
   specs:
-    cloudgov-style (0.7.3)
+    cloudgov-style (1.1.1)
       sass (~> 3.4)
 
 GEM
