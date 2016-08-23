@@ -15,7 +15,7 @@ test:
     - npm run test
 
 deployment:
-  deploy:
+  npm:
     branch: master
     tag: /release-.*/
     owner: 18F
