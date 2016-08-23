@@ -6,6 +6,7 @@ machine:
 dependencies:
   pre:
     - bundle config without development:production
+    - npm rebuild node-sass
   cache_directories:
     - "/node_modules/"
 test:
