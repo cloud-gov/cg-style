@@ -1,3 +1,7 @@
+@import '../core.scss';
+@import '../override_vars.scss';
+@import '../vars.scss';
+
 .activity_log-container h1 {
   font-size: 1.3rem;
   font-weight: 800;
@@ -41,15 +45,15 @@
 }
 
 .activity_log-item-error {
-  border-left-color: #e31c3d;
+  border-left-color: $color-secondary; // #e31c3d;
 }
 
 .activity_log-item-warning {
-  border-left-color: #fdb81e;
+  border-left-color: $color-gold;
 }
 
 .activity_log-item-success {
-  border-left-color: #2e8540;
+  border-left-color: $color-green; //#2e8540;
 }
 
 .activity_log-item:before {
