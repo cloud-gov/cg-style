@@ -1,0 +1,24 @@
+
+machine:
+  node:
+    version: 6
+
+dependencies:
+  pre:
+    - bundle config without development:production
+    - npm rebuild node-sass
+  cache_directories:
+    - "/node_modules/"
+test:
+  pre:
+    - npm run build
+  override:
+    - npm run test
+
+deployment:
+  npm:
+    tag: /release-.*/
+    owner: 18F
+    commands:
+      - echo -e "$NPM_USERNAME\n$NPM_PASSWORD\n$NPM_EMAIL" | npm login
+      - npm run check-publish
