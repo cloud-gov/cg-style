@@ -56,7 +56,7 @@
     "uswds": "~0.10.0"
   },
   "devDependencies": {
-    "@18f/stylelint-rules": "^1.1.0",
+    "@18f/stylelint-rules": "^2.0.0",
     "@frctl/fractal": "^1.0.8",
     "autoprefixer": "^6.2.3",
     "browserify": "^13.0.0",
