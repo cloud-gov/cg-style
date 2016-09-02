@@ -1,4 +1,8 @@
 
+@import '../../../node_modules/uswds/src/stylesheets/core/defaults.scss';
+@import '../override_vars.scss';
+@import '../core.scss';
+
 form {
   max-width: none;
   margin-bottom: 0;
@@ -42,11 +46,17 @@ input[type='time'],
 input[type='week'],
 textarea,
 select {
+  border-radius: 3px;
   font-size: 1rem;
   font-weight: 600;
   height: auto;
   line-height: 1.2;
   padding: .5rem 0.7em;
+
+  &:focus {
+    box-shadow: none;
+    outline: 2px solid $color-primary;
+  }
 }
 /* stylelint-enable */
 

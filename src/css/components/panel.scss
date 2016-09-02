@@ -64,6 +64,12 @@ h3 + .panel {
   }
 }
 
+.panel form {
+  background-color: $color-background-light;
+  padding: 1rem;
+  width: 100%;
+}
+
 .panel-column {
   flex: 1 0 0;
 
