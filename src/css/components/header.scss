@@ -24,6 +24,7 @@
 .header-side {
   float: left;
   width: 60%;
+  position: relative;
 
   @include media($medium-screen) {
     float: right;

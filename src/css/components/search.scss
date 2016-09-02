@@ -1,0 +1,56 @@
+@import '../core.scss';
+
+$search-btn-width:   4.5rem;
+$search-btn-height:  2rem;
+
+@mixin search-icon {
+  background-image: url('../img/i-search.svg');
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.search-bar {
+  @include clearfix;
+  max-width: none;
+  position: relative;
+  $width: $search-btn-width;
+  margin-left: 0;
+  margin-top: 0.5rem;
+  margin-right: 0;
+  margin-bottom: 0;
+
+  [type='search'],
+  .search-field {
+    -webkit-appearance: none;
+    border-bottom-right-radius: 0;
+    border-right: none;
+    border-top-right-radius: 0;
+    float: left;
+    height: $search-btn-height;
+    margin: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    width: calc(100% - #{$width});
+
+    @include media($small-screen) {
+      width: calc(100% - #{width});
+    }
+  }
+
+  [type='submit'],
+  .search-submit {
+    @include search-icon;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    height: $search-btn-height;
+    margin: 0;
+    padding: 0;
+    width: $width;
+    background-color: $color-primary-darkest;
+
+    @include media($small-screen) {
+      @include search-icon;
+      width: $width;
+    }
+  }
+}
