@@ -1,5 +1,5 @@
 
-@import "../core.scss";
+@import '../core.scss';
 
 body {
   color: $color-base;
@@ -35,7 +35,7 @@ h1 {
   }
 
   & + h4 {
-    margin-top: 1rem;;
+    margin-top: 1rem;
   }
 }
 
@@ -49,6 +49,8 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
+  margin-top: .5em;
+  font-weight: 600;
 }
 
 h4 {
@@ -83,4 +85,14 @@ p {
 blockquote {
   margin-left: 0;
   margin-right: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  a {
+    text-decoration: underline;
+  }
 }

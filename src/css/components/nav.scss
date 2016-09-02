@@ -1,6 +1,7 @@
 
-@import "../core.scss";
-@import "../../../node_modules/uswds/src/stylesheets/core/utilities.scss";
+@import '../override_vars.scss';
+@import '../core.scss';
+@import '../../../node_modules/uswds/src/stylesheets/core/utilities.scss';
 
 .nav {
   @include unstyled-list;
@@ -35,5 +36,59 @@
     padding-left: .2rem;
     padding-right: .2rem;
     padding-top: 0;
+  }
+}
+
+// triage tab treatment
+
+$border-highlight: 3px;
+$padding-highlight: 4px;
+$size-xsmall: .8rem;
+
+.nav-tabs {
+  color: $color-lightgray;
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: $size-xsmall;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: $color-lightgray;
+}
+
+.nav-tabs li {
+  flex: 1;
+  &:before {
+    display: none;
+  }
+}
+
+// gettin deep
+.nav-tabs a {
+  border-bottom: 1px solid $color-lightgray;
+  color: $color-gray;
+  display: block;
+  font-weight: 600;
+  padding-bottom: ($padding-highlight + $border-highlight - 1);
+  text-align: center;
+  width: auto;
+}
+
+.nav-tabs .active a,
+.nav-tabs a:hover {
+  border-bottom: $border-highlight solid $color-primary;
+  color: $color-primary;
+  padding-bottom: $padding-highlight;
+  text-decoration: none;
+}
+
+// secondary tabs
+
+.nav-tabs + div .nav-tabs {
+  .active a,
+  a:hover {
+    border-color: $color-secondary;
+    color: $color-secondary;
   }
 }

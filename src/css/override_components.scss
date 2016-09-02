@@ -12,32 +12,51 @@
 .usa-disclaimer {
   // Requires being overridden because uswds sets a different root font-size on
   // <html> which effects all rem units.
+  color: $color-disclaimer-text;
   font-size: 0.9rem;
+  padding-top: 4px;
+
+  .usa-disclaimer-stage {
+    margin-top: 0;
+  }
+
+  a,
+  a:active,
+  a:hover,
+  a:visited {
+    color: $color-disclaimer-link;
+  }
+}
+
+.usa-disclaimer-official img {
+  margin-top: 7px;
+  width: 1rem;
 }
 
 .usa-button {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .usa-sidenav-list {
   a {
-    padding: 1rem 1rem 1rem 1rem;
+    padding: .85rem .85rem .85rem 1rem;
 
+    /* stylelint-disable selector-no-qualifying-type */
     &:hover,
     &:active,
     &.usa-current {
-      padding: 1rem 1rem 1rem 1rem;
+      padding: .85rem .85rem .85rem 1rem;
     }
   }
 
   @include media($medium-screen) {
     a {
-      padding: 1rem 1rem 1rem 1.8rem;
+      padding: .85rem .85rem .85rem 1.8rem;
 
       &:hover,
       &.usa-current,
       &:active {
-        padding: 1rem 1rem 1rem 1.8rem;
+        padding: .85rem .85rem .85rem 1.8rem;
       }
     }
   }
@@ -56,26 +75,41 @@
 
   @include media($medium-screen) {
     a {
-      padding-left: 2.8rem;
+      padding-left: 3rem;
 
       &:hover,
       &.usa-current,
       &:active {
-        padding-left: 2.8rem;
+        padding-left: 3rem;
       }
+      /* stylelint-enable */
     }
   }
 }
 
+.usa-alert {
+  background-image: url('#{$static-img-path}/alert-info.svg');
+  background-position: 1rem 1rem;
+  background-size: 2.3rem;
+  margin-top: 0;
+}
 
 .usa-button,
 .usa-button-primary,
 .usa-button:visited,
 .usa-button-primary:visited,
 button,
-[type="button"],
-[type="submit"],
-[type="reset"],
-[type="image"] {
-  font-size: inherit;
+[type='button'],
+[type='submit'],
+[type='reset'],
+[type='image'] {
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 2px;
+}
+
+a:focus,
+input:focus {
+  box-shadow: 0 0 0 4 rgba(255, 221, 0, 0.55);
+  outline: none;
 }

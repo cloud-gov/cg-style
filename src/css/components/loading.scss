@@ -1,0 +1,29 @@
+
+$z-foreground: 200;
+
+.loading {
+  background: white;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: $z-foreground;
+}
+
+.loading-relative {
+  top: auto;
+}
+
+$indicator-size: 3.5rem;
+
+.loading-indicator {
+  left: calc(50% - #{$indicator-size});
+  position: absolute;
+  top: 10rem;
+  width: 3.5rem;
+}
+
+.loading-inactive {
+  display: none;
+}

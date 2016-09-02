@@ -2,8 +2,10 @@
 /node_modules/
 
 /img/
-/font/
+/fonts/
 /js/
 /css/
 /gem/
 /_site/
+
+.DS_Store

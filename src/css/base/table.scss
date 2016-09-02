@@ -1,9 +1,44 @@
 
-@import "../core.scss";
+@import '../core.scss';
 
 table {
   border-collapse: collapse;
   border-spacing: 0;
+
+  button,
+  [type='button'] {
+    padding: .5rem;
+  }
+
+  th,
+  td {
+    padding: .5em 1.25em;
+    padding-left: 0;
+    border: none;
+    border-top: 1px solid;
+  }
+
+  /* stylelint-disable selector-no-qualifying-type */
+  th[scope='row'] {
+    text-align: left;
+  }
+  /* stylelint-enable */
+
+  td:last-child {
+    padding-right: 0;
+  }
+
+  thead tr {
+    background-color: transparent;
+  }
+
+  thead th {
+    background-color: transparent;
+    border-top: none;
+    border-bottom: 3px solid;
+    font-size: .8rem;
+    font-weight: 800;
+  }
 
   tbody {
     display: flex;
@@ -22,9 +57,11 @@ table {
         td {
           border-left-width: 0;
 
+          /* stylelint-disable max-nesting-depth */
           @include media($medium-screen) {
             border-left-width: 1px;
           }
+          /* stylelint-enable */
         }
       }
 
@@ -36,19 +73,20 @@ table {
     th {
       border-right-width: 0;
       border-bottom-width: 0;
-      border-bottom: 0;
       display: flex;
       flex-direction: column;
       flex-grow: 1;
+      font-weight: 800;
       height: 21rem;
       justify-content: center;
       margin: 0;
       width: 0;
 
-      &:last-child {
-        border-bottom-width: 1px;
-        border-style: solid;
+      /* stylelint-disable selector-no-qualifying-type */
+      &[scope='row'] {
+        text-align: left;
       }
+      /* stylelint-enable */
 
       span {
         margin-top: 3rem;
@@ -59,13 +97,11 @@ table {
         @include media($medium-screen) {
           display: inline;
           line-height: initial;
-          margin-top: 0;
           transform: initial;
         }
       }
 
       @include media($medium-screen) {
-        border-width: 1px;
         display: table-cell;
         height: inherit;
         width: auto;
@@ -80,16 +116,17 @@ table {
       height: 21rem;
       justify-content: center;
 
-      &:last-child {
-        border-bottom-width: 1px;
-        border-style: solid;
-      }
-
       @include media($medium-screen) {
-        border-width: 1px;
         display: table-cell;
         height: inherit;
       }
+
+      [type='checkbox'] {
+        display: inline-block;
+        margin-right: 0.5rem;
+        width: auto;
+      }
+
     }
   }
 }
@@ -98,3 +135,19 @@ td table {
   margin: 0;
 }
 
+td .tableWrapper {
+  margin: .8rem 0;
+  border: 1px solid $color-primary;
+  padding: 1.6rem;
+  border-radius: 3px;
+  margin-bottom: 3rem;
+}
+
+td thead th {
+  color: $color-primary;
+  border-bottom: 1px solid $color-primary;
+}
+
+td [label='Actions'] {
+  text-align: right;
+}

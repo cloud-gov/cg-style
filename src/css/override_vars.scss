@@ -1,31 +1,38 @@
 
-// Path to override for web design standards
+// path to override for web design standards
 $static-img-path: '../img' !default;
-$static-font-path: '../font' !default;
+$static-font-path: '../fonts' !default;
 
-// Color
-$color-primary:              #277CB2;
-$color-primary-darker:       #2C3E50;
-$color-primary-darkest:      #1F2C38;
+// color
+$color-primary:              #277cb2;
+$color-primary-darker:       #2c3e50;
+$color-primary-darkest:      #1f2c38;
 
-$color-primary-alt:          #3498DB;
+$color-primary-alt:          #3498db;
 $color-primary-alt-dark:     darken($color-primary-alt, 40%);
 $color-primary-alt-darkest:  darken($color-primary-alt, 70%);
-$color-primary-alt-light:    #F3736E;
-$color-primary-alt-lightest: lighten($color-primary-alt, 70%);
+$color-primary-alt-light:    #77b6ff;
+$color-primary-alt-lightest: #d9f1ff;
 
-$color-secondary:            #E74C3C;
-$color-secondary-dark:       #B0392E;
+$color-secondary:            #e74c3c;
+$color-secondary-dark:       #b0392e;
 $color-secondary-darkest:    darken($color-secondary, 75%);
-$color-secondary-light:      #3498DB;
-$color-secondary-lightest:   lighten($color-secondary, 75%);
+$color-secondary-light:      #f3736e;
+$color-secondary-lightest:   #deeeef; // DEEF!
 
-$color-focus:                $color-primary-alt;
+$color-focus:                rgba(255, 221, 0, 0.55);
 $color-visited:              #4c2c92;
+
+$color-gold: #f8ba1c;
 
 $color-gray:                 #595959;
 $color-gray-dark:            darken($color-gray, 20%);
 
+$color-disclaimer-text:      #000000;
+$color-disclaimer-link:      #0071bc;
+
 $color-base: $color-gray;
 $text-max-width:    660px;
+
+$color-lightgray: #bababa;
 $site-max-width:    1040px;

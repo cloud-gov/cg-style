@@ -1,0 +1,99 @@
+@import '../core.scss';
+@import '../override_vars.scss';
+@import '../vars.scss';
+
+.activity_log-container h1 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.activity_log {
+  list-style-type: none;
+  margin-top: 1rem;
+  margin-left: 0;
+  width: 100%;
+
+  li::before {
+    display: none;
+  }
+}
+
+.activity_log-item {
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding-left: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  width: 100%;
+}
+
+.activity_log-item-console p {
+  font-family: monospace;
+  word-wrap: break-word;
+}
+
+.activity_log-item-error,
+.activity_log-item-warning,
+.activity_log-item-success {
+  border-left-width: 5px;
+  border-left-style: solid;
+}
+
+.activity_log-item-error {
+  border-left-color: $color-secondary; // #e31c3d;
+}
+
+.activity_log-item-warning {
+  border-left-color: $color-gold;
+}
+
+.activity_log-item-success {
+  border-left-color: $color-green; //#2e8540;
+}
+
+.activity_log-item:before {
+  content: '';
+  padding: 0;
+}
+
+.activity_log-item {
+  border-bottom: 2px solid #ccc;
+}
+
+.activity_log-item:first-child {
+  border-top: 2px solid #ccc;
+}
+
+.activity_log-item_text,
+.activity_log-item_timestamp {
+  flex-grow: 1;
+}
+
+.activity_log-item_raw {
+  flex-grow: 2;
+  font-size: .8rem;
+  max-width: 60rem;
+  min-width: 50rem;
+}
+
+.activity_log-item_raw pre {
+  background-color: $color-gray-lightest;
+  padding: .8rem;
+}
+
+.activity_log-item_timestamp {
+  cursor: pointer;
+  font-family: monospace;
+  padding-right: 1rem;
+  text-align: right;
+}
+
+.activity_log-item p,
+.activity_log-item_timestamp {
+  margin: .25rem 0;
+}

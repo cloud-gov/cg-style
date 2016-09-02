@@ -1,5 +1,12 @@
 
+@import '../core.scss';
+@import '../override_vars.scss';
+@import '../vars.scss';
+
 pre {
-  white-space: pre-wrap;
+  background: $color-gray-lightest;
+  color: $color-base;
+  overflow: auto;
+  padding: 0.7rem;
   word-wrap: break-word;
 }
