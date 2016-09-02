@@ -1,7 +1,7 @@
-@import "../core.scss";
+@import '../core.scss';
 
 $search-btn-width:   4.5rem;
-$search-btn-height:  2.0rem;
+$search-btn-height:  2rem;
 
 @mixin search-icon {
   background-image: url('../img/i-search.svg');
@@ -19,7 +19,7 @@ $search-btn-height:  2.0rem;
   margin-right: 0;
   margin-bottom: 0;
 
-  [type="search"],
+  [type='search'],
   .search-field {
     -webkit-appearance: none;
     border-bottom-right-radius: 0;
@@ -37,7 +37,7 @@ $search-btn-height:  2.0rem;
     }
   }
 
-  [type="submit"],
+  [type='submit'],
   .search-submit {
     @include search-icon;
     border-bottom-left-radius: 0;
