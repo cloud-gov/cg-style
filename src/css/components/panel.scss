@@ -64,6 +64,11 @@ h4 + .panel {
     justify-content: space-between;
   }
 
+  form {
+    margin: -1rem;
+    width: calc(100% + 2rem);
+  }
+
   &:last-of-type {
     border-bottom: 2px solid $color-background-light;
   }
