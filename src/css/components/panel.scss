@@ -15,7 +15,8 @@ $panel-padding: 1rem;
 
 h1 + .panel,
 h2 + .panel,
-h3 + .panel {
+h3 + .panel,
+h4 + .panel {
   margin-top: 2rem;
 }
 
@@ -55,9 +56,13 @@ h3 + .panel {
 
 .panel-row {
   border-top: 2px solid $color-background-light;
-  display: flex;
-  justify-content: space-between;
   padding: $panel-padding;
+
+  // TODO react problem can't return just rows without wrapped div.
+  > div {
+    display: flex;
+    justify-content: space-between;
+  }
 
   &:last-of-type {
     border-bottom: 2px solid $color-background-light;
