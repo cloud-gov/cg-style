@@ -4,6 +4,27 @@
 @import '../../../node_modules/uswds/src/stylesheets/core/utilities.scss';
 @import '../../../node_modules/uswds/src/stylesheets/core/defaults.scss';
 
+.action-link {
+  color: $color-primary;
+  font-weight: bold;
+  text-decoration: underline;
+
+  &:visited {
+    color: $color-primary;
+  }
+
+  &:hover {
+    color: darken($color-primary, 20%);
+    text-decoration: none;
+  }
+
+  &.action-cautious {
+    color: $color-gray;
+  }
+
+}
+
+/* TODO refactor all actions */
 .actions-confirm {
   background-color: #ffffff;
   border: 2px solid $color-gray-light;
@@ -14,16 +35,16 @@
 }
 
 .actions-large {
-  padding: 3rem 2rem;
   background-color: $color-secondary-lightest;
   margin: -2rem;
+  padding: 3rem 2rem;
 }
 
 .actions-callout-inline-block {
   display: inline-block;
   border: 1px solid;
   border-radius: 2px;
-  padding: 0.05em .25em .2em;
   font-weight: 600;
   margin: 0 .25rem;
+  padding: 0.05em .25em .2em;
 }

@@ -4,7 +4,7 @@ $static-img-path: '../img' !default;
 $static-font-path: '../fonts' !default;
 
 // color
-$color-primary:              #277cb2;
+$color-primary:              #157de6;
 $color-primary-darker:       #2c3e50;
 $color-primary-darkest:      #1f2c38;
 
@@ -34,5 +34,8 @@ $color-disclaimer-link:      #0071bc;
 $color-base: $color-gray;
 $text-max-width:    660px;
 
+// TODO what color is this? it should follow convention
 $color-lightgray: #bababa;
 $site-max-width:    1040px;
+
+$color-background-light: #f3f4f8;
