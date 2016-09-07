@@ -33,6 +33,12 @@ h4 + .panel {
   margin-top: 1rem;
 }
 
+.panel-group:last-child {
+  .panel-row {
+    border-bottom: 0;
+  }
+}
+
 .panel-actions {
   > * {
     margin-right: 2rem;
