@@ -73,6 +73,12 @@ fieldset div {
   padding-bottom: .25rem;
 }
 
+.error_message {
+  @extend .usa-input-error-message;
+  color: $color-error;
+  font-size: initial;
+}
+
 .button-cancel {
   background-color: transparent;
   box-shadow: inset 0 0 0 2px $color-base;
