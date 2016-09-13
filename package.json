@@ -53,7 +53,7 @@
   },
   "homepage": "https://github.com/18F/cg-style#readme",
   "dependencies": {
-    "uswds": "~0.10.0"
+    "uswds": "~0.12.1"
   },
   "devDependencies": {
     "@18f/stylelint-rules": "^2.0.0",
