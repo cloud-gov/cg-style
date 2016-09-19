@@ -23,7 +23,10 @@ $color-secondary-lightest:   #deeeef; // DEEF!
 $color-focus:                rgba(255, 221, 0, 0.55);
 $color-visited:              #4c2c92;
 
-$color-gold: #f8ba1c;
+$color-gold:                 #f8ba1c;
+
+$color-warning:              #f16031;
+$color-error:                #f16031;
 
 $color-gray:                 #595959;
 $color-gray-dark:            darken($color-gray, 20%);
