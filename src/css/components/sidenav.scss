@@ -84,6 +84,7 @@ $color-heading:     $color-primary-alt-light;
   li {
     border-top: 0;
     font-size: 0.9rem;
+    list-style: none;
   }
 
 }
@@ -196,6 +197,7 @@ $color-heading:     $color-primary-alt-light;
   margin-bottom: 0;
   margin-left: 0;
   margin-top: 0;
+  padding-left: 0;
 
   > li {
     background-color: $color-level-3-bg;
