@@ -72,7 +72,8 @@ h4 + .panel {
 
   form {
     background-color: $color-background-light;
-    margin: -1rem;
+    flex-grow: 1;
+    margin: 1rem -1rem -1rem;
     padding: 1rem;
     width: calc(100% + 2rem);
   }
@@ -80,12 +81,17 @@ h4 + .panel {
   &:last-of-type {
     border-bottom: 2px solid $color-background-light;
   }
+
+  .panel-form-replace {
+    margin: -1rem;
+  }
 }
 
 .panel-column {
   flex: 1 0 0;
 
-  &:last-child {
+  &:last-child,
+  &.panel-column-last {
     padding-right: 2rem;
     text-align: right;
   }
