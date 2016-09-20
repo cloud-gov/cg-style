@@ -66,6 +66,7 @@ h4 + .panel {
 
   // TODO react problem can't return just rows without wrapped div.
   > div {
+    align-items: center;
     display: flex;
     justify-content: space-between;
   }
