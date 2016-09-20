@@ -1,0 +1,98 @@
+
+@import '../../../node_modules/uswds/src/stylesheets/core/defaults.scss';
+@import '../override_vars.scss';
+@import '../core.scss';
+
+$panel-padding: 1rem;
+
+.panel {
+  min-height: 10rem;
+
+  & + .panel {
+    margin-top: 3rem;
+  }
+}
+
+h1 + .panel,
+h2 + .panel,
+h3 + .panel,
+h4 + .panel {
+  margin-top: 2rem;
+}
+
+.panel-title {
+  color: $color-primary;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.panel-rows {
+  border: 3px solid $color-background-light;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.panel-group:last-child {
+  .panel-row {
+    border-bottom: 0;
+  }
+}
+
+.panel-actions {
+  > * {
+    margin-right: 2rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.panel-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: $panel-padding;
+
+  h1, h2, h3, h4 {
+    font-size: 1.1875rem;
+  }
+}
+
+.panel-row {
+  border-top: 2px solid $color-background-light;
+  padding: $panel-padding;
+
+  // TODO react problem can't return just rows without wrapped div.
+  > div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  form {
+    background-color: $color-background-light;
+    margin: -1rem;
+    padding: 1rem;
+    width: calc(100% + 2rem);
+  }
+
+  &:last-of-type {
+    border-bottom: 2px solid $color-background-light;
+  }
+}
+
+.panel-column {
+  flex: 1 0 0;
+
+  &:last-child {
+    padding-right: 2rem;
+    text-align: right;
+  }
+}
+
+.panel-column-less {
+  flex-grow: 0;
+  flex-shrink: 1;
+  min-width: 25%;
+}

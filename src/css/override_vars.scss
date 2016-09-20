@@ -4,7 +4,7 @@ $static-img-path: '../img' !default;
 $static-font-path: '../fonts' !default;
 
 // color
-$color-primary:              #277cb2;
+$color-primary:              #056dd4;
 $color-primary-darker:       #2c3e50;
 $color-primary-darkest:      #1f2c38;
 
@@ -23,7 +23,10 @@ $color-secondary-lightest:   #deeeef; // DEEF!
 $color-focus:                rgba(255, 221, 0, 0.55);
 $color-visited:              #4c2c92;
 
-$color-gold: #f8ba1c;
+$color-gold:                 #f8ba1c;
+
+$color-warning:              #f16031;
+$color-error:                #f16031;
 
 $color-gray:                 #595959;
 $color-gray-dark:            darken($color-gray, 20%);
@@ -34,5 +37,8 @@ $color-disclaimer-link:      #0071bc;
 $color-base: $color-gray;
 $text-max-width:    660px;
 
+// TODO what color is this? it should follow convention
 $color-lightgray: #bababa;
 $site-max-width:    1040px;
+
+$color-background-light: #f3f4f8;
