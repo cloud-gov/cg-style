@@ -18,10 +18,37 @@
     text-decoration: none;
   }
 
+}
+
+// Extra specificity due to WDS.
+.action {
   &.action-cautious {
     color: $color-gray;
+
+    &:hover {
+      color: $color-primary;
+    }
+
+    &.usa-button-outline {
+      box-shadow: inset 0 0 0 2px $color-gray;
+
+      &:hover {
+        box-shadow: inset 0 0 0 2px $color-primary;
+      }
+    }
   }
 
+  &.action-warning {
+    color: $color-warning;
+
+    &.usa-button-outline {
+      box-shadow: inset 0 0 0 2px $color-warning;
+    }
+  }
+
+  &.action-finish {
+    background-color: $color-finish;
+  }
 }
 
 /* TODO refactor all actions */

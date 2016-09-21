@@ -6,7 +6,10 @@
 $panel-padding: 1rem;
 
 .panel {
+  border-bottom: 1px solid $color-background-light;
+  border-top: 1px solid $color-background-light;
   min-height: 10rem;
+  padding: 0.75rem 0.5rem 0 0.5rem;
 
   & + .panel {
     margin-top: 3rem;
@@ -21,16 +24,12 @@ h4 + .panel {
 }
 
 .panel-title {
-  color: $color-primary;
-  font-size: 0.875rem;
+  font-size: 1.3rem;
   font-weight: 600;
-  text-transform: uppercase;
 }
 
-.panel-rows {
-  border: 3px solid $color-background-light;
-  border-radius: 5px;
-  margin-top: 1rem;
+.panel-group {
+  margin-bottom: 0.65rem;
 }
 
 .panel-group:last-child {
@@ -53,19 +52,22 @@ h4 + .panel {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: $panel-padding;
+  padding: 0.5rem 0;
 
   h1, h2, h3, h4 {
-    font-size: 1.1875rem;
+    font-size: 1rem;
+    font-weight: 900;
   }
 }
 
 .panel-row {
-  border-top: 2px solid $color-background-light;
-  padding: $panel-padding;
+  $vertical-padding: $panel-padding / 2;
+  border-top: 1px solid $color-background-light;
+  padding: $vertical-padding 0;
 
   // TODO react problem can't return just rows without wrapped div.
   > div {
+    align-items: center;
     display: flex;
     justify-content: space-between;
   }
