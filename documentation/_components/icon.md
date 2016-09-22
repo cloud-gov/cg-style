@@ -129,6 +129,42 @@ title: Icons
   </div>
   <span>i-user_researched</span>
 </div>
+<div class="force-inline">
+  <div class="icon-container">
+    <svg class="icon icon-alt">
+      <use xlink:href="{{ '/assets/img/cloudgov-sprite.svg#i-add' |
+         prepend: site.baseurl }}"/>
+    </svg>
+  </div>
+  <span>i-add</span>
+</div>
+<div class="force-inline">
+  <div class="icon-container">
+    <svg class="icon icon-alt">
+      <use xlink:href="{{ '/assets/img/cloudgov-sprite.svg#i-delete' |
+         prepend: site.baseurl }}"/>
+    </svg>
+  </div>
+  <span>i-delete</span>
+</div>
+<div class="force-inline">
+  <div class="icon-container">
+    <svg class="icon icon-alt">
+      <use xlink:href="{{ '/assets/img/cloudgov-sprite.svg#i-edit' |
+         prepend: site.baseurl }}"/>
+    </svg>
+  </div>
+  <span>i-edit</span>
+</div>
+<div class="force-inline">
+  <div class="icon-container">
+    <svg class="icon icon-alt">
+      <use xlink:href="{{ '/assets/img/cloudgov-sprite.svg#i-unlink' |
+         prepend: site.baseurl }}"/>
+    </svg>
+  </div>
+  <span>i-unlink</span>
+</div>
 
 <pre>
   <code>
