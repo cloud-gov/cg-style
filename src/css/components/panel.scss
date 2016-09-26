@@ -99,6 +99,13 @@ h4 + .panel {
   }
 }
 
+.panel-column-error {
+  border-left-width: 5px;
+  border-left-style: solid;
+  border-left-color: $color-warning; // #e31c3d;
+  padding-left: 0.5rem;
+}
+
 .panel-column-less {
   flex-grow: 0;
   flex-shrink: 1;
