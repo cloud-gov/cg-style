@@ -68,6 +68,7 @@
     "gulp-sass": "^2.3.1",
     "gulp-svg-sprite": "^1.2.19",
     "node-sass": "^3.4.2",
+    "politespace": "^0.1.19",
     "postcss": "^5.0.14",
     "postcss-cli": "^2.3.3",
     "postcss-copy-assets": "^0.3.0",
