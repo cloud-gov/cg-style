@@ -1,4 +1,11 @@
 
+.usa-nav-secondary {
+  
+  @include media($medium-screen) {
+    position: static;
+  }
+}
+
 .usa-grid {
   padding-left: 2rem;
   padding-right: 2rem;
