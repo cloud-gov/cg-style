@@ -1,0 +1,44 @@
+@import '../core.scss';
+
+.js-search-button {
+  display: none;
+
+  @include media(950px) {
+
+    background-image: url('#{$static-img-path}/i-search.png');
+    background-image: url('#{$static-img-path}/i-search.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto $hit-area / 2;
+    display: inline-block;
+    height: 3rem;
+    left: -1rem;
+    position: relative;
+    text-align: center;
+    top: -11px;
+    width: $hit-area;
+
+    &:hover {
+
+      background-image: url('#{$static-img-path}/i-search-hover.svg');
+      background-image: url('#{$static-img-path}/i-search-hover.png');
+      cursor: pointer;
+    }
+
+    &.is-hidden {
+      background-image: none;
+
+      &:after {
+        content: 'X';
+        clear: both;
+        font-size: 30px;
+        font-weight: 300;
+      }
+    }
+
+    span {
+      @include sr-only();
+    }
+
+  }
+}

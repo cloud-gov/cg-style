@@ -1,3 +1,8 @@
+.usa-nav-secondary {
+  @include media($medium-screen) {
+    position: static;
+  }
+}
 
 .usa-grid {
   padding-left: 2rem;
@@ -109,4 +114,57 @@ a:focus,
 input:focus {
   box-shadow: 0 0 0 4 rgba(255, 221, 0, 0.55);
   outline: none;
+}
+
+.usa-search {
+
+  background-color: #ffffff;
+  width: 90%;
+  z-index: 1;
+  position: static;
+
+  @include media($large-screen) {
+    position: absolute;
+    top: -5px;
+  }
+
+  @include media($medium-screen) {
+    position: absolute;
+    top: 5px;
+  }
+
+  [type='search'] {
+
+    border-top: none;
+    border-left: none;
+    border-radius: 0;
+    border-color: $color-primary;
+    color: $color-gray;
+    font-weight: 300;
+    font-size: 1rem;
+    width: 100%;
+
+    &:focus {
+      box-shadow: none;
+      color: $color-primary;
+      outline: unset;
+    }
+  }
+
+  [type='submit'] {
+
+    background-color: #ffffff;
+    background-image: url('#{$static-img-path}/search.png');
+    background-image: url('#{$static-img-path}/search.svg');
+    height: 2.2rem;
+    position: absolute;
+    right: 15px;
+    top: 55px;
+    width: 3rem;
+
+    @include media($medium-screen) {
+      top: 10px;
+    }
+
+  }
 }
