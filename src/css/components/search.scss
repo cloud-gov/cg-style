@@ -1,10 +1,9 @@
 @import '../core.scss';
 
 .js-search-button {
-
   display: none;
 
-  @include media(950px) { 
+  @include media(950px) {
 
     background-image: url('#{$static-img-path}/i-search.png');
     background-image: url('#{$static-img-path}/i-search.svg');
@@ -19,11 +18,8 @@
     top: -11px;
     width: $hit-area;
 
-    span {
-      @include sr-only();
-    }
-
     &:hover {
+
       background-image: url('#{$static-img-path}/i-search-hover.svg');
       background-image: url('#{$static-img-path}/i-search-hover.png');
       cursor: pointer;
@@ -33,11 +29,15 @@
       background-image: none;
 
       &:after {
-        content: "X";
+        content: 'X';
         clear: both;
         font-size: 30px;
         font-weight: 300;
       }
+    }
+
+    span {
+      @include sr-only();
     }
 
   }

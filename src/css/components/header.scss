@@ -21,13 +21,13 @@
 }
 
 .header-side {
-  
+
   float: left;
   width: 100%;
   position: relative;
 
   @include media($medium-screen) {
-    
+
     float: right;
     width: 60%;
   }
