@@ -46,6 +46,15 @@ h4 + .panel {
       margin-right: 0;
     }
   }
+
+  .action {
+    margin-left: 0;
+    margin-right: 0;
+
+    & + .action {
+      margin-left: 0.5rem;
+    }
+  }
 }
 
 .panel-header {
