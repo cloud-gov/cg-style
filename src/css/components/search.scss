@@ -3,42 +3,46 @@
 .js-search-button {
   display: none;
 
-  @include media(950px) {
+  @include media($nav-width) {
 
     background-image: url('#{$static-img-path}/i-search.png');
     background-image: url('#{$static-img-path}/i-search.svg');
+    background-color: transparent;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: auto $hit-area / 2;
     display: inline-block;
     height: 3rem;
-    left: -1rem;
+    margin: 0;
     position: relative;
     text-align: center;
-    top: -11px;
-    width: $hit-area;
+    top: -15px;
+    width: 3rem;
 
     &:hover {
 
       background-image: url('#{$static-img-path}/i-search-hover.svg');
       background-image: url('#{$static-img-path}/i-search-hover.png');
+      background-color: transparent;
       cursor: pointer;
-    }
-
-    &.is-hidden {
-      background-image: none;
-
-      &:after {
-        content: 'X';
-        clear: both;
-        font-size: 30px;
-        font-weight: 300;
-      }
     }
 
     span {
       @include sr-only();
     }
 
+  }
+
+  @include media($large-screen) {
+
+    &.is-hidden {
+
+      background-image: url('#{$static-img-path}/close.svg');
+      background-image: url('#{$static-img-path}/close.png');
+      background-size: auto 3rem;
+      left: 10px;
+      top: 1px;
+      z-index: 999;
+    }
   }
 }
