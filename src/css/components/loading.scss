@@ -68,9 +68,10 @@ $indicator-size: 3.5rem;
 }
 
 .loading-inline-text {
+  color: $color-primary;
   font-size: 1rem;
+  font-weight: bold;
   margin-left: 1rem;
-  weight: bold;
 }
 
 @keyframes blink {
