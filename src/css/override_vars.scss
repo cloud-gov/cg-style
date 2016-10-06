@@ -36,7 +36,7 @@ $color-lightestgray:            #f5f5f3;
 $color-white:                   #ffffff; // perhaps redundant
 
 // Override WDS gray colors
-$color-gray:                 color-darkgray;
+$color-gray:                 $color-darkgray;
 $color-gray-dark:            darken($color-gray, 20%);
 $color-disclaimer-text:      #000000;
 $color-disclaimer-link:      #0071bc;
