@@ -1,56 +1,51 @@
 
 @import '../core.scss';
 
-// Source sans light
+// 18Franklin light
 @font-face {
-  font-family: 'Source Sans Pro';
+  font-family: '18Franklin';
   font-style: normal;
   font-weight: 300;
-  src: url('#{$static-font-path}/sourcesanspro-light-webfont.eot');
-  src: url('#{$static-font-path}/sourcesanspro-light-webfont.eot?#iefix') format('embedded-opentype'),
-    url('#{$static-font-path}/sourcesanspro-light-webfont.woff2') format('woff2'),
-    url('#{$static-font-path}/sourcesanspro-light-webfont.woff') format('woff'),
-    url('#{$static-font-path}/sourcesanspro-light-webfont.ttf') format('truetype');
+  src:
+    url('#{$static-font-path}/18franklin-v0.06-light-webfont.woff2') format('woff2'),
+    url('#{$static-font-path}/18franklin-v0.06-light-webfont.woff') format('woff'),
+    url('#{$static-font-path}/18franklin-v0.06-light-webfont.ttf') format('truetype');
 }
 
-// Source sans regular
+// 18Franklin regular
 @font-face {
-  font-family: 'Source Sans Pro';
+  font-family: '18Franklin';
   font-style: normal;
   font-weight: 400;
-  src: url('#{$static-font-path}/sourcesanspro-regular-webfont.eot');
-  src: url('#{$static-font-path}/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
-    url('#{$static-font-path}/sourcesanspro-regular-webfont.woff2') format('woff2'),
-    url('#{$static-font-path}/sourcesanspro-regular-webfont.woff') format('woff'),
-    url('#{$static-font-path}/sourcesanspro-regular-webfont.ttf') format('truetype');
+  src:
+    url('#{$static-font-path}/18franklin-v0.06-regular-webfont.woff2') format('woff2'),
+    url('#{$static-font-path}/18franklin-v0.06-regular-webfont.woff') format('woff'),
+    url('#{$static-font-path}/18franklin-v0.06-regular-webfont.ttf') format('truetype');
 }
 
+// 18Franklin bold
 @font-face {
-  font-family: 'Source Sans Pro';
+  font-family: '18Franklin';
   font-style: normal;
-  font-weight: 600;
-  src: url('#{$static-font-path}/SourceSansPro-Semibold.ttf');
+  font-weight: 700;
+  src:
+    url('#{$static-font-path}/18franklin-v0.06-bold-webfont.woff2') format('woff2'),
+    url('#{$static-font-path}/18franklin-v0.06-bold-webfont.woff') format('woff'),
+    url('#{$static-font-path}/18franklin-v0.06-bold-webfont.ttf') format('truetype');
 }
 
-// Merriweather Light
+// Roboto mono regular
 @font-face {
-  font-family: 'Merriweather';
+  font-family: 'Roboto Mono';
   font-style: normal;
-  font-weight: 300;
-  src: url('#{$static-font-path}/merriweather-light-webfont.eot');
-  src: url('#{$static-font-path}/merriweather-light-webfont.eot?#iefix') format('embedded-opentype'),
-    url('#{$static-font-path}/merriweather-light-webfont.woff2') format('woff2'),
-    url('#{$static-font-path}/merriweather-light-webfont.woff') format('woff'),
-    url('#{$static-font-path}/merriweather-light-webfont.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Merriweather';
-  font-style: italic;
   font-weight: 400;
-  src: url('#{$static-font-path}/merriweather-italic-webfont.eot');
-  src: url('#{$static-font-path}/merriweather-italic-webfont.eot?#iefix') format('embedded-opentype'),
-    url('#{$static-font-path}/merriweather-italic-webfont.woff2') format('woff2'),
-    url('#{$static-font-path}/merriweather-italic-webfont.woff') format('woff'),
-    url('#{$static-font-path}/merriweather-italic-webfont.ttf') format('truetype');
+  src: url('#{$static-font-path}/RobotoMono-Regular.ttf');
+}
+
+// Roboto mono bold
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 700;
+  src: url('#{$static-font-path}/RobotoMono-Bold.ttf');
 }

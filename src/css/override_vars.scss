@@ -35,13 +35,20 @@ $color-gray-dark:            darken($color-gray, 20%);
 $color-disclaimer-text:      #000000;
 $color-disclaimer-link:      #0071bc;
 
-$color-base: $color-gray;
-$text-max-width:    660px;
+$color-base:                 $color-gray;
+$text-max-width:             660px;
 
 // TODO what color is this? it should follow convention
-$color-lightgray: #bababa;
-$site-max-width:    1040px;
+$color-lightgray:            #bababa;
+$site-max-width:             1040px;
 
-$color-background-light: #f3f4f8;
+$color-background-light:     #f3f4f8;
 
-$nav-width:           600px;
+$nav-width:                  600px;
+
+
+$font-sans:                  '18Franklin', 'Helvetica Neue', 'Helvetica',
+                             'Roboto', 'Arial', sans-serif;
+$font-serif:                 'Georgia', 'Cambria', 'Times New Roman', 'Times', serif;
+$font-mono:                  'Roboto Mono', 'Bitstream Vera Sans Mono', 'Consolas',
+                             'Courier', monospace;
