@@ -6,7 +6,12 @@
 pre {
   background: $color-gray-lightest;
   color: $color-base;
+  font-family: $font-mono;
   overflow: auto;
   padding: 0.7rem;
   word-wrap: break-word;
+}
+
+code {
+  font-family: $font-mono;
 }
