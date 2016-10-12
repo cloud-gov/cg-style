@@ -51,8 +51,7 @@ $site-max-width:    1040px;
 
 $nav-width:                  600px;
 
-$font-sans:                  '18Franklin', 'Helvetica Neue', 'Helvetica',
-  'Roboto', 'Arial', sans-serif;
+$font-sans:                  '18Franklin', system, -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 $font-serif:                 'Georgia', 'Cambria', 'Times New Roman', 'Times', serif;
 $font-mono:                  'Roboto Mono', 'Bitstream Vera Sans Mono', 'Consolas',
   'Courier', monospace;
