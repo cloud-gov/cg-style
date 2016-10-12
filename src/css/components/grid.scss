@@ -1,0 +1,9 @@
+.cg-grid {
+  @include outer-container;
+
+  @for $i from 1 through 12 {
+    .cg-width-#{$i} {
+      @include span-columns($i);
+    }
+  }
+}
