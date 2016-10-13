@@ -25,19 +25,18 @@
   padding-bottom: .2rem;
   padding-top: .2rem;
   padding-left: 0;
-  
+
   a {
     color: $color-textblack;
     &:hover {
       color: $color-primary;
     }
   }
-  
+
   & + .nav-link {
     padding-left: .2rem;
-    @include media($medium-screen) { 
-      padding-left: $b4x;
-    }
+
+    @include media($medium-screen) { padding-left: $b4x; }
   }
 
   @include media($medium-screen) {
