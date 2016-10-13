@@ -33,16 +33,20 @@
 
   }
 
-  @include media($large-screen) {
-
+  @include media($medium-screen) {
     &.is-hidden {
-
-      background-image: url('#{$static-img-path}/close.svg');
       background-image: url('#{$static-img-path}/close.png');
-      background-size: auto 3rem;
-      left: 10px;
-      top: 1px;
+      background-image: url('#{$static-img-path}/close.svg');
+      background-size: $b4x $b4x;
+      right: -40px;
+      top: -5px;
       z-index: 999;
+      margin: 0;
+      
+      &:hover {
+        background-image: url('#{$static-img-path}/close-blue.png');
+        background-image: url('#{$static-img-path}/close-blue.svg');
+      }
     }
   }
 }
