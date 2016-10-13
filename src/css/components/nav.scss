@@ -14,27 +14,33 @@
 
   @include media($medium-screen) {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
 }
 
 .nav-link {
-  color: $color-gray;
-  font-size: 1.1rem;
+  color: $color-textblack;
+  font-size: $sans-s5;
   font-weight: 400;
   padding-bottom: .2rem;
   padding-top: .2rem;
-  text-transform: uppercase;
-
+  padding-left: 0;
+  
   a {
-    color: $color-gray;
+    color: $color-textblack;
+  }
+  
+  & + .nav-link {
+    padding-left: .2rem;
+    @include media($medium-screen) { 
+      padding-left: $b4x;
+    }
   }
 
   @include media($medium-screen) {
     font-size: inherit;
     padding-bottom: 0;
-    padding-left: .2rem;
-    padding-right: .2rem;
+    padding-right: 0;
     padding-top: 0;
   }
 }
@@ -67,7 +73,7 @@ $size-xsmall: .8rem;
 // gettin deep
 .nav-tabs a {
   border-bottom: 1px solid $color-lightgray;
-  color: $color-gray;
+  color: $color-textblack;
   display: block;
   font-weight: 600;
   padding-bottom: ($padding-highlight + $border-highlight - 1);
