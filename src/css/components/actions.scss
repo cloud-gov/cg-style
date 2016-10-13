@@ -41,11 +41,11 @@
     &.usa-button-outline {
       background-color: transparent;
       color: $color-gray;
-      box-shadow: inset 0 0 0 2px $color-gray;
+      box-shadow: inset 0 0 0 1px $color-gray;
       font-size: $sans-s2; 
 
       &:hover {
-        box-shadow: inset 0 0 0 2px $color-primary;
+        box-shadow: inset 0 0 0 1px $color-primary;
       }
     }
   }
@@ -61,7 +61,7 @@
     &.usa-button-outline {
       background-color: transparent;
       color: $color-warning;
-      box-shadow: inset 0 0 0 2px $color-warning;
+      box-shadow: inset 0 0 0 1px $color-warning;
     }
   }
 
