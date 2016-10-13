@@ -23,29 +23,91 @@ $color-secondary-lightest:   #deeeef; // DEEF!
 $color-focus:                rgba(255, 221, 0, 0.55);
 $color-visited:              #4c2c92;
 
-$color-gold:                 #f8ba1c;
+$color-gold:                 #f4B400;
 
-$color-finish:               #0daf02;
-$color-warning:              #cb4f03;
-$color-error:                #f16031;
+$color-finish:               #0DAF00;
+$color-warning:              #CB4F03;
+$color-error:                #CB4F03;
+$color-red:                #CB4F03;
 
 $color-gray:                 #595959;
-$color-gray-dark:            darken($color-gray, 20%);
+$color-darkgray: #555;
+$color-mediumgray: #8E8E8E;
+$color-lightgray: #D3D3D3;
+$color-textblack: #333;
+$color-trueblack: #000;
+
+$color-gray-dark: #555; // redundant to prevent breaking
+
 
 $color-disclaimer-text:      #000000;
 $color-disclaimer-link:      #0071bc;
 
-$color-base:                 $color-gray;
-$text-max-width:             660px;
+$color-base:                 $color-textblack;
+$text-max-width:             36em;
 
 // TODO what color is this? it should follow convention
-$color-lightgray:            #bababa;
 $site-max-width:             1040px;
 
 $color-background-light:     #f3f4f8;
+$color-cream:     #f5f5f3;
 
 $nav-width:                  600px;
 
 $font-sans:                  '18Franklin', system, -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 $font-serif:                 'Georgia', 'Cambria', 'Times New Roman', 'Times', serif;
 $font-mono:                  'Roboto Mono', 'Bitstream Vera Sans Mono', 'Consolas', 'Courier', monospace;
+
+$base: 8;
+$base-grid: #{$base}px;
+$base-rem: #{$base}rem;
+$base-type: $base * 2;
+$base-type-rem: #{$base * 2}rem;
+$base-type-px: #{$base * 2}px;
+
+$bx5: #{($base / 2 / $base-type)}rem;    // 4px
+$b1x: #{($base / $base-type)}rem;        // 8px
+$b2x: #{($base * 2 / $base-type)}rem;   // 16px
+$b3x: #{($base * 3 / $base-type)}rem;   // 24px
+$b4x: #{($base * 4 / $base-type)}rem;   // 32px
+$b5x: #{($base * 5 / $base-type)}rem;   // 40px
+$b6x: #{($base * 6 / $base-type)}rem;   // 48px
+$b7x: #{($base * 7 / $base-type)}rem;   // 56px
+$b8x: #{($base * 8 / $base-type)}rem;   // 64px
+$b9x: #{($base * 9 / $base-type)}rem;   // 72px
+$b10x: #{($base * 10 / $base-type)}rem; // 80px
+
+
+$sans-s1: (8rem / $base-type);    // 8px;
+$sans-s2: (12rem / $base-type);   // 12px;
+$sans-s3: (13rem / $base-type);   // 13px;
+$sans-s4: (14rem / $base-type);   // 14px;
+$sans-s5: (16rem / $base-type);   // 16px;
+$sans-s6: (20rem / $base-type);   // 20px;
+$sans-s7: (26rem / $base-type);   // 26px;
+$sans-s8: (40rem / $base-type);   // 40px;
+
+$serif-s1: (10rem / $base-type);   // 10px;
+$serif-s2: (13rem / $base-type);   // 13px;
+$serif-s3: (14rem / $base-type);   // 14px;
+$serif-s4: (15rem / $base-type);   // 15px;
+$serif-s5: (17.5rem / $base-type);   // 17.5px;
+$serif-s6: (23rem / $base-type);   // 23px;
+$serif-s7: (39rem / $base-type);   // 39px;
+$serif-s8: (43rem / $base-type);   // 43px;
+
+$mono-s1: (10rem / $base-type);   // 10px;
+$mono-s2: (12rem / $base-type);   // 12px;
+$mono-s3: (13rem / $base-type);   // 13px;
+$mono-s4: (15rem / $base-type);   // 15px;
+$mono-s5: (18rem / $base-type);   // 18px;
+$mono-s6: (23rem / $base-type);  // 23px;
+$mono-s7: (38rem / $base-type);   // 38px;
+$mono-s8: (44rem / $base-type);   // 44px;
+
+$leading-hed: 1.1;
+$leading-cap: 1.3;
+$leading-body: 1.55;
+
+$rounded: 2px;
+$not-rounded: 0px;

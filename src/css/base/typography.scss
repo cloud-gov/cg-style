@@ -1,10 +1,27 @@
 
 @import '../core.scss';
 
+
 body {
   color: $color-base;
   font-weight: 400;
-  line-height: 1.7333333;
+  line-height: $leading-body;
+  font-size: $base-type-px;
+}
+
+a {
+  text-decoration: none;
+}
+
+strong {
+  font-family: $font-sans;
+  font-weight: 600;
+}
+
+// constrain to docs content
+.usa-content p strong,
+.usa-content li strong {
+  font-size: $sans-s5;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -13,75 +30,117 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 
   & + p {
-    margin-top: 0.5rem;
+    margin-top: $b1x;
   }
 
   & + .text_block {
-    margin-top: 1.5rem;
+    margin-top: $b3x;
+  }
+  
+  // using this style until I have an italic solution
+  em, i {
+    font-style: normal;
+    color: $color-red;
   }
 }
 
 h1 {
-  font-size: 2.5rem;
-  line-height: 1.19;
+  font-size: $sans-s7;
+  line-height: $leading-hed;
+  font-weight: 200;
 
   @include media($medium-screen) {
-    font-size: 2.75rem;
-    line-height: 1.18;
+    font-size: $sans-s8;
   }
 
   & + p {
-    margin-top: 2rem;
+    margin-top: $b3x;
+  }
+
+  & + h2 {
+    margin-top: $b2x;
   }
 
   & + h4 {
-    margin-top: 1rem;
+    margin-top: $b3x;
   }
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: $sans-s6;
+  font-weight: 200;
+  margin-bottom: $b2x;
 
   @include media($medium-screen) {
-    font-size: 2.125rem;
+    font-size: $sans-s7;
   }
 }
 
 h3 {
-  font-size: 1.25rem;
-  margin-top: .5em;
+  font-size: $sans-s6;
+  margin-top: $b6x;
   font-weight: 600;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+h2 + h3 {
+  margin-top: $b2x;
 }
 
 h4 {
-  font-size: 1rem;
-  font-weight: 700;
+  font-size: $sans-s4;
+  font-weight: 600;
 
   & + h4 {
-    margin-top: .5rem;
+    margin-top: $b1x;
   }
 }
 
 h5 {
-  font-size: 0.875rem;
-  font-weight: 700;
+  font-size: $sans-s2;
+  font-weight: 600;
 }
 
 p {
   font-family: $font-serif;
-  font-size: 0.9375rem;
-  line-height: 1.75;
+  font-size: $serif-s4;
+  line-height: $leading-body;
+  &:first-child {
+    margin-top: 0;
+  }
 
+  @include media($medium-screen) {
+    font-size: $serif-s5;
+  }
+}
+
+//spacing after block elements
+p, ul, ol, pre {
+  & + h1,
   & + h2,
   & + h3,
   & + h4,
   & + h5 {
-    margin-top: 2rem;
-  }
+    margin-top: $b4x;
+  }  
+}
 
-  @include media($medium-screen) {
-    font-size: 0.9375rem;
+// constrain to docs content
+.usa-content p, 
+.usa-content li {
+  a {
+    text-decoration: none;
+    border-bottom: 1px solid;
+    padding-bottom: 2px;
   }
+}
+
+// constrain to docs content
+.usa-content li {
+  font-family: $font-serif;
+  font-size: $serif-s5;
 }
 
 blockquote {
@@ -89,12 +148,26 @@ blockquote {
   margin-right: 0;
 }
 
-a {
-  text-decoration: none;
+code {
+  background-color: $color-cream;
+  border-radius: $rounded;
+  display: inline-block;
+  line-height: $leading-cap;
+  padding: 2px 6px;
 }
 
-p {
-  a {
-    text-decoration: underline;
+.usa-content code {
+  font-size: $mono-s4;
+}
+
+pre {
+  background-color: $color-cream;
+  border-radius: $rounded;
+  
+  code {
+    background-color: transparent;
+    padding: 0;
+    line-height: $leading-body;
+    display: inline;
   }
 }
