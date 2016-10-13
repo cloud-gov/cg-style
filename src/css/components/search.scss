@@ -1,3 +1,4 @@
+@import '../override_vars.scss';
 @import '../core.scss';
 
 .js-search-button {
@@ -10,19 +11,18 @@
     background-color: transparent;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: auto $hit-area / 2 - 1;
+    background-size: auto $b4x;
     display: inline-block;
-    height: 3rem;
-    margin: 0;
+    height: $b4x;
+    margin: 0 0 0 $b4x;
     position: relative;
     text-align: center;
-    top: -15px;
-    width: 3rem;
+    top: -5px;
+    width: $b4x;
 
     &:hover {
-
-      background-image: url('#{$static-img-path}/i-search-hover.svg');
       background-image: url('#{$static-img-path}/i-search-hover.png');
+      background-image: url('#{$static-img-path}/i-search-hover.svg');
       background-color: transparent;
       cursor: pointer;
     }

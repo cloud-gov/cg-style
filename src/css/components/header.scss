@@ -29,6 +29,6 @@
   @include media($medium-screen) {
 
     float: right;
-    width: 60%;
+    width: calc(100% - 260px);
   }
 }
