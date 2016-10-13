@@ -19,8 +19,8 @@ strong {
 }
 
 // constrain to docs content
-.usa-content p strong,
-.usa-content li strong {
+.usa-content.content p strong,
+.usa-content.content li strong {
   font-size: $sans-s5;
 }
 
@@ -116,6 +116,15 @@ p {
   }
 }
 
+p.page-lede {
+  color: $color-mediumgray;
+  font-family: $font-sans;
+  font-size: $sans-s5;
+  font-weight: 200;
+  line-height: $leading-body;
+  padding-bottom: $b2x;
+}
+
 //spacing after block elements
 p, ul, ol, pre {
   & + h1,
@@ -128,8 +137,8 @@ p, ul, ol, pre {
 }
 
 // constrain to docs content
-.usa-content p, 
-.usa-content li {
+.usa-content.content p, 
+.usa-content.content li {
   a {
     text-decoration: none;
     border-bottom: 1px solid;
@@ -138,7 +147,7 @@ p, ul, ol, pre {
 }
 
 // constrain to docs content
-.usa-content li {
+.usa-content.content li {
   font-family: $font-serif;
   font-size: $serif-s5;
 }
@@ -156,7 +165,7 @@ code {
   padding: 2px 6px;
 }
 
-.usa-content code {
+.usa-content.content code {
   font-size: $mono-s4;
 }
 
