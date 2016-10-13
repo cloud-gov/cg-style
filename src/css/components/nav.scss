@@ -28,6 +28,9 @@
   
   a {
     color: $color-textblack;
+    &:hover {
+      color: $color-primary;
+    }
   }
   
   & + .nav-link {
