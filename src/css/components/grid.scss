@@ -1,9 +1,26 @@
-.cg-grid {
+.grid {
   @include outer-container;
+  padding: 0 $gutter;
 
+  @include media($large-screen) {
+    padding: 0;
+  }
+
+  // Keep .content backwards compatible
+  //TODO probably delete this rule once all the repos adopt the new grid
+  .content & {
+    padding: 0;
+  }
+
+  // grid columns
   @for $i from 1 through 12 {
-    .cg-width-#{$i} {
-      @include span-columns($i);
+    .grid-width-#{$i} {
+      @include span-columns(12);
+      @include omega;
+
+      @include media($medium-screen) {
+        @include span-columns($i);
+      }
     }
   }
 }
