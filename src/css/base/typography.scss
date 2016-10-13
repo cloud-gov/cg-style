@@ -1,7 +1,6 @@
 
 @import '../core.scss';
 
-
 body {
   color: $color-base;
   font-weight: 400;
@@ -36,7 +35,7 @@ h1, h2, h3, h4, h5, h6 {
   & + .text_block {
     margin-top: $b3x;
   }
-  
+
   // using this style until I have an italic solution
   em, i {
     font-style: normal;
@@ -116,7 +115,7 @@ p {
   }
 }
 
-p.page-dek {
+.page-dek {
   color: $color-mediumgray;
   font-family: $font-sans;
   font-size: $sans-s5;
@@ -131,13 +130,11 @@ p, ul, ol, pre {
   & + h2,
   & + h3,
   & + h4,
-  & + h5 {
-    margin-top: $b4x;
-  }  
+  & + h5 { margin-top: $b4x; }
 }
 
 // constrain to docs content
-.usa-content.content p, 
+.usa-content.content p,
 .usa-content.content li {
   a {
     text-decoration: none;
@@ -172,7 +169,7 @@ code {
 pre {
   background-color: $color-cream;
   border-radius: $rounded;
-  
+
   code {
     background-color: transparent;
     padding: 0;

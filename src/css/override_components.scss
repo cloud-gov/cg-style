@@ -10,7 +10,6 @@
     margin-top: 1rem;
 
     @include media($medium-screen) {
-
       margin-top: 0;
       margin-bottom: 0;
     }
@@ -130,34 +129,28 @@ input:focus {
 }
 
 .usa-search {
-
   background-color: #ffffff;
   border-bottom: 1px solid $color-primary;
   height: 36px;
   overflow: auto;
-  padding: 0; 
+  padding: 0;
   position: static;
-  right: 0;
-  top: 0;
   width: 100%;
   max-width: 40em;
   z-index: 1;
 
   @include media($large-screen) {
-
     position: absolute;
     top: -15px;
     width: 93%;
   }
 
   @include media($nav-width) {
-
     position: absolute;
     top: 0;
   }
 
   [type='search'] {
-
     border: none;
     color: $color-gray;
     font-weight: 400;
@@ -174,7 +167,6 @@ input:focus {
   }
 
   [type='submit'] {
-
     background-color: #ffffff;
     background-image: url('#{$static-img-path}/search.png');
     background-image: url('#{$static-img-path}/search.svg');
