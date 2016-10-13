@@ -139,10 +139,10 @@ input:focus {
   max-width: 40em;
   z-index: 1;
 
-  @include media($large-screen) {
+  @include media($medium-screen) {
     position: absolute;
-    top: -15px;
-    width: 93%;
+    top: 0;
+    right: 0;
   }
 
   @include media($nav-width) {
