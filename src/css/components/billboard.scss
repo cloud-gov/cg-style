@@ -21,7 +21,7 @@
   font-size: $sans-s8;
   font-weight: 600;
   line-height: $leading-cap;
-  margin-top: $grid-3;
+  padding-top: $grid-3;
 
   @include media($medium-screen) {
     font-size: 3.8rem;
