@@ -19,6 +19,12 @@ label {
   font-weight: 400;
 }
 
+input, select {
+  & + label {
+     margin-top: $gx2;
+  }
+}
+
 [type='email'] {
   font-size: 1rem;
   padding: 0.7rem 0.7rem;
