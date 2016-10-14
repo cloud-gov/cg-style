@@ -1,5 +1,6 @@
 // color
-$color-primary:              #056dd4;
+$color-blue:              #056dd4;
+$color-primary:              $color-blue;
 $color-primary-darker:       #2c3e50;
 $color-primary-darkest:      #1f2c38;
 
@@ -9,32 +10,32 @@ $color-primary-alt-darkest:  darken($color-primary-alt, 70%);
 $color-primary-alt-light:    #77b6ff;
 $color-primary-alt-lightest: #d9f1ff;
 
-$color-secondary:            #cb4f03;
+$color-red:            #cb4f03;
+$color-secondary:            $color-red;
 $color-secondary-dark:       #b0392e;
 $color-secondary-darkest:    darken($color-secondary, 75%);
 $color-secondary-light:      #f3736e;
 $color-secondary-lightest:   #deeeef; // DEEF!
 
-$color-focus:                rgba(255, 221, 0, 0.55); // slated for a change
-
-// TODO find new value for this.
-$color-visited:              #4c2c92;
-
-$color-gold:                 #f4b400;
-
-$color-finish:               #0daf00;
 $color-warning:              #cb4f03;
 $color-error:                #cb4f03;
-$color-red:                #cb4f03;
 
-$color-gray:                 #595959;
+$color-visited:              $color-blue;
+
+$color-gold:                 #f4b400;
+$color-focus:                $color-gold;
+
+$color-green:               #0daf00;
+$color-finish:               $color-green;
+
 $color-darkgray: #555;
 $color-mediumgray: #8e8e8e;
 $color-lightgray: #d3d3d3;
 $color-textblack: #333;
 $color-trueblack: #000;
 
-$color-gray-dark: #555; // redundant to prevent breaking
+$color-gray-dark:       $color-darkgray; // redundant to prevent breaking
+$color-gray:             $color-mediumgray;
 
 // Override WDS gray colors
 $color-gray-dark:            darken($color-gray, 20%);
@@ -47,27 +48,21 @@ $text-max-width:    660px;
 
 // TODO what color is this? it should follow convention
 $color-base:                 $color-textblack;
-$text-max-width:             36em;
 
-// TODO what color is this? it should follow convention
-$site-max-width:             1040px;
-
-$color-background-light:     #f3f4f8;
 $color-cream:     #f5f5f3;
+$color-background-light:     $color-cream;
 
-$nav-width:                  600px;
-
+// typefaces
 $font-sans:                  '18Franklin', system, -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 $font-serif:                 'Georgia', 'Cambria', 'Times New Roman', 'Times', serif;
 $font-mono:                  'Roboto Mono', 'Bitstream Vera Sans Mono', 'Consolas',
   'Courier', monospace;
 
-$grid: 8;
-$grid-px: #{$grid}px;
-$grid-rem: #{$grid}rem;
+// grid
+$grid: 8; // unitless for some calculations
+$grid-px: 8px;
 $grid-type: $grid * 2;
-$grid-type-px: #{$grid * 2}px;
-$grid-type-rem: #{$grid * 2}rem;
+$grid-type-px: #{$grid-type}px;
 
 $gx05: #{($grid / 2 / $grid-type)}rem;    // 4px
 $gx1: #{($grid / $grid-type)}rem;        // 8px
@@ -81,6 +76,12 @@ $gx8: #{($grid * 8 / $grid-type)}rem;   // 64px
 $gx9: #{($grid * 9 / $grid-type)}rem;   // 72px
 $gx10: #{($grid * 10 / $grid-type)}rem; // 80px
 
+// widths
+$nav-width:                  $grid-px * 75; // 600px;
+$site-max-width:            $grid-px * 130; // 1040px;
+$text-max-width:             36em;
+
+// type scale
 $sans-s1: (8rem / $grid-type);    // 8px;
 $sans-s2: (12rem / $grid-type);   // 12px;
 $sans-s3: (13rem / $grid-type);   // 13px;
@@ -112,5 +113,6 @@ $leading-hed: 1.1;
 $leading-cap: 1.3;
 $leading-body: 1.55;
 
+// border radius
 $rounded: 2px;
 $not-rounded: 0;
