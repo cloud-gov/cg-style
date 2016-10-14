@@ -31,7 +31,7 @@ input, select {
 }
 
 form [type='submit'] {
-  margin-top: 1.5rem;
+  margin-top: $grid-1;
 }
 
 // TODO remove extra specificity when WDS fixes theirs.
