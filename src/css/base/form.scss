@@ -21,7 +21,7 @@ label {
 
 input, select {
   & + label {
-    margin-top: $gx2;
+    margin-top: $grid-2;
   }
 }
 

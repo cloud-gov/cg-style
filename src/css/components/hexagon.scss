@@ -7,8 +7,8 @@ $alt-color: $color-red;
 .hexagon {
   background: $primary-color;
   height: .65em;
-  margin-bottom: $gx1;
-  margin-top: $gx1;
+  margin-bottom: $grid-1;
+  margin-top: $grid-1;
   position: relative;
   width: 1em;
 }

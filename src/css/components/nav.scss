@@ -36,7 +36,7 @@
   & + .nav-link {
     padding-left: .2rem;
 
-    @include media($medium-screen) { padding-left: $gx4; }
+    @include media($medium-screen) { padding-left: $grid-4; }
   }
 
   @include media($medium-screen) {
