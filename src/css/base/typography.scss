@@ -35,11 +35,11 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 
   & + p {
-    margin-top: $gx1;
+    margin-top: $grid-1;
   }
 
   & + .text_block {
-    margin-top: $gx3;
+    margin-top: $grid-3;
   }
 
   // using this style until I have an italic solution
@@ -59,22 +59,22 @@ h1 {
   }
 
   & + p {
-    margin-top: $gx3;
+    margin-top: $grid-3;
   }
 
   & + h2 {
-    margin-top: $gx2;
+    margin-top: $grid-2;
   }
 
   & + h4 {
-    margin-top: $gx3;
+    margin-top: $grid-3;
   }
 }
 
 h2 {
   font-size: $sans-s6;
   font-weight: 300;
-  margin-bottom: $gx2;
+  margin-bottom: $grid-2;
 
   @include media($medium-screen) {
     font-size: $sans-s7;
@@ -83,12 +83,12 @@ h2 {
 
 h3 {
   font-size: $sans-s6;
-  margin-top: $gx6;
+  margin-top: $grid-6;
   font-weight: 600;
 }
 
 h2 + h3 {
-  margin-top: $gx2;
+  margin-top: $grid-2;
 }
 
 h4 {
@@ -96,7 +96,7 @@ h4 {
   font-weight: 600;
 
   & + h4 {
-    margin-top: $gx1;
+    margin-top: $grid-1;
   }
 }
 
@@ -121,7 +121,7 @@ p {
   font-size: $sans-s5;
   font-weight: 300;
   line-height: $leading-body;
-  padding-bottom: $gx2;
+  padding-bottom: $grid-2;
 }
 
 //spacing after block elements
@@ -130,7 +130,7 @@ p, ul, ol, pre {
   & + h2,
   & + h3,
   & + h4,
-  & + h5 { margin-top: $gx4; }
+  & + h5 { margin-top: $grid-4; }
 }
 
 // constrain to docs content

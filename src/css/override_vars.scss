@@ -55,27 +55,30 @@ $font-sans:                  '18Franklin', system, -apple-system, BlinkMacSystem
 $font-serif:                 'Georgia', 'Cambria', 'Times New Roman', 'Times', serif;
 $font-mono:                  'Roboto Mono', 'Bitstream Vera Sans Mono', 'Consolas', 'Courier', monospace;
 
-// grid
-$grid: 8; // unitless for some calculations
-$grid-px: 8px;
-$grid-type: $grid * 2;
-$grid-type-px: #{$grid-type}px;
+// spacing scale and grid
+// spacing is calculated on multiples of a base grid (here, 8px)
 
-$gx05: #{($grid / 2 / $grid-type)}rem;    // 4px
-$gx1: #{($grid / $grid-type)}rem;        // 8px
-$gx2: #{($grid * 2 / $grid-type)}rem;   // 16px
-$gx3: #{($grid * 3 / $grid-type)}rem;   // 24px
-$gx4: #{($grid * 4 / $grid-type)}rem;   // 32px
-$gx5: #{($grid * 5 / $grid-type)}rem;   // 40px
-$gx6: #{($grid * 6 / $grid-type)}rem;   // 48px
-$gx7: #{($grid * 7 / $grid-type)}rem;   // 56px
-$gx8: #{($grid * 8 / $grid-type)}rem;   // 64px
-$gx9: #{($grid * 9 / $grid-type)}rem;   // 72px
-$gx10: #{($grid * 10 / $grid-type)}rem; // 80px
+$grid-base: 8; // unitless for some calculations
+$grid-base-px: 8px; // the same value in px
+$grid-type: $grid-base * 2; // establishes the base type size (16px) for rem calculations; unitless here
+$grid-type-px: #{$grid-type}px; // the base type size in px
+
+// calculates multiples of the base grid in units of rem
+$grid-05: #{($grid-base / 2 / $grid-type)}rem;    // 4px
+$grid-1: #{($grid-base / $grid-type)}rem;        // 8px
+$grid-2: #{($grid-base * 2 / $grid-type)}rem;   // 16px
+$grid-3: #{($grid-base * 3 / $grid-type)}rem;   // 24px
+$grid-4: #{($grid-base * 4 / $grid-type)}rem;   // 32px
+$grid-5: #{($grid-base * 5 / $grid-type)}rem;   // 40px
+$grid-6: #{($grid-base * 6 / $grid-type)}rem;   // 48px
+$grid-7: #{($grid-base * 7 / $grid-type)}rem;   // 56px
+$grid-8: #{($grid-base * 8 / $grid-type)}rem;   // 64px
+$grid-9: #{($grid-base * 9 / $grid-type)}rem;   // 72px
+$grid-10: #{($grid-base * 10 / $grid-type)}rem; // 80px
 
 // widths
-$nav-width:                  $grid-px * 75; // 600px;
-$site-max-width:            $grid-px * 130; // 1040px;
+$nav-width:                  $grid-base-px * 75; // 600px;
+$site-max-width:            $grid-base-px * 130; // 1040px;
 $text-max-width:             36em;
 
 // type scale

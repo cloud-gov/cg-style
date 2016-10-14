@@ -11,14 +11,14 @@
     background-color: transparent;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: auto $gx4;
+    background-size: auto $grid-4;
     display: inline-block;
-    height: $gx4;
-    margin: 0 0 0 $gx4;
+    height: $grid-4;
+    margin: 0 0 0 $grid-4;
     position: relative;
     text-align: center;
     top: -5px;
-    width: $gx4;
+    width: $grid-4;
 
     &:hover {
       background-image: url('#{$static-img-path}/i-search-hover.png');
@@ -37,7 +37,7 @@
     &.is-hidden {
       background-image: url('#{$static-img-path}/close.png');
       background-image: url('#{$static-img-path}/close.svg');
-      background-size: $gx4 $gx4;
+      background-size: $grid-4 $grid-4;
       right: -40px;
       top: -5px;
       z-index: 999;

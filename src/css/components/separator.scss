@@ -9,8 +9,8 @@ $center-piece-size: 12px;
   align-items: center;
   display: flex;
   justify-content: space-between;
-  margin-bottom: $gx3;
-  margin-top: $gx3;
+  margin-bottom: $grid-3;
+  margin-top: $grid-3;
   width: 100%;
 
   &:before,
@@ -42,8 +42,8 @@ $center-piece-size: 12px;
   flex-grow: 0;
   flex-shrink: 1;
   font-size: $center-piece-size;
-  margin-left: $gx2;
-  margin-right: $gx2;
+  margin-left: $grid-2;
+  margin-right: $grid-2;
   order: 2;
   width: $center-piece-size;
 }
