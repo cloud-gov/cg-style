@@ -18,9 +18,15 @@ strong {
 }
 
 // constrain to docs content
-.usa-content.content p strong,
+p strong,
 .usa-content.content li strong {
   font-size: $sans-s5;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  &:first-child {
+    margin-top: 0;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -79,9 +85,6 @@ h3 {
   font-size: $sans-s6;
   margin-top: $gx6;
   font-weight: 600;
-  &:first-child {
-    margin-top: 0;
-  }
 }
 
 h2 + h3 {
@@ -106,9 +109,6 @@ p {
   font-family: $font-serif;
   font-size: $serif-s4;
   line-height: $leading-body;
-  &:first-child {
-    margin-top: 0;
-  }
 
   @include media($medium-screen) {
     font-size: $serif-s5;
