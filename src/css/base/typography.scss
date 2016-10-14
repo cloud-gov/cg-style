@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: $sans-s7;
   line-height: $leading-hed;
-  font-weight: 200;
+  font-weight: 300;
 
   @include media($medium-screen) {
     font-size: $sans-s8;
@@ -67,7 +67,7 @@ h1 {
 
 h2 {
   font-size: $sans-s6;
-  font-weight: 200;
+  font-weight: 300;
   margin-bottom: $gx2;
 
   @include media($medium-screen) {
@@ -119,7 +119,7 @@ p {
   color: $color-mediumgray;
   font-family: $font-sans;
   font-size: $sans-s5;
-  font-weight: 200;
+  font-weight: 300;
   line-height: $leading-body;
   padding-bottom: $gx2;
 }

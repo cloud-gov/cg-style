@@ -20,7 +20,7 @@ $chevron-size: 4.865rem;
   }
 
   h3 {
-    font-weight: 200;
+    font-weight: 300;
   }
 
   @include media($medium-screen) {
@@ -38,7 +38,7 @@ $chevron-size: 4.865rem;
     }
 
     h1, h2, h3, h4 {
-      font-weight: 200;
+      font-weight: 300;
     }
   }
 }
