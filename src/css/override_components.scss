@@ -37,7 +37,7 @@
   .usa-disclaimer-stage {
     margin-top: 0;
 
-  @include media($medium-screen) {
+    @include media($medium-screen) {
       margin-right: -33px;
     }
   }

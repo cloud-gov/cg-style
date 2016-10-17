@@ -10,7 +10,9 @@
   font-weight: bold;
   text-decoration: underline;
 
-  &:visited { color: $color-primary; }
+  &:visited {
+    color: $color-primary;
+  }
 
   &:hover {
     color: darken($color-primary, 20%);
@@ -20,12 +22,16 @@
 
 // Extra specificity due to WDS.
 .action {
-  &.action-primary { font-size: $sans-s2; }
+  &.action-primary {
+    font-size: $sans-s2;
+  }
 
   &.action-cautious {
     background-color: $color-gray;
 
-    &:hover { color: $color-primary; }
+    &:hover {
+      color: $color-primary;
+    }
 
     &.action-link {
       background-color: transparent;
@@ -38,7 +44,9 @@
       box-shadow: inset 0 0 0 1px $color-gray;
       font-size: $sans-s2;
 
-      &:hover { box-shadow: inset 0 0 0 1px $color-primary; }
+      &:hover {
+        box-shadow: inset 0 0 0 1px $color-primary;
+      }
     }
   }
 
