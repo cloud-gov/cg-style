@@ -159,6 +159,16 @@ blockquote {
   margin-right: 0;
 }
 
+.big-quote {
+    padding-top: $grid-2;
+
+  p {
+    font-family: $font-sans;
+    font-weight: 400;
+    line-height: 1.65; // do we need a new var for this loose leading?
+  }
+}
+
 code {
   background-color: $color-cream;
   border-radius: $rounded;

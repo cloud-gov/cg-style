@@ -4,12 +4,12 @@
 $chevron-size: 4.865rem;
 
 .section {
-  padding-bottom: 12.5rem;
+  padding-bottom: 10rem;
   padding-top: 2.75rem;
 }
 
 .section-middle {
-  padding-bottom: 12.2rem;
+  padding-bottom: 10rem;
   padding-top: 1.5rem;
 }
 
@@ -43,7 +43,20 @@ $chevron-size: 4.865rem;
   }
 }
 
-.section-dark {
+.section-content,
+.section-dark,
+.section-blue,
+.section-red {
+  h1 + p {
+    margin-top: $grid-5;
+  }
+}
+
+.section-dark,
+.section-blue,
+.section-red,
+.section-cream
+ {
   color: $color-white;
   position: relative;
 
@@ -52,7 +65,6 @@ $chevron-size: 4.865rem;
   }
 
   &:before {
-    background-image: url('#{$static-img-path}/chevron-top.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     content: '';
@@ -61,6 +73,73 @@ $chevron-size: 4.865rem;
     position: absolute;
     top: -$chevron-size;
     width: 100%;
+  }
+}
+
+.section-dark {
+  background-color: $color-textblack;
+
+  &:before {
+    background-image: url('#{$static-img-path}/chevron-top.svg');
+  }
+}
+
+.section-blue {
+  background-color: $color-blue;
+
+  a,
+  a:active,
+  a:hover,
+  a:visited {
+    color: $color-white;
+    text-decoration: underline;
+  }
+
+  &:before {
+    background-image: url('#{$static-img-path}/chevron-top-blue.svg');
+  }
+}
+
+.section-cream {
+  background-color: $color-cream;
+  color: $color-textblack;
+
+  strong {
+    color: $color-red;
+    display: block;
+    font-weight: 400;
+    margin-bottom: $grid-2;
+    margin-top: $grid-05;
+  }
+
+  span {
+    font-weight: 600;
+    color: $color-textblack;
+  }
+
+  a,
+  a:active,
+  a:hover,
+  a:visited {
+    color: $color-red;
+    text-decoration: underline;
+  }
+
+  a:active,
+  a:hover {
+    color: $color-textblack;
+  }
+
+  &:before {
+    background-image: url('#{$static-img-path}/chevron-top-cream.svg');
+  }
+}
+
+.section-red {
+  background-color: $color-red;
+
+  &:before {
+    background-image: url('#{$static-img-path}/chevron-top-red.svg');
   }
 }
 
@@ -116,20 +195,19 @@ $chevron-size: 4.865rem;
   padding-bottom: 6.5rem;
 
   &:not(.section-first) {
-    background-color: $color-primary-darkest;
     margin-top: -4.5rem;
     padding-top: $chevron-size;
   }
 
   &:not(.section-first) {
     &:before {
-      background-image: url('#{$static-img-path}/chevron-top-inverse.svg');
+      background-image: url('#{$static-img-path}/chevron-top-inverse-black.svg');
       top: -$chevron-size;
     }
   }
 
   &:after {
-    background-image: url('#{$static-img-path}/chevron-bottom-inverse.svg');
+    background-image: url('#{$static-img-path}/chevron-bottom-inverse-black.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     bottom: 0;
