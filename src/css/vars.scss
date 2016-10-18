@@ -2,3 +2,8 @@
 // Path
 $static-font-path: '../fonts' !default;
 $static-img-path: '../img' !default;
+
+// Grid overrides
+$column: 48px !global;
+$gutter: 32px !global;
+$max-width: 928px !global;

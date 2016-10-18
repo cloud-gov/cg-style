@@ -218,7 +218,7 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Cloud.gov Pattern Library<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"-preview"</span>&gt;</span>
 
 <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 
@@ -230,20 +230,10 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-c9d17694984f26226c47f119c65d1ec2-panel-view">
     <code class="Code Code--lang-">
-        <pre><span class="xml"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">media</span>=<span class="hljs-string">"all"</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ path '/css/cloudgov-style-min.css' }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">media</span>=<span class="hljs-string">"all"</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ path '/css/main.css' }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Cloud.gov Pattern Library<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-
+        <pre><span class="xml"></span><span class="hljs-template-tag">{{#&gt; @<span class="hljs-name">preview-layout</span> }}</span><span class="xml">
 </span><span class="hljs-template-variable">{{{ <span class="hljs-builtin-name">yield</span> }}</span><span class="xml">}
-
-<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></span></pre>
+</span><span class="hljs-template-tag">{{/@<span class="hljs-name">preview-layout</span>}}</span><span class="xml">
+</span></pre>
     </code>
 </div>
 
@@ -296,6 +286,15 @@
             <span class="Meta-value">docs/src/components/_preview.hbs</span>
         </li>
         
+        <li class="Meta-item">
+            <strong class="Meta-key">References <em class="Meta-count">(1)</em>:</strong>
+            <span class="Meta-value Meta-value--linkList">
+            
+                <a href="preview-layout.html">@<span>preview-layout</span></a>
+            
+            </span>
+        </li class="Meta-item">
+        
         
     </ul>
 </div>
@@ -342,6 +341,30 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="button.html" data-pjax>
                 <span>Button</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="grid.html" data-pjax>
+                <span>Grid</span>
                 
 
 <div class="Status Status--unlabelled">
