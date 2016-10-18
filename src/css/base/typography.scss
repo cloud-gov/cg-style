@@ -165,7 +165,7 @@ blockquote {
   p {
     font-family: $font-sans;
     font-weight: 400;
-    line-height: 1.65; // do we need a new var for this loose leading?
+    line-height: $leading-display;
   }
 }
 
