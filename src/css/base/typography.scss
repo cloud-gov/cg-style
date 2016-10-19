@@ -159,6 +159,16 @@ blockquote {
   margin-right: 0;
 }
 
+.big-quote {
+  padding-top: $grid-2;
+
+  p {
+    font-family: $font-sans;
+    font-weight: 400;
+    line-height: $leading-display;
+  }
+}
+
 code {
   background-color: $color-cream;
   border-radius: $rounded;

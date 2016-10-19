@@ -46,7 +46,8 @@
   a:active,
   a:hover,
   a:visited {
-    color: $color-disclaimer-link;
+    color: $color-blue;
+    text-decoration: underline;
   }
 }
 

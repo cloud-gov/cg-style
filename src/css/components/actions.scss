@@ -10,9 +10,7 @@
   font-weight: bold;
   text-decoration: underline;
 
-  &:visited {
-    color: $color-primary;
-  }
+  &:visited { color: $color-primary; }
 
   &:hover {
     color: darken($color-primary, 20%);
@@ -29,9 +27,7 @@
   &.action-cautious {
     background-color: $color-gray;
 
-    &:hover {
-      color: $color-primary;
-    }
+    &:hover { color: $color-primary; }
 
     &.action-link {
       background-color: transparent;
