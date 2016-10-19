@@ -18,12 +18,15 @@ $color-heading:     $color-primary-alt-light;
   margin: 0 auto;
   max-width: $site-max-width;
   position: relative;
+
+  @include media($medium-screen) {
+    padding: $grid-4 $grid-2;
+  }
 }
 
 .sidenav {
   /* stylelint-disable plugin/declaration-block-max-declarations */
   align-self: stretch;
-  background-color: $color-primary-darkest;
   bottom: 0;
   display: none;
   flex-grow: 0;
@@ -65,15 +68,12 @@ $color-heading:     $color-primary-alt-light;
   width: 100%;
 
   a {
-    border-left: 4px solid transparent;
-    color: $color-light-font;
-    line-height: 1.2;
+    color: $color-blue;
+    line-height: $leading-hed;
     word-wrap: break-word;
 
     &:hover {
       background-color: transparent;
-      border-left: 4px solid $color-highlight;
-      color: $color-highlight;
 
       .sidenav-arrow {
         border-color: $color-highlight;
@@ -83,38 +83,28 @@ $color-heading:     $color-primary-alt-light;
 
   li {
     border-top: 0;
-    font-size: 0.8rem;
+    font-size: $sans-s5;
     list-style: none;
   }
 
 }
 
 .sidenav-entity.sidenav-entity {
-  background-color: $color-background;
-  color: white;
+  color: $color-blue;
 }
 
 .sidenav-header.sidenav-header {
-  background-color: $color-background;
-  border-top: 1px solid $color-level-2-bg;
   margin-bottom: 0;
 
   > a {
-    background-color: $color-level-2-bg;
-    margin-bottom: 1px;
-    padding: 0 0 0 1rem;
 
-    &:hover {
-      background-color: $color-level-2-bg;
-      color: $color-highlight;
-      padding: 0 0 0 1rem;
-    }
+    &:hover {    }
   }
 }
 
 .sidenav-header-text {
   border-left: 4px solid transparent;
-  color: $color-heading;
+  color: $color-blue;
   display: inline-block;
   font-size: .7rem;
   letter-spacing: .15em;
@@ -124,10 +114,8 @@ $color-heading:     $color-primary-alt-light;
 }
 
 .sidenav-level-one {
-  background-color: $color-background;
 
   > li {
-    background-color: $color-level-2-bg;
     margin-bottom: 4px; //.2rem displaying inconsistently...
   }
 }
@@ -136,8 +124,8 @@ $color-heading:     $color-primary-alt-light;
   border-right: 1px solid white;
   border-bottom: 1px solid white;
   float: right;
-  height: 8px; //.6em is inconsistent
-  width: 8px; //.6em is inconsistent
+  height: $grid-1;
+  width: $grid-1;
 }
 
 .sidenav-arrow-right {
@@ -151,19 +139,12 @@ $color-heading:     $color-primary-alt-light;
 }
 
 .sidenav-active {
-  background-color: $color-highlight;
-  color: $color-background;
 
   > a {
-    color: $color-background;
-    background-color: $color-highlight;
     font-weight: 800;
     text-decoration: none;
 
-    &:hover {
-      color: $color-background;
-      background-color: $color-highlight;
-    }
+    &:hover {}
   }
 
   /* stylelint-disable declaration-no-important */
@@ -174,24 +155,18 @@ $color-heading:     $color-primary-alt-light;
 }
 
 .sidenav-level-two {
-  background-color: $color-background;
 
   > li {
-    background-color: $color-background;
     margin-bottom: 0;
 
     a {
-      padding-left: 2rem;
 
-      &:hover {
-        padding-left: 2rem;
-      }
+      &:hover {      }
     }
   }
 }
 
 .sidenav-level-three {
-  background-color: $color-background;
 
   /* Removes weird margin in list for third level */
   margin-bottom: 0;
@@ -200,26 +175,19 @@ $color-heading:     $color-primary-alt-light;
   padding-left: 0;
 
   > li {
-    background-color: $color-level-3-bg;
     margin-bottom: 1px;
 
     a {
-      padding-left: 3rem;
 
-      &:hover {
-        padding-left: 3rem;
-      }
+      &:hover {      }
     }
   }
 }
 
 // extra specificity to override level 2 li bg
 .marketplace {
-  background-color: $color-background;
 
   > a {
-    &:hover {
-      padding-left: 2rem;
-    }
+    &:hover {    }
   }
 }

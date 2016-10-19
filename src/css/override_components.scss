@@ -29,7 +29,8 @@
 .usa-disclaimer {
   // Requires being overridden because uswds sets a different root font-size on
   // <html> which effects all rem units.
-  color: $color-textblack;
+  background-color: $color-textblack;
+  color: $color-white;
   font-size: $sans-s2;
   padding-top: 9px;
   font-weight: 600;
@@ -46,8 +47,9 @@
   a:active,
   a:hover,
   a:visited {
-    color: $color-blue;
+    color: $color-lightgray;
     text-decoration: underline;
+    font-weight: 400;
   }
 }
 
@@ -58,24 +60,24 @@
 
 .usa-sidenav-list {
   a {
-    padding: .85rem .85rem .85rem 1rem;
+    padding: 0;
 
     /* stylelint-disable selector-no-qualifying-type */
     &:hover,
     &:active,
     &.usa-current {
-      padding: .85rem .85rem .85rem 1rem;
+      padding: 0;
     }
   }
 
   @include media($medium-screen) {
     a {
-      padding: .85rem .85rem .85rem 1.8rem;
+      padding: 0;
 
       &:hover,
       &.usa-current,
       &:active {
-        padding: .85rem .85rem .85rem 1.8rem;
+        padding: 0;
       }
     }
   }
@@ -83,23 +85,23 @@
 
 .usa-sidenav-sub_list {
   a {
-    padding-left: 2rem;
+    padding-left: 0;
 
     &:hover,
     &.usa-current,
     &:active {
-      padding-left: 2rem;
+      padding-left: 0;
     }
   }
 
   @include media($medium-screen) {
     a {
-      padding-left: 3rem;
+      padding-left: 0;
 
       &:hover,
       &.usa-current,
       &:active {
-        padding-left: 3rem;
+        padding-left: 0;
       }
       /* stylelint-enable */
     }
@@ -130,7 +132,7 @@ button,
 
 a:focus,
 input:focus {
-  box-shadow: 0 0 0 4 rgba(255, 221, 0, 0.55);
+  box-shadow: 0 0 0 4px rgba(255, 221, 0, 0.55);
   outline: none;
 }
 

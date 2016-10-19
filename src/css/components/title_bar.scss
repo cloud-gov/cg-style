@@ -16,6 +16,10 @@
       margin-left: 0;
     }
   }
+
+  @include media($medium-screen) {
+    display: none;
+  }
 }
 
 .title_bar-title {
