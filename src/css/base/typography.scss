@@ -159,7 +159,6 @@ blockquote {
   margin-right: 0;
 }
 
-<<<<<<< HEAD
 .big-quote {
   padding-top: $grid-2;
 
@@ -180,30 +179,6 @@ code {
 
 .usa-content.content code {
   font-size: $mono-s4;
-}
-
-pre {
-  background-color: $color-cream;
-  border-radius: $rounded;
-
-  code {
-    background-color: transparent;
-    padding: 0;
-    line-height: $leading-body;
-    display: inline;
-  }
-=======
-code {
-  background-color: $color-cream;
-  border-radius: $rounded;
-  display: inline-block;
-  line-height: $leading-cap;
-  padding: 2px 6px;
-}
-
-.usa-content.content code {
-  font-size: $mono-s4;
->>>>>>> master
 }
 
 pre {
