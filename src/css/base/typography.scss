@@ -3,83 +3,155 @@
 
 body {
   color: $color-base;
-  font-weight: 300;
-  line-height: 1.7333333;
+  font-weight: 400;
+  line-height: $leading-body;
+  font-size: $grid-type-px;
+}
+
+a {
+  text-decoration: none;
+}
+
+strong {
+  font-family: $font-sans;
+  font-weight: 600;
+}
+
+// constrain to docs content
+p strong,
+.usa-content.content li strong {
+  font-size: $sans-s5;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  &:first-child {
+    margin-top: 0;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-sans;
-  font-weight: 300;
+  font-weight: 400;
   margin: 0;
 
   & + p {
-    margin-top: 0.5rem;
+    margin-top: $grid-1;
   }
 
   & + .text_block {
-    margin-top: 1.5rem;
+    margin-top: $grid-3;
+  }
+
+  // using this style until I have an italic solution
+  em, i {
+    font-style: normal;
+    color: $color-red;
   }
 }
 
 h1 {
-  font-size: 2rem;
-  line-height: 1.19;
+  font-size: $sans-s7;
+  line-height: $leading-hed;
+  font-weight: 300;
 
   @include media($medium-screen) {
-    font-size: 2.75rem;
-    line-height: 1.18;
+    font-size: $sans-s8;
   }
 
   & + p {
-    margin-top: 2rem;
+    margin-top: $grid-3;
+  }
+
+  & + h2 {
+    margin-top: $grid-2;
   }
 
   & + h4 {
-    margin-top: 1rem;
+    margin-top: $grid-3;
   }
 }
 
 h2 {
-  font-size: 1.85rem;
+  font-size: $sans-s6;
+  font-weight: 300;
+  margin-bottom: $grid-2;
 
   @include media($medium-screen) {
-    font-size: 2.125rem;
+    font-size: $sans-s7;
   }
 }
 
 h3 {
-  font-size: 1.5rem;
-  margin-top: .5em;
+  font-size: $sans-s6;
+  margin-top: $grid-6;
   font-weight: 600;
 }
 
+h2 + h3 {
+  margin-top: $grid-2;
+}
+
 h4 {
-  font-size: 1.1875rem;
+  font-size: $sans-s4;
+  font-weight: 600;
 
   & + h4 {
-    margin-top: .5rem;
+    margin-top: $grid-1;
   }
 }
 
 h5 {
-  font-size: 1rem;
+  font-size: $sans-s2;
+  font-weight: 600;
 }
 
 p {
   font-family: $font-serif;
-  font-size: 1.05rem;
-  line-height: 1.75;
+  font-size: $serif-s4;
+  line-height: $leading-body;
 
+  @include media($medium-screen) {
+    font-size: $serif-s5;
+  }
+}
+
+.page-dek {
+  color: $color-mediumgray;
+  font-family: $font-sans;
+  font-size: $sans-s5;
+  font-weight: 300;
+  line-height: $leading-body;
+  margin-bottom: 0;
+  padding-bottom: $grid-2;
+}
+
+h1 + .page-dek {
+  margin-top: $grid-1;
+}
+
+//spacing after block elements
+p, ul, ol, pre {
+  & + h1,
   & + h2,
   & + h3,
   & + h4,
-  & + h5 {
-    margin-top: 2rem;
-  }
+  & + h5 { margin-top: $grid-4; }
+}
 
-  @include media($medium-screen) {
-    font-size: 0.9375rem;
+// constrain to docs content
+.usa-content.content p,
+.usa-content.content li {
+  a {
+    text-decoration: none;
+    border-bottom: 1px solid;
+    padding-bottom: 2px;
   }
+}
+
+// constrain to docs content
+.usa-content.content li {
+  font-family: $font-serif;
+  font-size: $serif-s5;
 }
 
 blockquote {
@@ -87,12 +159,26 @@ blockquote {
   margin-right: 0;
 }
 
-a {
-  text-decoration: none;
+code {
+  background-color: $color-cream;
+  border-radius: $rounded;
+  display: inline-block;
+  line-height: $leading-cap;
+  padding: 2px 6px;
 }
 
-p {
-  a {
-    text-decoration: underline;
+.usa-content.content code {
+  font-size: $mono-s4;
+}
+
+pre {
+  background-color: $color-cream;
+  border-radius: $rounded;
+
+  code {
+    background-color: transparent;
+    padding: 0;
+    line-height: $leading-body;
+    display: inline;
   }
 }

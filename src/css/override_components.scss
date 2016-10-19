@@ -1,3 +1,5 @@
+@import 'override_vars.scss';
+
 .usa-nav-secondary {
   @include media($medium-screen) {
     position: static;
@@ -8,7 +10,6 @@
     margin-top: 1rem;
 
     @include media($medium-screen) {
-
       margin-top: 0;
       margin-bottom: 0;
     }
@@ -28,12 +29,17 @@
 .usa-disclaimer {
   // Requires being overridden because uswds sets a different root font-size on
   // <html> which effects all rem units.
-  color: $color-disclaimer-text;
-  font-size: 0.9rem;
-  padding-top: 4px;
+  color: $color-textblack;
+  font-size: $sans-s2;
+  padding-top: 9px;
+  font-weight: 600;
 
   .usa-disclaimer-stage {
     margin-top: 0;
+
+    @include media($medium-screen) {
+      margin-right: -33px;
+    }
   }
 
   a,
@@ -45,7 +51,7 @@
 }
 
 .usa-disclaimer-official img {
-  margin-top: 7px;
+  margin-top: 3px;
   width: 1rem;
 }
 
@@ -115,7 +121,7 @@ button,
 [type='submit'],
 [type='reset'],
 [type='image'] {
-  font-size: 1rem;
+  font-size: 0.85rem;
   min-width: 6rem;
   padding: 0.75rem 1rem;
   border-radius: 2px;
@@ -128,35 +134,35 @@ input:focus {
 }
 
 .usa-search {
-
   background-color: #ffffff;
+  border-bottom: 1px solid $color-primary;
+  height: 36px;
+  overflow: auto;
+  padding: 0;
   position: static;
   width: 100%;
+  max-width: 40em;
   z-index: 1;
 
-  @include media($large-screen) {
-
+  @include media($medium-screen) {
     position: absolute;
-    top: -15px;
-    width: 93%;
+    top: 0;
+    right: 0;
   }
 
   @include media($nav-width) {
-
     position: absolute;
     top: 0;
   }
 
   [type='search'] {
-
-    border-top: none;
-    border-left: none;
-    border-radius: 0;
-    border-color: $color-primary;
+    border: none;
     color: $color-gray;
-    font-weight: 300;
-    font-size: 1.2rem;
+    font-weight: 400;
+    font-size: $sans-s5;
+    padding: 0;
     width: 100%;
+    height: (43rem / $grid-type);
 
     &:focus {
       box-shadow: none;
@@ -166,20 +172,14 @@ input:focus {
   }
 
   [type='submit'] {
-
     background-color: #ffffff;
     background-image: url('#{$static-img-path}/search.png');
     background-image: url('#{$static-img-path}/search.svg');
-    height: 2.2rem;
+    height: $grid-4;
+    min-width: 0;
     position: absolute;
-    right: 15px;
-    top: 25px;
-    width: 3rem;
-
-    @include media($medium-screen) {
-      top: 10px;
-      right: 0;
-    }
-
+    right: 0;
+    top: $grid-05;
+    width: $grid-4;
   }
 }

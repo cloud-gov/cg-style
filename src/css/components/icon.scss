@@ -9,6 +9,10 @@
     max-height: 3.1rem;
     max-width: none;
   }
+
+  & + h3 {
+    margin-top: $grid-3;
+  }
 }
 
 .icon {
