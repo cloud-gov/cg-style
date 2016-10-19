@@ -123,14 +123,15 @@ p {
   }
 }
 
-h1 + p,
+.usa-content.content h1 + p, // scope to docs
 .page-dek {
-  color: $color-mediumgray;
+  color: $color-blue;
   font-family: $font-sans;
-  font-size: $sans-s5;
+  font-size: $sans-s6;
   font-weight: 300;
   line-height: $leading-body;
   margin-bottom: 0;
+  margin-top: $grid-2;
   padding-bottom: $grid-2;
 }
 
