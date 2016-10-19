@@ -76,7 +76,7 @@ $color-heading:     $color-primary-alt-light;
       background-color: transparent;
 
       .sidenav-arrow {
-        border-color: $color-highlight;
+        border-color: $color-textblack;
       }
     }
   }
@@ -117,15 +117,24 @@ $color-heading:     $color-primary-alt-light;
 
   > li {
     margin-bottom: 4px; //.2rem displaying inconsistently...
+
+    > a .sidenav-arrow {
+      display: block;
+    }
+
+    a:hover {
+      color: $color-textblack;
+    }
   }
 }
 
 .sidenav-arrow {
-  border-right: 1px solid white;
-  border-bottom: 1px solid white;
+  border-right: 1px solid $color-blue;
+  border-bottom: 1px solid $color-blue;
   float: right;
   height: $grid-1;
   width: $grid-1;
+  display: none;
 }
 
 .sidenav-arrow-right {
@@ -150,7 +159,7 @@ $color-heading:     $color-primary-alt-light;
 
   /* stylelint-disable declaration-no-important */
   .sidenav-arrow {
-    border-color: $color-background !important; // prevents hover re-color when active
+    border-color: $color-red !important; // prevents hover re-color when active
   }
   /* stylelint-enable */
 }
@@ -161,7 +170,7 @@ $color-heading:     $color-primary-alt-light;
     position: relative;
 
     &:before {
-      background-color: $color-blue;
+      background-color: $color-lightgray;
       bottom: 0;
       content: '';
       display: block;
@@ -220,6 +229,10 @@ $color-heading:     $color-primary-alt-light;
   a {
     font-size: $sans-s3;
     font-weight: 600;
+
+    &:before {
+      background-color: $color-blue;
+    }
   }
 
   a:hover {

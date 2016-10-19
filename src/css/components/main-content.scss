@@ -5,10 +5,10 @@
 
 .content {
   background: $color-white;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 2.3125rem;
-  padding-bottom: 2rem;
+  padding-left: $grid-3;
+  padding-right: $grid-3;
+  padding-top: $grid-4;
+  padding-bottom: $grid-4;
 }
 
 .content-dashboard {
