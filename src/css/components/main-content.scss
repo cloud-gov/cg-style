@@ -5,7 +5,11 @@
 
 .content {
   background: $color-white;
-  padding: $grid-4;
+  padding: $grid-4 $grid-2 $grid-2;
+
+  @include media($medium-screen) {
+    padding: $grid-4;
+  }
 }
 
 .content-dashboard {

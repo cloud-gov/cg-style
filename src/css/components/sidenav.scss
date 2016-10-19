@@ -27,21 +27,25 @@ $color-heading:     $color-primary-alt-light;
 .sidenav {
   /* stylelint-disable plugin/declaration-block-max-declarations */
   align-self: stretch;
+  background-color: $color-cream;
   bottom: 0;
   display: none;
   flex-grow: 0;
   flex-shrink: 0;
   height: 100%;
-  padding: 0;
+  padding: $grid-3;
   position: absolute;
   top: 0;
-  width: $width-nav-sidebar;
+  width: 100%;
   z-index: 1;
   /* stylelint-enable */
 
   @include media($medium-screen + $width-nav-sidebar) {
+    background-color: transparent;
     display: block;
+    padding: 0;
     position: static;
+    width: $width-nav-sidebar;
   }
 
   &.active {
@@ -210,11 +214,6 @@ $color-heading:     $color-primary-alt-light;
 
   > li {
     margin-bottom: 0;
-
-    a {
-
-      &:hover {      }
-    }
   }
 }
 
@@ -263,11 +262,6 @@ $color-heading:     $color-primary-alt-light;
 
   > li {
     margin-bottom: 0;
-
-    a {
-
-      &:hover {      }
-    }
   }
 }
 

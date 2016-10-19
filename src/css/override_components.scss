@@ -58,25 +58,12 @@
   margin-left: -$grid-1;
 
   a {
-    padding: 0 0 $grid-2 0;
+    padding: $grid-1;
 
-    /* stylelint-disable selector-no-qualifying-type */
     &:hover,
-    &:active,
-    &.usa-current {
+    &.usa-current,
+    &:active {
       padding: $grid-1;
-    }
-  }
-
-  @include media($medium-screen) {
-    a {
-      padding: $grid-1;
-
-      &:hover,
-      &.usa-current,
-      &:active {
-        padding: $grid-1;
-      }
     }
   }
 }
@@ -91,21 +78,6 @@
     &:active {
       padding: $grid-1;
       padding-left: $grid-2;
-    }
-  }
-
-  @include media($medium-screen) {
-    a {
-      padding: $grid-1;
-      padding-left: $grid-2;
-
-      &:hover,
-      &.usa-current,
-      &:active {
-        padding: $grid-1;
-        padding-left: $grid-2;
-    }
-      /* stylelint-enable */
     }
   }
 }
