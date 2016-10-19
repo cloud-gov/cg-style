@@ -20,13 +20,9 @@
 
 // Extra specificity due to WDS.
 .action {
-<<<<<<< HEAD
-  &.action-primary { font-size: $sans-s2; }
-=======
   &.action-primary {
     font-size: $sans-s2;
   }
->>>>>>> master
 
   &.action-cautious {
     background-color: $color-gray;
@@ -44,13 +40,9 @@
       box-shadow: inset 0 0 0 1px $color-gray;
       font-size: $sans-s2;
 
-<<<<<<< HEAD
-      &:hover { box-shadow: inset 0 0 0 1px $color-primary; }
-=======
       &:hover {
         box-shadow: inset 0 0 0 1px $color-primary;
       }
->>>>>>> master
     }
   }
 
