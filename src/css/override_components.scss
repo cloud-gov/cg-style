@@ -85,19 +85,6 @@
   a {
     padding: $grid-1;
     padding-left: $grid-2;
-    position: relative;
-    margin-left: 9px;
-
-    &:before {
-      background-color: $color-blue;
-      bottom: 0;
-      content: '';
-      display: block;
-      left: 0;
-      position: absolute;
-      top: 0;
-      width: $grid-05;
-    }
 
     &:hover,
     &.usa-current,
@@ -105,18 +92,6 @@
       padding: $grid-1;
       padding-left: $grid-2;
     }
-  }
-
-  li:first-child a:before {
-    border-top-left-radius: $grid-1;
-    border-top-right-radius: $grid-1;
-    top: .4em;
-  }
-
-  li:last-child a:before {
-    border-bottom-left-radius: $grid-1;
-    border-bottom-right-radius: $grid-1;
-    bottom: .6em;
   }
 
   @include media($medium-screen) {

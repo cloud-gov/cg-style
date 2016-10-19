@@ -141,7 +141,8 @@ $color-heading:     $color-primary-alt-light;
 .sidenav-active {
 
   > a {
-    font-weight: 800;
+    color: $color-textblack;
+    font-weight: 600;
     text-decoration: none;
 
     &:hover {}
@@ -155,6 +156,48 @@ $color-heading:     $color-primary-alt-light;
 }
 
 .sidenav-level-two {
+  a {
+    margin-left: 9px;
+    position: relative;
+
+    &:before {
+      background-color: $color-blue;
+      bottom: 0;
+      content: '';
+      display: block;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: $grid-05;
+    }
+  }
+
+  > li:first-child > a:before {
+    border-top-left-radius: $grid-1;
+    border-top-right-radius: $grid-1;
+    top: .1em;
+    margin-top: $grid-05;
+  }
+
+  > li:last-child > a:before {
+    border-bottom-left-radius: $grid-1;
+    border-bottom-right-radius: $grid-1;
+    bottom: .3em;
+  }
+
+  .sidenav-active {
+    > a {
+      color: $color-red;
+
+      &:hover {
+        color: $color-textblack;
+      }
+
+      &:before {
+        background-color: $color-red;
+      }
+    }
+  }
 
   > li {
     margin-bottom: 0;
@@ -174,8 +217,39 @@ $color-heading:     $color-primary-alt-light;
   margin-top: 0;
   padding-left: 0;
 
+  a {
+    font-size: $sans-s3;
+    font-weight: 600;
+  }
+
+  a:hover {
+    color: $color-textblack;
+
+    &:before {
+      background-color: $color-textblack;
+    }
+  }
+
+  li {
+    margin-top: 1px;
+  }
+
+  > li:first-child > a:before {
+    top: 0;
+  }
+
+  > li:last-child {
+    margin-bottom: $grid-2;
+
+    > a:before {
+     border-bottom-left-radius: $grid-1;
+     border-bottom-right-radius: $grid-1;
+     bottom: 0;
+   }
+  }
+
   > li {
-    margin-bottom: 1px;
+    margin-bottom: 0;
 
     a {
 

@@ -10,6 +10,14 @@ body {
 
 a {
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $color-black;
+  }
+  &:active {
+    color: $color-blue;
+  }
 }
 
 strong {
