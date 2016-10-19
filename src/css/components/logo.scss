@@ -3,5 +3,14 @@
 
 .logo {
   height: 41px;
-  width: 203px;
+  width: 144px;
+}
+
+.header-title a {
+  display: inline-block;
+  height: auto;
+  margin-left: -$grid-1;
+  margin-top: -$grid-1;
+  padding: $grid-1;
+  width: auto;
 }
