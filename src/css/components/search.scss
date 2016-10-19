@@ -1,3 +1,4 @@
+@import '../override_vars.scss';
 @import '../core.scss';
 
 .js-search-button {
@@ -10,19 +11,18 @@
     background-color: transparent;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: auto $hit-area / 2;
+    background-size: auto $grid-4;
     display: inline-block;
-    height: 3rem;
-    margin: 0;
+    height: $grid-4;
+    margin: 0 0 0 $grid-4;
     position: relative;
     text-align: center;
-    top: -15px;
-    width: 3rem;
+    top: -5px;
+    width: $grid-4;
 
     &:hover {
-
-      background-image: url('#{$static-img-path}/i-search-hover.svg');
       background-image: url('#{$static-img-path}/i-search-hover.png');
+      background-image: url('#{$static-img-path}/i-search-hover.svg');
       background-color: transparent;
       cursor: pointer;
     }
@@ -33,16 +33,20 @@
 
   }
 
-  @include media($large-screen) {
-
+  @include media($medium-screen) {
     &.is-hidden {
-
-      background-image: url('#{$static-img-path}/close.svg');
       background-image: url('#{$static-img-path}/close.png');
-      background-size: auto 3rem;
-      left: 10px;
-      top: 1px;
+      background-image: url('#{$static-img-path}/close.svg');
+      background-size: $grid-4 $grid-4;
+      right: -40px;
+      top: -5px;
       z-index: 999;
+      margin: 0;
+
+      &:hover {
+        background-image: url('#{$static-img-path}/close-blue.png');
+        background-image: url('#{$static-img-path}/close-blue.svg');
+      }
     }
   }
 }

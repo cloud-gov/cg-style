@@ -1,16 +1,16 @@
 
 @import '../core.scss';
 
-$primary-color: $color-primary-alt;
-$alt-color: $color-secondary;
+$primary-color: $color-blue;
+$alt-color: $color-red;
 $center-piece-size: 12px;
 
 .separator {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1.875rem;
-  margin-top: 1.875rem;
+  margin-bottom: $grid-3;
+  margin-top: $grid-3;
   width: 100%;
 
   &:before,
@@ -42,8 +42,8 @@ $center-piece-size: 12px;
   flex-grow: 0;
   flex-shrink: 1;
   font-size: $center-piece-size;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: $grid-2;
+  margin-right: $grid-2;
   order: 2;
   width: $center-piece-size;
 }

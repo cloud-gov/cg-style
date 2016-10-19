@@ -19,13 +19,19 @@ label {
   font-weight: 400;
 }
 
+input, select {
+  & + label {
+    margin-top: $grid-2;
+  }
+}
+
 [type='email'] {
   font-size: 1rem;
   padding: 0.7rem 0.7rem;
 }
 
 form [type='submit'] {
-  margin-top: 1.5rem;
+  margin-top: $grid-1;
 }
 
 // TODO remove extra specificity when WDS fixes theirs.

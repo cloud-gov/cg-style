@@ -1,14 +1,14 @@
 
 @import '../core.scss';
 
-$primary-color: $color-primary-alt;
-$alt-color: $color-secondary;
+$primary-color: $color-blue;
+$alt-color: $color-red;
 
 .hexagon {
   background: $primary-color;
   height: .65em;
-  margin-bottom: .5em;
-  margin-top: .51em;
+  margin-bottom: $grid-1;
+  margin-top: $grid-1;
   position: relative;
   width: 1em;
 }
