@@ -90,9 +90,13 @@ h2 {
 }
 
 h3 {
-  font-size: $sans-s6;
+  font-size: $sans-s5;
   margin-top: $grid-6;
   font-weight: 600;
+
+  @include media($medium-screen) {
+    font-size: $sans-s6;
+  }
 }
 
 h2 + h3 {
@@ -115,12 +119,8 @@ h5 {
 
 p {
   font-family: $font-serif;
-  font-size: $serif-s4;
+  font-size: $serif-s5;
   line-height: $leading-body;
-
-  @include media($medium-screen) {
-    font-size: $serif-s5;
-  }
 }
 
 .usa-content.content h1 + p, // scope to docs
