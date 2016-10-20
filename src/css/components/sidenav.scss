@@ -98,16 +98,17 @@ $color-heading:     $color-primary-alt-light;
 }
 
 .sidenav-header {
-  margin-top: $grid-2;
+  border-bottom: 1px solid $color-blue;
+  margin: $grid-2 $grid-1 $grid-1 $grid-1;
 }
 
 .sidenav-header-text {
-  color: $color-mediumgray-trans;
+  color: $color-blue;
   display: inline-block;
   font-size: $sans-s2;
   letter-spacing: .15em;
   line-height: $leading-hed;
-  padding: $grid-1;
+  padding: $grid-1 0;
   text-transform: uppercase;
 }
 
@@ -145,11 +146,17 @@ $color-heading:     $color-primary-alt-light;
   transform: rotate(45deg);
 }
 
-.sidenav-active {
+.sidenav-level-one .sidenav-active {
 
   > a {
     font-weight: 600;
     text-decoration: none;
+    cursor: default;
+
+    &:hover,
+    &:focus {
+      color: $color-blue;
+    }
   }
 }
 
