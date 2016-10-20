@@ -149,7 +149,6 @@ $color-heading:     $color-primary-alt-light;
 .sidenav-level-one .sidenav-active {
 
   > a {
-    font-weight: 600;
     text-decoration: none;
     cursor: default;
 
@@ -157,6 +156,11 @@ $color-heading:     $color-primary-alt-light;
     &:focus {
       color: $color-blue;
     }
+
+    .sidenav-arrow {
+      border-color: $color-blue;
+    }
+
   }
 }
 
