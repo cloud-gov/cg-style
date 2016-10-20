@@ -59,7 +59,7 @@
 
   a {
     padding: $grid-1;
-
+    /* stylelint-disable selector-no-qualifying-type */
     &:hover,
     &.usa-current,
     &:active {
@@ -79,6 +79,7 @@
       padding: $grid-1;
       padding-left: $grid-2;
     }
+    /* stylelint-enable */
   }
 }
 

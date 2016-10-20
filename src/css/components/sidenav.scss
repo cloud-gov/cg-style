@@ -99,11 +99,6 @@ $color-heading:     $color-primary-alt-light;
 
 .sidenav-header.sidenav-header {
   margin-bottom: 0;
-
-  > a {
-
-    &:hover {    }
-  }
 }
 
 .sidenav-header-text {
@@ -157,8 +152,6 @@ $color-heading:     $color-primary-alt-light;
     color: $color-textblack;
     font-weight: 600;
     text-decoration: none;
-
-    &:hover {}
   }
 
   /* stylelint-disable declaration-no-important */
@@ -218,8 +211,7 @@ $color-heading:     $color-primary-alt-light;
 }
 
 .sidenav-level-three {
-
-  /* Removes weird margin in list for third level */
+  // Removes weird margin in list for third level
   margin-bottom: 0;
   margin-left: 0;
   margin-top: 0;
@@ -254,21 +246,13 @@ $color-heading:     $color-primary-alt-light;
     margin-bottom: $grid-2;
 
     > a:before {
-     border-bottom-left-radius: $grid-1;
-     border-bottom-right-radius: $grid-1;
-     bottom: 0;
-   }
+      border-bottom-left-radius: $grid-1;
+      border-bottom-right-radius: $grid-1;
+      bottom: 0;
+    }
   }
 
   > li {
     margin-bottom: 0;
-  }
-}
-
-// extra specificity to override level 2 li bg
-.marketplace {
-
-  > a {
-    &:hover {    }
   }
 }
