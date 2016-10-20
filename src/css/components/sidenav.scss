@@ -195,14 +195,14 @@ $color-heading:     $color-primary-alt-light;
 
   .sidenav-active {
     > a {
-      color: $color-red;
+      color: $color-textblack;
 
       &:hover {
         color: $color-textblack;
       }
 
       &:before {
-        background-color: $color-red;
+        background-color: $color-textblack;
       }
     }
   }
