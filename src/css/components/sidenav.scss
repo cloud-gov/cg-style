@@ -254,21 +254,15 @@ $color-heading:     $color-primary-alt-light;
     margin-top: 1px;
   }
 
+  > li {
+    margin-bottom: 0;
+  }
+
   > li:first-child > a:before {
     top: 0;
   }
 
   > li:last-child {
-    margin-bottom: $grid-2;
-
-    > a:before {
-      border-bottom-left-radius: $grid-1;
-      border-bottom-right-radius: $grid-1;
-      bottom: 0;
-    }
-  }
-
-  > li {
-    margin-bottom: 0;
+    margin-bottom: 1px;
   }
 }
