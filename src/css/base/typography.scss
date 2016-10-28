@@ -174,30 +174,6 @@ blockquote {
   margin-right: 0;
 }
 
-.big-quote {
-  padding-top: $grid-2;
-
-  p {
-    font-family: $font-sans;
-    font-weight: 400;
-    line-height: $leading-display;
-  }
-}
-
-.quote-attrib {
-  color: $color-red;
-  display: block;
-  font-weight: 400;
-  margin-bottom: $grid-2;
-  margin-top: $grid-05;
-}
-
-.quote-attrib-name {
-  font-weight: 600;
-  color: $color-textblack;
-}
-
-
 hr {
   border: none;
   border-top: 1px solid $color-lightgray;
