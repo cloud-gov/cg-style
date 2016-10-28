@@ -207,20 +207,6 @@ $color-heading:     $color-primary-alt-light;
     }
   }
 
-  .sidenav-active-dashboard {
-    > a {
-      color: $color-textblack;
-
-      &:hover {
-        color: $color-textblack;
-      }
-
-      &:before {
-        background-color: $color-textblack;
-      }
-    }
-  }
-
   > li {
     margin-bottom: 0;
   }
