@@ -17,91 +17,67 @@
 }
 
 .usa-grid {
-  padding-left: 2rem;
-  padding-right: 2rem;
-
-  @include media($medium-screen) {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
+  padding-left: $grid-2;
+  padding-right: $grid-2;
 }
 
 .usa-disclaimer {
   // Requires being overridden because uswds sets a different root font-size on
   // <html> which effects all rem units.
-  color: $color-textblack;
+  background-color: $color-textblack;
+  color: $color-white;
   font-size: $sans-s2;
+  padding-left: $grid-05;
   padding-top: 9px;
   font-weight: 600;
 
   .usa-disclaimer-stage {
     margin-top: 0;
-
-    @include media($medium-screen) {
-      margin-right: -33px;
-    }
   }
 
   a,
   a:active,
   a:hover,
   a:visited {
-    color: $color-disclaimer-link;
+    color: $color-lightgray;
+    text-decoration: underline;
+    font-weight: 400;
   }
 }
 
-.usa-disclaimer-official img {
-  margin-top: 3px;
-  width: 1rem;
+.usa-disclaimer-official {
+  padding-left: $grid-05;
+
+  img {
+    margin-top: 3px;
+    width: 1rem;
+  }
 }
 
 .usa-sidenav-list {
-  a {
-    padding: .85rem .85rem .85rem 1rem;
+  margin-left: -$grid-1;
 
+  a {
+    padding: $grid-1;
     /* stylelint-disable selector-no-qualifying-type */
     &:hover,
-    &:active,
-    &.usa-current {
-      padding: .85rem .85rem .85rem 1rem;
-    }
-  }
-
-  @include media($medium-screen) {
-    a {
-      padding: .85rem .85rem .85rem 1.8rem;
-
-      &:hover,
-      &.usa-current,
-      &:active {
-        padding: .85rem .85rem .85rem 1.8rem;
-      }
+    &.usa-current,
+    &:active {
+      padding: $grid-1;
     }
   }
 }
 
 .usa-sidenav-sub_list {
   a {
-    padding-left: 2rem;
+    padding: $grid-105 $grid-1 $grid-105 $grid-2;
 
     &:hover,
     &.usa-current,
     &:active {
-      padding-left: 2rem;
+      padding: $grid-105 $grid-1 $grid-105 $grid-2;
     }
-  }
-
-  @include media($medium-screen) {
-    a {
-      padding-left: 3rem;
-
-      &:hover,
-      &.usa-current,
-      &:active {
-        padding-left: 3rem;
-      }
-      /* stylelint-enable */
-    }
+    /* stylelint-enable */
   }
 }
 
@@ -129,7 +105,7 @@ button,
 
 a:focus,
 input:focus {
-  box-shadow: 0 0 0 4 rgba(255, 221, 0, 0.55);
+  box-shadow: 0 0 0 4px rgba(255, 221, 0, 0.55);
   outline: none;
 }
 

@@ -3,10 +3,11 @@
 @import '../core.scss';
 
 .title_bar {
-  background-color: $color-primary-darkest;
+  background-color: $color-blue;
   margin: 0 auto;
   max-width: $site-max-width;
   padding: 0 .5rem 0 0;
+  min-height: $grid-6;
 
   & > * {
     display: inline-block;
@@ -15,6 +16,10 @@
     &:first-child {
       margin-left: 0;
     }
+  }
+
+  @include media($medium-screen) {
+    display: none;
   }
 }
 

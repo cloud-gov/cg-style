@@ -5,12 +5,9 @@
 
 .content {
   background: $color-white;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 2.3125rem;
-  padding-bottom: 2rem;
-}
+  padding: $grid-4 $grid-2 $grid-2;
 
-.content-dashboard {
-  border-top: 2.0625rem solid $color-primary-darkest;
+  @include media($medium-screen) {
+    padding: $grid-4;
+  }
 }

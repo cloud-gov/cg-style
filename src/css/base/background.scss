@@ -3,20 +3,10 @@
 @import '../vars.scss';
 
 body {
-  background-color: $color-primary-darkest;
+  background-color: $color-background-light;
 }
 
 main {
-  background-color: white;
+  background-color: transparent;
   position: relative;
-}
-
-main:before {
-  background: url('#{$static-img-path}/cg-bg-a.png') no-repeat 0 0;
-  content: '';
-  height: 19.3rem;
-  right: 100%;
-  position: absolute;
-  top: 15vh;
-  width: 9.85rem;
 }

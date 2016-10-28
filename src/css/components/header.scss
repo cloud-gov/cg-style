@@ -12,7 +12,8 @@
   max-width: $site-max-width;
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top: 1.875rem;
+  padding-top: $grid-5;
+  padding-bottom: $grid-3;
 }
 
 .header-title {
