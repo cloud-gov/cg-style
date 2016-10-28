@@ -159,16 +159,3 @@ input:focus {
     width: $grid-4;
   }
 }
-
-.fa {
-  font-size: 80%;
-  padding-right: 4px;
-  // repeated here to not eff up react css c
-  width: 1.5em;
-  display: inline-block;
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-}
