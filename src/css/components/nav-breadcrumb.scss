@@ -1,0 +1,50 @@
+.nav-breadcrumb-select-wrapper {
+  display: inline-block;
+}
+
+.nav-breadcrumb-divider {
+  font-size: 1.5rem;
+  font-weight: 100;
+  line-height: 1;
+  margin: 0 0.5rem;
+  vertical-align: middle;
+}
+
+.nav-breadcrumb-select {
+  position: relative;
+  width: 16rem;
+
+  select {
+    padding-left: 2rem;
+  }
+
+  &::before {
+    background-image: url('#{$static-img-path}/org-small.svg');
+    background-repeat: no-repeat;
+    content: '';
+    position: absolute;
+    left: 0.8rem;
+    width: 1rem;
+    height: 1rem;
+    top: 0.6rem;
+  }
+
+}
+
+.nav-breadcrumb-select-org {
+  &::before {
+    background-image: url('#{$static-img-path}/org-small.svg');
+  }
+}
+
+.nav-breadcrumb-select-space {
+  &::before {
+    background-image: url('#{$static-img-path}/space-small.svg');
+  }
+}
+
+.nav-breadcrumb-select-app {
+  &::before {
+    background-image: url('#{$static-img-path}/app-small.svg');
+  }
+}
