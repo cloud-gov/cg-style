@@ -3,35 +3,35 @@
 
 // 18Franklin light
 @font-face {
-  font-family: '18Franklin';
+  font-family: '18Franklin-webfont';
   font-style: normal;
   font-weight: 300;
   src:
-    url('#{$static-font-path}/18franklin-v0.06-light-webfont.woff2') format('woff2'),
-    url('#{$static-font-path}/18franklin-v0.06-light-webfont.woff') format('woff'),
-    url('#{$static-font-path}/18franklin-v0.06-light-webfont.ttf') format('truetype');
+    url('#{$static-font-path}/18Franklin-11-Regular.woff2') format('woff2'),
+    url('#{$static-font-path}/18Franklin-11-Regular.woff') format('woff'),
+    url('#{$static-font-path}/18Franklin-11-Regular.ttf') format('truetype');
 }
 
 // 18Franklin regular
 @font-face {
-  font-family: '18Franklin';
+  font-family: '18Franklin-webfont';
   font-style: normal;
   font-weight: 400;
   src:
-    url('#{$static-font-path}/18franklin-v0.06-regular-webfont.woff2') format('woff2'),
-    url('#{$static-font-path}/18franklin-v0.06-regular-webfont.woff') format('woff'),
-    url('#{$static-font-path}/18franklin-v0.06-regular-webfont.ttf') format('truetype');
+    url('#{$static-font-path}/18Franklin-11-Regular.woff2') format('woff2'),
+    url('#{$static-font-path}/18Franklin-11-Regular.woff') format('woff'),
+    url('#{$static-font-path}/18Franklin-11-Regular.ttf') format('truetype');
 }
 
 // 18Franklin bold
 @font-face {
-  font-family: '18Franklin';
+  font-family: '18Franklin-webfont';
   font-style: normal;
   font-weight: 700;
   src:
-    url('#{$static-font-path}/18franklin-v0.06-bold-webfont.woff2') format('woff2'),
-    url('#{$static-font-path}/18franklin-v0.06-bold-webfont.woff') format('woff'),
-    url('#{$static-font-path}/18franklin-v0.06-bold-webfont.ttf') format('truetype');
+    url('#{$static-font-path}/18Franklin-11-Bold.woff2') format('woff2'),
+    url('#{$static-font-path}/18Franklin-11-Bold.woff') format('woff'),
+    url('#{$static-font-path}/18Franklin-11-Bold.ttf') format('truetype');
 }
 
 // Roboto mono regular
