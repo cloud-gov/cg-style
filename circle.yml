@@ -17,7 +17,7 @@ test:
 
 deployment:
   library:
-    branch: ab/library-deploy
+    branch: master
     commands:
       - npm run build-library
       - scripts/deploy-library.sh 18F/cg-style
