@@ -16,6 +16,12 @@ test:
     - npm run test
 
 deployment:
+  library:
+    branch: ab/library-deploy
+    commands:
+      - npm run build-library
+      - scripts/deploy-library.sh 18F/cg-style
+
   npm:
     tag: /[0-9]+(\.[0-9]+)*/
     owner: 18F
