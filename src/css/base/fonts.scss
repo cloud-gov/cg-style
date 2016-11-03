@@ -7,9 +7,9 @@
   font-style: normal;
   font-weight: 300;
   src:
-    url('#{$static-font-path}/18Franklin-12-Regular.woff2') format('woff2'),
-    url('#{$static-font-path}/18Franklin-12-Regular.woff') format('woff'),
-    url('#{$static-font-path}/18Franklin-12-Regular.ttf') format('truetype');
+    url('#{$static-font-path}/18Franklin-13-Light.woff2') format('woff2'),
+    url('#{$static-font-path}/18Franklin-13-Light.woff') format('woff'),
+    url('#{$static-font-path}/18Franklin-13-Light.ttf') format('truetype');
 }
 
 // 18Franklin regular
@@ -18,9 +18,20 @@
   font-style: normal;
   font-weight: 400;
   src:
-    url('#{$static-font-path}/18Franklin-12-Regular.woff2') format('woff2'),
-    url('#{$static-font-path}/18Franklin-12-Regular.woff') format('woff'),
-    url('#{$static-font-path}/18Franklin-12-Regular.ttf') format('truetype');
+    url('#{$static-font-path}/18Franklin-13-Regular.woff2') format('woff2'),
+    url('#{$static-font-path}/18Franklin-13-Regular.woff') format('woff'),
+    url('#{$static-font-path}/18Franklin-13-Regular.ttf') format('truetype');
+}
+
+// 18Franklin medium
+@font-face {
+  font-family: '18Franklin-webfont';
+  font-style: normal;
+  font-weight: 500;
+  src:
+    url('#{$static-font-path}/18Franklin-13-Medium.woff2') format('woff2'),
+    url('#{$static-font-path}/18Franklin-13-Medium.woff') format('woff'),
+    url('#{$static-font-path}/18Franklin-13-Medium.ttf') format('truetype');
 }
 
 // 18Franklin bold
@@ -29,9 +40,9 @@
   font-style: normal;
   font-weight: 700;
   src:
-    url('#{$static-font-path}/18Franklin-12-Bold.woff2') format('woff2'),
-    url('#{$static-font-path}/18Franklin-12-Bold.woff') format('woff'),
-    url('#{$static-font-path}/18Franklin-12-Bold.ttf') format('truetype');
+    url('#{$static-font-path}/18Franklin-13-Bold.woff2') format('woff2'),
+    url('#{$static-font-path}/18Franklin-13-Bold.woff') format('woff'),
+    url('#{$static-font-path}/18Franklin-13-Bold.ttf') format('truetype');
 }
 
 // Roboto mono regular
