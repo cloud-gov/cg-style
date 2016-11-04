@@ -34,7 +34,7 @@
     "lint": "node node_modules/.bin/18f-stylelint-rules './src/css/**/*.scss'",
     "svg": "gulp --gulpfile build/gulpfile.js svg-sprite",
     "test": "npm run lint",
-    "watch": "watch 'npm run build' ./src",
+    "watch": "watch 'npm run build' ./src -d",
     "release": "node ./scripts/release.js",
     "start": "npm run build-library && fractal start --sync"
   },
