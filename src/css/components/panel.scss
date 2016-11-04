@@ -69,7 +69,8 @@ h4 + .panel {
   }
 }
 
-.panel-row {
+.panel-row,
+.panel-block {
   $vertical-padding: $panel-padding / 2;
   border-top: 1px solid $color-background-light;
   padding: $vertical-padding 0;
@@ -96,6 +97,11 @@ h4 + .panel {
   .panel-form-replace {
     margin: -.5rem 0 -.5rem 0;
   }
+}
+
+.panel-block {
+  border-top: 0;
+  margin-bottom: 2rem;
 }
 
 .panel-column {
