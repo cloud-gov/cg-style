@@ -1,15 +1,15 @@
 @import '../core.scss';
 
-.nav-breadcrumb {
+.nav_breadcrumb {
   background-color: $color-white;
   padding: 1rem 2rem;
 }
 
-.nav-breadcrumb-select-wrapper {
+.nav_breadcrumb-select_wrapper {
   display: inline-block;
 }
 
-.nav-breadcrumb-divider {
+.nav_breadcrumb-divider {
   font-size: 1.5rem;
   font-weight: 100;
   line-height: 1;
@@ -17,7 +17,7 @@
   vertical-align: middle;
 }
 
-.nav-breadcrumb-select {
+.nav_breadcrumb-select {
   position: relative;
   width: 16rem;
 
@@ -35,7 +35,6 @@
     height: 1rem;
     top: 0.6rem;
   }
-
 }
 
 .nav-breadcrumb-select-org {
@@ -44,13 +43,13 @@
   }
 }
 
-.nav-breadcrumb-select-space {
+.nav_breadcrumb-select-space {
   &::before {
     background-image: url('#{$static-img-path}/space-small.svg');
   }
 }
 
-.nav-breadcrumb-select-app {
+.nav_breadcrumb-select-app {
   &::before {
     background-image: url('#{$static-img-path}/app-small.svg');
   }
