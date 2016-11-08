@@ -12,10 +12,10 @@ table {
 
   th,
   td {
-    padding: .5em 1.25em;
-    padding-left: 0;
     border: none;
     border-top: 1px solid;
+    padding: .5em 1.25em;
+    padding-left: 0;
   }
 
   /* stylelint-disable selector-no-qualifying-type */
@@ -34,8 +34,8 @@ table {
 
   thead th {
     background-color: transparent;
-    border-top: none;
     border-bottom: 3px solid;
+    border-top: none;
     font-size: .8rem;
     font-weight: 800;
   }
@@ -73,8 +73,8 @@ table {
     }
 
     th {
-      border-right-width: 0;
       border-bottom-width: 0;
+      border-right-width: 0;
       display: flex;
       flex-direction: column;
       flex-grow: 1;
@@ -91,10 +91,10 @@ table {
       /* stylelint-enable */
 
       span {
-        margin-top: 3rem;
-        transform: rotate(-90deg);
         display: block;
         line-height: 1;
+        margin-top: 3rem;
+        transform: rotate(-90deg);
 
         @include media($medium-screen) {
           display: inline;
@@ -138,16 +138,16 @@ td table {
 }
 
 td .tableWrapper {
-  margin: .8rem 0;
   border: 1px solid $color-primary;
-  padding: 1.6rem;
   border-radius: 3px;
+  margin: .8rem 0;
   margin-bottom: 3rem;
+  padding: 1.6rem;
 }
 
 td thead th {
-  color: $color-primary;
   border-bottom: 1px solid $color-primary;
+  color: $color-primary;
 }
 
 td [label='Actions'] {
