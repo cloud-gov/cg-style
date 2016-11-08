@@ -3,9 +3,9 @@
 
 body {
   color: $color-base;
+  font-size: $grid-type-px;
   font-weight: 400;
   line-height: $leading-body;
-  font-size: $grid-type-px;
 }
 
 a {
@@ -68,15 +68,15 @@ h1, h2, h3, h4, h5, h6 {
 
   // using this style until I have an italic solution
   em, i {
-    font-style: normal;
     color: $color-red;
+    font-style: normal;
   }
 }
 
 h1 {
   font-size: $sans-s7;
-  line-height: $leading-hed;
   font-weight: 300;
+  line-height: $leading-hed;
 
   @include media($medium-screen) {
     font-size: $sans-s8;
@@ -107,8 +107,8 @@ h2 {
 
 h3 {
   font-size: $sans-s5;
-  margin-top: $grid-6;
   font-weight: 600;
+  margin-top: $grid-6;
 }
 
 h2 + h3 {
@@ -166,9 +166,9 @@ p, ul, ol, pre {
 .content-text p,
 .content-text li {
   a {
-    text-decoration: none;
     border-bottom: 1px solid;
     padding-bottom: 2px;
+    text-decoration: none;
 
     &:visited {
       border-bottom-style: dotted;
