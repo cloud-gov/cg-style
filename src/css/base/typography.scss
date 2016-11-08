@@ -19,6 +19,8 @@ a {
     color: $color-blue;
   }
 
+  /* stylelint-disable selector-no-qualifying-type */
+  // needed to target <a> styles
   &.link-textblack {
     color: $color-textblack;
 
@@ -30,6 +32,7 @@ a {
       color: $color-textblack;
     }
   }
+  /* stylelint-enable */
 
 }
 

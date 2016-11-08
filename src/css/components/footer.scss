@@ -27,6 +27,7 @@
 // overriding uswds
 .usa-footer-slim .usa-footer-contact_info {
   width: auto;
+
   @include media($medium-screen) {
     float: right;
     width: auto;
