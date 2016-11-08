@@ -121,3 +121,17 @@ h4 + .panel {
   flex-shrink: 1;
   min-width: 25%;
 }
+
+.panel-new {
+  background-color: $color-white;
+  margin-top: $grid-4;
+  padding: $grid-4;
+}
+
+.panel-new-date {
+  color: $color-red;
+  display: block;
+  font-size: $sans-s4;
+  font-weight: 600;
+  padding-bottom: $grid-1;
+}

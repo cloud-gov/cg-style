@@ -18,6 +18,19 @@ a {
   &:active {
     color: $color-blue;
   }
+
+  &.link-textblack {
+    color: $color-textblack;
+
+    &:hover,
+    &:focus {
+      color: $color-blue;
+    }
+    &:active {
+      color: $color-textblack;
+    }
+  }
+
 }
 
 strong {
@@ -27,7 +40,7 @@ strong {
 
 // TODO docs-class
 p strong,
-.usa-content.content li strong {
+.content-text li strong {
   font-size: $sans-s5;
 }
 
@@ -117,9 +130,10 @@ p {
   font-family: $font-serif;
   font-size: $serif-s5;
   line-height: $leading-body;
+  margin-bottom: 0;
 }
 
-.usa-content.content h1 + p, // scope to docs
+.content-text h1 + p, // scope to docs
 .page-dek,
 .section-subhed {
   color: $color-mediumgray;
@@ -146,8 +160,8 @@ p, ul, ol, pre {
 }
 
 // constrain to docs content
-.usa-content.content p,
-.usa-content.content li {
+.content-text p,
+.content-text li {
   a {
     text-decoration: none;
     border-bottom: 1px solid;
@@ -160,7 +174,7 @@ p, ul, ol, pre {
 }
 
 // constrain to docs content
-.usa-content.content li {
+.content-text li {
   font-family: $font-serif;
   font-size: $serif-s5;
 }
