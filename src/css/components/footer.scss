@@ -23,3 +23,17 @@
   padding-bottom: 0;
   padding-top: $grid-2;
 }
+
+// overriding uswds
+.usa-footer-slim .usa-footer-contact_info {
+  width: auto;
+
+  @include media($medium-screen) {
+    float: right;
+    width: auto;
+  }
+}
+
+.usa-footer-primary-section {
+  background-color: $color-cream;
+}

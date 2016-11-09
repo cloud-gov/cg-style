@@ -11,3 +11,4 @@
 /_site/
 
 .DS_Store
+.stylelintrc
