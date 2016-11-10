@@ -1,0 +1,47 @@
+
+@import '../core.scss';
+@import '../override_vars.scss';
+@import '../vars.scss';
+
+.stat {
+  align-items: center;
+  border-left-color: transparent;
+  border-left-style: solid;
+  border-left-width: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.stat-error,
+.stat-warning,
+.stat-success {
+  border-left-width: 4px;
+  padding-left: 0.5rem;
+}
+
+h5 + .stat {
+  margin-top: 0.6rem;
+}
+
+.stat-error {
+  border-left-color: $color-error;
+}
+
+.stat-warning {
+  border-left-color: $color-warning;
+}
+
+.stat-info {
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+.stat-success {
+  border-left-color: $color-finish;
+}
+
+.stat-primary {
+  font-size: 1.25rem;
+}
