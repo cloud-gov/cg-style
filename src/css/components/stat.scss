@@ -47,10 +47,10 @@ h5 + .stat {
 }
 
 .stat-single_box {
-  $v_space: 0.65rem;
+  $v-space: 0.65rem;
   background-color: $color-lightestgray;
-  margin: -$v_space 1.8rem;
-  padding: $v_space 0;
+  margin: -$v-space 1.8rem;
+  padding: $v-space 0;
   text-align: center;
 
   .stat-info {
