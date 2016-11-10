@@ -87,6 +87,10 @@ h4 + .panel {
   }
 }
 
+.panel-row-space {
+  margin-top: 1rem;
+}
+
 .panel-block {
   $vertical-padding: $panel-padding / 2;
   padding: $vertical-padding 0;
