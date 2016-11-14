@@ -11,7 +11,7 @@ dependencies:
     - bundle config without development:production
     - npm rebuild node-sass
   cache_directories:
-    - "/node_modules/"
+    - "node_modules/"
 test:
   pre:
     - npm run build
