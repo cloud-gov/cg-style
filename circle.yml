@@ -2,6 +2,9 @@
 machine:
   node:
     version: 6
+  environment:
+    CF_ORG: cloud-gov
+    CF_SPACE: cg-style
 
 dependencies:
   pre:
@@ -20,7 +23,7 @@ deployment:
     branch: master
     commands:
       - npm run build-library
-      - scripts/deploy-library.sh 18F/cg-style
+      - scripts/deploy-library.sh cg-style
 
   npm:
     tag: /[0-9]+(\.[0-9]+)*/
