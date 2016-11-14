@@ -45,3 +45,17 @@ h5 + .stat {
 .stat-primary {
   font-size: 1.25rem;
 }
+
+.stat-single_box {
+  $v-space: 0.65rem;
+  background-color: $color-lightestgray;
+  margin: -$v-space 1.8rem;
+  padding: $v-space 0;
+  text-align: center;
+
+  .stat-info {
+    display: inline-block;
+    margin-top: 3rem;
+    max-width: 5rem;
+  }
+}
