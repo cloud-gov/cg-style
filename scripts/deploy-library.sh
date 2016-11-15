@@ -2,32 +2,25 @@
 
 set -o errexit
 set -o pipefail
+set -o nounset
 
-function on_exit () {
-  local exit_code=$?
-  if [[ ${exit_code} -ne 0 ]]; then
-    echo "Error deploying pages" >&2
-  fi
+app=$1
+manifest=${2:-manifest.yml}
 
-  exit $exit_code
-}
+cf_api=${CF_API:-"https://api.fr.cloud.gov"}
+cf_org=${CF_ORG:-"cloud-gov"}
+cf_space=${CF_SPACE:-"cg-style"}
 
-trap on_exit EXIT
+curl -L -o cf-cli_amd64.deb 'https://cli.run.pivotal.io/stable?release=debian64&source=github'
+sudo dpkg -i cf-cli_amd64.deb
+cf -v
 
-destination_repo=${1:-${GITHUB_REPO}}
-build_dir=docs/build
-target=18f-pages
+# Install autopilot
+go get github.com/contraband/autopilot
+cf install-plugin -f /home/ubuntu/.go_workspace/bin/autopilot
 
-# Git init
-cd $build_dir
-git --version
-git init
-git config user.name "Continuous deploy script"
-git config user.email "deploy@example.com"
-git add .
-git commit -m "Deploy to pages"
-# Force push from the current directory to the remote repo's target branch.
-# (All previous history on the target branch will be lost, since we are
-# overwriting it.) We redirect any output to /dev/null to hide any sensitive
-# credential data that might otherwise be exposed.
-git push --force --quiet "ssh://git@github.com/${destination_repo}.git" master:${target} > /dev/null 2>&1
+cf api $cf_api
+cf auth $CF_USERNAME $CF_PASSWORD
+cf target -o $cf_org -s $cf_space
+
+cf zero-downtime-push $app -f $manifest
