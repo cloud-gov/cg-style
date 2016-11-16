@@ -109,6 +109,12 @@ input:focus {
   outline: none;
 }
 
+.usa-label {
+  font-size: 0.7rem;
+  padding: 0.2rem 0.4rem;
+  vertical-align: middle;
+}
+
 .usa-search {
   background-color: #ffffff;
   border-bottom: 1px solid $color-primary;
