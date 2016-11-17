@@ -5,10 +5,9 @@
   display: none;
 
   @include media($nav-width) {
-
+    background-color: transparent;
     background-image: url('#{$static-img-path}/i-search.png');
     background-image: url('#{$static-img-path}/i-search.svg');
-    background-color: transparent;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: auto $grid-4;
@@ -21,9 +20,9 @@
     width: $grid-4;
 
     &:hover {
+      background-color: transparent;
       background-image: url('#{$static-img-path}/i-search-hover.png');
       background-image: url('#{$static-img-path}/i-search-hover.svg');
-      background-color: transparent;
       cursor: pointer;
     }
 
@@ -38,10 +37,10 @@
       background-image: url('#{$static-img-path}/close.png');
       background-image: url('#{$static-img-path}/close.svg');
       background-size: $grid-4 $grid-4;
+      margin: 0;
       right: -40px;
       top: -5px;
       z-index: 999;
-      margin: 0;
 
       &:hover {
         background-image: url('#{$static-img-path}/close-blue.png');

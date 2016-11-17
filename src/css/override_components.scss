@@ -5,13 +5,12 @@
     position: static;
   }
   .usa-search {
-
     margin-bottom: 1rem;
-    margin-top: 1rem;
+    overflow: hidden;
 
     @include media($medium-screen) {
-      margin-top: 0;
       margin-bottom: 0;
+      margin-top: 0;
     }
   }
 }
@@ -27,9 +26,9 @@
   background-color: $color-textblack;
   color: $color-white;
   font-size: $sans-s2;
+  font-weight: 600;
   padding-left: $grid-05;
   padding-top: 9px;
-  font-weight: 600;
 
   .usa-disclaimer-stage {
     margin-top: 0;
@@ -40,8 +39,8 @@
   a:hover,
   a:visited {
     color: $color-lightgray;
-    text-decoration: underline;
     font-weight: 400;
+    text-decoration: underline;
   }
 }
 
@@ -97,10 +96,10 @@ button,
 [type='submit'],
 [type='reset'],
 [type='image'] {
+  border-radius: 2px;
   font-size: 0.85rem;
   min-width: 6rem;
   padding: 0.75rem 1rem;
-  border-radius: 2px;
 }
 
 a:focus,
@@ -113,17 +112,17 @@ input:focus {
   background-color: #ffffff;
   border-bottom: 1px solid $color-primary;
   height: 36px;
+  max-width: 40em;
   overflow: auto;
   padding: 0;
   position: static;
   width: 100%;
-  max-width: 40em;
   z-index: 1;
 
   @include media($medium-screen) {
     position: absolute;
-    top: 0;
     right: 0;
+    top: 0;
   }
 
   @include media($nav-width) {
@@ -134,11 +133,11 @@ input:focus {
   [type='search'] {
     border: none;
     color: $color-gray;
-    font-weight: 400;
     font-size: $sans-s5;
+    font-weight: 400;
+    height: (43rem / $grid-type);
     padding: 0;
     width: 100%;
-    height: (43rem / $grid-type);
 
     &:focus {
       box-shadow: none;
