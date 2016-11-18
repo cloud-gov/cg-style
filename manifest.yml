@@ -1,5 +1,6 @@
 ---
 path: ./docs/build
+domain: fr.cloud.gov
 applications:
 - name: cg-style
   host: styleguide
