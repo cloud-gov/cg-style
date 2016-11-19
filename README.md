@@ -47,9 +47,6 @@ require('cloudgov-style');
 @import './node_modules/cloudgov-style/src/css/main.scss';
 ```
 
-### ruby/jekyll
-We've created a ruby gem that makes incorporating the standards into a jekyll site easier. Instructions on installation and use is at the [gem's page](https://github.com/18F/cg-style-gem)
-
 ## Using svg images
 Images that are part of the cg-style project are available as one central svg sprite with each image consisting of a svg `<symbol>`. To use these images, you can use the svg `xlink` attribute as follows:
 ```
@@ -83,12 +80,7 @@ There is a coding standards document that dictates standards and suggestions for
 Run `npm run lint` to lint the codebase for style problems.
 
 ## Running the styleguide
-The styleguide allows you to see changes to components from the cloudgov-style project rather then another site and is used for visual regression testing of components. To get the jekyll styleguide site working:
-
-- Ensure you have ruby and bundler installed
-- Install ruby gems by running `bundle install`
-- Configure jekyll to use the local gem by running `bundle config local.cloudgov-style ./gem/`
-- Build and run the jekyll server by running `bundle exec jekyll serve`
+The styleguide allows you to see changes to components from the cloudgov-style project rather then another site and is used for visual regression testing of components.
 
 ## [WIP] Running Cloud.gov pattern library locally
 The Cloud.gov pattern library leverages Fractal, a static site framework for building and documenting component libraries. Here are some instructions to view the library locally:
