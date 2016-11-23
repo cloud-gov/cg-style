@@ -31,17 +31,18 @@
 
     &.action-link {
       background-color: transparent;
-      color: $color-gray;
+      color: $color-darkgray;
     }
 
     &.usa-button-outline {
       background-color: transparent;
-      color: $color-gray;
-      box-shadow: inset 0 0 0 1px $color-gray;
+      color: $color-darkgray;
+      box-shadow: inset 0 0 0 1px $color-darkgray;
       font-size: $sans-s2;
 
       &:hover {
         box-shadow: inset 0 0 0 1px $color-primary;
+        color: $color-primary;
       }
     }
   }
