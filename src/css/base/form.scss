@@ -83,6 +83,19 @@ fieldset div {
   @extend .usa-input-error-message;
   color: $color-error;
   font-size: initial;
+
+  a {
+    color: $color-error;
+    text-decoration: underline;
+  }
+}
+
+.error-inline {
+  display: inline-block;
+  font-size: 0.875rem;
+  margin: 0 0.25rem;
+  width: 40%;
+  vertical-align: middle;
 }
 
 .button-cancel {
