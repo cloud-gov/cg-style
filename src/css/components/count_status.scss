@@ -4,12 +4,8 @@
 @import '../core.scss';
 
 .count_status {
-  /*
-  border-bottom-color: transparent;
-  border-bottom-style: solid;
-  border-bottom-width: 0.5rem;
-  */
   display: inline-block;
+  height: 0.9rem;
   margin-left: $grid-3;
   position: relative;
   width: 7.5rem;
@@ -19,30 +15,41 @@
   }
 
   &::after {
-    background: $color-ok;
+    background: $color-cream;
     content: '';
     display: block;
     height: 0.5rem;
     position: absolute;
-    top: calc(100% + 1.3rem);
+    top: calc(100% + 1.5rem);
     width: 100%;
   }
 }
 
-.count_status-ok {
+.count_status-ok,
+.count_status-started,
+.count_status-running {
   &::after {
     background: $color-ok;
   }
 }
 
-.count-status-inactive {
+.count-status-inactive,
+.count_status-stopped {
   &::after {
     background: $color-inactive;
   }
 }
 
-.count_status-error {
+.count_status-error,
+.count_status-crashed {
   &::after {
     background: $color-error;
   }
+}
+
+.count_status-none {
+  &::after {
+    background: $color-cream;
+  }
+
 }
