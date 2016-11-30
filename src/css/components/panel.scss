@@ -82,8 +82,28 @@ h4 + .panel {
     width: 100%;
   }
 
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  a {
+    color: $color-textblack;
+    text-decoration: underline;
+  }
+
   .panel-form-replace {
     margin: -.5rem 0 -.5rem 0;
+  }
+}
+
+.panel-row-boxed {
+  border: 1px solid $color-textblack;
+  margin-bottom: 1rem;
+  padding: 1rem;
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 
