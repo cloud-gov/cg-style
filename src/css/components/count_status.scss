@@ -1,8 +1,48 @@
 
+@import '../../../node_modules/uswds/src/stylesheets/core/defaults.scss';
+@import '../override_vars.scss';
+@import '../core.scss';
+
 .count_status {
+  /*
+  border-bottom-color: transparent;
+  border-bottom-style: solid;
+  border-bottom-width: 0.5rem;
+  */
+  display: inline-block;
   margin-left: $grid-3;
+  position: relative;
+  width: 7.5rem;
 
   &:first-child {
     margin-left: 0;
+  }
+
+  &::after {
+    background: $color-ok;
+    content: '';
+    display: block;
+    height: 0.5rem;
+    position: absolute;
+    top: calc(100% + 1.3rem);
+    width: 100%;
+  }
+}
+
+.count_status-ok {
+  &::after {
+    background: $color-ok;
+  }
+}
+
+.count-status-inactive {
+  &::after {
+    background: $color-inactive;
+  }
+}
+
+.count_status-error {
+  &::after {
+    background: $color-error;
   }
 }
