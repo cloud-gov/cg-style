@@ -2,25 +2,36 @@
 @import '../override_vars.scss';
 @import '../core.scss';
 
-.title_bar {
-  background-color: $color-blue;
-  margin: 0 auto;
-  max-width: $site-max-width;
-  padding: 0 .5rem 0 0;
-  min-height: $grid-6;
+//.title_bar {
+//  background-color: $color-blue;
+//  margin: 0 auto;
+//  max-width: $site-max-width;
+//  padding: 0 .5rem 0 0;
+//  min-height: $grid-6;
+//
+//  & > * {
+//    display: inline-block;
+//    margin-left: 1em;
 
-  & > * {
-    display: inline-block;
-    margin-left: 1em;
+//    &:first-child {
+//      margin-left: 0;
+//    }
+//  }
 
-    &:first-child {
-      margin-left: 0;
-    }
-  }
+//  @include media($medium-screen) {
 
-  @include media($medium-screen) {
-    display: none;
-  }
+//  }
+//}
+.title_bar h1 {
+  display:inline-block;
+}
+.title_bar .usa-label {
+  display:inline-block;
+  margin-left:1rem;
+  margin-top:-0.8rem;
+}
+.title_bar .action-primary {
+  float:right;
 }
 
 .title_bar-title {
