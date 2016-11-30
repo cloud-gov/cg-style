@@ -98,7 +98,6 @@ h1 {
 h2 {
   font-size: $sans-s6;
   font-weight: 300;
-  margin-bottom: $grid-2;
 
   @include media($medium-screen) {
     font-size: $sans-s7;
@@ -159,7 +158,13 @@ p, ul, ol, pre {
   & + h2,
   & + h3,
   & + h4,
-  & + h5 { margin-top: $grid-4; }
+  & + h5 {
+    margin-top: $grid-4;
+  }
+
+  & + h2 {
+    margin-top: $grid-2;
+  }
 }
 
 // constrain to docs content
