@@ -99,8 +99,8 @@ h4 + .panel {
 
 .panel-row-boxed {
   border: 1px solid $color-textblack;
-  margin-bottom: 1rem;
-  padding: 1rem;
+  margin-bottom: $grid-3;
+  padding: $grid-3;
 
   &:last-child {
     margin-bottom: 0;
