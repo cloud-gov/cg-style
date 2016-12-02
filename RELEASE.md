@@ -38,5 +38,5 @@ The script does the following things in order:
 0. Update the `package.json` with the version number from above.
 0. Checkout the `master` branch and cut a release branch from there. The release branch name will be the version number preceded by "release-".
 0. Commit the `package.json` version bump.
-0. Tag that commit with a tag that is just the release version.
-0. Push that branch and tag to Github.
+0. Push that branch to Github and create a Pull Request for review.
+0. Once reviewed and merged, tag the merge commit with a tag that is just the release version `git tag -a ${version_number} -m "v${version_number} - ${description_of_release}"`
