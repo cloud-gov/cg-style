@@ -64,7 +64,7 @@ h4 + .panel {
 }
 
 .panel-row {
-  $vertical-padding: $panel-padding / 2;
+  $vertical-padding: $grid-105;
   padding: $vertical-padding 0;
 
   // TODO react problem can't return just rows without wrapped div.
@@ -82,18 +82,41 @@ h4 + .panel {
     width: 100%;
   }
 
+  // TODO Where does these sizes come from? Move to typography somehow?
   h2 {
     font-size: 1.5rem;
     font-weight: 400;
   }
 
+  // TODO Where does these sizes come from? Move to typography somehow?
+  h3 {
+    font-size: 1.125rem;
+    font-weight: 200;
+  }
+
+  // TODO this rule is probably better outside of panel-row, maybe in typography,
+  // as h{1-5} a?
   a {
     color: $color-textblack;
     text-decoration: underline;
   }
 
+  // TODO Does this need to be under .panel-row? It can probably be outside.
   .panel-form-replace {
     margin: -.5rem 0 -.5rem 0;
+  }
+
+  > .panel-row {
+    border-top: 1px solid $color-textblack;
+    display: block;
+
+    > .panel-row {
+      border-top: 1px solid $color-lightgray;
+      display: flex;
+      margin-top: $vertical-padding;
+      padding-bottom: 0;
+      padding-left: $grid-2;
+    }
   }
 }
 
