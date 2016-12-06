@@ -6,8 +6,10 @@
   width: 3.9rem;
 
   .icon {
+    height: 100%;
     max-height: 3.1rem;
     max-width: none;
+    width: 100%;
   }
 
   & + h3 {
@@ -17,17 +19,51 @@
 
 .icon {
   display: inline-block;
-  height: 100%;
   fill: transparent;
+  height: 1em;
   max-height: 2rem;
   max-width: 2rem;
+  min-height: 20px;
+  min-width: 20px;
   stroke: currentColor;
   position: relative;
   top: -0.0625rem;
   vertical-align: middle;
-  width: 100%;
+  width: 1em;
 }
 
 .icon-alt {
   stroke: $color-primary-alt-light;
+}
+
+.icon-fill {
+  @extend .icon;
+  fill: currentColor;
+  stroke: transparent;
+
+  &.icon-fill-ok {
+    fill: $color-ok;
+  }
+
+  &.icon-fill-error {
+    fill: $color-error;
+  }
+
+  &.icon-alt {
+    fill: $color-primary-alt-light;
+  }
+}
+
+* + .icon,
+* + .icon-fill {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+.icon,
+.icon-fill {
+  & + * {
+    display: inline-block;
+    margin-left: 1rem;
+  }
 }

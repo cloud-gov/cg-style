@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="19px" height="20px" viewBox="0 0 19 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>space</title>
+    <defs>
+      <style>.cls-1{fill:#fff;stroke:none;}</style>
+      <rect id="path-1" x="0" y="0" width="27.0543686" height="27.2338967" rx="2"></rect>
+    </defs>
+    <g id="Page-1" fill-rule="evenodd">
+      <g id="base/bg-white.border-b1.border-textblack.rounded">
+        <g id="Rectangle-2-Clipped">
+          <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+          </mask>
+          <g id="path-1"></g>
+        </g>
+      </g>
+      <polygon class="cls-1" id="Polygon-46" points="13.6930212 5.10635563 17.2406541 7.16817415 17.2406541 11.2918112 13.6930212 13.3536297 10.1453882 11.2918112 10.1453882 7.16817415"></polygon>
+      <polygon class="cls-1" id="Polygon-46-Copy" points="8.62032707 13.6169483 12.16796 15.6787669 12.16796 19.8024039 8.62032707 21.8642225 5.07269412 19.8024039 5.07269412 15.6787669"></polygon>
+      <polygon class="cls-1" id="Polygon-46-Copy-2" points="18.7657153 13.6169483 22.3133482 15.6787669 22.3133482 19.8024039 18.7657153 21.8642225 15.2180824 19.8024039 15.2180824 15.6787669"></polygon>
+    </g>
+</svg>
