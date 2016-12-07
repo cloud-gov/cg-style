@@ -15,6 +15,10 @@
   & + h3 {
     margin-top: $grid-3;
   }
+
+  & + .icon-container {
+    margin-top: 1rem;
+  }
 }
 
 .icon {
@@ -36,16 +40,24 @@
   stroke: $color-primary-alt-light;
 }
 
+.icon-ok {
+  stroke: $color-ok;
+}
+
+.icon-error {
+  stroke: $color-error;
+}
+
 .icon-fill {
   @extend .icon;
   fill: currentColor;
   stroke: transparent;
 
-  &.icon-fill-ok {
+  &.icon-ok {
     fill: $color-ok;
   }
 
-  &.icon-fill-error {
+  &.icon-error {
     fill: $color-error;
   }
 
