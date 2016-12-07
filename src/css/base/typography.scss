@@ -33,7 +33,6 @@ a {
     }
   }
   /* stylelint-enable */
-
 }
 
 strong {
@@ -70,6 +69,16 @@ h1, h2, h3, h4, h5, h6 {
   em, i {
     color: $color-red;
     font-style: normal;
+  }
+
+  a {
+    color: $color-textblack;
+    text-decoration: underline;
+
+    &:visited {
+      color: $color-textblack;
+      text-decoration: underline;
+    }
   }
 }
 
@@ -206,4 +215,11 @@ hr {
 .anchorjs-link {
   font-size: $sans-s6;
   opacity: 1;
+}
+
+@for $i from 1 through length($sans-s) {
+  .sans-s#{$i} {
+    font-size: nth($sans-s, $i);
+    font-weight: 200;
+  }
 }
