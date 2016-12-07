@@ -10,6 +10,7 @@
   border-left-width: 0;
   display: flex;
   justify-content: space-between;
+  min-height: 2.5rem; // Leave some space for input element when editing a stat
   width: 100%;
 }
 
@@ -57,5 +58,24 @@ h5 + .stat {
     display: inline-block;
     margin-top: 3rem;
     max-width: 5rem;
+  }
+}
+
+// Double classes to compete with specificity over input elements
+.stat-input {
+  &.stat-input-text {
+    display: inline;
+    font-size: 0.75rem;
+    margin: 0;
+    width: 6rem;
+  }
+
+  &.stat-input-text-scale {
+    margin-top: 0.5rem;
+  }
+
+  &.stat-input-label {
+    display: inline;
+    margin-left: 0.5rem;
   }
 }
