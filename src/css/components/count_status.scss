@@ -25,6 +25,14 @@
   }
 }
 
+.count_status-icon {
+  float: left;
+}
+
+.count_status-text {
+  float: right;
+}
+
 .count_status-ok,
 .count_status-started,
 .count_status-running {
