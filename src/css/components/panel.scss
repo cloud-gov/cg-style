@@ -23,9 +23,9 @@ h4 + .panel {
 }
 
 .panel-title {
-  font-size: 1.3rem;
-  font-weight: 600;
-  margin-bottom: 2rem;
+  font-size: $sans-s7;
+  font-weight: 400;
+  margin-bottom: $grid-2;
 }
 
 .panel-group {
@@ -58,8 +58,8 @@ h4 + .panel {
   padding: 0.5rem 0;
 
   h1, h2, h3, h4 {
-    font-size: 1rem;
-    font-weight: 900;
+    font-size: $sans-s7;
+    font-weight: 400;
   }
 }
 
@@ -120,8 +120,8 @@ h4 + .panel {
 }
 
 .panel-column {
-  font-size: $sans-s4;
   flex: 1 0 0;
+  font-size: $sans-s4;
   margin-right: 1rem;
 
   &:last-child,
@@ -132,9 +132,9 @@ h4 + .panel {
 }
 
 .panel-column-error {
-  border-left-width: 5px;
-  border-left-style: solid;
   border-left-color: $color-warning; // #e31c3d;
+  border-left-style: solid;
+  border-left-width: 5px;
   padding-left: 0.5rem;
 }
 
