@@ -220,6 +220,17 @@ hr {
 @for $i from 1 through length($sans-s) {
   .sans-s#{$i} {
     font-size: nth($sans-s, $i);
-    font-weight: 200;
+  }
+}
+
+@for $i from 1 through length($serif-s) {
+  .serif-s#{$i} {
+    font-size: nth($serif-s, $i);
+  }
+}
+
+@for $i from 1 through length($mono-s) {
+  .mono-s#{$i} {
+    font-size: nth($mono-s, $i);
   }
 }
