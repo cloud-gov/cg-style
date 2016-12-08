@@ -169,12 +169,10 @@ h4 + .panel {
 
     a {
       color: #056dd4;
+
+      .route-link {
+        text-decoration: underline;
+      }
     }
-
   }
-
-  a.route-link {
-    text-decoration: underline;
-  }
-
 }
