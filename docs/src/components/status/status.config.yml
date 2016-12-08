@@ -1,0 +1,30 @@
+title: Status
+context:
+  text: "status message"
+variants:
+  - name: default
+  - name: started
+    context:
+      text: "started"
+      modifier: started
+  - name: running
+    context:
+      text: "running"
+      modifier: running
+  - name: ok
+    context:
+      modifier: ok
+  - name: stopped
+    context:
+      text: "stopped"
+      modifier: stopped
+  - name: inactive
+    context:
+      modifier: inactive
+  - name: crashed
+    context:
+      text: "crashed"
+      modifier: crashed
+  - name: error
+    context:
+      modifier: error
