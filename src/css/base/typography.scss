@@ -74,12 +74,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: $sans-s7;
+  font-size: $sans-s8;
   font-weight: 300;
   line-height: $leading-hed;
 
   @include media($medium-screen) {
-    font-size: $sans-s8;
+    font-size: $sans-s9;
   }
 
   & + p {
@@ -96,11 +96,11 @@ h1 {
 }
 
 h2 {
-  font-size: $sans-s6;
+  font-size: $sans-s7;
   font-weight: 300;
 
   @include media($medium-screen) {
-    font-size: $sans-s7;
+    font-size: $sans-s8;
   }
 }
 
@@ -140,7 +140,7 @@ p {
 .section-subhed {
   color: $color-mediumgray;
   font-family: $font-sans;
-  font-size: $sans-s6;
+  font-size: $sans-s7;
   font-weight: 300;
   line-height: $leading-body;
   margin-bottom: 0;
@@ -204,6 +204,6 @@ hr {
 
 // where should this live?
 .anchorjs-link {
-  font-size: $sans-s6;
+  font-size: $sans-s7;
   opacity: 1;
 }

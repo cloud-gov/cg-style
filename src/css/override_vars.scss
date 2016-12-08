@@ -84,34 +84,40 @@ $site-max-width:     $grid-base-px * 130;         // 1040px;
 $text-max-width:     36em;
 
 // type scale
-$sans-s1:           (8rem / $grid-type);          // 8px;
+$sans-s1:           (10rem / $grid-type);         // 10px;
 $sans-s2:           (12rem / $grid-type);         // 12px;
 $sans-s3:           (13rem / $grid-type);         // 13px;
 $sans-s4:           (14rem / $grid-type);         // 14px;
 $sans-s5:           (16rem / $grid-type);         // 16px;
-$sans-s6:           (20rem / $grid-type);         // 20px;
-$sans-s7:           (26rem / $grid-type);         // 26px;
-$sans-s8:           (40rem / $grid-type);         // 40px;
+$sans-s6:           (18rem / $grid-type);         // 18px;
+$sans-s7:           (20rem / $grid-type);         // 20px;
+$sans-s8:           (24rem / $grid-type);         // 24px;
+$sans-s9:           (40rem / $grid-type);         // 40px;
+$sans-s10:          (100rem / $grid-type);        // 100px;
 
 $serif-s1:          (10rem / $grid-type);         // 10px;
 $serif-s2:          (13rem / $grid-type);         // 13px;
 $serif-s3:          (14rem / $grid-type);         // 14px;
 $serif-s4:          (15rem / $grid-type);         // 15px;
-$serif-s5:          (17.5rem / $grid-type);       // 17.5px;
-$serif-s6:          (23rem / $grid-type);         // 23px;
-$serif-s7:          (39rem / $grid-type);         // 39px;
-$serif-s8:          (40rem / $grid-type);         // 40px;
+$serif-s5:          (17rem / $grid-type);         // 17px;
+$serif-s6:          (19rem / $grid-type);         // 19px;
+$serif-s7:          (23rem / $grid-type);         // 23px;
+$serif-s8:          (27rem / $grid-type);         // 27px;
+$serif-s9:          (43rem / $grid-type);         // 43px;
+$serif-s10:         (108rem / $grid-type);        // 108px;
 
 $mono-s1:           (10rem / $grid-type);         // 10px;
 $mono-s2:           (12rem / $grid-type);         // 12px;
 $mono-s3:           (13rem / $grid-type);         // 13px;
 $mono-s4:           (15rem / $grid-type);         // 15px;
-$mono-s5:           (18rem / $grid-type);         // 18px;
-$mono-s6:           (23rem / $grid-type);         // 23px;
-$mono-s7:           (38rem / $grid-type);         // 38px;
-$mono-s8:           (44rem / $grid-type);         // 44px;
+$mono-s5:           (16rem / $grid-type);         // 16px;
+$mono-s6:           (18rem / $grid-type);         // 18px;
+$mono-s7:           (23rem / $grid-type);         // 23px;
+$mono-s8:           (25rem / $grid-type);         // 25px;
+$mono-s9:           (44rem / $grid-type);         // 44px;
+$mono-s10:          (104rem / $grid-type);        // 104px;
 
-$leading-hed:       1.1;
+$leading-hed:       1.05;
 $leading-cap:       1.3;
 $leading-body:      1.55;
 $leading-display:   1.65;
