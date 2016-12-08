@@ -5,7 +5,7 @@
 
 .count_status {
   display: inline-block;
-  height: 0.9rem;
+  height: 0.6rem;
   margin-left: $grid-3;
   position: relative;
   width: 7.5rem;
@@ -23,6 +23,14 @@
     top: calc(100% + 1.5rem);
     width: 100%;
   }
+}
+
+.count_status-icon {
+  float: left;
+}
+
+.count_status-text {
+  float: right;
 }
 
 .count_status-ok,

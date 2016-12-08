@@ -95,6 +95,8 @@ $sans-s8:           (24rem / $grid-type);         // 24px;
 $sans-s9:           (40rem / $grid-type);         // 40px;
 $sans-s10:          (100rem / $grid-type);        // 100px;
 
+$sans-s: $sans-s1, $sans-s2, $sans-s3, $sans-s4, $sans-s5, $sans-s6, $sans-s7, $sans-s8;
+
 $serif-s1:          (10rem / $grid-type);         // 10px;
 $serif-s2:          (13rem / $grid-type);         // 13px;
 $serif-s3:          (14rem / $grid-type);         // 14px;
