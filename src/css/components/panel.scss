@@ -121,7 +121,6 @@ h4 + .panel {
 
 .panel-column {
   font-size: $sans-s4;
-  flex: 1 0 0;
   margin-right: 1rem;
 
   &:last-child,
@@ -156,4 +155,26 @@ h4 + .panel {
   font-size: $sans-s4;
   font-weight: 600;
   padding-bottom: $grid-1;
+}
+
+.panel-routes,
+.panel-services {
+
+  h1 {
+    font-weight: 400;
+  }
+
+  h3 {
+    font-size: 0.75rem;
+
+    a {
+      color: #056dd4;
+    }
+
+  }
+
+  a.route-link {
+    text-decoration: underline;
+  }
+
 }
