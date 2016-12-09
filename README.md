@@ -1,7 +1,7 @@
 # cg-style
 This repository houses cg-style or cloudgov-style, a shared style library for the cloud.gov product ecosystem. Cloudgov-style was built on top of the [US Web Design Standards](https://github.com/18F/web-design-standards).
 
-The purpose of cg-style is to provide the assets such as CSS, SCSS, JS, images and fonts to design a site with the visual style of cloud.gov. This allows multiple sites built in separate repositories and with different languages to share a global style without repeating styling code. The cg-style library is primarily distributed on the node/npm ecosystem but also includes a ruby jekyll package.
+The purpose of cg-style is to provide the assets such as CSS, SCSS, JS, images and fonts to design a site with the visual style of cloud.gov. This allows multiple sites built in separate repositories and with different languages to share a global style without repeating styling code. The cg-style library is primarily distributed on the node/npm ecosystem.
 
 ## Install and use
 ### node/npm
@@ -54,49 +54,6 @@ Images that are part of the cg-style project are available as one central svg sp
     <use xlink:href="/public/img/cloudgov-sprite.svg#i-agreement"/>
   </svg>
 ```
-
-<a name="development" id="development"></a>
 ## Development and contributing setup
-These instructions explain how to develop the cloudgov style while using it on another (companion) site. This allows to see the result of the style changes on an actual site. This has already been started with [cg-docs](https://github.com/18F/cg-docs/tree/style-initial_setup).
 
-0. Ensure npm is installed.
-0. Run `git clone git@github.com:18F/cg-style.git cloudgov-style` if you haven't done so already.
-0. Enter the project directory with `cd cloudgov-style`.
-0. Run `npm install` in the `cloudgov-style` repo.
-0. Run `npm run build` in the `cloudgov-style` repo.
-0. In the *cloudgov-style* repo, link the current module by running `npm link` in the root of the repo.
-0. In the companion site repo, link the *cloudgov-style* repo by running `npm link cloudgov-style` in the root of the repo.
-
-   - Confirm that the cg-style folder exists in `node_modules` folder.
-
-0. In the *cloudgov-style* repo, complete the build by running `npm install && npm run build`.
-0. In the companion site repo, import cg style into the main sass file: `@import "../node_modules/cloudgov-style/css/cg_style.scss";`.
-0. In the companion site repo, run sass to build the *cg-style* repo into the css. This is best done through a script in package.json: `"build": "node-sass static_src/main.scss static/css/main.css"`
-
-When writing styling code, make changes in the *cloudgov-style* repo, run `npm run build` in the *cloudgov-style* repo, run `npm run build` in the companion site repo, and changes should be built. Alternatively, both repos have a watch task which can be run with `npm run watch` to allow changes to propegate automatically.
-
-There is a coding standards document that dictates standards and suggestions for how to write code: [documentation/frontend_standards.md](documentation/frontend_standards.md).
-
-Run `npm run lint` to lint the codebase for style problems.
-
-## Running the styleguide
-The styleguide allows you to see changes to components from the cloudgov-style project rather then another site and is used for visual regression testing of components.
-
-## [WIP] Running Cloud.gov pattern library locally
-The Cloud.gov pattern library leverages Fractal, a static site framework for building and documenting component libraries. Here are some instructions to view the library locally:
-
-First, you'll perform a build step to create the site and test the build process:
-
-```sh
-npm run build-library
-```
-
-Now you can run you local server by running the following command:
-
-```sh
-npm run start
-```
-
-Go to `localhost:3000` in your browser and you should be viewing a local instance of the Cloud.gov pattern library. The `--sync` flag indicates that you would like Fractal to watch any changes you make. When your file is saved, Fractal will reload the site automatically and you will be able to view those changes.
-
-Happy developing!
+See the [CONTRIBUTING documentation](CONTRIBUTING.md).
