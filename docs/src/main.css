@@ -16,9 +16,8 @@ code {
   padding: 0;
 }
 
-[dir="ltr"] .Preview-resizer {
-  left: 1rem;
-  top: 1rem;
+.preview {
+  padding: 1rem;
 }
 
 .Frame-panel--sidebar {
