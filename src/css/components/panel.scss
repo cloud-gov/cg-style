@@ -156,23 +156,3 @@ h4 + .panel {
   font-weight: 600;
   padding-bottom: $grid-1;
 }
-
-.panel-routes,
-.panel-services {
-
-  h1 {
-    font-weight: 400;
-  }
-
-  h3 {
-    font-size: 0.75rem;
-
-    a {
-      color: #056dd4;
-
-      .route-link {
-        text-decoration: underline;
-      }
-    }
-  }
-}
