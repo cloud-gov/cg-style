@@ -15,6 +15,10 @@
   & + h3 {
     margin-top: $grid-3;
   }
+
+  & + .icon-container {
+    margin-top: 1rem;
+  }
 }
 
 .icon {
@@ -36,16 +40,24 @@
   stroke: $color-primary-alt-light;
 }
 
+.icon-ok {
+  stroke: $color-ok;
+}
+
+.icon-error {
+  stroke: $color-error;
+}
+
 .icon-fill {
   @extend .icon;
   fill: currentColor;
   stroke: transparent;
 
-  &.icon-fill-ok {
+  &.icon-ok {
     fill: $color-ok;
   }
 
-  &.icon-fill-error {
+  &.icon-error {
     fill: $color-error;
   }
 
@@ -65,5 +77,29 @@
   & + * {
     display: inline-block;
     margin-left: 1rem;
+  }
+}
+
+.icon-bordered {
+  border-color: $color-textblack;
+  border-style: solid;
+  border-width: 0.1em;
+  border-radius: 0.2em;
+  height: 1.1em;
+  min-height: 22px;
+  min-width: 22px;
+  padding: 0 0.1em;
+  width: 1.1em;
+
+  &.icon-ok {
+    border-color: $color-ok;
+  }
+
+  &.icon-error {
+    border-color: $color-error;
+  }
+
+  &.icon-alt {
+    border-color: $color-primary-alt-light;
   }
 }
