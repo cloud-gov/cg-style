@@ -68,6 +68,10 @@
   border-color: $color-secondary; // #e31c3d;
 }
 
+.activity_log-item-error .activity_log-item_timestamp {
+  color:$color-secondary;
+}
+
 .activity_log-item-warning .activity_log-item_text::before {
   border-color: $color-gold;
 }
