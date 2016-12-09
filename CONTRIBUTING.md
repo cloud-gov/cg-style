@@ -70,7 +70,7 @@ observed unless they are overridden here.
 
 ### Build
 
-- CSS: the following features of SASS should not be used:
+- CSS: the following features of SASS should only be used when absolutely necessary:
   - Functions
   - @extend
   - For loops
@@ -108,15 +108,13 @@ be given easy to understand names.
 ```
 /base
 /components
-/modules
-/layout
-/overrides
 ```
-- CSS: will be imported in this grouped order: base, components, modules,
-  overrides and in alphabetically order within these groups.
+- CSS: will be imported in this grouped order: base, components, overrides and in alphabetically order within these groups.
 - CSS: base code should only include tag rules `a { }, h1 { }`.
 - CSS: component code should be classes nested no more then 0 level deep.
-- CSS: scss code that doesn't ouput actual styles, such as `@mixin`s, `@functions`s, variables should be kept in a separate directory from base, or component.
+- CSS: scss code that doesn't ouput actual styles, such as `@mixin`s, `@functions`s, variables should be kept in a separate directory from base, or component, such as `util`.
+- CSS: Code that overrides WDS Sass variables should be kept in `override_vars.scss`.
+- CSS: Code that overrides WDS components should be kept in `override_components.scss`.
 - HTML: components should be accessible by default.
 - JS: components should work (display all data) without JS by default.
 - CSS: components should not define their own layout. Use of margins should be kept to a minimum.
