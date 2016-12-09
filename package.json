@@ -48,6 +48,7 @@
   "devDependencies": {
     "@18f/stylelint-rules": "^2.0.0",
     "@frctl/fractal": "^1.0.8",
+    "@frctl/mandelbrot": "^1.0.7",
     "autoprefixer": "^6.2.3",
     "browserify": "^13.0.0",
     "clean-css": "^3.4.9",
