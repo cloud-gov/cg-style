@@ -23,6 +23,7 @@
     "svg": "gulp --gulpfile build/gulpfile.js svg-sprite",
     "test": "npm run lint",
     "watch": "watch 'npm run build' ./src -d",
+    "watch-library": "watch 'npm run build-library-assets' ./src -d",
     "release": "node ./scripts/release.js",
     "start": "npm run build-library && fractal start --sync"
   },
@@ -48,6 +49,7 @@
   "devDependencies": {
     "@18f/stylelint-rules": "^2.0.0",
     "@frctl/fractal": "^1.0.8",
+    "@frctl/mandelbrot": "^1.0.7",
     "autoprefixer": "^6.2.3",
     "browserify": "^13.0.0",
     "clean-css": "^3.4.9",

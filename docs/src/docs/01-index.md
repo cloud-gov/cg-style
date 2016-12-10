@@ -1,5 +1,5 @@
 ---
-title: Cloud.gov Pattern Library
+title: cloud.gov design system
 ---
 
-Welcome to the Cloud.gov pattern library!
+Welcome to the cloud.gov design system!

@@ -1,6 +1,31 @@
-body {
-  padding: 20px;
-  background-color: white
+code {
+  font-family: monospace;
+  font-size: 0.9rem;
+}
+
+.Header {
+  background-color: #2c3e50;
+}
+
+.Header-button {
+  border-radius: 0;
+  font-size: initial;
+  margin: 0;
+  min-width: initial;
+  padding: 0;
+}
+
+.preview {
+  padding: 1rem;
+}
+
+.Frame-panel--sidebar {
+  background: #f5f5f3;
+}
+
+.Tree-title,
+.Tree-collectionLabel {
+  color: #333;
 }
 
 .grid-container {
