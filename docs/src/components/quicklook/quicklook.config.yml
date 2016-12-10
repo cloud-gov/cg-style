@@ -1,0 +1,19 @@
+context:
+  organizations:
+    - org:
+      name: 'foo'
+      spaces:
+        - space:
+          name: 'foo/foo'
+        - space:
+          name: 'foo/bar'
+      apps:
+        - app:
+          name: 'foo/foo'
+        - app:
+          name: 'foo/bar'
+    - org:
+      name: 'bar'
+      spaces:
+        - space:
+          name: 'bar/foo'

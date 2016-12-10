@@ -1,9 +1,10 @@
 body {
   padding: 20px;
+  background-color: white
 }
 
 .grid-container {
-  background-color: #ddd;
+  background-color: white;
   color: white;
   margin: auto;
   max-width: 1040px;
