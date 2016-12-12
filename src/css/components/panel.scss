@@ -3,7 +3,7 @@
 @import '../override_vars.scss';
 @import '../core.scss';
 
-$panel-padding: 1rem;
+$panel-padding: $grid-2;
 
 .panel {
   @include clearfix;
@@ -157,8 +157,4 @@ h4 + .panel {
   font-size: $sans-s4;
   font-weight: 600;
   padding-bottom: $grid-1;
-}
-
-.card--home-title {
-  font-weight: 400;
 }

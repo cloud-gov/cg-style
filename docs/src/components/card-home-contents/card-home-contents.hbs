@@ -1,0 +1,47 @@
+
+{{#each organizations}}
+<div class="card-home-contents"> <!-- card-home-contents--quicklook -->
+  <div class="card-home-contents-header row"> <!-- card-home-contents-header -->
+    <h2 class="card-home-contents-title col-fit">
+      <svg class="icon-fill icon-fill-inactive">
+        <use xlink:href="/img/cloudgov-sprite.svg#i-fill-org"></use>
+      </svg>
+      <a href="#">{{ name }}</a>
+    </h2>
+    <div class="card-home-contents-status col-none row"> <!-- card-home-contents-header-status -->
+
+      <div class="count_status count_status-none col-none row-center"> <!-- card-home-contents-header-status-entity -->
+        <div class="count_status-icon col-none">
+          <svg class="icon-fill icon-bordered icon-fill-alt">
+            <use xlink:href="/img/cloudgov-sprite.svg#i-fill-space"></use>
+          </svg>
+        </div>
+        <div class="count_status-text col-fit">
+          {{#if spaces.0.name}}
+            <strong>{{ spaces.length }}</strong> space{{#if spaces.1.name}}s{{/if}}
+          {{else}}
+            <strong>0</strong> spaces
+          {{/if}}
+        </div>
+      </div><!-- /card-home-contents-header-status-entity -->
+
+      <span class="count_status count_status-ok col-none row-center"> <!-- card-home-contents-header-status-item -->
+        <span class="count_status-icon col-none">
+          <svg class="icon-fill icon-bordered icon-ok">
+            <use xlink:href="/img/cloudgov-sprite.svg#i-fill-app"></use>
+          </svg>
+        </span>
+        <span class="count_status-text col-fit">
+          {{#if apps.0.name}}
+            <strong>{{ apps.length }}</strong> app{{#if apps.1.name}}s{{/if}}
+          {{else}}
+            <strong>0</strong> apps
+          {{/if}}
+        </span>
+      </span><!-- /card-home-contents-header-status-item -->
+
+    </div> <!-- /card-home-contents-header-status -->
+  </div> <!-- /card-home-contents--header -->
+</div> <!-- /card-home-contents--quicklook -->
+
+{{/each}}

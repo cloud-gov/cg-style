@@ -1,7 +1,9 @@
+title: card-home-contents
+status: wip
 context:
   organizations:
     - org:
-      name: 'foo'
+      name: 'abacus'
       spaces:
         - space:
           name: 'foo/foo'
@@ -13,7 +15,12 @@ context:
         - app:
           name: 'foo/bar'
     - org:
-      name: 'bar'
+      name: 'epa-journeyman'
       spaces:
         - space:
           name: 'bar/foo'
+    - org:
+      name: 'sandbox'
+      spaces:
+        - space:
+          name: 'sandbox/user.name'
