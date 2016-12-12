@@ -10,6 +10,25 @@
   width: 100%;
 }
 
+.activity_log-item_text {
+  position: relative;
+  word-wrap: break-word;
+}
+
+.activity_log-item_timestamp {
+  cursor: pointer;
+  padding-right: 1rem;
+  text-align: right;
+}
+
+.activity_log-item_text,
+.activity_log-item_timestamp {
+  flex-grow: 1;
+  font-family: $font-mono;
+  font-size: $sans-s3;
+  max-width: initial;
+}
+
 .activity_log-item {
   align-items: center;
   border-bottom: 1px solid $color-lightgray;
@@ -23,53 +42,40 @@
   position: relative;
   width: 100%;
 
-  .activity_log-item_text {
-    position: relative;
-  }
-
-  .activity_log-item_text p,
-  .activity_log-item_timestamp {
-    font-family: $font-mono;
-    font-size: $sans-s3;
-    max-width: initial;
-  }
-
   &:first-child {
     border-top: 1px solid $color-lightgray;
     padding-top: .5rem;
   }
+}
 
-  &.activity_log-item-error,
-  &.activity_log-item-success,
-  &.activity_log-item-warning {
-    .activity_log-item_text::before {
-      border-radius: 3px;
-      border-style: solid;
-      border-width: 2px;
-      content: '';
-      height: 100%;
-      left: -1rem;
-      position: absolute;
-      top: 0;
-    }
+.activity_log-item-error,
+.activity_log-item-success,
+.activity_log-item-warning {
+  .activity_log-item_text::before {
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 2px;
+    content: '';
+    height: 100%;
+    left: -1rem;
+    position: absolute;
+    top: 0;
+  }
 
-    .activity_log-item_text p {
-      font-family: $font-sans;
-      font-weight: 600;
-    }
+  .activity_log-item_text {
+    font-family: $font-sans;
+    font-weight: 600;
   }
 }
 
-.activity_log-container p {
-  word-wrap: break-word;
-}
+.activity_log-item-error {
+  .activity_log-item_timestamp {
+    color: $color-secondary;
+  }
 
-.activity_log-item-error .activity_log-item_text::before {
-  border-color: $color-secondary; // #e31c3d;
-}
-
-.activity_log-item-error .activity_log-item_timestamp {
-  color: $color-secondary;
+  .activity_log-item_text::before {
+    border-color: $color-secondary; // #e31c3d;
+  }
 }
 
 .activity_log-item-warning .activity_log-item_text::before {
@@ -80,24 +86,14 @@
   border-color: $color-green; //#2e8540;
 }
 
-.activity_log-item_text p,
-.activity_log-item_timestamp {
-  flex-grow: 1;
-}
-
 .activity_log-item_raw {
   flex-grow: 2;
   max-width: 60rem;
   min-width: 50rem;
+
+  pre {
+    background-color: $color-gray-lightest;
+    padding: .8rem;
+  }
 }
 
-.activity_log-item_raw pre {
-  background-color: $color-gray-lightest;
-  padding: .8rem;
-}
-
-.activity_log-item_timestamp {
-  cursor: pointer;
-  padding-right: 1rem;
-  text-align: right;
-}
