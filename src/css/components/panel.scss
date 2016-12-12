@@ -97,6 +97,7 @@ h4 + .panel {
 }
 
 .panel-row-boxed {
+  background-color: $color-white;
   border: 1px solid $color-textblack;
   margin-bottom: $grid-3;
   padding: $grid-3;
@@ -156,4 +157,8 @@ h4 + .panel {
   font-size: $sans-s4;
   font-weight: 600;
   padding-bottom: $grid-1;
+}
+
+.card--home-title {
+  font-weight: 400;
 }
