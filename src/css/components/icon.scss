@@ -102,6 +102,7 @@
   }
   &-up {
     @extend .icon-chevron;
+    top: -1px;
     transform: rotate(-90deg);
   }
   &-down {

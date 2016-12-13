@@ -8,11 +8,19 @@
       {{ buttonText }}
     </div>
     <div class="trigger-action col-none">
-      {{#unless isOutline}}
-        {{ render '@icon-ui--chevron-down-white' }}
+      {{#if isOpen}}
+        {{#unless isOutline}}
+          {{ render '@icon-ui--chevron-up-white' }}
+        {{else}}
+          {{ render '@icon-ui--chevron-up' }}
+        {{/unless}}
       {{else}}
-        {{ render '@icon-ui--chevron-down' }}
-      {{/unless}}
+        {{#unless isOutline}}
+          {{ render '@icon-ui--chevron-down-white' }}
+        {{else}}
+          {{ render '@icon-ui--chevron-down' }}
+        {{/unless}}
+      {{/if}}
     </div>
   </div>
 </a>
