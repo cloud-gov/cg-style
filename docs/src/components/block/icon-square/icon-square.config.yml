@@ -3,58 +3,58 @@ collated: true
 variants:
   - name: default
     context:
-      iconKind: org--new
+      iconKind: org
       iconSize: small
       isBorder: false
   - name: org-small
     context:
-      iconKind: org--new
+      iconKind: org
       iconSize: small
       isBorder: false
   - name: org-medium
     context:
-      iconKind: org--new
+      iconKind: org
       iconSize: medium
       isBorder: false
   - name: org-large
     context:
-      iconKind: org--new
+      iconKind: org
       iconSize: large
       isBorder: false
   - name: org-active-small
     context:
       iconStatus: active
-      iconKind: org--new
+      iconKind: org
       iconSize: small
       isBorder: false
   - name: org-active-medium
     context:
       iconStatus: active
-      iconKind: org--new
+      iconKind: org
       iconSize: medium
       isBorder: false
   - name: org-active-large
     context:
       iconStatus: active
-      iconKind: org--new
+      iconKind: org
       iconSize: large
       isBorder: false
   - name: org-disabled-small
     context:
       iconStatus: disabled
-      iconKind: org--new
+      iconKind: org
       iconSize: small
       isBorder: false
   - name: org-disabled-medium
     context:
       iconStatus: disabled
-      iconKind: org--new
+      iconKind: org
       iconSize: medium
       isBorder: false
   - name: org-disabled-large
     context:
       iconStatus: disabled
-      iconKind: org--new
+      iconKind: org
       iconSize: large
       isBorder: false
   - name: space-small
@@ -72,6 +72,21 @@ variants:
       iconKind: space
       iconSize: large
       isBorder: true
+  - name: space-small-reverse
+    context:
+      iconKind: space
+      iconSize: small
+      isReverse: true
+  - name: space-medium-reverse
+    context:
+      iconKind: space
+      iconSize: medium
+      isReverse: true
+  - name: space-large-reverse
+    context:
+      iconKind: space
+      iconSize: large
+      isReverse: true
   - name: space-disabled-small
     context:
       iconStatus: disabled
@@ -90,6 +105,24 @@ variants:
       iconKind: space
       iconSize: large
       isBorder: true
+  - name: space-disabled-small-reverse
+    context:
+      iconStatus: disabled
+      iconKind: space
+      iconSize: small
+      isReverse: true
+  - name: space-disabled-medium-reverse
+    context:
+      iconStatus: disabled
+      iconKind: space
+      iconSize: medium
+      isReverse: true
+  - name: space-disabled-large-reverse
+    context:
+      iconStatus: disabled
+      iconKind: space
+      iconSize: large
+      isReverse: true
   - name: space-active-small
     context:
       iconStatus: active
@@ -108,6 +141,24 @@ variants:
       iconKind: space
       iconSize: large
       isBorder: true
+  - name: space-active-small-reverse
+    context:
+      iconStatus: active
+      iconKind: space
+      iconSize: small
+      isReverse: true
+  - name: space-active-medium-reverse
+    context:
+      iconStatus: active
+      iconKind: space
+      iconSize: medium
+      isReverse: true
+  - name: space-active-large-reverse
+    context:
+      iconStatus: active
+      iconKind: space
+      iconSize: large
+      isReverse: true
   - name: space-ok-small
     context:
       iconStatus: ok
@@ -126,6 +177,24 @@ variants:
       iconKind: space
       iconSize: large
       isBorder: true
+  - name: space-ok-small-reverse
+    context:
+      iconStatus: ok
+      iconKind: space
+      iconSize: small
+      isReverse: true
+  - name: space-ok-medium-reverse
+    context:
+      iconStatus: ok
+      iconKind: space
+      iconSize: medium
+      isReverse: true
+  - name: space-ok-large-reverse
+    context:
+      iconStatus: ok
+      iconKind: space
+      iconSize: large
+      isReverse: true
   - name: space-error-small
     context:
       iconStatus: error
@@ -144,6 +213,24 @@ variants:
       iconKind: space
       iconSize: large
       isBorder: true
+  - name: space-error-small-reverse
+    context:
+      iconStatus: error
+      iconKind: space
+      iconSize: small
+      isReverse: true
+  - name: space-error-medium-reverse
+    context:
+      iconStatus: error
+      iconKind: space
+      iconSize: medium
+      isReverse: true
+  - name: space-error-large-reverse
+    context:
+      iconStatus: error
+      iconKind: space
+      iconSize: large
+      isReverse: true
   - name: app-small
     context:
       iconKind: app
@@ -159,6 +246,21 @@ variants:
       iconKind: app
       iconSize: large
       isBorder: true
+  - name: app-small-reverse
+    context:
+      iconKind: app
+      iconSize: small
+      isReverse: true
+  - name: app-medium-reverse
+    context:
+      iconKind: app
+      iconSize: medium
+      isReverse: true
+  - name: app-large-reverse
+    context:
+      iconKind: app
+      iconSize: large
+      isReverse: true
   - name: app-disabled-small
     context:
       iconStatus: disabled
@@ -177,6 +279,24 @@ variants:
       iconKind: app
       iconSize: large
       isBorder: true
+  - name: app-disabled-small-reverse
+    context:
+      iconStatus: disabled
+      iconKind: app
+      iconSize: small
+      isReverse: true
+  - name: app-disabled-medium-reverse
+    context:
+      iconStatus: disabled
+      iconKind: app
+      iconSize: medium
+      isReverse: true
+  - name: app-disabled-large-reverse
+    context:
+      iconStatus: disabled
+      iconKind: app
+      iconSize: large
+      isReverse: true
   - name: app-active-small
     context:
       iconStatus: active
@@ -195,6 +315,24 @@ variants:
       iconKind: app
       iconSize: large
       isBorder: true
+  - name: app-active-small-reverse
+    context:
+      iconStatus: active
+      iconKind: app
+      iconSize: small
+      isReverse: true
+  - name: app-active-medium-reverse
+    context:
+      iconStatus: active
+      iconKind: app
+      iconSize: medium
+      isReverse: true
+  - name: app-active-large-reverse
+    context:
+      iconStatus: active
+      iconKind: app
+      iconSize: large
+      isReverse: true
   - name: app-ok-small
     context:
       iconStatus: ok
@@ -213,6 +351,24 @@ variants:
       iconKind: app
       iconSize: large
       isBorder: true
+  - name: app-ok-small-reverse
+    context:
+      iconStatus: ok
+      iconKind: app
+      iconSize: small
+      isReverse: true
+  - name: app-ok-medium-reverse
+    context:
+      iconStatus: ok
+      iconKind: app
+      iconSize: medium
+      isReverse: true
+  - name: app-ok-large-reverse
+    context:
+      iconStatus: ok
+      iconKind: app
+      iconSize: large
+      isReverse: true
   - name: app-error-small
     context:
       iconStatus: error
@@ -231,6 +387,24 @@ variants:
       iconKind: app
       iconSize: large
       isBorder: true
+  - name: app-error-small-reverse
+    context:
+      iconStatus: error
+      iconKind: app
+      iconSize: small
+      isReverse: true
+  - name: app-error-medium-reverse
+    context:
+      iconStatus: error
+      iconKind: app
+      iconSize: medium
+      isReverse: true
+  - name: app-error-large-reverse
+    context:
+      iconStatus: error
+      iconKind: app
+      iconSize: large
+      isReverse: true
   - name: service-small
     context:
       iconKind: service
@@ -246,6 +420,21 @@ variants:
       iconKind: service
       iconSize: large
       isBorder: true
+  - name: service-small-reverse
+    context:
+      iconKind: service
+      iconSize: small
+      isReverse: true
+  - name: service-medium-reverse
+    context:
+      iconKind: service
+      iconSize: medium
+      isReverse: true
+  - name: service-large-reverse
+    context:
+      iconKind: service
+      iconSize: large
+      isReverse: true
   - name: service-error-small
     context:
       iconStatus: error
@@ -264,3 +453,21 @@ variants:
       iconKind: service
       iconSize: large
       isBorder: true
+  - name: service-error-small-reverse
+    context:
+      iconStatus: error
+      iconKind: service
+      iconSize: small
+      isReverse: true
+  - name: service-error-medium-reverse
+    context:
+      iconStatus: error
+      iconKind: service
+      iconSize: medium
+      isReverse: true
+  - name: service-error-large-reverse
+    context:
+      iconStatus: error
+      iconKind: service
+      iconSize: large
+      isReverse: true

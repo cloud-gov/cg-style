@@ -3,14 +3,14 @@
 <div class="card-home-contents"> <!-- card-home-contents--quicklook -->
   <div class="card-home-contents-header row-center"> <!-- card-home-contents-header -->
     <h2 class="card-home-contents-title col-fit">
-      {{ render '@icon-ui--org-medium' }}
+      {{ render '@icon-square--org-medium' }}
       <a href="#">{{ name }}</a>
     </h2>
     <div class="panel-contents-status col-none row"> <!-- card-home-contents-header-status -->
 
       <div class="count_status count_status-none col-none row-center"> <!-- card-home-contents-header-status-entity -->
         <div class="count_status-icon col-none">
-          {{ render '@icon-ui--space-medium' }}
+          {{ render '@icon-square--space-medium' }}
         </div>
         <div class="count_status-text col-fit">
           {{#if spaces.0.name}}
@@ -25,7 +25,7 @@
 
         {{#if apps.0.name}}
         <div class="count_status-icon col-none">
-          {{ render '@icon-ui--app-ok-medium' }}
+          {{ render '@icon-square--app-ok-medium' }}
         </div>
         <div class="count_status-text col-fit">
           {{#if apps.0.name}}
@@ -36,7 +36,7 @@
         </div>
         {{else}}
         <div class="count_status-icon col-none">
-          {{ render '@icon-ui--app-disabled-medium' }}
+          {{ render '@icon-square--app-disabled-medium' }}
         </div>
         <div class="count_status-text col-fit">
             <strong>0</strong> apps
