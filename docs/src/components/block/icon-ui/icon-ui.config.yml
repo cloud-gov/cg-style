@@ -227,3 +227,18 @@ variants:
       iconKind: app
       iconSize: large
       isBorder: true
+  - name: service-small
+    context:
+      iconKind: service
+      iconSize: small
+      isBorder: true
+  - name: service-medium
+    context:
+      iconKind: service
+      iconSize: medium
+      isBorder: true
+  - name: service-large
+    context:
+      iconKind: service
+      iconSize: large
+      isBorder: true

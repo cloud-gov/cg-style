@@ -7,12 +7,10 @@ $panel-padding: $grid-2;
 
 .panel {
   @include clearfix;
+  background-color: $color-white;
+  margin-bottom: $grid-4;
   min-height: 10rem;
-  padding: 0.75rem 0 0 0;
-
-  & + .panel {
-    margin-top: 1.5rem;
-  }
+  padding: $grid-3 $grid-2 $grid-4;
 }
 
 h1 + .panel,
@@ -25,6 +23,7 @@ h4 + .panel {
 .panel-title {
   font-size: $sans-s7;
   font-weight: 400;
+  line-height: $leading-single;
   margin-bottom: $grid-2;
 }
 
