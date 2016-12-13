@@ -1,7 +1,7 @@
 
 {{#each organizations}}
 <div class="card-home-contents"> <!-- card-home-contents--quicklook -->
-  <div class="card-home-contents-header row"> <!-- card-home-contents-header -->
+  <div class="card-home-contents-header row-center"> <!-- card-home-contents-header -->
     <h2 class="card-home-contents-title col-fit">
       {{ render '@icon-ui--org-medium' }}
       <a href="#">{{ name }}</a>
@@ -45,7 +45,14 @@
       </span><!-- /card-home-contents-header-status-item -->
 
     </div> <!-- /card-home-contents-header-status -->
-  </div> <!-- /card-home-contents--header -->
+  </div> <!-- /card-home-contents-header -->
+
+  {{#if isOpen }}
+  <div class="card-home-contents-items">
+    {{ render '@overview-row' }}
+  </div>
+  {{/if}}
+
 </div> <!-- /card-home-contents--quicklook -->
 
 {{/each}}

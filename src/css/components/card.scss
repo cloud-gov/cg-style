@@ -7,12 +7,21 @@
   border: 1px solid $color-textblack;
   border-radius: $rounded;
   margin-bottom: $grid-2;
-  padding: $grid-3;
-  padding: $grid-3 $grid-2;
+  padding: 0;
 }
 
 .card-home-contents-title {
   font-size: $sans-s8;
   font-weight: 400;
   line-height: 1;
+}
+
+.card-home-contents-header {
+  height: $grid-9;
+  overflow: hidden;
+  padding: 0 $grid-2;
+}
+
+.card-home-contents-items {
+  padding: $grid-4 $grid-2;
 }

@@ -1,0 +1,42 @@
+<div class="overview-column-heds row center">
+  <div class="overview-column-hed col-fit">Spaces and apps</div>
+  <div class="overview-column-hed overview-item-usage col-none">Usage</div>
+</div>
+<div class="overview-items">
+
+  <!-- space item -->
+  <div class="overview-row row-center indent-0">
+    <div class="col-fit">
+      {{ render '@icon-ui--space-medium' }}
+      <h3 class="overview-item-title inline"><a href="#">spaceName</a></h3>
+    </div>
+    <div class="overview-item-usage col-none">
+      <div class="overview-item-usage-amt">itemUsage</div>
+      <div class="overview-item-usage-helper">itemUsageHelper</div>
+    </div>
+  </div>
+
+  <!-- app/path ok item -->
+  <div class="overview-row row-center indent-1">
+    <div class="col-fit">
+      {{ render '@icon-ui--app-ok-medium' }}
+      <h3 class="overview-item-title inline"><span class="overview-item-title-path">spaceName / <span><a href="#">appName</a></h3>
+    </div>
+    <div class="overview-item-status col-none">
+      <div class="overview-item-status status-ok">Running</div>
+    </div>
+  </div>
+
+  <!-- app/path crashed item -->
+  <div class="overview-row row-center indent-1">
+    <div class="col-fit">
+      {{ render '@icon-ui--app-error-medium' }}
+      <h3 class="overview-item-title inline"><span class="overview-item-title-path">spaceName / <span><a href="#" class="status-error">appName</a></h3>
+    </div>
+    <div class="overview-item-status col-none">
+      {{ render '@button--active' }}
+      <span class="overview-item-status status-error inline">Crashed</span>
+    </div>
+  </div>
+
+</div>
