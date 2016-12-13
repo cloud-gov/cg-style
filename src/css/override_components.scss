@@ -97,6 +97,7 @@ button,
 [type='reset'],
 [type='image'] {
   border-radius: $rounded;
+  display: inline-block;
   font-size: $sans-s3;
   font-weight: 500;
   height: $grid-4;

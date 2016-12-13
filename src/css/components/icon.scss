@@ -64,9 +64,14 @@
   border-radius: $rounded;
   fill: $color-textblack;
   stroke: transparent;
+  top: auto;
 
   &.icon-disabled {
     fill: $color-lightgray;
+  }
+
+  &.icon-white {
+    fill: $color-white;
   }
 
   &.icon-ok {
@@ -79,6 +84,29 @@
 
   &.icon-active {
     fill: $color-blue;
+  }
+}
+
+.icon-chevron {
+  fill: $color-blue;
+  height: 11px;
+  width: 11px;
+
+  &-left {
+    @extend .icon-chevron;
+    transform: rotate(180deg);
+  }
+  &-right {
+    @extend .icon-chevron;
+    transform: rotate(0deg);
+  }
+  &-up {
+    @extend .icon-chevron;
+    transform: rotate(-90deg);
+  }
+  &-down {
+    @extend .icon-chevron;
+    transform: rotate(90deg);
   }
 }
 
@@ -109,6 +137,10 @@
 
   &.icon-ok {
     border-color: $color-ok;
+  }
+
+  &.icon-white {
+    border-color: $color-white;
   }
 
   &.icon-disabled {

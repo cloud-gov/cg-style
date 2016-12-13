@@ -1,0 +1,18 @@
+
+<a class="usa-button trigger action {{#if isOutline }}usa-button-outline {{/if}}action-{{ buttonStatus }}">
+  <div class="trigger-content row-center">
+    <div class="trigger-icon col-none">
+      {{ render '@icon-square--org-small' }}
+    </div>
+    <div class="trigger-text col-fit">
+      {{ buttonText }}
+    </div>
+    <div class="trigger-action col-none">
+      {{#unless isOutline}}
+        {{ render '@icon-ui--chevron-down-white' }}
+      {{else}}
+        {{ render '@icon-ui--chevron-down' }}
+      {{/unless}}
+    </div>
+  </div>
+</a>
