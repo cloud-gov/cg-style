@@ -14,8 +14,13 @@ table {
   td {
     border: none;
     border-top: 1px solid;
-    padding: .5em 1.25em;
+    padding: .8em 1.25em;
     padding-left: 0;
+    text-align: right;
+
+    &:first-child {
+      text-align: left;
+    }
   }
 
   /* stylelint-disable selector-no-qualifying-type */
@@ -24,6 +29,7 @@ table {
   }
   /* stylelint-enable */
 
+  th:last-child,
   td:last-child {
     padding-right: 0;
   }
@@ -34,7 +40,7 @@ table {
 
   thead th {
     background-color: transparent;
-    border-bottom: 3px solid;
+    border-bottom: 0;
     border-top: none;
     font-size: .8rem;
     font-weight: 800;
@@ -111,7 +117,9 @@ table {
     }
 
     td {
-      border-bottom-width: 0;
+      border-color: $color-textblack;
+      border-bottom-style: solid;
+      border-bottom-width: 1px;
       display: flex;
       flex-direction: column;
       flex-grow: 1;
