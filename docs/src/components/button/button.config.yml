@@ -7,35 +7,50 @@ variants:
       isOutline: false
       isLink: false
       buttonStatus: primary
-      buttonText: buttonText
+      buttonText: default
+  - name: base
+    context:
+      isDefault: true
+      isOutline: false
+      isLink: false
+      buttonStatus: base
+      buttonText: base
   - name: warning
     context:
       isDefault: true
       isOutline: false
       isLink: false
       buttonStatus: warning
-      buttonText: buttonText
-  - name: primary
+      buttonText: warning
+  - name: active
     context:
       isDefault: true
       isOutline: false
       isLink: false
       buttonStatus: primary
-      buttonText: buttonText
+      buttonText: active
   - name: disabled
     context:
       isDefault: true
       isOutline: false
       isLink: false
       buttonStatus: cautious
-      buttonText: buttonText
+      buttonText: disabled
   - name: finish
     context:
       isDefault: true
       isOutline: false
       isLink: false
       buttonStatus: finish
-      buttonText: buttonText
+      buttonText: finish-outline
+  - name: base-outline
+    context:
+      isDefault: false
+      isOutline: true
+      isLink: false
+      buttonStatus: base
+      buttonStyle: outline
+      buttonText: base-outline
   - name: warning-outline
     context:
       isDefault: false
@@ -43,15 +58,15 @@ variants:
       isLink: false
       buttonStatus: warning
       buttonStyle: outline
-      buttonText: buttonText
-  - name: primary-outline
+      buttonText: warning-outline
+  - name: active-outline
     context:
       isDefault: false
       isOutline: true
       isLink: false
       buttonStatus: primary
       buttonStyle: outline
-      buttonText: buttonText
+      buttonText: active-outline
   - name: disabled-outline
     context:
       isDefault: false
@@ -59,7 +74,7 @@ variants:
       isLink: false
       buttonStatus: cautious
       buttonStyle: outline
-      buttonText: buttonText
+      buttonText: disabled-outline
   - name: finish-outline
     context:
       isDefault: false
@@ -67,7 +82,15 @@ variants:
       isLink: false
       buttonStatus: finish
       buttonStyle: outline
-      buttonText: buttonText
+      buttonText: finish-outline
+  - name: base-link
+    context:
+      isDefault: false
+      isOutline: false
+      isLink: true
+      buttonStatus: base
+      buttonStyle: link
+      buttonText: base-link
   - name: warning-link
     context:
       isDefault: false
@@ -75,15 +98,15 @@ variants:
       isLink: true
       buttonStatus: warning
       buttonStyle: link
-      buttonText: buttonText
-  - name: primary-link
+      buttonText: warning-outline
+  - name: active-link
     context:
       isDefault: false
       isOutline: false
       isLink: true
       buttonStatus: primary
       buttonStyle: link
-      buttonText: buttonText
+      buttonText: primary-link
   - name: disabled-link
     context:
       isDefault: false
@@ -91,7 +114,7 @@ variants:
       isLink: true
       buttonStatus: cautious
       buttonStyle: link
-      buttonText: buttonText
+      buttonText: disabled-link
   - name: finish-link
     context:
       isDefault: false
@@ -99,4 +122,4 @@ variants:
       isLink: true
       buttonStatus: finish
       buttonStyle: link
-      buttonText: buttonText
+      buttonText: finish-link

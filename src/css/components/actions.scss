@@ -94,6 +94,35 @@
       }
     }
   }
+
+  &.action-base {
+    background-color: $color-textblack;
+
+    &:hover {
+      background-color: $color-blue;
+      color: $color-white;
+    }
+
+    &.action-link {
+      background-color: transparent;
+      color: $color-textblack;
+
+      &:hover {
+        color: $color-blue;
+      }
+    }
+
+    &.usa-button-outline {
+      background-color: $color-white;
+      box-shadow: inset 0 0 0 1px $color-textblack;
+      color: $color-textblack;
+
+      &:hover {
+        box-shadow: inset 0 0 0 1px $color-blue;
+        color: $color-blue;
+      }
+    }
+  }
 }
 
 /* TODO refactor "actions" into own components */
