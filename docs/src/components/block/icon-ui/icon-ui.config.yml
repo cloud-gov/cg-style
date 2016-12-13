@@ -2,55 +2,59 @@ title: icon-ui
 collated: true
 variants:
   - name: default
+    context:
+      iconKind: org--new
+      iconSize: small
+      isBorder: false
   - name: org-small
     context:
-      iconKind: org
+      iconKind: org--new
       iconSize: small
       isBorder: false
   - name: org-medium
     context:
-      iconKind: org
+      iconKind: org--new
       iconSize: medium
       isBorder: false
   - name: org-large
     context:
-      iconKind: org
+      iconKind: org--new
       iconSize: large
       isBorder: false
   - name: org-active-small
     context:
       iconStatus: active
-      iconKind: org
+      iconKind: org--new
       iconSize: small
       isBorder: false
   - name: org-active-medium
     context:
       iconStatus: active
-      iconKind: org
+      iconKind: org--new
       iconSize: medium
       isBorder: false
   - name: org-active-large
     context:
       iconStatus: active
-      iconKind: org
+      iconKind: org--new
       iconSize: large
       isBorder: false
   - name: org-disabled-small
     context:
       iconStatus: disabled
-      iconKind: org
+      iconKind: org--new
       iconSize: small
       isBorder: false
   - name: org-disabled-medium
     context:
       iconStatus: disabled
-      iconKind: org
+      iconKind: org--new
       iconSize: medium
       isBorder: false
   - name: org-disabled-large
     context:
       iconStatus: disabled
-      iconKind: org
+      iconKind: org--new
       iconSize: large
       isBorder: false
   - name: space-small
@@ -239,6 +243,24 @@ variants:
       isBorder: true
   - name: service-large
     context:
+      iconKind: service
+      iconSize: large
+      isBorder: true
+  - name: service-error-small
+    context:
+      iconStatus: error
+      iconKind: service
+      iconSize: small
+      isBorder: true
+  - name: service-error-medium
+    context:
+      iconStatus: error
+      iconKind: service
+      iconSize: medium
+      isBorder: true
+  - name: service-error-large
+    context:
+      iconStatus: error
       iconKind: service
       iconSize: large
       isBorder: true

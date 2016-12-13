@@ -29,7 +29,10 @@
     "lint": "node node_modules/.bin/18f-stylelint-rules './src/css/**/*.scss'",
     "svg": "gulp --gulpfile build/gulpfile.js svg-sprite",
     "test": "npm run lint",
-    "watch": "npm run build && watch 'npm run build-css-all' ./src/css -d && watch 'npm run build-font-all' ./src/font -d && watch 'npm run build-img-all' ./src/img -d && watch 'npm run compile-js' ./src/js -d",
+    "watch-css": "watch 'npm run build-css-all' ./src/css -d",
+    "watch-font": "watch 'npm run build-font-all' ./src/font -d",
+    "watch-img": "watch 'npm run build-img-all' ./src/img -d",
+    "watch-js": "watch 'npm run compile-js' ./src/js -d",
     "watch-library": "watch 'npm run build-library-assets' ./src -d",
     "release": "node ./scripts/release.js",
     "start": "fractal start --sync"

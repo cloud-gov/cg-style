@@ -61,6 +61,7 @@
 
 .icon-fill {
   @extend .icon;
+  border-radius: $rounded;
   fill: $color-textblack;
   stroke: transparent;
 
