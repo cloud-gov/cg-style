@@ -27,7 +27,7 @@
     position: relative;
   }
 
-  .activity_log-item_text p,
+  .activity_log-item_text,
   .activity_log-item_timestamp {
     font-family: $font-mono;
     font-size: $sans-s3;
@@ -53,7 +53,7 @@
       top: 0;
     }
 
-    .activity_log-item_text p {
+    .activity_log-item_text {
       font-family: $font-sans;
       font-weight: 600;
     }
