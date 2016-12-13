@@ -3,18 +3,14 @@
 <div class="card-home-contents"> <!-- card-home-contents--quicklook -->
   <div class="card-home-contents-header row"> <!-- card-home-contents-header -->
     <h2 class="card-home-contents-title col-fit">
-      <svg class="icon-fill icon-fill-inactive">
-        <use xlink:href="/img/cloudgov-sprite.svg#i-fill-org"></use>
-      </svg>
+      {{ render '@icon-ui--org-medium' }}
       <a href="#">{{ name }}</a>
     </h2>
-    <div class="card-home-contents-status col-none row"> <!-- card-home-contents-header-status -->
+    <div class="panel-contents-status col-none row"> <!-- card-home-contents-header-status -->
 
       <div class="count_status count_status-none col-none row-center"> <!-- card-home-contents-header-status-entity -->
         <div class="count_status-icon col-none">
-          <svg class="icon-fill icon-bordered icon-fill-alt">
-            <use xlink:href="/img/cloudgov-sprite.svg#i-fill-space"></use>
-          </svg>
+          {{ render '@icon-ui--space-medium' }}
         </div>
         <div class="count_status-text col-fit">
           {{#if spaces.0.name}}
@@ -25,19 +21,27 @@
         </div>
       </div><!-- /card-home-contents-header-status-entity -->
 
-      <span class="count_status count_status-ok col-none row-center"> <!-- card-home-contents-header-status-item -->
-        <span class="count_status-icon col-none">
-          <svg class="icon-fill icon-bordered icon-ok">
-            <use xlink:href="/img/cloudgov-sprite.svg#i-fill-app"></use>
-          </svg>
-        </span>
-        <span class="count_status-text col-fit">
+      <span class="count_status {{#if apps.0.name}}count_status-ok{{else}}count_status-none{{/if}} col-none row-center"> <!-- card-home-contents-header-status-item -->
+
+        {{#if apps.0.name}}
+        <div class="count_status-icon col-none">
+          {{ render '@icon-ui--app-ok-medium' }}
+        </div>
+        <div class="count_status-text col-fit">
           {{#if apps.0.name}}
             <strong>{{ apps.length }}</strong> app{{#if apps.1.name}}s{{/if}}
           {{else}}
             <strong>0</strong> apps
           {{/if}}
-        </span>
+        </div>
+        {{else}}
+        <div class="count_status-icon col-none">
+          {{ render '@icon-ui--app-disabled-medium' }}
+        </div>
+        <div class="count_status-text col-fit">
+            <strong>0</strong> apps
+        </div>
+        {{/if}}
       </span><!-- /card-home-contents-header-status-item -->
 
     </div> <!-- /card-home-contents-header-status -->
