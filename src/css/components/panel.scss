@@ -3,7 +3,7 @@
 @import '../override_vars.scss';
 @import '../core.scss';
 
-$panel-padding: 1rem;
+$panel-padding: $grid-3;
 
 .panel {
   @include clearfix;
@@ -98,8 +98,8 @@ h4 + .panel {
 
 .panel-row-boxed {
   border: 1px solid $color-textblack;
-  margin-bottom: $grid-3;
-  padding: $grid-3;
+  margin-bottom: $panel-padding;
+  padding: $panel-padding;
 
   &:last-child {
     margin-bottom: 0;
@@ -108,6 +108,12 @@ h4 + .panel {
 
 .panel-row-space {
   margin-top: 1rem;
+}
+
+.panel-row-is_clickable {
+  cursor: pointer;
+  margin: -$panel-padding;
+  padding: $panel-padding;
 }
 
 .panel-form-replace {
