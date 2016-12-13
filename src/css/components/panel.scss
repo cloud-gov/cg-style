@@ -8,7 +8,7 @@ $panel-padding: 1rem;
 .panel {
   @include clearfix;
   min-height: 10rem;
-  padding: 0.75rem 0 0 0;
+  padding: .75rem 0 0;
 
   & + .panel {
     margin-top: 1.5rem;
@@ -24,12 +24,20 @@ h4 + .panel {
 
 .panel-title {
   font-size: 1.3rem;
-  font-weight: 600;
   margin-bottom: 2rem;
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
 }
 
 .panel-group {
-  margin-bottom: 0.65rem;
+  margin-bottom: .65rem;
 }
 
 .panel-actions {
@@ -46,7 +54,7 @@ h4 + .panel {
     margin-right: 0;
 
     & + .action {
-      margin-left: 0.5rem;
+      margin-left: .5rem;
     }
   }
 }
@@ -55,9 +63,12 @@ h4 + .panel {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem 0;
+  padding: .5rem 0;
 
-  h1, h2, h3, h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     font-size: 1rem;
     font-weight: 900;
   }
@@ -80,6 +91,12 @@ h4 + .panel {
     margin: 1rem -1rem -1rem;
     padding: 1rem;
     width: 100%;
+
+    .route-form-preview {
+      margin-top: 0;
+      padding-left: 0;
+      padding-top: 0;
+    }
   }
 
   > .panel-row {
@@ -104,6 +121,17 @@ h4 + .panel {
   &:last-child {
     margin-bottom: 0;
   }
+
+}
+
+.panel-row-bordered {
+  border-top: 1px solid $color-lightgray;
+
+  &:last-child {
+    border-bottom: 1px solid $color-lightgray;
+    margin-bottom: 0;
+  }
+
 }
 
 .panel-row-space {
@@ -111,7 +139,7 @@ h4 + .panel {
 }
 
 .panel-form-replace {
-  margin: -.5rem 0 -.5rem 0;
+  margin: -.5rem 0;
 }
 
 .panel-block {
@@ -131,10 +159,10 @@ h4 + .panel {
 }
 
 .panel-column-error {
-  border-left-width: 5px;
-  border-left-style: solid;
   border-left-color: $color-warning; // #e31c3d;
-  padding-left: 0.5rem;
+  border-left-style: solid;
+  border-left-width: 5px;
+  padding-left: .5rem;
 }
 
 .panel-column-less {
