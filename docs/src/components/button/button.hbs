@@ -1,5 +1,11 @@
-<button class="action action-{{ modifier }}">A button element</button>
+{{#if isDefault }}
+<button class="action action-{{ buttonStatus }}">{{ buttonText }}</button>
+{{/if}}
 
-<button class="action usa-button-outline action-{{ modifier }}">A button outline</button>
+{{#if isOutline }}
+<button class="action usa-button-outline action-{{ buttonStatus }}">{{ buttonText }}</button>
+{{/if}}
 
-<a class="action action-link action-{{ modifier }}" href="javascript:void(0)">A button link</a>
+{{#if isLink }}
+<a class="action action-link action-{{ buttonStatus }}" href="javascript:void(0)">{{ buttonText }}</a>
+{{/if}}

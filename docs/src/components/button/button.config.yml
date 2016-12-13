@@ -1,15 +1,102 @@
-title: Buttons
+title: button
+collated: true
 variants:
   - name: default
+    context:
+      isDefault: true
+      isOutline: false
+      isLink: false
+      buttonStatus: primary
+      buttonText: buttonText
   - name: warning
     context:
-      modifier: warning
+      isDefault: true
+      isOutline: false
+      isLink: false
+      buttonStatus: warning
+      buttonText: buttonText
   - name: primary
     context:
-      modifier: primary
-  - name: cautious
+      isDefault: true
+      isOutline: false
+      isLink: false
+      buttonStatus: primary
+      buttonText: buttonText
+  - name: disabled
     context:
-      modifier: cautious
+      isDefault: true
+      isOutline: false
+      isLink: false
+      buttonStatus: cautious
+      buttonText: buttonText
   - name: finish
     context:
-      modifier: finish
+      isDefault: true
+      isOutline: false
+      isLink: false
+      buttonStatus: finish
+      buttonText: buttonText
+  - name: warning-outline
+    context:
+      isDefault: false
+      isOutline: true
+      isLink: false
+      buttonStatus: warning
+      buttonStyle: outline
+      buttonText: buttonText
+  - name: primary-outline
+    context:
+      isDefault: false
+      isOutline: true
+      isLink: false
+      buttonStatus: primary
+      buttonStyle: outline
+      buttonText: buttonText
+  - name: disabled-outline
+    context:
+      isDefault: false
+      isOutline: true
+      isLink: false
+      buttonStatus: cautious
+      buttonStyle: outline
+      buttonText: buttonText
+  - name: finish-outline
+    context:
+      isDefault: false
+      isOutline: true
+      isLink: false
+      buttonStatus: finish
+      buttonStyle: outline
+      buttonText: buttonText
+  - name: warning-link
+    context:
+      isDefault: false
+      isOutline: false
+      isLink: true
+      buttonStatus: warning
+      buttonStyle: link
+      buttonText: buttonText
+  - name: primary-link
+    context:
+      isDefault: false
+      isOutline: false
+      isLink: true
+      buttonStatus: primary
+      buttonStyle: link
+      buttonText: buttonText
+  - name: disabled-link
+    context:
+      isDefault: false
+      isOutline: false
+      isLink: true
+      buttonStatus: cautious
+      buttonStyle: link
+      buttonText: buttonText
+  - name: finish-link
+    context:
+      isDefault: false
+      isOutline: false
+      isLink: true
+      buttonStatus: finish
+      buttonStyle: link
+      buttonText: buttonText
