@@ -64,7 +64,8 @@ code {
 .Tree-title,
 .Tree-collectionLabel,
 .Tree-item,
-.Pen-title {
+.Pen-title,
+.Browser-tab a {
   font: normal .85rem/1.2 '18Franklin-webfont', system, -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   font-weight: 500;
 }
@@ -139,4 +140,31 @@ ol,ul {
 [dir="ltr"] .Pen-previewLink svg {
   margin-left: 4px;
   margin-bottom: 1px;
+}
+
+.Browser-tab a {
+  display: flex;
+  align-items: center;
+  height: 56px;
+  margin-top: 4px;
+  margin-left: 8px;
+}
+
+.Browser-tab a span {
+  padding-top: 1px;
+}
+
+.Browser-tab svg {
+  fill: #838383;
+  padding-right: 4px;
+  height: 32px;
+  width: 24px;
+}
+
+.Browser-tab.is-active svg {
+  fill: #056DD4;
+}
+
+.Browser-tab.is-active a {
+  border-bottom-color: #056DD4;
 }
