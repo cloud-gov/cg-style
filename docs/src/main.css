@@ -61,8 +61,82 @@ code {
   border: none;
 }
 
-Tree-title,
-Tree-collectionLabel,
-Tree-item {
-  font-family: '18Franklin-webfont', system, -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+.Tree-title,
+.Tree-collectionLabel,
+.Tree-item,
+.Pen-title {
+  font: normal .85rem/1.2 '18Franklin-webfont', system, -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 500;
+}
+
+.Tree-title,
+.Tree-collectionLabel,
+[dir="ltr"] .Tree-depth-1 .Tree-collectionLabel,
+[dir="ltr"] .Tree-depth-1 .Tree-entityLink {
+  padding-left: 0;
+}
+
+.Tree-collectionLabel {
+  font-weight: 700;
+}
+
+ul.Tree-collectionItems {
+  padding-left: .9rem;
+}
+
+[dir="ltr"] .Tree-collectionLabel span {
+  margin: 0;
+}
+
+ol,ul {
+  padding-left: 0;
+}
+
+[dir="ltr"] .Tree-title {
+  padding-left: 0;
+}
+
+.Frame-panel--sidebar {
+  padding: 1.25rem 1rem;
+}
+
+[dir="ltr"] .Tree-depth-3 .Tree-collectionLabel {
+  font-weight: 500;
+  font-size: .85rem;
+}
+
+.Tree-title {
+  font-size: .7rem;
+}
+
+.Tree-collectionLabel {
+  font-size: 1rem;
+}
+
+[dir="ltr"] .Tree-collectionLabel span::before {
+  left: -3px;
+  top: 3px;
+  background-size: 10px;
+}
+
+.Tree-title, .Tree-collectionLabel, [dir="ltr"] .Tree-depth-1 .Tree-collectionLabel, [dir="ltr"] .Tree-depth-1 .Tree-entityLink {
+  padding-left: 12px;
+}
+
+.Tree-depth-1 {
+  padding-left: -12px;
+}
+
+.Pen-title {
+  font-size: 1.75rem;
+  font-weight: 200;
+}
+
+.Pen-header {
+  padding: 2.5rem 0.75rem
+}
+
+[dir="ltr"] .Pen-previewLink svg {
+  margin-left: 4px;
+  margin-bottom: 1px;
 }
