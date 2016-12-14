@@ -3,6 +3,8 @@
 @import '../override_vars.scss';
 @import '../vars.scss';
 
+$input-font-size: $sans-s2;
+
 .stat {
   align-items: center;
   border-left-color: transparent;
@@ -12,6 +14,10 @@
   justify-content: space-between;
   min-height: 2.5rem; // Leave some space for input element when editing a stat
   width: 100%;
+
+  .error_message {
+    font-size: $input-font-size;
+  }
 }
 
 .stat-error,
@@ -65,7 +71,7 @@ h5 + .stat {
 .stat-input {
   &.stat-input-text {
     display: inline;
-    font-size: 0.75rem;
+    font-size: $input-font-size;
     margin: 0;
     width: 6rem;
   }
