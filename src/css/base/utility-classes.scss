@@ -1,0 +1,253 @@
+@import '../core.scss';
+
+// base utility classes, primarily for documentation
+
+// color `{{colorName}}`
+
+.blue {
+  color: $color-blue;
+}
+
+.brightmint {
+  color: $color-brightmint;
+}
+
+.cream {
+  color: $color-cream;
+}
+
+.gold {
+  color: $color-gold;
+}
+
+.green {
+  color: $color-green;
+}
+
+.red {
+  color: $color-red;
+}
+
+.trueblack {
+  color: $color-trueblack;
+}
+
+.textblack {
+  color: $color-textblack;
+}
+
+.darkgray {
+  color: $color-darkgray;
+}
+
+.mediumgray {
+  color: $color-mediumgray;
+}
+
+.mediumgray-trans {
+  color: $color-mediumgray-trans;
+}
+
+.lightgray {
+  color: $color-lightgray;
+}
+
+.lightestgray {
+  color: $color-lightestgray;
+}
+
+.white {
+  color: $color-white;
+}
+
+// background `bg-{{colorName}}`
+
+.bg-blue {
+  background-color: $color-blue;
+}
+
+.bg-brightmint {
+  background-color: $color-brightmint;
+}
+
+.bg-cream {
+  background-color: $color-cream;
+}
+
+.bg-gold {
+  background-color: $color-gold;
+}
+
+.bg-green {
+  background-color: $color-green;
+}
+
+.bg-red {
+  background-color: $color-red;
+}
+
+.bg-trueblack {
+  background-color: $color-trueblack;
+}
+
+.bg-textblack {
+  background-color: $color-textblack;
+}
+
+.bg-darkgray {
+  background-color: $color-darkgray;
+}
+
+.bg-mediumgray {
+  background-color: $color-mediumgray;
+}
+
+.bg-mediumgray-trans {
+  background-color: $color-mediumgray-trans;
+}
+
+.bg-lightgray {
+  background-color: $color-lightgray;
+}
+
+.bg-lightestgray {
+  background-color: $color-lightestgray;
+}
+
+.bg-white {
+  background-color: $color-white;
+}
+
+// font-faces
+
+.font-sans {
+  font-family: '18Franklin-webfont', system, -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+
+.font-serif {
+  font-family: 'Georgia', 'Cambria', 'Times New Roman', 'Times', serif;
+}
+
+.font-mono {
+  font-family: 'Roboto Mono', 'Bitstream Vera Sans Mono', 'Consolas', 'Courier', monospace;
+}
+
+// opentype
+
+.ot-tnum {
+  font-feature-settings: 'tnum';
+}
+
+.ot-alt {
+  font-feature-settings: 'ss01', 'kern';
+}
+
+.ot-default {
+  font-feature-settings: 'kern';
+}
+
+// font weights
+
+.fw-thin {
+  font-weight: 100;
+}
+
+.fw-extralight {
+  font-weight: 200;
+}
+
+.fw-light {
+  font-weight: 300;
+}
+
+.fw-normal {
+  font-weight: 400;
+}
+
+.fw-medium {
+  font-weight: 500;
+}
+
+.fw-semibold {
+  font-weight: 600;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+.fw-extrabold {
+  font-weight: 800;
+}
+
+.fw-black {
+  font-weight: 900;
+}
+
+// type style
+
+.italic {
+  font-style: italic;
+}
+
+// type scale
+
+@for $i from 1 through length($sans-s) {
+  .sans-s#{$i} {
+    font-size: nth($sans-s, $i);
+  }
+}
+
+@for $i from 1 through length($serif-s) {
+  .serif-s#{$i} {
+    font-size: nth($serif-s, $i);
+  }
+}
+
+@for $i from 1 through length($mono-s) {
+  .mono-s#{$i} {
+    font-size: nth($mono-s, $i);
+  }
+}
+
+// measure
+
+.measure-reading {
+  max-width: $text-max-width;
+}
+
+.measure-narrow {
+  max-width: 17em;
+}
+
+// leading
+
+.leading-single {
+  line-height: $leading-single;
+}
+
+.leading-hed {
+  line-height: $leading-hed;
+}
+
+.leading-cap {
+  line-height: $leading-cap;
+}
+
+.leading-body {
+  line-height: $leading-body;
+}
+
+.leading-display {
+  line-height: $leading-display;
+}
+
+// border radius
+
+.rounded {
+  border-radius: $rounded;
+}
+
+.not-rounded {
+  border-radius: none;
+}

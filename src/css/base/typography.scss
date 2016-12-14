@@ -4,8 +4,12 @@
 body {
   color: $color-base;
   font-size: $grid-type-px;
+  font-feature-settings: "kern";
+  font-kerning: normal;
+  font-variant-ligatures: common-ligatures;
   font-weight: 400;
   line-height: $leading-body;
+  text-rendering: optimizeLegibility;
 }
 
 a {
@@ -220,22 +224,4 @@ hr {
 .anchorjs-link {
   font-size: $sans-s7;
   opacity: 1;
-}
-
-@for $i from 1 through length($sans-s) {
-  .sans-s#{$i} {
-    font-size: nth($sans-s, $i);
-  }
-}
-
-@for $i from 1 through length($serif-s) {
-  .serif-s#{$i} {
-    font-size: nth($serif-s, $i);
-  }
-}
-
-@for $i from 1 through length($mono-s) {
-  .mono-s#{$i} {
-    font-size: nth($mono-s, $i);
-  }
 }

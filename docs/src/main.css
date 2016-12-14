@@ -143,7 +143,6 @@ ol,ul {
 }
 
 .Browser-tab a {
-  flex-container {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -178,4 +177,35 @@ ol,ul {
 
 .Browser-tab.is-active a {
   border-bottom-color: #056DD4;
+}
+
+.Meta-value {
+  white-space: normal;
+}
+
+
+/* pattern library helper styles */
+
+body {
+  background-color: white;
+}
+
+.pattern {
+  margin: 8px 8px 32px;
+}
+
+.pattern-example {
+  margin-bottom: 8px;
+}
+
+.swatch {
+  float: left;
+  width: 160px;
+  height: 160px;
+  margin: 8px 8px 32px;
+}
+
+.swatch-color {
+  height: 120px;
+  margin-bottom: 8px;
 }
