@@ -23,7 +23,7 @@
       <h3 class="overview-item-title inline"><span class="overview-item-title-path">spaceName / <span><a href="#">appName</a></h3>
     </div>
     <div class="overview-item-status col-none">
-      <div class="overview-item-status status-ok">Running</div>
+      {{ render '@status--running' }}
     </div>
   </div>
 
@@ -35,7 +35,7 @@
     </div>
     <div class="overview-item-status col-none">
       {{ render '@button--active' }}
-      <span class="overview-item-status status-error inline">Crashed</span>
+      {{ render '@status--crashed' }}
     </div>
   </div>
 

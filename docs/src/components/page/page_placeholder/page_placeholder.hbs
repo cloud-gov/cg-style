@@ -1,0 +1,58 @@
+
+{{#each organizations}}
+<div class="card-home-contents"> <!-- card-home-contents--quicklook -->
+  <div class="card-home-contents-header row-center"> <!-- card-home-contents-header -->
+    <h2 class="card-home-contents-title col-fit">
+      {{ render '@icon-square--org-medium' }}
+      <a href="#">{{ name }}</a>
+    </h2>
+    <div class="panel-contents-status col-none row"> <!-- card-home-contents-header-status -->
+
+      <div class="count_status count_status-none col-none row-center"> <!-- card-home-contents-header-status-entity -->
+        <div class="count_status-icon col-none">
+          {{ render '@icon-square--space-medium' }}
+        </div>
+        <div class="count_status-text col-fit">
+          {{#if spaces.0.name}}
+            <strong>{{ spaces.length }}</strong> space{{#if spaces.1.name}}s{{/if}}
+          {{else}}
+            <strong>0</strong> spaces
+          {{/if}}
+        </div>
+      </div><!-- /card-home-contents-header-status-entity -->
+
+      <span class="count_status {{#if apps.0.name}}count_status-ok{{else}}count_status-none{{/if}} col-none row-center"> <!-- card-home-contents-header-status-item -->
+
+        {{#if apps.0.name}}
+        <div class="count_status-icon col-none">
+          {{ render '@icon-square--app-ok-medium' }}
+        </div>
+        <div class="count_status-text col-fit">
+          {{#if apps.0.name}}
+            <strong>{{ apps.length }}</strong> app{{#if apps.1.name}}s{{/if}}
+          {{else}}
+            <strong>0</strong> apps
+          {{/if}}
+        </div>
+        {{else}}
+        <div class="count_status-icon col-none">
+          {{ render '@icon-square--app-disabled-medium' }}
+        </div>
+        <div class="count_status-text col-fit">
+            <strong>0</strong> apps
+        </div>
+        {{/if}}
+      </span><!-- /card-home-contents-header-status-item -->
+
+    </div> <!-- /card-home-contents-header-status -->
+  </div> <!-- /card-home-contents-header -->
+
+  {{#if isOpen }}
+  <div class="card-home-contents-items">
+    {{ render '@overview-row' }}
+  </div>
+  {{/if}}
+
+</div> <!-- /card-home-contents--quicklook -->
+
+{{/each}}

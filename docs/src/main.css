@@ -57,6 +57,12 @@ code {
   background-color: #999;
 }
 
-[dir="ltr"] .Header-button {
+[dir='ltr'] .Header-button {
   border: none;
+}
+
+Tree-title,
+Tree-collectionLabel,
+Tree-item {
+  font-family: '18Franklin-webfont', system, -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 }
