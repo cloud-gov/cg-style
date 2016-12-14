@@ -16,6 +16,13 @@
     flex-direction: row;
     justify-content: flex-end;
   }
+  .action {
+    &.usa-button-outline {
+      font-size: initial;
+      margin: -.25rem 0 0 2rem;
+      padding: .5rem 1rem;
+  }
+}
 }
 
 .nav-link {
@@ -23,9 +30,8 @@
   font-size: $sans-s5;
   font-weight: 400;
   padding-bottom: .2rem;
-  padding-top: .2rem;
   padding-left: 0;
-
+  padding-top: .2rem;
   a {
     color: $color-textblack;
     &:hover {
@@ -57,12 +63,11 @@ $size-xsmall: .8rem;
   color: $color-lightgray;
   display: flex;
   flex-direction: row;
-  margin-top: 1rem;
-  padding-bottom: 1rem;
   font-size: $sans-s2;
   letter-spacing: .1em;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
   text-transform: uppercase;
-  color: $color-lightgray;
 }
 
 .nav-tabs li {
