@@ -1,11 +1,11 @@
-
 code {
   font-family: monospace;
   font-size: 0.9rem;
 }
 
 .Header {
-  background-color: #2c3e50;
+  background-color: #333;
+  box-shadow: none;
 }
 
 .Header-button {
@@ -30,7 +30,7 @@ code {
 }
 
 .grid-container {
-  background-color: #ddd;
+  background-color: white;
   color: white;
   margin: auto;
   max-width: 1040px;
@@ -55,4 +55,14 @@ code {
 .grid--default-preview .grid-width-11,
 .grid--default-preview .grid-width-12 {
   background-color: #999;
+}
+
+[dir='ltr'] .Header-button {
+  border: none;
+}
+
+Tree-title,
+Tree-collectionLabel,
+Tree-item {
+  font-family: '18Franklin-webfont', system, -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 }

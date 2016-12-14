@@ -4,33 +4,19 @@
 @import '../core.scss';
 
 .count_status {
-  display: inline-block;
-  height: 0.6rem;
   margin-left: $grid-3;
   position: relative;
   width: 7.5rem;
-
-  &:first-child {
-    margin-left: 0;
-  }
 
   &::after {
     background: $color-cream;
     content: '';
     display: block;
-    height: 0.5rem;
+    height: $grid-1;
     position: absolute;
-    top: calc(100% + 1.5rem);
+    top: calc(100% + #{$grid-2});
     width: 100%;
   }
-}
-
-.count_status-icon {
-  float: left;
-}
-
-.count_status-text {
-  float: right;
 }
 
 .count_status-ok,
@@ -59,5 +45,11 @@
   &::after {
     background: $color-cream;
   }
+}
 
+.count_status-text {
+  font-family: $font-sans;
+  font-size: $sans-s4;
+  line-height: $leading-single;
+  text-align: right;
 }

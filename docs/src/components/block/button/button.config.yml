@@ -1,0 +1,125 @@
+title: button
+collated: true
+variants:
+  - name: default
+    context:
+      isDefault: true
+      isOutline: false
+      isLink: false
+      buttonStatus: primary
+      buttonText: default
+  - name: base
+    context:
+      isDefault: true
+      isOutline: false
+      isLink: false
+      buttonStatus: base
+      buttonText: base
+  - name: warning
+    context:
+      isDefault: true
+      isOutline: false
+      isLink: false
+      buttonStatus: warning
+      buttonText: warning
+  - name: active
+    context:
+      isDefault: true
+      isOutline: false
+      isLink: false
+      buttonStatus: primary
+      buttonText: active
+  - name: disabled
+    context:
+      isDefault: true
+      isOutline: false
+      isLink: false
+      buttonStatus: cautious
+      buttonText: disabled
+  - name: finish
+    context:
+      isDefault: true
+      isOutline: false
+      isLink: false
+      buttonStatus: finish
+      buttonText: finish-outline
+  - name: base-outline
+    context:
+      isDefault: false
+      isOutline: true
+      isLink: false
+      buttonStatus: base
+      buttonStyle: outline
+      buttonText: base-outline
+  - name: warning-outline
+    context:
+      isDefault: false
+      isOutline: true
+      isLink: false
+      buttonStatus: warning
+      buttonStyle: outline
+      buttonText: warning-outline
+  - name: active-outline
+    context:
+      isDefault: false
+      isOutline: true
+      isLink: false
+      buttonStatus: primary
+      buttonStyle: outline
+      buttonText: active-outline
+  - name: disabled-outline
+    context:
+      isDefault: false
+      isOutline: true
+      isLink: false
+      buttonStatus: cautious
+      buttonStyle: outline
+      buttonText: disabled-outline
+  - name: finish-outline
+    context:
+      isDefault: false
+      isOutline: true
+      isLink: false
+      buttonStatus: finish
+      buttonStyle: outline
+      buttonText: finish-outline
+  - name: base-link
+    context:
+      isDefault: false
+      isOutline: false
+      isLink: true
+      buttonStatus: base
+      buttonStyle: link
+      buttonText: base-link
+  - name: warning-link
+    context:
+      isDefault: false
+      isOutline: false
+      isLink: true
+      buttonStatus: warning
+      buttonStyle: link
+      buttonText: warning-outline
+  - name: active-link
+    context:
+      isDefault: false
+      isOutline: false
+      isLink: true
+      buttonStatus: primary
+      buttonStyle: link
+      buttonText: primary-link
+  - name: disabled-link
+    context:
+      isDefault: false
+      isOutline: false
+      isLink: true
+      buttonStatus: cautious
+      buttonStyle: link
+      buttonText: disabled-link
+  - name: finish-link
+    context:
+      isDefault: false
+      isOutline: false
+      isLink: true
+      buttonStatus: finish
+      buttonStyle: link
+      buttonText: finish-link

@@ -1,0 +1,11 @@
+{{#if isDefault }}
+<button class="action action-{{ buttonStatus }}">{{ buttonText }}</button>
+{{/if}}
+
+{{#if isOutline }}
+<button class="action usa-button-outline action-{{ buttonStatus }}">{{ buttonText }}</button>
+{{/if}}
+
+{{#if isLink }}
+<a class="action action-link action-{{ buttonStatus }}" href="javascript:void(0)">{{ buttonText }}</a>
+{{/if}}

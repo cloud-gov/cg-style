@@ -1,0 +1,9 @@
+title: icon
+collated: true
+context:
+  modifier:
+variants:
+  - name: default
+  - name: alt
+    context:
+      modifier: alt

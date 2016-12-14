@@ -24,16 +24,27 @@
 .icon {
   display: inline-block;
   fill: transparent;
-  height: 1em;
-  max-height: 2rem;
-  max-width: 2rem;
-  min-height: 20px;
-  min-width: 20px;
-  stroke: currentColor;
   position: relative;
+  stroke: currentColor;
   top: -0.0625rem;
   vertical-align: middle;
   width: 1em;
+
+  &-small {
+    @extend .icon;
+    height: $grid-2;
+    width: $grid-2;
+  }
+  &-medium {
+    @extend .icon;
+    height: $grid-3;
+    width: $grid-3;
+  }
+  &-large {
+    @extend .icon;
+    height: $grid-4;
+    width: $grid-4;
+  }
 }
 
 .icon-alt {
@@ -50,8 +61,18 @@
 
 .icon-fill {
   @extend .icon;
-  fill: currentColor;
+  border-radius: $rounded;
+  fill: $color-textblack;
   stroke: transparent;
+  top: auto;
+
+  &.icon-disabled {
+    fill: $color-lightgray;
+  }
+
+  &.icon-white {
+    fill: $color-white;
+  }
 
   &.icon-ok {
     fill: $color-ok;
@@ -61,45 +82,77 @@
     fill: $color-error;
   }
 
-  &.icon-alt {
-    fill: $color-primary-alt-light;
+  &.icon-active {
+    fill: $color-blue;
+  }
+}
+
+.icon-chevron {
+  fill: $color-blue;
+  height: 11px;
+  width: 11px;
+
+  &-left {
+    @extend .icon-chevron;
+    transform: rotate(180deg);
+  }
+  &-right {
+    @extend .icon-chevron;
+    transform: rotate(0deg);
+  }
+  &-up {
+    @extend .icon-chevron;
+    top: -1px;
+    transform: rotate(-90deg);
+  }
+  &-down {
+    @extend .icon-chevron;
+    transform: rotate(90deg);
   }
 }
 
 * + .icon,
 * + .icon-fill {
   display: inline-block;
-  margin-left: 1rem;
+  margin-left: $grid-105;
 }
 
 .icon,
 .icon-fill {
   & + * {
     display: inline-block;
-    margin-left: 1rem;
+    margin-left: $grid-105;
   }
 }
 
 .icon-bordered {
   border-color: $color-textblack;
+  border-radius: $rounded;
   border-style: solid;
-  border-width: 0.1em;
-  border-radius: 0.2em;
-  height: 1.1em;
-  min-height: 22px;
-  min-width: 22px;
-  padding: 0 0.1em;
-  width: 1.1em;
+  border-width: 1px;
+  padding: $grid-05;
+
+  &.icon-small {
+    padding: 2px;
+  }
 
   &.icon-ok {
     border-color: $color-ok;
+  }
+
+  &.icon-white {
+    border-color: $color-white;
+  }
+
+  &.icon-disabled {
+    border-color: $color-lightgray;
   }
 
   &.icon-error {
     border-color: $color-error;
   }
 
-  &.icon-alt {
-    border-color: $color-primary-alt-light;
+  &.icon-active {
+    border-color: $color-blue;
   }
 }

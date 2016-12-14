@@ -24,3 +24,26 @@
     }
   }
 }
+
+.row {
+  display: flex;
+}
+
+.row-center {
+  @extend .row;
+  align-items: center;
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    width: 100% / (12 * $i);
+  }
+}
+
+.col-fit {
+  flex: 1;
+}
+
+.col-none {
+  flex: none;
+}
