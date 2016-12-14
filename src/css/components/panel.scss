@@ -25,15 +25,6 @@ h4 + .panel {
 .panel-title {
   font-size: 1.3rem;
   margin-bottom: 2rem;
-
-  h1,
-  h2,
-  h3,
-  h4 {
-    font-size: 1rem;
-    font-weight: 400;
-  }
-
 }
 
 .panel-group {
@@ -92,11 +83,6 @@ h4 + .panel {
     padding: 1rem;
     width: 100%;
 
-    .route-form-preview {
-      margin-top: 0;
-      padding-left: 0;
-      padding-top: 0;
-    }
   }
 
   > .panel-row {
