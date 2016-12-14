@@ -3,6 +3,8 @@
 @import '../override_vars.scss';
 @import '../vars.scss';
 
+$input-font-size: $sans-s2;
+
 .stat {
   align-items: center;
   border-left-color: transparent;
@@ -10,7 +12,12 @@
   border-left-width: 0;
   display: flex;
   justify-content: space-between;
+  min-height: 2.5rem; // Leave some space for input element when editing a stat
   width: 100%;
+
+  .error_message {
+    font-size: $input-font-size;
+  }
 }
 
 .stat-error,
@@ -57,5 +64,26 @@ h5 + .stat {
     display: inline-block;
     margin-top: 3rem;
     max-width: 5rem;
+  }
+}
+
+// Double classes to compete with specificity over input elements
+.stat-input {
+  &.stat-input-text {
+    /* stylelint-disable declaration-block-no-ignored-properties */
+    display: inline;
+    font-size: $input-font-size;
+    margin: 0;
+    width: 6rem;
+    /* stylelint-enable */
+  }
+
+  &.stat-input-text-scale {
+    margin-top: 0.5rem;
+  }
+
+  &.stat-input-label {
+    display: inline;
+    margin-left: 0.5rem;
   }
 }
