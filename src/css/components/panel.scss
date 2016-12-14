@@ -131,7 +131,9 @@ h4 + .panel {
 }
 
 .panel-form-replace {
-  margin: -.5rem 0;
+  &.panel-form-replace {
+    margin: -1rem 0;
+  }
 }
 
 .panel-block {
