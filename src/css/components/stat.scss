@@ -70,10 +70,12 @@ h5 + .stat {
 // Double classes to compete with specificity over input elements
 .stat-input {
   &.stat-input-text {
+    /* stylelint-disable declaration-block-no-ignored-properties */
     display: inline;
     font-size: $input-font-size;
     margin: 0;
     width: 6rem;
+    /* stylelint-enable */
   }
 
   &.stat-input-text-scale {
