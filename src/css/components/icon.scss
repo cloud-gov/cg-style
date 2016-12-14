@@ -66,17 +66,19 @@
   }
 }
 
+$default-spacing: 0.65em;
+
 * + .icon,
 * + .icon-fill {
   display: inline-block;
-  margin-left: 1rem;
+  margin-left: $default-spacing;
 }
 
 .icon,
 .icon-fill {
   & + * {
     display: inline-block;
-    margin-left: 1rem;
+    margin-left: $default-spacing;
   }
 }
 
@@ -85,11 +87,9 @@
   border-style: solid;
   border-width: 0.1em;
   border-radius: 0.2em;
-  height: 1.1em;
-  min-height: 22px;
-  min-width: 22px;
+  height: 1.35em;
   padding: 0 0.1em;
-  width: 1.1em;
+  width: 1.35em;
 
   &.icon-ok {
     border-color: $color-ok;
