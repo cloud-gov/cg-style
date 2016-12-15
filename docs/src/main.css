@@ -328,3 +328,31 @@ body {
 }
 
 p { text-align: left; }
+
+.Prose h1 {
+  font-family: '18Franklin';
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.05;
+  letter-spacing: normal;
+}
+
+.Prose h2 {
+  font-family: '18Franklin';
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.05;
+  letter-spacing: normal;
+  margin-bottom: .5em;
+}
+
+.Prose h3 {
+  font-family: '18Franklin';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.05;
+  letter-spacing: normal;
+  margin-bottom: .5em;
+  color: #333;
+  opacity: 1;
+}
