@@ -35,7 +35,19 @@
   align-items: center;
 }
 
-//align across the x-axis
+//align bottom (end of cross-axis)
+.row-end {
+  @extend .row;
+  align-items: flex-end;
+}
+
+//align top (start of cross-axis)
+.row-start {
+  @extend .row;
+  align-items: flex-start;
+}
+
+//align centered on the y-axis
 .row-center-y {
   @extend .row;
   justify-content: center;
