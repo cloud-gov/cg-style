@@ -29,21 +29,28 @@
   display: flex;
 }
 
-.row-center {
+//align across the x-axis
+.row-center-x {
   @extend .row;
   align-items: center;
 }
 
+//align across the x-axis
+.row-center-y {
+  @extend .row;
+  justify-content: center;
+}
+
 @for $i from 1 through 12 {
   .col-#{$i} {
-    width: 100% / (12 * $i);
+    width: 100% / (12 / $i);
   }
 }
 
-.col-fit {
+.col-fill {
   flex: 1;
 }
 
-.col-none {
+.col-fit {
   flex: none;
 }

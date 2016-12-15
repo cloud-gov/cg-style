@@ -1,13 +1,13 @@
 
 <a class="usa-button trigger action {{#if isOutline }}usa-button-outline {{/if}}action-{{ buttonStatus }}">
-  <div class="trigger-content row-center">
-    <div class="trigger-icon col-none">
+  <div class="trigger-content row-center-x">
+    <div class="trigger-icon col-fit">
       {{ render '@icon-square--org-small' }}
     </div>
-    <div class="trigger-text col-fit">
+    <div class="trigger-text col-fill">
       {{ buttonText }}
     </div>
-    <div class="trigger-action col-none">
+    <div class="trigger-action col-fit">
       {{#if isOpen}}
         {{#unless isOutline}}
           {{ render '@icon-ui--chevron-up-white' }}

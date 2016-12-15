@@ -1,10 +1,10 @@
-<div class="count_status count_status-{{status}} col-none row-center"> <!-- card-home-contents-header-status-entity -->
-  <div class="count_status-icon  col-none">
+<div class="count_status count_status-{{status}} col-fit row-center-x"> <!-- card-home-contents-header-status-entity -->
+  <div class="count_status-icon  col-fit">
     <svg class="icon-fill icon-bordered icon-{{status}}">
       <use xlink:href="/img/cloudgov-sprite.svg#i-fill-{{kindIcon}}"></use>
     </svg>
   </div>
-  <div class="count_status-text col-fit">
+  <div class="count_status-text col-fill">
     {{#if kinds.0.name}}
       <strong>{{ kinds.length }}</strong> {{kind}}{{#if kinds.1.name}}s{{/if}}
     {{else}}

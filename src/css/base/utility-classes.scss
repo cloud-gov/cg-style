@@ -251,3 +251,102 @@
 .not-rounded {
   border-radius: none;
 }
+
+// flex column order
+
+@for $i from 0 through 11 {
+  .order-#{$i} {
+    order: $i;
+  }
+}
+
+.order-first {
+  order: -1;
+}
+
+.order-last {
+  order: 99;
+}
+
+// spacing scale
+
+// w: width
+// h: height
+// p: padding
+// m: margin
+
+// v: vertical (top and bottom)
+// h: horizontal (left and right)
+// t: top
+// r: right
+// b: bottom
+// l: left
+
+@for $i from 1 through length($grid-s) {
+  .w-#{nth($grid-multipliers, $i)} {
+    width: nth($grid-s, $i);
+  }
+  .h-#{nth($grid-multipliers, $i)} {
+    height: nth($grid-s, $i);
+  }
+  .sq-#{nth($grid-multipliers, $i)} {
+    height: nth($grid-s, $i);
+    width: nth($grid-s, $i);
+  }
+  .p-#{nth($grid-multipliers, $i)} {
+    padding: nth($grid-s, $i);
+  }
+  .pv-#{nth($grid-multipliers, $i)} {
+    padding-bottom: nth($grid-s, $i);
+    padding-top: nth($grid-s, $i);
+  }
+  .ph-#{nth($grid-multipliers, $i)} {
+    padding-left: nth($grid-s, $i);
+    padding-right: nth($grid-s, $i);
+  }
+  .pt-#{nth($grid-multipliers, $i)} {
+    padding-top: nth($grid-s, $i);
+  }
+  .pr-#{nth($grid-multipliers, $i)} {
+    padding-right: nth($grid-s, $i);
+  }
+  .pb-#{nth($grid-multipliers, $i)} {
+    padding-bottom: nth($grid-s, $i);
+  }
+  .pl-#{nth($grid-multipliers, $i)} {
+    padding-left: nth($grid-s, $i);
+  }
+  .m-#{nth($grid-multipliers, $i)} {
+    margin: nth($grid-s, $i);
+  }
+  .mv-#{nth($grid-multipliers, $i)} {
+    margin-bottom: nth($grid-s, $i);
+    margin-top: nth($grid-s, $i);
+  }
+  .mh-#{nth($grid-multipliers, $i)} {
+    margin-left: nth($grid-s, $i);
+    margin-right: nth($grid-s, $i);
+  }
+  .mt-#{nth($grid-multipliers, $i)} {
+    margin-top: nth($grid-s, $i);
+  }
+  .mr-#{nth($grid-multipliers, $i)} {
+    margin-right: nth($grid-s, $i);
+  }
+  .mb-#{nth($grid-multipliers, $i)} {
+    margin-bottom: nth($grid-s, $i);
+  }
+  .ml-#{nth($grid-multipliers, $i)} {
+    margin-left: nth($grid-s, $i);
+  }
+}
+
+// floats
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}

@@ -1,20 +1,5 @@
-# Grid
+# A bit about 18Franklin
 
-The grid uses a `928px` max-width. Grid columns collapse down to a single width
-on small screens.
+**18Franklin** was developed by 18F as a fork of **Libre Franklin**. It has some significant and some subtle differences from its parent font. It should be suitable for reading or for headings, but cloud.gov uses it mostly for dashboard UI.
 
-
-## Grid rows
-
-A `.grid` represents a single row. For multiple rows, use multiple grids.
-
-```html
-<div class="grid">
-  <div class="grid-width-4"></div>
-  <div class="grid-width-8"></div>
-</div>
-<div class="grid">
-  <div class="grid-width-8"></div>
-  <div class="grid-width-4"></div>
-</div>
-```
+ The typeface is under active development in 2016 and 2017. Get most recent version or contribute to its development at [https://github.com/18F/18franklin](https://github.com/18F/18franklin).
