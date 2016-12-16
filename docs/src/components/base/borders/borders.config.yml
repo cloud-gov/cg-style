@@ -1,0 +1,31 @@
+title: 'color palette'
+
+context:
+  colors:
+    - colorName: 'red'
+    - colorName: 'blue'
+    - colorName: 'gold'
+    - colorName: 'green'
+    - colorName: 'brightmint'
+    - colorName: 'cream'
+    - colorName: 'trueblack'
+    - colorName: 'textblack'
+    - colorName: 'darkgray'
+    - colorName: 'mediumgray'
+    - colorName: 'mediumgray-trans'
+    - colorName: 'lightgray'
+    - colorName: 'lightestgray'
+    - colorName: 'white'
+  borders:
+    - border:
+      borderName: '1px'
+      borderCode: 'b1'
+    - border:
+      borderName: '2px'
+      borderCode: 'b2'
+    - border:
+      borderName: '4px'
+      borderCode: 'b3'
+    - border:
+      borderName: '8px'
+      borderCode: 'b4'
