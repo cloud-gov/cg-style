@@ -73,6 +73,6 @@ and the same **multiplier codes** from the grid variables:
 ```
 
 ### Examples:
-- **a full margin of 64px:** `m-8`
-- **8px padding on top and bottom:** `pv-1`
-- **height of 48px:** `h-6`
+- **a full margin of 64px:** `m8`
+- **8px padding on top and bottom:** `py1`
+- **height of 48px:** `h6`

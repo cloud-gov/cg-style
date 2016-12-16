@@ -7,16 +7,16 @@
   </header>
   <div class="panel-content">
     <section class="panel-section">
-      {{#if hasHeader}}
+      {% if hasHeader %}
         <header class="panel-section-header row-end">
           <h2 class="panel-section-title col-fill">panelSectionTitle</h2>
           <div class="panel-secondary col-fit">
             <span class="panel-secondary-description">panelSecondaryDescription</span>
           </div>
         </header>
-        {{/if}}
+        {% endif %}
       <div class="panel-section-content">
-        {{ render '@overview-row' }}
+        {% render '@overview-row' %}
       </div>
     </section>
   </div>

@@ -2,7 +2,7 @@
 
 // base utility classes, primarily for documentation
 
-// color `{{colorName}}`
+// color `{{ colorName }}`
 
 .blue {
   color: $color-blue;
@@ -60,7 +60,7 @@
   color: $color-white;
 }
 
-// background `bg-{{colorName}}`
+// background `bg-{{ colorName }}`
 
 .bg-blue {
   background-color: $color-blue;
@@ -283,61 +283,84 @@
 // l: left
 
 @for $i from 1 through length($grid-s) {
-  .w-#{nth($grid-multipliers, $i)} {
+  .w#{nth($grid-multipliers, $i)} {
     width: nth($grid-s, $i);
   }
-  .h-#{nth($grid-multipliers, $i)} {
+  .h#{nth($grid-multipliers, $i)} {
     height: nth($grid-s, $i);
   }
-  .sq-#{nth($grid-multipliers, $i)} {
+  .sq#{nth($grid-multipliers, $i)} {
     height: nth($grid-s, $i);
     width: nth($grid-s, $i);
   }
-  .p-#{nth($grid-multipliers, $i)} {
+  .p#{nth($grid-multipliers, $i)} {
     padding: nth($grid-s, $i);
   }
-  .pv-#{nth($grid-multipliers, $i)} {
+  .py#{nth($grid-multipliers, $i)} {
     padding-bottom: nth($grid-s, $i);
     padding-top: nth($grid-s, $i);
   }
-  .ph-#{nth($grid-multipliers, $i)} {
+  .px#{nth($grid-multipliers, $i)} {
     padding-left: nth($grid-s, $i);
     padding-right: nth($grid-s, $i);
   }
-  .pt-#{nth($grid-multipliers, $i)} {
+  .pt#{nth($grid-multipliers, $i)} {
     padding-top: nth($grid-s, $i);
   }
-  .pr-#{nth($grid-multipliers, $i)} {
+  .pr#{nth($grid-multipliers, $i)} {
     padding-right: nth($grid-s, $i);
   }
-  .pb-#{nth($grid-multipliers, $i)} {
+  .pb#{nth($grid-multipliers, $i)} {
     padding-bottom: nth($grid-s, $i);
   }
-  .pl-#{nth($grid-multipliers, $i)} {
+  .pl#{nth($grid-multipliers, $i)} {
     padding-left: nth($grid-s, $i);
   }
-  .m-#{nth($grid-multipliers, $i)} {
+  .m#{nth($grid-multipliers, $i)} {
     margin: nth($grid-s, $i);
   }
-  .mv-#{nth($grid-multipliers, $i)} {
+  .my#{nth($grid-multipliers, $i)} {
     margin-bottom: nth($grid-s, $i);
     margin-top: nth($grid-s, $i);
   }
-  .mh-#{nth($grid-multipliers, $i)} {
+  .mx#{nth($grid-multipliers, $i)} {
     margin-left: nth($grid-s, $i);
     margin-right: nth($grid-s, $i);
   }
-  .mt-#{nth($grid-multipliers, $i)} {
+  .mt#{nth($grid-multipliers, $i)} {
     margin-top: nth($grid-s, $i);
   }
-  .mr-#{nth($grid-multipliers, $i)} {
+  .mr#{nth($grid-multipliers, $i)} {
     margin-right: nth($grid-s, $i);
   }
-  .mb-#{nth($grid-multipliers, $i)} {
+  .mb#{nth($grid-multipliers, $i)} {
     margin-bottom: nth($grid-s, $i);
   }
-  .ml-#{nth($grid-multipliers, $i)} {
+  .ml#{nth($grid-multipliers, $i)} {
     margin-left: nth($grid-s, $i);
+  }
+}
+
+@for $i from 1 through length($grid-n-s) {
+  .myn#{nth($grid-n-multipliers, $i)} {
+    margin-bottom: nth($grid-n-s, $i);
+    margin-top: nth($grid-n-s, $i);
+  }
+  .mxn#{nth($grid-n-multipliers, $i)} {
+    margin-left: nth($grid-n-s, $i);
+    margin-right: nth($grid-n-s, $i);
+  }
+  .mtn#{nth($grid-n-multipliers, $i)} {
+    margin-top: nth($grid-n-s, $i);
+  }
+  .mrn#{nth($grid-n-multipliers, $i)} {
+    margin-right: nth($grid-n-s, $i);
+  }
+  .mbn#{nth($grid-n-multipliers, $i)} {
+    margin-bottom: nth($grid-n-s, $i);
+  }
+  .mln#{nth($grid-n-multipliers, $i)} {
+    margin-left: nth($grid-n-s, $i);
   }
 }
 

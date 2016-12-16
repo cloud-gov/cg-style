@@ -52,6 +52,7 @@
   },
   "homepage": "https://github.com/18F/cg-style#readme",
   "dependencies": {
+    "@frctl/nunjucks": "^1.0.2",
     "lodash.debounce": "^4.0.8",
     "politespace": "^0.1.20",
     "uswds": "~0.12.1"

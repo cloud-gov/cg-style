@@ -77,9 +77,23 @@ $grid-7:             #{($grid-base * 7 / $grid-type)}rem;     // 56px
 $grid-8:             #{($grid-base * 8 / $grid-type)}rem;     // 64px
 $grid-9:             #{($grid-base * 9 / $grid-type)}rem;     // 72px
 $grid-10:            #{($grid-base * 10 / $grid-type)}rem;    // 80px
+$grid-20:            #{($grid-base * 20 / $grid-type)}rem;    // 160px
+$grid-30:            #{($grid-base * 30 / $grid-type)}rem;    // 240px
+$grid-40:            #{($grid-base * 40 / $grid-type)}rem;    // 320px
+$grid-50:            #{($grid-base * 50 / $grid-type)}rem;    // 400px
 
-$grid-multipliers: '05', '1', '105', '2', '3', '4', '5', '6', '7', '8', '9', '10';
-$grid-s: $grid-05, $grid-1, $grid-105, $grid-2, $grid-3, $grid-4, $grid-5, $grid-6, $grid-7, $grid-8, $grid-9, $grid-10;
+$grid-n05:            #{($grid-base / -2 / $grid-type)}rem;     // 4px
+$grid-n1:             #{($grid-base * -1 / $grid-type)}rem;     // 8px
+$grid-n105:           #{($grid-base * -1.5 / $grid-type)}rem;   // 12px
+$grid-n2:             #{($grid-base * -2 / $grid-type)}rem;     // 16px
+$grid-n3:             #{($grid-base * -3 / $grid-type)}rem;     // 24px
+$grid-n4:             #{($grid-base * -4 / $grid-type)}rem;     // 32px
+$grid-n5:             #{($grid-base * -5 / $grid-type)}rem;     // 40px
+
+$grid-multipliers: '05', '1', '105', '2', '3', '4', '5', '6', '7', '8', '9', '10', '20', '30', '40', '50';
+$grid-s: $grid-05, $grid-1, $grid-105, $grid-2, $grid-3, $grid-4, $grid-5, $grid-6, $grid-7, $grid-8, $grid-9, $grid-10, $grid-20, $grid-30, $grid-40, $grid-50;
+$grid-n-multipliers: '05', '1', '105', '2', '3', '4', '5';
+$grid-n-s: $grid-n05, $grid-n1, $grid-n105, $grid-n2, $grid-n3, $grid-n4, $grid-n5;
 
 // widths
 $nav-width:          $grid-base-px * 75;          // 600px;

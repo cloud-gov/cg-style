@@ -1,58 +1,59 @@
 
-{{#each organizations}}
+{% for org in organizations %}
 <div class="card-home-contents"> <!-- card-home-contents--quicklook -->
   <div class="card-home-contents-header row-center-x"> <!-- card-home-contents-header -->
     <h2 class="card-home-contents-title col-fill">
-      {{ render '@icon-square--org-medium' }}
-      <a href="#">{{ name }}</a>
+      {% render '@icon-square--org-medium' %}
+      <a href="#">{{ org.name }}</a>
     </h2>
     <div class="panel-contents-status col-fit row"> <!-- card-home-contents-header-status -->
 
       <div class="count_status count_status-none col-fit row-center-x"> <!-- card-home-contents-header-status-entity -->
         <div class="count_status-icon col-fit">
-          {{ render '@icon-square--space-medium' }}
+          {% set myVar = '@icon-square' + '--space-medium' %}
+          {% render myVar %}
         </div>
         <div class="count_status-text col-fill">
-          {{#if spaces.0.name}}
-            <strong>{{ spaces.length }}</strong> space{{#if spaces.1.name}}s{{/if}}
-          {{else}}
+          {% if org.spaces[0].name %}
+            <strong>{{ org.spaces | length }}</strong> space{% if org.spaces[1].name %}s{% endif %}
+          {% else %}
             <strong>0</strong> spaces
-          {{/if}}
+          {% endif %}
         </div>
       </div><!-- /card-home-contents-header-status-entity -->
 
-      <span class="count_status {{#if apps.0.name}}count_status-ok{{else}}count_status-none{{/if}} col-fit row-center-x"> <!-- card-home-contents-header-status-item -->
+      <span class="count_status {% if org.apps[0].name %}count_status-ok{% else %}count_status-none{% endif %} col-fit row-center-x"> <!-- card-home-contents-header-status-item -->
 
-        {{#if apps.0.name}}
+        {% if org.apps[0].name %}
         <div class="count_status-icon col-fit">
-          {{ render '@icon-square--app-ok-medium' }}
+          {% render '@icon-square--app-ok-medium' %}
         </div>
         <div class="count_status-text col-fill">
-          {{#if apps.0.name}}
-            <strong>{{ apps.length }}</strong> app{{#if apps.1.name}}s{{/if}}
-          {{else}}
+          {% if org.apps[0].name %}
+            <strong>{{ org.apps | length }}</strong> app{% if org.apps[1].name %}s{% endif %}
+          {% else %}
             <strong>0</strong> apps
-          {{/if}}
+          {% endif %}
         </div>
-        {{else}}
+        {% else %}
         <div class="count_status-icon col-fit">
-          {{ render '@icon-square--app-disabled-medium' }}
+          {% render '@icon-square--app-disabled-medium' %}
         </div>
         <div class="count_status-text col-fill">
             <strong>0</strong> apps
         </div>
-        {{/if}}
+        {% endif %}
       </span><!-- /card-home-contents-header-status-item -->
 
     </div> <!-- /card-home-contents-header-status -->
   </div> <!-- /card-home-contents-header -->
 
-  {{#if isOpen }}
+  {% if isOpen %}
   <div class="card-home-contents-items">
-    {{ render '@overview-row' }}
+    {% render '@overview-row' %}
   </div>
-  {{/if}}
+  {% endif %}
 
 </div> <!-- /card-home-contents--quicklook -->
 
-{{/each}}
+{% endfor %}

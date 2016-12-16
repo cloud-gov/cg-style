@@ -6,8 +6,8 @@
 
   <!-- space item -->
   <div class="overview-row row-center-x indent-0">
-    <div class="col-fill">
-      {{ render '@icon-square--space-medium' }}
+    <div class="col-fill row-center-x">
+      {% render '@icon-square--space-medium' %}
       <h3 class="overview-item-title inline"><a href="#">spaceName</a></h3>
     </div>
     <div class="overview-item-usage col-fit">
@@ -18,24 +18,24 @@
 
   <!-- app/path ok item -->
   <div class="overview-row row-center-x indent-1">
-    <div class="col-fill">
-      {{ render '@icon-square--app-ok-medium' }}
+    <div class="col-fill row-center-x">
+      {% render '@icon-square--app-ok-medium' %}
       <h3 class="overview-item-title inline"><span class="overview-item-title-path">spaceName / <span><a href="#">appName</a></h3>
     </div>
-    <div class="overview-item-status col-fit">
-      {{ render '@status--running' }}
+    <div class="overview-item-status col-fit row-center-x">
+      {% render '@status--running' %}
     </div>
   </div>
 
   <!-- app/path crashed item -->
   <div class="overview-row row-center-x indent-1">
-    <div class="col-fill">
-      {{ render '@icon-square--app-error-medium' }}
+    <div class="col-fill row-center-x">
+      {% render '@icon-square--app-error-medium' %}
       <h3 class="overview-item-title inline"><span class="overview-item-title-path">spaceName / <span><a href="#" class="status-error">appName</a></h3>
     </div>
-    <div class="overview-item-status col-fit">
-      {{> @button }}
-      {{ render '@status--crashed' }}
+    <div class="overview-item-status col-fit row-center-x">
+      {% render '@button--active', {buttonText: 'Restart app'}, true %}
+      {% render '@status--crashed' %}
     </div>
   </div>
 

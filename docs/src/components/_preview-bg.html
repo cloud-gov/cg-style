@@ -2,13 +2,13 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <link media="all" rel="stylesheet" href="{{ path '/css/cloudgov-style-min.css' }}">
-    <link media="all" rel="stylesheet" href="{{ path '/css/main.css' }}">
+    <link media="all" rel="stylesheet" href="{{ '/css/cloudgov-style-min.css' | path }}">
+    <link media="all" rel="stylesheet" href="{{  '/css/main.css' | path }}">
     <title>Cloud.gov Pattern Library</title>
 </head>
 <body class="{{ _target.handle }}-preview preview _hasBackground">
 
-{{{ yield }}}
+{{ yield }}
 
 </body>
 </html>

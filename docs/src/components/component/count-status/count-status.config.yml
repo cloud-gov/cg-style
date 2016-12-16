@@ -1,35 +1,23 @@
 title: count-status
 status: wip
 context:
+  entityKind: space
   status: alt
-  kind: kind
-  kindIcon: kindIcon
-  kinds:
-    - kind:
-      name: name
+  entityCount: '1'
 variants:
   - name: default
   - name: space
     context:
+      entityKind: space
       status: alt
-      kind: space
-      kindIcon: space
-      kinds:
-        - kind:
-          name: name
+      entityCount: '3'
   - name: app
     context:
+      entityKind: app
       status: ok
-      kind: app
-      kindIcon: app
-      kinds:
-        - kind:
-          name: name
+      entityCount: '4'
   - name: service
     context:
+      entityKind: service
       status: alt
-      kind: service
-      kindIcon: service
-      kinds:
-        - kind:
-          name: name
+      entityCount: '0'
