@@ -1,7 +1,8 @@
 {% for color in colors %}
-<div class="swatch">
-  <div class="example swatch-color bg-{{ color.colorName }}"></div>
-  <div class="font-sans sans-s5 fw-bold">{{ color.colorName }}</div>
-  <div class="font-mono mono-s3 fw-light">{{ color.colorCode }}</div>
-</div>
+  <div class="swatch h20 mb8">
+    <div class="example swatch-color bg-{{ color.colorName }}"></div>
+    <div class="font-sans sans-s5 fw-bold">{{ color.colorName }}</div>
+    <div class="pattern-vars font-sans sans-s2 fw-bold">$color-{{ color.colorName }}</div>
+    <div class="font-mono mono-s3 fw-light">{{ color.colorCode }}</div>
+  </div>
 {% endfor %}

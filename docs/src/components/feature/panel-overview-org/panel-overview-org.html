@@ -4,6 +4,7 @@
     <div class="panel-secondary col-fit row-center-x">
       {% render '@count-status--space'%}
       {% render '@count-status--app'%}
+      {% render '@count-status--service'%}
     </div>
   </header>
   <div class="panel-content">
@@ -15,7 +16,7 @@
             <span class="panel-secondary-description">panelSecondaryDescription</span>
           </div>
         </header>
-        {% endif %}
+      {% endif %}
       <div class="panel-section-content">
         {% render '@overview-row' %}
       </div>
