@@ -3,9 +3,9 @@
 
 body {
   color: $color-base;
-  font-size: $grid-type-px;
-  font-feature-settings: "kern";
+  font-feature-settings: 'kern';
   font-kerning: normal;
+  font-size: $grid-type-px;
   font-variant-ligatures: common-ligatures;
   font-weight: 400;
   line-height: $leading-body;
