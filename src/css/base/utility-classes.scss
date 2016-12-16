@@ -382,7 +382,19 @@
 }
 
 .clearfix:after {
-  clear: both;
+  clear: both !important;
+}
+
+.clear {
+  clear: both !important;
+}
+
+.clear-right {
+  clear: right !important;
+}
+
+.clear-left {
+  clear: left !important;
 }
 
 // border
