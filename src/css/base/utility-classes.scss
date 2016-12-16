@@ -375,6 +375,16 @@
   float: right !important;
 }
 
+.clearfix:after,
+.clearfix:before {
+  content: ' ';
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
 // border
 
 .b1 {
@@ -411,6 +421,26 @@
 .bx4 {
   border-left: $grid-1 solid !important;
   border-right: $grid-1 solid !important;
+}
+
+.by1 {
+  border-bottom: 1px solid !important;
+  border-top: 1px solid !important;
+}
+
+.by2 {
+  border-bottom: 2px solid !important;
+  border-top: 2px solid !important;
+}
+
+.by3 {
+  border-bottom: $grid-05 solid !important;
+  border-top: $grid-05 solid !important;
+}
+
+.by4 {
+  border-bottom: $grid-1 solid !important;
+  border-top: $grid-1 solid !important;
 }
 
 .br1 {

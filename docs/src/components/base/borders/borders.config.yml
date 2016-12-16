@@ -1,5 +1,4 @@
-title: 'color palette'
-
+title: 'borders'
 context:
   colors:
     - colorName: 'red'
@@ -29,3 +28,22 @@ context:
     - border:
       borderName: '8px'
       borderCode: 'b4'
+  options:
+    - option:
+      optionName: border-x
+      optionCode: bx
+    - option:
+      optionName: border-y
+      optionCode: by
+    - option:
+      optionName: border-top
+      optionCode: bt
+    - option:
+      optionName: border-right
+      optionCode: br
+    - option:
+      optionName: border-bottom
+      optionCode: bb
+    - option:
+      optionName: border-left
+      optionCode: bl
