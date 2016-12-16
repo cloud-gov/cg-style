@@ -9,7 +9,6 @@ $panel-padding: $grid-3;
   @include clearfix;
   background-color: $color-white;
   margin-bottom: $grid-4;
-  min-height: 10rem;
   padding: $grid-3 $grid-3 $grid-4;
 }
 
@@ -24,7 +23,22 @@ h4 + .panel {
   font-size: $sans-s7;
   font-weight: 400;
   line-height: $leading-single;
-  margin-bottom: $grid-2;
+}
+
+.panel-secondary {
+  font-size: $sans-s3;
+  font-weight: 400;
+  line-height: $leading-single;
+}
+
+.panel-section-title {
+  font-size: $sans-s3;
+  font-weight: 700;
+  line-height: $leading-single;
+}
+
+.panel-section-header {
+  padding-bottom: $grid-1;
 }
 
 .panel-group {
@@ -54,7 +68,7 @@ h4 + .panel {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem 0;
+  padding-bottom: $grid-4;
 
   h1, h2, h3, h4 {
     font-size: $sans-s7;

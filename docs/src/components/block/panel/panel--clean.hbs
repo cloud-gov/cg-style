@@ -2,19 +2,21 @@
   <header class="panel-header row-center-x">
     <h1 class="panel-title col-fill">panelTitle</h1>
     <div class="panel-secondary col-fit">
-      panelSecondary
+      <span class="panel-secondary-description">panelSecondaryDescription</span>
     </div>
   </header>
   <div class="panel-content">
     <section class="panel-section">
-      <header class="panel-section-header row-end">
-        <h2 class="panel-section-title col-fill">panelSectionTitle</h2>
-        <div class="panel-section-secondary col-fit">
-          panelSectionSecondary
-        </div>
-      </header>
+      {{#if hasHeader}}
+        <header class="panel-section-header row-end">
+          <h2 class="panel-section-title col-fill">panelSectionTitle</h2>
+          <div class="panel-secondary col-fit">
+            <span class="panel-secondary-description">panelSecondaryDescription</span>
+          </div>
+        </header>
+        {{/if}}
       <div class="panel-section-content">
-        {{previewSlug}}
+        {{ render '@overview-row' }}
       </div>
     </section>
   </div>

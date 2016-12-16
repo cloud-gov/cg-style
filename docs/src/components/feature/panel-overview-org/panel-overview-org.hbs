@@ -1,4 +1,23 @@
 <article class="panel">
-  <h1 class="panel-title">Organization overview</h1>
-  {{ render '@overview-row' }}
+  <header class="panel-header row-center-x">
+    <h1 class="panel-title col-fill">Organization overview</h1>
+    <div class="panel-secondary col-fit">
+      <span class="panel-secondary-description"></span>
+    </div>
+  </header>
+  <div class="panel-content">
+    <section class="panel-section">
+      {{#if hasHeader}}
+        <header class="panel-section-header row-end">
+          <h2 class="panel-section-title col-fill">panelSectionTitle</h2>
+          <div class="panel-secondary col-fit">
+            <span class="panel-secondary-description">panelSecondaryDescription</span>
+          </div>
+        </header>
+        {{/if}}
+      <div class="panel-section-content">
+        {{ render '@overview-row' }}
+      </div>
+    </section>
+  </div>
 </article>

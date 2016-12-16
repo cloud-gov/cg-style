@@ -1,0 +1,28 @@
+title: testComponent
+status: draft
+context:
+  people:
+    - person: dave
+      testName: dave-text
+      nicknames:
+        - nickname:
+          testName: dave-o
+        - nickname:
+          testName: davey
+        - nickname:
+          testName: d-dog
+        - nickname:
+          testName: gopher
+    - person: ann
+      testName: ann-text
+    - person: carlos
+      testName: carlos-text
+    - person: jin
+      testName: jin-text
+    - person: horace
+      testName: horace-text
+    isDefault: true
+    isOutline: false
+    isLink: false
+    buttonStatus: base
+    buttonText: base
