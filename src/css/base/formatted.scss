@@ -15,7 +15,7 @@ pre {
   code {
     background-color: transparent;
     padding: 0;
-    line-height: $leading-body;
+    line-height: $lh-body;
     display: inline;
   }
 }
@@ -25,12 +25,12 @@ code {
   border-radius: $rounded;
   display: inline-block;
   font-family: $font-mono;
-  line-height: $leading-cap;
+  line-height: $lh-cap;
   padding: 2px 6px;
 }
 
 // TODO docs-class
 .usa-content.content code {
-  font-size: $mono-s4;
+  font-size: $fs-mono-s4;
 }
 

@@ -18,16 +18,16 @@ context:
   borders:
     - border:
       borderName: '1px'
-      borderCode: 'b1'
+      borderCode: '1px'
     - border:
       borderName: '2px'
-      borderCode: 'b2'
+      borderCode: '2px'
     - border:
       borderName: '4px'
-      borderCode: 'b3'
+      borderCode: '05'
     - border:
       borderName: '8px'
-      borderCode: 'b4'
+      borderCode: '1'
   options:
     - option:
       optionName: border-x

@@ -48,8 +48,8 @@ table {
 
   tbody {
     display: flex;
-    font-size: $sans-s4;
-    line-height: $leading-body;
+    font-size: $fs-sans-s4;
+    line-height: $lh-body;
 
     @include media($medium-screen) {
       display: table-row-group;

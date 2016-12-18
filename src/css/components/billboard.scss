@@ -18,9 +18,9 @@
 }
 
 .billboard-display_text {
-  font-size: $sans-s9;
+  font-size: $fs-sans-s9;
   font-weight: 600;
-  line-height: $leading-cap;
+  line-height: $lh-cap;
   padding-top: $grid-2;
 
   @include media($medium-screen) {

@@ -1,10 +1,10 @@
 {% for option in options %}
 <div class="clearfix">
-  {% for i in range(1, 5) %}
+  {% for border in borders %}
     <div class="float-left m1 w20 h15 mb4">
-      <div class="h10 mb1 bg-cream {{ option.optionCode }}{{ i }}"></div>
-      <div class="font-sans sans-s5 fw-bold">{{ option.optionName }}</div>
-      <div class="font-mono mono-s3 fw-light">.{{ option.optionCode }}{{ i }}</div>
+      <div class="h10 mb1 bg-cream {{ option.optionCode }}{{ border.borderCode }}"></div>
+      <div class="font-sans sans-s5 fw-700">{{ option.optionName }}</div>
+      <div class="font-mono mono-s3 fw-300">.{{ option.optionCode }}{{ border.borderCode }}</div>
     </div>
   {% endfor %}
 </div>

@@ -8,7 +8,7 @@ body {
   font-size: $grid-type-px;
   font-variant-ligatures: common-ligatures;
   font-weight: 400;
-  line-height: $leading-body;
+  line-height: $lh-body;
   text-rendering: optimizeLegibility;
 }
 
@@ -47,7 +47,7 @@ strong {
 // TODO docs-class
 p strong,
 .content-text li strong {
-  font-size: $sans-s5;
+  font-size: $fs-sans-s5;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -92,12 +92,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: $sans-s8;
+  font-size: $fs-sans-s8;
   font-weight: 300;
-  line-height: $leading-hed;
+  line-height: $lh-hed;
 
   @include media($medium-screen) {
-    font-size: $sans-s9;
+    font-size: $fs-sans-s9;
   }
 
   & + p {
@@ -114,16 +114,16 @@ h1 {
 }
 
 h2 {
-  font-size: $sans-s7;
+  font-size: $fs-sans-s7;
   font-weight: 300;
 
   @include media($medium-screen) {
-    font-size: $sans-s8;
+    font-size: $fs-sans-s8;
   }
 }
 
 h3 {
-  font-size: $sans-s5;
+  font-size: $fs-sans-s5;
   font-weight: 600;
   margin-top: $grid-6;
 }
@@ -133,7 +133,7 @@ h2 + h3 {
 }
 
 h4 {
-  font-size: $sans-s4;
+  font-size: $fs-sans-s4;
   font-weight: 600;
 
   & + h4 {
@@ -142,14 +142,14 @@ h4 {
 }
 
 h5 {
-  font-size: $sans-s2;
+  font-size: $fs-sans-s2;
   font-weight: 600;
 }
 
 p {
   font-family: $font-serif;
-  font-size: $serif-s5;
-  line-height: $leading-body;
+  font-size: $fs-serif-s5;
+  line-height: $lh-body;
   margin-bottom: 0;
 }
 
@@ -158,9 +158,9 @@ p {
 .section-subhed {
   color: $color-mediumgray;
   font-family: $font-sans;
-  font-size: $sans-s7;
+  font-size: $fs-sans-s7;
   font-weight: 300;
-  line-height: $leading-body;
+  line-height: $lh-body;
   margin-bottom: 0;
   margin-top: $grid-2;
   padding-bottom: $grid-2;
@@ -202,7 +202,7 @@ p, ul, ol, pre {
 // constrain to docs content
 .content-text li {
   font-family: $font-serif;
-  font-size: $serif-s5;
+  font-size: $fs-serif-s5;
 }
 
 blockquote {
@@ -222,6 +222,6 @@ hr {
 
 // where should this live?
 .anchorjs-link {
-  font-size: $sans-s7;
+  font-size: $fs-sans-s7;
   opacity: 1;
 }

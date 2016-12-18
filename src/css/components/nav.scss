@@ -27,7 +27,7 @@
 
 .nav-link {
   color: $color-textblack;
-  font-size: $sans-s5;
+  font-size: $fs-sans-s5;
   font-weight: 400;
   padding-bottom: .2rem;
   padding-left: 0;
@@ -63,7 +63,7 @@ $size-xsmall: .8rem;
   color: $color-lightgray;
   display: flex;
   flex-direction: row;
-  font-size: $sans-s2;
+  font-size: $fs-sans-s2;
   letter-spacing: .1em;
   margin-top: 1rem;
   padding-bottom: 1rem;
