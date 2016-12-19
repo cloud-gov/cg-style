@@ -1,539 +1,461 @@
 @import '../core.scss';
 
-// base utility classes, primarily for documentation
+// base utility classes, primarily for documentation and prototyping
 
-// color `{{ colorName }}`
+$u-percentages: '5', '10', '20', '25', '30', '33', '40', '50', '60', '66', '70', '75', '80', '90', '100';
+$u-percentageSuffix: 'ct';
+$u-percentages-s: '5%', '10%', '20%', '25%', '30%', '33.3333333333%', '40%', '50%', '60%', '66.6666666666', '70%', '75%', '80%', '90%', '100%';
+$u-pixels: '1px', '2px';
+$u-gridscale: '05', '1', '105', '2', '3', '4', '5', '6', '7', '8', '9', '10', '15', '20', '25', '30', '40', '50';
+$grid-s: $grid-05, $grid-1, $grid-105, $grid-2, $grid-3, $grid-4, $grid-5, $grid-6, $grid-7, $grid-8, $grid-9, $grid-10, $grid-15, $grid-20, $grid-25, $grid-30, $grid-40, $grid-50;
+$grid-n-multipliers: '05', '1', '105', '2', '3', '4', '5';
+$grid-n-s: $grid-n05, $grid-n1, $grid-n105, $grid-n2, $grid-n3, $grid-n4, $grid-n5;
 
 /* stylelint-disable declaration-no-important  */
-%blue {
-  color: $color-blue;
-}
-
-.blue {
-  color: $color-blue !important;
-}
-
-%brightmint {
-  color: $color-brightmint;
-}
-
-.brightmint {
-  color: $color-brightmint !important;
-}
-
-%cream {
-  color: $color-cream;
-}
-
-.cream {
-  color: $color-cream !important;
-}
-
-%gold {
-  color: $color-gold;
-}
-
-.gold {
-  color: $color-gold !important;
-}
-
-%green {
-  color: $color-green;
-}
-
-.green {
-  color: $color-green !important;
-}
-
-%red {
-  color: $color-red;
-}
-
-.red {
-  color: $color-red !important;
-}
-
-%trueblack {
-  color: $color-trueblack;
-}
-
-.trueblack {
-  color: $color-trueblack !important;
-}
-
-%textblack {
-  color: $color-textblack;
-}
-
-.textblack {
-  color: $color-textblack !important;
-}
-
-%darkgray {
-  color: $color-darkgray;
-}
-
-.darkgray {
-  color: $color-darkgray !important;
-}
-
-%mediumgray {
-  color: $color-mediumgray;
-}
-
-.mediumgray {
-  color: $color-mediumgray !important;
-}
-
-%mediumgray-trans {
-  color: $color-mediumgray-trans;
-}
-
-.mediumgray-trans {
-  color: $color-mediumgray-trans !important;
-}
-
-%lightgray {
-  color: $color-lightgray;
-}
-
-.lightgray {
-  color: $color-lightgray !important;
-}
-
-%lightestgray {
-  color: $color-lightestgray;
-}
-
-.lightestgray {
-  color: $color-lightestgray !important;
-}
-
-%white {
-  color: $color-white;
-}
-
-.white {
-  color: $color-white !important;
-}
-
-// background `bg-{{ colorName }}`
-
-%bg-blue {
-  background-color: $color-blue;
-}
-
-.bg-blue {
-  background-color: $color-blue !important;
-}
-
-%bg-brightmint {
-  background-color: $color-brightmint;
-}
-
-.bg-brightmint {
-  background-color: $color-brightmint !important;
-}
-
-%bg-cream {
-  background-color: $color-cream;
-}
-
-.bg-cream {
-  background-color: $color-cream !important;
-}
-
-%bg-gold {
-  background-color: $color-gold;
-}
-
-.bg-gold {
-  background-color: $color-gold !important;
-}
-
-%bg-green {
-  background-color: $color-green;
-}
-
-.bg-green {
-  background-color: $color-green !important;
-}
-
-%bg-red {
-  background-color: $color-red;
-}
-
-.bg-red {
-  background-color: $color-red !important;
-}
-
-%bg-trueblack {
-  background-color: $color-trueblack;
-}
-
-.bg-trueblack {
-  background-color: $color-trueblack !important;
-}
-
-%bg-textblack {
-  background-color: $color-textblack;
-}
-
-.bg-textblack {
-  background-color: $color-textblack !important;
-}
-
-%bg-darkgray {
-  background-color: $color-darkgray;
-}
-
-.bg-darkgray {
-  background-color: $color-darkgray !important;
-}
-
-%bg-mediumgray {
-  background-color: $color-mediumgray;
-}
-
-.bg-mediumgray {
-  background-color: $color-mediumgray !important;
-}
-
-%bg-mediumgray-trans {
-  background-color: $color-mediumgray-trans;
-}
-
-.bg-mediumgray-trans {
-  background-color: $color-mediumgray-trans !important;
-}
-
-%bg-lightgray {
-  background-color: $color-lightgray;
-}
-
-.bg-lightgray {
-  background-color: $color-lightgray !important;
-}
-
-%bg-lightestgray {
-  background-color: $color-lightestgray;
-}
-
-.bg-lightestgray {
-  background-color: $color-lightestgray !important;
-}
-
-%bg-white {
-  background-color: $color-white;
-}
-
-.bg-white {
-  background-color: $color-white !important;
-}
-
-// font-faces
-
-%font-sans {
-  font-family: '18Franklin-webfont', system, -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-}
 
-.font-sans {
-  font-family: '18Franklin-webfont', system, -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !important;
-}
-
-%font-serif {
-  font-family: 'Georgia', 'Cambria', 'Times New Roman', 'Times', serif;
-}
-
-.font-serif {
-  font-family: 'Georgia', 'Cambria', 'Times New Roman', 'Times', serif !important;
-}
-
-%font-mono {
-  font-family: 'Roboto Mono', 'Bitstream Vera Sans Mono', 'Consolas', 'Courier', monospace;
-}
-
-.font-mono {
-  font-family: 'Roboto Mono', 'Bitstream Vera Sans Mono', 'Consolas', 'Courier', monospace !important;
-}
-
-// opentype
-
-%ot-tnum {
-  font-feature-settings: 'tnum';
-}
-
-.ot-tnum {
-  font-feature-settings: 'tnum' !important;
-}
-
-%ot-alt {
-  font-feature-settings: 'ss01', 'kern';
-}
-
-.ot-alt {
-  font-feature-settings: 'ss01', 'kern' !important;
-}
-
-%ot-default {
-  font-feature-settings: 'kern';
-}
+/*
 
-.ot-default {
-  font-feature-settings: 'kern' !important;
-}
+  COLORS
 
-// font weights
+  Base:
+    ---
 
-%fw-100 {
-  font-weight: 100;
-}
+  Modifiers:
+    ---
 
-.fw-100 {
-  font-weight: 100 !important;
-}
+  Values:
+    {$color}
 
-%fw-200 {
-  font-weight: 200;
-}
+*/
 
-.fw-200 {
-  font-weight: 200 !important;
-}
+$color-s: 'blue', 'brightmint', 'cream', 'gold', 'green', 'red', 'trueblack', 'textblack', 'darkgray', 'mediumgray', 'mediumgray-trans', 'lightgray', 'lightestgray', 'white';
+$colorvar-s: $color-blue, $color-brightmint, $color-cream, $color-gold, $color-green, $color-red, $color-trueblack, $color-textblack, $color-darkgray, $color-mediumgray, $color-mediumgray-trans, $color-lightgray, $color-lightestgray, $color-white;
 
-%fw-300 {
-  font-weight: 300;
+@for $i from 1 through length($color-s) {
+  %#{nth($color-s, $i)} { color: nth($colorvar-s, $i); }
+  .#{nth($color-s, $i)} { color: nth($colorvar-s, $i) !important; }
 }
 
-.fw-300 {
-  font-weight: 300 !important;
-}
+/*
 
-%fw-400 {
-  font-weight: 400;
-}
+  BACKGROUND
 
-.fw-400 {
-  font-weight: 400 !important;
-}
+  Base:
+    bg
 
-%fw-500 {
-  font-weight: 500;
-}
+  Modifiers:
+    ---
 
-.fw-500 {
-  font-weight: 500 !important;
-}
+  Values:
+    -{$color}
 
-%fw-600 {
-  font-weight: 600;
-}
+  Reset:
+    transparent
 
-.fw-600 {
-  font-weight: 600 !important;
-}
+*/
 
-%fw-700 {
-  font-weight: 700;
+@for $i from 1 through length($color-s) {
+  %bg-#{nth($color-s, $i)} { background-color: nth($colorvar-s, $i); }
+  .bg-#{nth($color-s, $i)} { background-color: nth($colorvar-s, $i) !important; }
 }
 
-.fw-700 {
-  font-weight: 700 !important;
-}
+%bg-- { background-color: transparent; }
+.bg-- { background-color: transparent !important; }
 
-%fw-800 {
-  font-weight: 800;
-}
+/*
 
-.fw-800 {
-  font-weight: 800 !important;
-}
+  FONT SIZE
 
-%fw-900 {
-  font-weight: 900;
-}
+  Base:
+    ---
 
-.fw-900 {
-  font-weight: 900;
-}
+  Modifiers:
+    sans
+    serif
+    mono
 
-// type style
+  Values:
+    -s1
+    -s2
+    -s3
+    -s4
+    -s5
+    -s6
+    -s7
+    -s8
+    -s9
+    -s10
 
-%italic {
-  font-style: italic;
-}
+  Reset:
+    -s6
 
-.italic {
-  font-style: italic !important;
-}
+*/
 
-// type scale
+$u-typescale: '-s1', '-s2', '-s3', '-s4', '-s5', '-s6', '-s7', '-s8', '-s9', '-s10';
 
 @for $i from 1 through length($u-typescale) {
   %sans-s#{$i} {
-    font-size: nth($fs-sans-s, $i);
+    font-family: $font-sans;
+    font-size: nth($sans-s, $i);
   }
   .sans-s#{$i} {
-    font-size: nth($fs-sans-s, $i) !important;
+    font-family: $font-sans !important;
+    font-size: nth($sans-s, $i) !important;
   }
-}
-
-@for $i from 1 through length($u-typescale) {
   %serif-s#{$i} {
-    font-size: nth($fs-serif-s, $i);
+    font-family: $font-serif;
+    font-size: nth($sans-s, $i);
   }
   .serif-s#{$i} {
-    font-size: nth($fs-serif-s, $i) !important;
+    font-family: $font-serif !important;
+    font-size: nth($sans-s, $i) !important;
   }
-}
-
-@for $i from 1 through length($u-typescale) {
   %mono-s#{$i} {
-    font-size: nth($fs-mono-s, $i);
+    font-family: $font-mono;
+    font-size: nth($sans-s, $i);
   }
   .mono-s#{$i} {
-    font-size: nth($fs-mono-s, $i) !important;
+    font-family: $font-mono !important;
+    font-size: nth($sans-s, $i) !important;
   }
 }
 
-// measure
+%sans-- { font-size: $sans-s6; }
+.sans-- { font-size: $sans-s6 !important; }
 
-%measure-reading {
-  max-width: $text-max-width;
+%serif-- { font-size: $serif-s6; }
+.serif-- { font-size: $serif-s6 !important; }
+
+%mono-- { font-size: $mono-s6; }
+.mono-- { font-size: $mono-s6 !important; }
+
+/*
+
+  FONT FACE
+
+  Base:
+    font
+
+  Modifiers:
+    ---
+
+  Values:
+    -sans
+    -serif
+    -mono
+
+  Reset:
+    -sans
+
+*/
+
+%font-sans { font-family: $font-sans; }
+.font-sans { font-family: $font-sans !important; }
+
+%font-serif { font-family: $font-serif; }
+.font-serif { font-family: $font-serif !important; }
+
+%font-mono { font-family: $font-mono; }
+.font-mono { font-family: $font-mono !important; }
+
+%font-- { font-family: $font-sans; }
+.font-- { font-family: $font-sans !important; }
+
+/*
+
+  OPENTYPE
+
+  Base:
+    ot
+
+  Modifiers:
+    ---
+
+  Values:
+    -alt
+    -tnum
+
+  Reset:
+    kern
+
+*/
+
+%ot-tnum { font-feature-settings: 'tnum', 'kern'; }
+.ot-tnum { font-feature-settings: 'tnum', 'kern' !important; }
+
+%ot-alt { font-feature-settings: 'ss01', 'kern'; }
+.ot-alt { font-feature-settings: 'ss01', 'kern' !important; }
+
+%ot-- { font-feature-settings: 'kern'; }
+.ot-- { font-feature-settings: 'kern' !important; }
+
+/*
+
+  OPENTYPE
+
+  Base:
+    fw
+
+  Modifiers:
+    ---
+
+  Values:
+    100
+    200
+    300
+    400
+    500
+    600
+    700
+    800
+    900
+
+  Reset:
+    500
+
+*/
+
+$fw-s: 100, 200, 300, 400, 500, 600, 700, 800, 900;
+
+@for $i from 1 through length($fw-s) {
+  %fw#{nth($fw-s, $i)} { font-weight: nth($fw-s, $i); }
+  .fw#{nth($fw-s, $i)} { font-weight: nth($fw-s, $i) !important; }
 }
 
-.measure-reading {
-  max-width: $text-max-width !important;
-}
+%fw-- { font-weight: 500; }
+.fw-- { font-weight: 500 !important; }
 
-%measure-narrow {
-  max-width: $text-narrow-width;
-}
+/*
 
-.measure-narrow {
-  max-width: $text-narrow-width !important;
-}
+  TYPE STYLE
 
-// leading
+  Base:
+    ---
 
-%leading-single {
-  line-height: $lh-single;
-}
+  Modifiers:
+    ---
 
-.leading-single {
-  line-height: $lh-single !important;
-}
+  Values:
+    italic
+    strike
+    underline
 
-%leading-hed {
-  line-height: $lh-hed;
-}
+  Reset:
+    ---
 
-.leading-hed {
-  line-height: $lh-hed !important;
-}
+*/
 
-%leading-cap {
-  line-height: $lh-cap;
-}
+%italic { font-style: italic; }
+.italic { font-style: italic !important; }
 
-.leading-cap {
-  line-height: $lh-cap !important;
-}
+%underline { text-decoration: underline; }
+.underline { text-decoration: underline !important; }
 
-%leading-body {
-  line-height: $lh-body;
-}
+%strike { text-decoration: line-through; }
+.strike { text-decoration: line-through !important; }
 
-.leading-body {
-  line-height: $lh-body !important;
-}
+/*
 
-%leading-display {
-  line-height: $lh-display;
-}
+  MEASURE
 
-.leading-display {
-  line-height: $lh-display !important;
-}
+  Base:
+    measure
 
-// border radius
+  Modifiers:
+    ---
 
-%rounded {
-  border-radius: $rounded;
-}
+  Values:
+    -reading
+    -narrow
 
-.rounded {
-  border-radius: $rounded !important;
-}
+  Reset:
+    none
 
-%rounded-- {
-  border-radius: none;
-}
+*/
 
-.rounded-- {
-  border-radius: none !important;
-}
+%measure-reading { max-width: $text-max-width; }
+.measure-reading { max-width: $text-max-width !important; }
 
-// flex column order
+%measure-narrow { max-width: $text-narrow-width; }
+.measure-narrow { max-width: $text-narrow-width !important; }
+
+%measure-- { max-width: none; }
+.measure-- { max-width: none !important; }
+
+/*
+
+  LINE HEIGHT
+
+  Base:
+    lh
+
+  Modifiers:
+    ---
+
+  Values:
+    -single
+    -hed
+    -cap
+    -body
+    -display
+
+  Reset:
+    -body
+
+*/
+
+%lh-single { line-height: $lh-single; }
+.lh-single { line-height: $lh-single !important; }
+
+%lh-hed { line-height: $lh-hed; }
+.lh-hed { line-height: $lh-hed !important; }
+
+%lh-cap { line-height: $lh-cap; }
+.lh-cap { line-height: $lh-cap !important; }
+
+%lh-body { line-height: $lh-body; }
+.lh-body { line-height: $lh-body !important; }
+
+%lh-display { line-height: $lh-display; }
+.lh-display { line-height: $lh-display !important; }
+
+%lh-- { line-height: $lh-body; }
+.lh-- { line-height: $lh-body !important; }
+
+/*
+
+  BORDER RADIUS
+
+  Base:
+    rd
+
+  Modifiers:
+    ---
+
+    no modifier applies project $rounded to each corner
+
+  Values:
+    -rounded
+    -pill
+
+  Reset:
+    none
+
+*/
+
+%rd-rounded { border-radius: $rounded; }
+.rd-rounded { border-radius: $rounded !important; }
+
+%rd-pill { border-radius: 10em; }
+.rd-pill { border-radius: 10em !important; }
+
+%rd-- { border-radius: none; }
+.rd-- { border-radius: none !important; }
+
+/*
+
+  FLEX ORDER
+
+  Base:
+    order-
+
+  Modifiers:
+    ---
+
+  Values:
+    0
+    1
+    2
+    3
+    4
+    5
+    6
+    7
+    8
+    9
+    10
+    11
+    first
+    last
+
+  Reset:
+    auto
+
+*/
 
 @for $i from 0 through length($u-flexscale) {
-  %order-#{$i} {
-    order: $i;
-  }
-  .order-#{$i} {
-    order: $i !important;
-  }
+  %order-#{$i} { order: $i; }
+  .order-#{$i} { order: $i !important; }
 }
 
-%order-first {
-  order: -1;
-}
+%order-first { order: -1; }
+.order-first { order: -1 !important; }
 
-.order-first {
-  order: -1 !important;
-}
+%order-last { order: 99; }
+.order-last { order: 99 !important; }
 
-%order-last {
-  order: 99;
-}
+%order-- { order: auto; }
+.order-- { order: auto !important; }
 
-.order-last {
-  order: 99 !important;
-}
+/*
 
-// spacing scale
+  WIDTH
 
-// w: width
-// h: height
-// p: padding
-// m: margin
+  Base:
+    w
 
-// v: vertical (top and bottom)
-// h: horizontal (left and right)
-// t: top
-// r: right
-// b: bottom
-// l: left
+  Modifiers:
+    ---
+
+  Values:
+    Percentages:
+      5ct
+      10ct
+      20ct
+      25ct
+      30ct
+      33ct
+      40ct
+      50ct
+      60ct
+      66ct
+      70ct
+      75ct
+      80ct
+      90ct
+      100ct
+    Grid:
+      05
+      1
+      105
+      2
+      3
+      4
+      5
+      6
+      7
+      8
+      9
+      10
+      15
+      20
+      30
+      40
+      50
+    Pixel:
+      1px
+      2px
+
+  Reset:
+    auto
+
+*/
 
 @for $i from 1 through length($u-percentages) {
   %w#{nth($u-percentages, $i)}#{$u-percentageSuffix} {
     width: #{nth($u-percentages-s, $i)};
   }
   .w#{nth($u-percentages, $i)}#{$u-percentageSuffix} {
-    width: #{nth($u-percentages-s, $i)} !important;
-  }
-  %h#{nth($u-percentages, $i)}#{$u-percentageSuffix} {
-    width: #{nth($u-percentages-s, $i)};
-  }
-  .h#{nth($u-percentages, $i)}#{$u-percentageSuffix} {
-    width: #{nth($u-percentages-s, $i)} !important;
-  }
-  %sq#{nth($u-percentages, $i)}#{$u-percentageSuffix} {
-    height: #{nth($u-percentages-s, $i)};
-    width: #{nth($u-percentages-s, $i)};
-  }
-  .sq#{nth($u-percentages, $i)}#{$u-percentageSuffix} {
-    height: #{nth($u-percentages-s, $i)} !important;
     width: #{nth($u-percentages-s, $i)} !important;
   }
 }
@@ -545,112 +467,6 @@
   .w#{nth($u-gridscale, $i)} {
     width: nth($grid-s, $i) !important;
   }
-  %h#{nth($u-gridscale, $i)} {
-    height: nth($grid-s, $i);
-  }
-  .h#{nth($u-gridscale, $i)} {
-    height: nth($grid-s, $i) !important;
-  }
-  %sq#{nth($u-gridscale, $i)} {
-    height: nth($grid-s, $i);
-    width: nth($grid-s, $i);
-  }
-  .sq#{nth($u-gridscale, $i)} {
-    height: nth($grid-s, $i) !important;
-    width: nth($grid-s, $i) !important;
-  }
-  %p#{nth($u-gridscale, $i)} {
-    padding: nth($grid-s, $i);
-  }
-  .p#{nth($u-gridscale, $i)} {
-    padding: nth($grid-s, $i) !important;
-  }
-  %py#{nth($u-gridscale, $i)} {
-    padding-bottom: nth($grid-s, $i);
-    padding-top: nth($grid-s, $i);
-  }
-  .py#{nth($u-gridscale, $i)} {
-    padding-bottom: nth($grid-s, $i) !important;
-    padding-top: nth($grid-s, $i) !important;
-  }
-  %px#{nth($u-gridscale, $i)} {
-    padding-left: nth($grid-s, $i);
-    padding-right: nth($grid-s, $i);
-  }
-  .px#{nth($u-gridscale, $i)} {
-    padding-left: nth($grid-s, $i) !important;
-    padding-right: nth($grid-s, $i) !important;
-  }
-  %pt#{nth($u-gridscale, $i)} {
-    padding-top: nth($grid-s, $i);
-  }
-  .pt#{nth($u-gridscale, $i)} {
-    padding-top: nth($grid-s, $i) !important;
-  }
-  %pr#{nth($u-gridscale, $i)} {
-    padding-right: nth($grid-s, $i);
-  }
-  .pr#{nth($u-gridscale, $i)} {
-    padding-right: nth($grid-s, $i) !important;
-  }
-  %pb#{nth($u-gridscale, $i)} {
-    padding-bottom: nth($grid-s, $i);
-  }
-  .pb#{nth($u-gridscale, $i)} {
-    padding-bottom: nth($grid-s, $i) !important;
-  }
-  %pl#{nth($u-gridscale, $i)} {
-    padding-left: nth($grid-s, $i);
-  }
-  .pl#{nth($u-gridscale, $i)} {
-    padding-left: nth($grid-s, $i) !important;
-  }
-  %m#{nth($u-gridscale, $i)} {
-    margin: nth($grid-s, $i);
-  }
-  .m#{nth($u-gridscale, $i)} {
-    margin: nth($grid-s, $i) !important;
-  }
-  %my#{nth($u-gridscale, $i)} {
-    margin-bottom: nth($grid-s, $i);
-    margin-top: nth($grid-s, $i);
-  }
-  .my#{nth($u-gridscale, $i)} {
-    margin-bottom: nth($grid-s, $i) !important;
-    margin-top: nth($grid-s, $i) !important;
-  }
-  %mx#{nth($u-gridscale, $i)} {
-    margin-left: nth($grid-s, $i);
-    margin-right: nth($grid-s, $i);
-  }
-  .mx#{nth($u-gridscale, $i)} {
-    margin-left: nth($grid-s, $i) !important;
-    margin-right: nth($grid-s, $i) !important;
-  }
-  %mt#{nth($u-gridscale, $i)} {
-    margin-top: nth($grid-s, $i);
-  }
-  .mt#{nth($u-gridscale, $i)} {
-    margin-top: nth($grid-s, $i) !important;
-  }
-  %mr#{nth($u-gridscale, $i)} {
-    margin-right: nth($grid-s, $i);
-  }
-  .mr#{nth($u-gridscale, $i)} {
-    margin-right: nth($grid-s, $i) !important;
-  }
-  %mb#{nth($u-gridscale, $i)} {
-    margin-bottom: nth($grid-s, $i);
-  }
-  .mb#{nth($u-gridscale, $i)} {
-    margin-bottom: nth($grid-s, $i) !important;
-  }
-  %ml#{nth($u-gridscale, $i)} {
-    margin-left: nth($grid-s, $i);
-  }
-  .ml#{nth($u-gridscale, $i)} {
-    margin-left: nth($grid-s, $i) !important;
-  }
 }
 
 @for $i from 1 through length($u-pixels) {
@@ -660,12 +476,179 @@
   .w#{nth($u-pixels, $i)} {
     width: #{nth($u-pixels, $i)} !important;
   }
+}
+
+%w-- { width: auto; }
+.w-- { width: auto !important; }
+
+/*
+
+  HEIGHT
+
+  Base:
+    h
+
+  Modifiers:
+    ---
+
+  Values:
+    Percentages:
+      5ct
+      10ct
+      20ct
+      25ct
+      30ct
+      33ct
+      40ct
+      50ct
+      60ct
+      66ct
+      70ct
+      75ct
+      80ct
+      90ct
+      100ct
+    Grid:
+      05
+      1
+      105
+      2
+      3
+      4
+      5
+      6
+      7
+      8
+      9
+      10
+      15
+      20
+      30
+      40
+      50
+    Pixel:
+      1px
+      2px
+
+  Reset:
+    auto
+
+*/
+
+@for $i from 1 through length($u-percentages) {
+  %h#{nth($u-percentages, $i)}#{$u-percentageSuffix} {
+    height: #{nth($u-percentages-s, $i)};
+  }
+  .h#{nth($u-percentages, $i)}#{$u-percentageSuffix} {
+    height: #{nth($u-percentages-s, $i)} !important;
+  }
+}
+
+@for $i from 1 through length($u-gridscale) {
+  %h#{nth($u-gridscale, $i)} {
+    height: nth($grid-s, $i);
+  }
+  .h#{nth($u-gridscale, $i)} {
+    height: nth($grid-s, $i) !important;
+  }
+}
+
+@for $i from 1 through length($u-pixels) {
   %h#{nth($u-pixels, $i)} {
     height: #{nth($u-pixels, $i)};
   }
   .h#{nth($u-pixels, $i)} {
     height: #{nth($u-pixels, $i)} !important;
   }
+}
+
+%h-- { height: auto; }
+.h-- { height: auto !important; }
+
+/*
+
+  SQUARE
+
+  Base:
+    sq
+
+  Modifiers:
+    v   vertical (top and bottom)
+    h   horizontal (left and right)
+    t   top
+    r   right
+    b   bottom
+    l   left
+
+    if no modifier, value applies to all sides
+
+  Values:
+    Percentages:
+      5ct
+      10ct
+      20ct
+      25ct
+      30ct
+      33ct
+      40ct
+      50ct
+      60ct
+      66ct
+      70ct
+      75ct
+      80ct
+      90ct
+      100ct
+    Grid:
+      05
+      1
+      105
+      2
+      3
+      4
+      5
+      6
+      7
+      8
+      9
+      10
+      15
+      20
+      30
+      40
+      50
+    Pixel:
+      1px
+      2px
+
+  Reset:
+    auto
+
+*/
+
+@for $i from 1 through length($u-percentages) {
+  %sq#{nth($u-percentages, $i)}#{$u-percentageSuffix} {
+    height: #{nth($u-percentages-s, $i)};
+    width: #{nth($u-percentages-s, $i)};
+  }
+  .sq#{nth($u-percentages, $i)}#{$u-percentageSuffix} {
+    height: #{nth($u-percentages-s, $i)} !important;
+    width: #{nth($u-percentages-s, $i)} !important;
+  }
+}
+
+@for $i from 1 through length($u-gridscale) {
+  %sq#{nth($u-gridscale, $i)} {
+    height: nth($grid-s, $i);
+    width: nth($grid-s, $i);
+  }
+  .sq#{nth($u-gridscale, $i)} {
+    height: nth($grid-s, $i) !important;
+    width: nth($grid-s, $i) !important;
+  }
+}
+
+@for $i from 1 through length($u-pixels) {
   %sq#{nth($u-pixels, $i)} {
     height: #{nth($u-pixels, $i)};
     width: #{nth($u-pixels, $i)};
@@ -674,203 +657,482 @@
     height: #{nth($u-pixels, $i)} !important;
     width: #{nth($u-pixels, $i)} !important;
   }
-  %p#{nth($u-pixels, $i)} {
-    padding: #{nth($u-pixels, $i)};
+}
+
+%sq-- {
+  height: auto;
+  width: auto;
+}
+
+.sq-- {
+  height: auto !important;
+  width: auto !important;
+}
+
+/*
+
+  PADDING
+
+  Base:
+    sq
+
+  Modifiers:
+    x   horizontal (left and right)
+    y   vertical (top and bottom)
+    t   top
+    r   right
+    b   bottom
+    l   left
+
+    if no modifier, value applies to all sides
+
+  Values:
+    Percentages:
+      5ct
+      10ct
+      20ct
+      25ct
+      30ct
+      33ct
+      40ct
+      50ct
+      60ct
+      66ct
+      70ct
+      75ct
+      80ct
+      90ct
+      100ct
+    Grid:
+      05
+      1
+      105
+      2
+      3
+      4
+      5
+      6
+      7
+      8
+      9
+      10
+      15
+      20
+      30
+      40
+      50
+    Pixel:
+      1px
+      2px
+
+  Reset:
+    auto
+
+*/
+
+@for $i from 1 through length($u-gridscale) {
+  %p#{nth($u-gridscale, $i)} { padding: nth($grid-s, $i); }
+  .p#{nth($u-gridscale, $i)} { padding: nth($grid-s, $i) !important; }
+
+  %py#{nth($u-gridscale, $i)} {
+    padding-bottom: nth($grid-s, $i);
+    padding-top: nth($grid-s, $i);
   }
-  .p#{nth($u-pixels, $i)} {
-    padding: #{nth($u-pixels, $i)} !important;
+
+  .py#{nth($u-gridscale, $i)} {
+    padding-bottom: nth($grid-s, $i) !important;
+    padding-top: nth($grid-s, $i) !important;
   }
+
+  %px#{nth($u-gridscale, $i)} {
+    padding-left: nth($grid-s, $i);
+    padding-right: nth($grid-s, $i);
+  }
+
+  .px#{nth($u-gridscale, $i)} {
+    padding-left: nth($grid-s, $i) !important;
+    padding-right: nth($grid-s, $i) !important;
+  }
+
+  %pt#{nth($u-gridscale, $i)} { padding-top: nth($grid-s, $i); }
+  .pt#{nth($u-gridscale, $i)} { padding-top: nth($grid-s, $i) !important; }
+
+  %pr#{nth($u-gridscale, $i)} { padding-right: nth($grid-s, $i); }
+  .pr#{nth($u-gridscale, $i)} { padding-right: nth($grid-s, $i) !important; }
+
+  %pb#{nth($u-gridscale, $i)} { padding-bottom: nth($grid-s, $i); }
+  .pb#{nth($u-gridscale, $i)} { padding-bottom: nth($grid-s, $i) !important; }
+
+  %pl#{nth($u-gridscale, $i)} { padding-left: nth($grid-s, $i); }
+  .pl#{nth($u-gridscale, $i)} { padding-left: nth($grid-s, $i) !important; }
+}
+
+@for $i from 1 through length($u-pixels) {
+  %p#{nth($u-pixels, $i)} { padding: #{nth($u-pixels, $i)}; }
+  .p#{nth($u-pixels, $i)} { padding: #{nth($u-pixels, $i)} !important; }
+
   %py#{nth($u-pixels, $i)} {
     padding-bottom: #{nth($u-pixels, $i)};
     padding-top: #{nth($u-pixels, $i)};
   }
+
   .py#{nth($u-pixels, $i)} {
     padding-bottom: #{nth($u-pixels, $i)} !important;
     padding-top: #{nth($u-pixels, $i)} !important;
   }
+
   %px#{nth($u-pixels, $i)} {
     padding-left: #{nth($u-pixels, $i)};
     padding-right: #{nth($u-pixels, $i)};
   }
+
   .px#{nth($u-pixels, $i)} {
     padding-left: #{nth($u-pixels, $i)} !important;
     padding-right: #{nth($u-pixels, $i)} !important;
   }
-  %pt#{nth($u-pixels, $i)} {
-    padding-top: #{nth($u-pixels, $i)};
+
+  %pt#{nth($u-pixels, $i)} { padding-top: #{nth($u-pixels, $i)}; }
+  .pt#{nth($u-pixels, $i)} { padding-top: #{nth($u-pixels, $i)} !important; }
+
+  %pr#{nth($u-pixels, $i)} { padding-right: #{nth($u-pixels, $i)}; }
+  .pr#{nth($u-pixels, $i)} { padding-right: #{nth($u-pixels, $i)} !important; }
+
+  %pb#{nth($u-pixels, $i)} { padding-bottom: #{nth($u-pixels, $i)}; }
+  .pb#{nth($u-pixels, $i)} { padding-bottom: #{nth($u-pixels, $i)} !important; }
+
+  %pl#{nth($u-pixels, $i)} { padding-left: #{nth($u-pixels, $i)}; }
+  .pl#{nth($u-pixels, $i)} { padding-left: #{nth($u-pixels, $i)} !important; }
+}
+
+%p-- { padding: none; }
+.p-- { padding: none !important; }
+
+%px-- {
+  padding-left: none;
+  padding-right: none;
+}
+
+.px-- {
+  padding-left: none !important;
+  padding-right: none !important;
+}
+
+%py-- {
+  padding-bottom: none;
+  padding-top: none;
+}
+
+.py-- {
+  padding-bottom: none !important;
+  padding-top: none !important;
+}
+
+%pt-- { padding-top: none; }
+.pt-- { padding-top: none !important; }
+
+%pr-- { padding-right: none; }
+.pr-- { padding-right: none !important; }
+
+%pb-- { padding-bottom: none; }
+.pb-- { padding-bottom: none !important; }
+
+%pl-- { padding-left: none; }
+.pl-- { padding-left: none !important; }
+
+/*
+
+  MARGIN
+
+  Base:
+    m
+
+  Modifiers:
+    x   horizontal (left and right)
+    y   vertical (top and bottom)
+    t   top
+    r   right
+    b   bottom
+    l   left
+
+    if no modifier, value applies to all sides
+
+  Values:
+    Percentages:
+      5ct
+      10ct
+      20ct
+      25ct
+      30ct
+      33ct
+      40ct
+      50ct
+      60ct
+      66ct
+      70ct
+      75ct
+      80ct
+      90ct
+      100ct
+    Grid:
+      05
+      1
+      105
+      2
+      3
+      4
+      5
+      6
+      7
+      8
+      9
+      10
+      15
+      20
+      30
+      40
+      50
+    Pixel:
+      1px
+      2px
+    Negative Grid:
+      n05
+      n1
+      n105
+      n2
+      n3
+      n4
+      n5
+    Negative Pixel:
+      n1px
+      n2px
+
+  Reset:
+    auto
+
+*/
+
+@for $i from 1 through length($u-gridscale) {
+  %m#{nth($u-gridscale, $i)} { margin: nth($grid-s, $i); }
+  .m#{nth($u-gridscale, $i)} { margin: nth($grid-s, $i) !important; }
+
+  %my#{nth($u-gridscale, $i)} {
+    margin-bottom: nth($grid-s, $i);
+    margin-top: nth($grid-s, $i);
   }
-  .pt#{nth($u-pixels, $i)} {
-    padding-top: #{nth($u-pixels, $i)} !important;
+
+  .my#{nth($u-gridscale, $i)} {
+    margin-bottom: nth($grid-s, $i) !important;
+    margin-top: nth($grid-s, $i) !important;
   }
-  %pr#{nth($u-pixels, $i)} {
-    padding-right: #{nth($u-pixels, $i)};
+
+  %mx#{nth($u-gridscale, $i)} {
+    margin-left: nth($grid-s, $i);
+    margin-right: nth($grid-s, $i);
   }
-  .pr#{nth($u-pixels, $i)} {
-    padding-right: #{nth($u-pixels, $i)} !important;
+
+  .mx#{nth($u-gridscale, $i)} {
+    margin-left: nth($grid-s, $i) !important;
+    margin-right: nth($grid-s, $i) !important;
   }
-  %pb#{nth($u-pixels, $i)} {
-    padding-bottom: #{nth($u-pixels, $i)};
+
+  %mt#{nth($u-gridscale, $i)} { margin-top: nth($grid-s, $i); }
+  .mt#{nth($u-gridscale, $i)} {
+    margin-top: nth($grid-s, $i) !important;
   }
-  .pb#{nth($u-pixels, $i)} {
-    padding-bottom: #{nth($u-pixels, $i)} !important;
-  }
-  %pl#{nth($u-pixels, $i)} {
-    padding-left: #{nth($u-pixels, $i)};
-  }
-  .pl#{nth($u-pixels, $i)} {
-    padding-left: #{nth($u-pixels, $i)} !important;
-  }
-  %m#{nth($u-pixels, $i)} {
-    margin: #{nth($u-pixels, $i)};
-  }
-  .m#{nth($u-pixels, $i)} {
-    margin: #{nth($u-pixels, $i)} !important;
-  }
+  %mr#{nth($u-gridscale, $i)} { margin-right: nth($grid-s, $i); }
+  .mr#{nth($u-gridscale, $i)} { margin-right: nth($grid-s, $i) !important; }
+
+  %mb#{nth($u-gridscale, $i)} { margin-bottom: nth($grid-s, $i); }
+  .mb#{nth($u-gridscale, $i)} { margin-bottom: nth($grid-s, $i) !important; }
+
+  %ml#{nth($u-gridscale, $i)} { margin-left: nth($grid-s, $i); }
+  .ml#{nth($u-gridscale, $i)} { margin-left: nth($grid-s, $i) !important; }
+}
+
+@for $i from 1 through length($u-pixels) {
+  %m#{nth($u-pixels, $i)} { margin: #{nth($u-pixels, $i)}; }
+  .m#{nth($u-pixels, $i)} { margin: #{nth($u-pixels, $i)} !important; }
+
   %my#{nth($u-pixels, $i)} {
     margin-bottom: #{nth($u-pixels, $i)};
     margin-top: #{nth($u-pixels, $i)};
   }
+
   .my#{nth($u-pixels, $i)} {
     margin-bottom: #{nth($u-pixels, $i)} !important;
     margin-top: #{nth($u-pixels, $i)} !important;
   }
+
   %mx#{nth($u-pixels, $i)} {
     margin-left: #{nth($u-pixels, $i)};
     margin-right: #{nth($u-pixels, $i)};
   }
+
   .mx#{nth($u-pixels, $i)} {
     margin-left: #{nth($u-pixels, $i)} !important;
     margin-right: #{nth($u-pixels, $i)} !important;
   }
-  %mt#{nth($u-pixels, $i)} {
-    margin-top: #{nth($u-pixels, $i)};
-  }
-  .mt#{nth($u-pixels, $i)} {
-    margin-top: #{nth($u-pixels, $i)} !important;
-  }
-  %mr#{nth($u-pixels, $i)} {
-    margin-right: #{nth($u-pixels, $i)};
-  }
-  .mr#{nth($u-pixels, $i)} {
-    margin-right: #{nth($u-pixels, $i)} !important;
-  }
-  %mb#{nth($u-pixels, $i)} {
-    margin-bottom: #{nth($u-pixels, $i)};
-  }
-  .mb#{nth($u-pixels, $i)} {
-    margin-bottom: #{nth($u-pixels, $i)} !important;
-  }
-  %ml#{nth($u-pixels, $i)} {
-    margin-left: #{nth($u-pixels, $i)};
-  }
-  .ml#{nth($u-pixels, $i)} {
-    margin-left: #{nth($u-pixels, $i)} !important;
-  }
+
+  %mt#{nth($u-pixels, $i)} { margin-top: #{nth($u-pixels, $i)}; }
+  .mt#{nth($u-pixels, $i)} { margin-top: #{nth($u-pixels, $i)} !important; }
+
+  %mr#{nth($u-pixels, $i)} { margin-right: #{nth($u-pixels, $i)}; }
+  .mr#{nth($u-pixels, $i)} { margin-right: #{nth($u-pixels, $i)} !important; }
+
+  %mb#{nth($u-pixels, $i)} { margin-bottom: #{nth($u-pixels, $i)}; }
+  .mb#{nth($u-pixels, $i)} { margin-bottom: #{nth($u-pixels, $i)} !important; }
+
+  %ml#{nth($u-pixels, $i)} { margin-left: #{nth($u-pixels, $i)}; }
+  .ml#{nth($u-pixels, $i)} { margin-left: #{nth($u-pixels, $i)} !important; }
 }
 
-@for $i from 1 through length($grid-n-s) {
-  %myn#{nth($grid-n-multipliers, $i)} {
+@for $i from 1 through 7 {
+  %myn#{nth($u-gridscale, $i)} {
     margin-bottom: nth($grid-n-s, $i);
     margin-top: nth($grid-n-s, $i);
   }
-  .myn#{nth($grid-n-multipliers, $i)} {
+
+  .myn#{nth($u-gridscale, $i)} {
     margin-bottom: nth($grid-n-s, $i) !important;
     margin-top: nth($grid-n-s, $i) !important;
   }
-  %mxn#{nth($grid-n-multipliers, $i)} {
+
+  %mxn#{nth($u-gridscale, $i)} {
     margin-left: nth($grid-n-s, $i);
     margin-right: nth($grid-n-s, $i);
   }
-  .mxn#{nth($grid-n-multipliers, $i)} {
+
+  .mxn#{nth($u-gridscale, $i)} {
     margin-left: nth($grid-n-s, $i) !important;
     margin-right: nth($grid-n-s, $i) !important;
   }
-  %mtn#{nth($grid-n-multipliers, $i)} {
-    margin-top: nth($grid-n-s, $i);
-  }
-  .mtn#{nth($grid-n-multipliers, $i)} {
-    margin-top: nth($grid-n-s, $i) !important;
-  }
-  %mrn#{nth($grid-n-multipliers, $i)} {
-    margin-right: nth($grid-n-s, $i);
-  }
-  .mrn#{nth($grid-n-multipliers, $i)} {
-    margin-right: nth($grid-n-s, $i) !important;
-  }
-  %mbn#{nth($grid-n-multipliers, $i)} {
-    margin-bottom: nth($grid-n-s, $i);
-  }
-  .mbn#{nth($grid-n-multipliers, $i)} {
-    margin-bottom: nth($grid-n-s, $i) !important;
-  }
-  %mln#{nth($grid-n-multipliers, $i)} {
-    margin-left: nth($grid-n-s, $i);
-  }
-  .mln#{nth($grid-n-multipliers, $i)} {
-    margin-left: nth($grid-n-s, $i) !important;
-  }
+
+  %mtn#{nth($u-gridscale, $i)} { margin-top: nth($grid-n-s, $i); }
+  .mtn#{nth($u-gridscale, $i)} { margin-top: nth($grid-n-s, $i) !important; }
+
+  %mrn#{nth($u-gridscale, $i)} { margin-right: nth($grid-n-s, $i); }
+  .mrn#{nth($u-gridscale, $i)} { margin-right: nth($grid-n-s, $i) !important; }
+
+  %mbn#{nth($u-gridscale, $i)} { margin-bottom: nth($grid-n-s, $i); }
+  .mbn#{nth($u-gridscale, $i)} { margin-bottom: nth($grid-n-s, $i) !important; }
+
+  %mln#{nth($u-gridscale, $i)} { margin-left: nth($grid-n-s, $i); }
+  .mln#{nth($u-gridscale, $i)} { margin-left: nth($grid-n-s, $i) !important; }
 }
 
 @for $i from 1 through length($u-pixels) {
-  %myn#{-#{nth($u-pixels, $i)}} {
+  %myn#{nth($u-pixels, $i)} {
     margin-bottom: -#{nth($u-pixels, $i)};
     margin-top: -#{nth($u-pixels, $i)};
   }
-  .myn#{-#{nth($u-pixels, $i)}} {
+
+  .myn#{nth($u-pixels, $i)} {
     margin-bottom: -#{nth($u-pixels, $i)} !important;
     margin-top: -#{nth($u-pixels, $i)} !important;
   }
-  %mxn#{-#{nth($u-pixels, $i)}} {
+
+  %mxn#{nth($u-pixels, $i)} {
     margin-left: -#{nth($u-pixels, $i)};
     margin-right: -#{nth($u-pixels, $i)};
   }
-  .mxn#{-#{nth($u-pixels, $i)}} {
+
+  .mxn#{nth($u-pixels, $i)} {
     margin-left: -#{nth($u-pixels, $i)} !important;
     margin-right: -#{nth($u-pixels, $i)} !important;
   }
-  %mtn#{-#{nth($u-pixels, $i)}} {
-    margin-top: -#{nth($u-pixels, $i)};
-  }
-  .mtn#{-#{nth($u-pixels, $i)}} {
-    margin-top: -#{nth($u-pixels, $i)} !important;
-  }
-  %mrn#{-#{nth($u-pixels, $i)}} {
-    margin-right: -#{nth($u-pixels, $i)};
-  }
-  .mrn#{-#{nth($u-pixels, $i)}} {
-    margin-right: -#{nth($u-pixels, $i)} !important;
-  }
-  %mbn#{-#{nth($u-pixels, $i)}} {
-    margin-bottom: -#{nth($u-pixels, $i)};
-  }
-  .mbn#{-#{nth($u-pixels, $i)}} {
-    margin-bottom: -#{-#{nth($u-pixels, $i)}} !important;
-  }
-  %mln#{-#{nth($u-pixels, $i)}} {
-    margin-left: -#{nth($u-pixels, $i)};
-  }
-  .mln#{-#{nth($u-pixels, $i)}} {
-    margin-left: -#{nth($u-pixels, $i)} !important;
-  }
+
+  %mtn#{nth($u-pixels, $i)} { margin-top: -#{nth($u-pixels, $i)}; }
+  .mtn#{nth($u-pixels, $i)} { margin-top: -#{nth($u-pixels, $i)} !important; }
+
+  %mrn#{nth($u-pixels, $i)} { margin-right: -#{nth($u-pixels, $i)}; }
+  .mrn#{nth($u-pixels, $i)} { margin-right: -#{nth($u-pixels, $i)} !important; }
+
+  %mbn#{nth($u-pixels, $i)} { margin-bottom: -#{nth($u-pixels, $i)}; }
+  .mbn#{nth($u-pixels, $i)} { margin-bottom: -#{nth($u-pixels, $i)} !important; }
+  %mln#{nth($u-pixels, $i)} { margin-left: -#{nth($u-pixels, $i)}; }
+  .mln#{nth($u-pixels, $i)} { margin-left: -#{nth($u-pixels, $i)} !important; }
 }
 
-// floats
+%m-- { margin: none; }
+.m-- { margin: none !important; }
 
-%float-left {
-  float: left;
+%mx-- {
+  margin-left: none;
+  margin-right: none;
 }
 
-.float-left {
-  float: left !important;
+.mx-- {
+  margin-left: none !important;
+  margin-right: none !important;
 }
 
-%float-right {
-  float: right;
+%my-- {
+  margin-bottom: none;
+  margin-top: none;
 }
 
-.float-right {
-  float: right !important;
+.my-- {
+  margin-bottom: none !important;
+  margin-top: none !important;
 }
+
+%mt-- { margin-top: none; }
+.mt-- { margin-top: none !important; }
+
+%mr-- { margin-right: none; }
+.mr-- { margin-right: none !important; }
+
+%mb-- { margin-bottom: none; }
+.mb-- { margin-bottom: none !important; }
+
+%ml-- { margin-left: none; }
+.ml-- { margin-left: none !important; }
+
+/*
+
+  FLOAT
+
+  Base:
+    float
+
+  Modifiers:
+    ---
+
+  Values:
+    -left
+    -right
+
+  Reset:
+    `none`
+
+*/
+
+%float-left { float: left; }
+.float-left { float: left !important; }
+
+%float-right { float: right; }
+.float-right { float: right !important; }
+
+%float-- { float: none; }
+.float-- { float: none !important; }
+
+/*
+
+  CLEARFIX
+
+  Base:
+    clearfix
+
+  Modifiers:
+    ---
+
+  Values:
+    ---
+
+  Reset:
+    ---
+
+*/
 
 %clearfix:after,
 %clearfix:before {
@@ -884,621 +1146,280 @@
   display: table !important;
 }
 
-%clearfix:after {
-  clear: both;
-}
+%clearfix:after { clear: both; }
 
-.clearfix:after {
-  clear: both !important;
-}
+.clearfix:after { clear: both !important; }
 
-%clear {
-  clear: both;
-}
+/*
 
-.clear {
-  clear: both !important;
-}
+  CLEAR
 
-%clear-right {
-  clear: right;
-}
+  Base:
+    clear
 
-.clear-right {
-  clear: right !important;
-}
+  Modifiers:
+    ---
 
-%clear-left {
-  clear: left;
-}
+  Values:
+    -left
+    -right
 
-.clear-left {
-  clear: left !important;
-}
+    no value clears both
 
-%clear-- {
-  clear: none;
-}
+  Reset:
+    `none`
 
-.clear-- {
-  clear: none !important;
-}
+*/
 
-// border
+%clear { clear: both; }
+.clear { clear: both !important; }
+
+%clear-right { clear: right; }
+.clear-right { clear: right !important; }
+
+%clear-left { clear: left; }
+.clear-left { clear: left !important; }
+
+%clear-- { clear: none; }
+.clear-- { clear: none !important; }
+
+/*
+
+  BORDER WIDTH
+
+  Base:
+    b
+
+  Modifiers:
+    x   horizontal (left and right)
+    y   vertical (top and bottom)
+    t   top
+    r   right
+    b   bottom
+    l   left
+
+    if no modifier, value applies to all sides
+
+  Values:
+    Grid:
+      05
+      1
+      105
+      2
+      3
+      4
+      5
+      6
+      7
+      8
+      9
+      10
+      15
+      20
+      30
+      40
+      50
+    Pixel:
+      1px
+      2px
+
+  Reset:
+    `none`
+
+*/
 
 @for $i from 1 through length($u-pixels) {
-  %b#{nth($u-pixels, $i)} {
-    border: #{nth($u-pixels, $i)} solid;
-  }
-  .b#{nth($u-pixels, $i)} {
-    border: #{nth($u-pixels, $i)} solid !important;
-  }
+  %b#{nth($u-pixels, $i)} { border: #{nth($u-pixels, $i)} solid; }
+  .b#{nth($u-pixels, $i)} { border: #{nth($u-pixels, $i)} solid !important; }
+
   %bx#{nth($u-pixels, $i)} {
     border-left: #{nth($u-pixels, $i)} solid;
     border-right: #{nth($u-pixels, $i)} solid;
   }
+
   .bx#{nth($u-pixels, $i)} {
     border-left: #{nth($u-pixels, $i)} solid !important;
     border-right: #{nth($u-pixels, $i)} solid !important;
   }
+
   %by#{nth($u-pixels, $i)} {
     border-bottom: #{nth($u-pixels, $i)} solid;
     border-top: #{nth($u-pixels, $i)} solid;
   }
+
   .by#{nth($u-pixels, $i)} {
     border-bottom: #{nth($u-pixels, $i)} solid !important;
     border-top: #{nth($u-pixels, $i)} solid !important;
   }
-  %bt#{nth($u-pixels, $i)} {
-    border-top: #{nth($u-pixels, $i)} solid;
-  }
-  .bt#{nth($u-pixels, $i)} {
-    border-top: #{nth($u-pixels, $i)} solid !important;
-  }
-  %br#{nth($u-pixels, $i)} {
-    border-right: #{nth($u-pixels, $i)} solid;
-  }
-  .br#{nth($u-pixels, $i)} {
-    border-right: #{nth($u-pixels, $i)} solid !important;
-  }
-  %bb#{nth($u-pixels, $i)} {
-    border-bottom: #{nth($u-pixels, $i)} solid;
-  }
-  .bb#{nth($u-pixels, $i)} {
-    border-bottom: #{nth($u-pixels, $i)} solid !important;
-  }
-  %bl#{nth($u-pixels, $i)} {
-    border-left: #{nth($u-pixels, $i)} solid;
-  }
-  .bl#{nth($u-pixels, $i)} {
-    border-left: #{nth($u-pixels, $i)} solid !important;
-  }
+
+  %bt#{nth($u-pixels, $i)} { border-top: #{nth($u-pixels, $i)} solid; }
+  .bt#{nth($u-pixels, $i)} { border-top: #{nth($u-pixels, $i)} solid !important; }
+
+  %br#{nth($u-pixels, $i)} { border-right: #{nth($u-pixels, $i)} solid; }
+  .br#{nth($u-pixels, $i)} { border-right: #{nth($u-pixels, $i)} solid important; }
+
+  %bb#{nth($u-pixels, $i)} { border-bottom: #{nth($u-pixels, $i)} solid; }
+  .bb#{nth($u-pixels, $i)} { border-bottom: #{nth($u-pixels, $i)} solid !important; }
+
+  %bl#{nth($u-pixels, $i)} { border-left: #{nth($u-pixels, $i)} solid; }
+  .bl#{nth($u-pixels, $i)} { border-left: #{nth($u-pixels, $i)} solid !important; }
 }
 
 @for $i from 1 through 2 {
-  %b#{nth($u-gridscale, $i)} {
-    border: nth($grid-s, $i) solid;
-  }
-  .b#{nth($u-gridscale, $i)} {
-    border: nth($grid-s, $i) solid !important;
-  }
+  %b#{nth($u-gridscale, $i)} { border: nth($grid-s, $i) solid; }
+  .b#{nth($u-gridscale, $i)} { border: nth($grid-s, $i) solid !important; }
+
   %bx#{nth($u-gridscale, $i)} {
     border-left: nth($grid-s, $i) solid;
     border-right: nth($grid-s, $i) solid;
   }
+
   .bx#{nth($u-gridscale, $i)} {
     border-left: nth($grid-s, $i) solid !important;
     border-right: nth($grid-s, $i) solid !important;
   }
+
   %by#{nth($u-gridscale, $i)} {
     border-bottom: nth($grid-s, $i) solid;
     border-top: nth($grid-s, $i) solid;
   }
+
   .by#{nth($u-gridscale, $i)} {
     border-bottom: nth($grid-s, $i) solid !important;
     border-top: nth($grid-s, $i) solid !important;
   }
-  %bt#{nth($u-gridscale, $i)} {
-    border-top: nth($grid-s, $i) solid;
-  }
-  .bt#{nth($u-gridscale, $i)} {
-    border-top: nth($grid-s, $i) solid !important;
-  }
-  %br#{nth($u-gridscale, $i)} {
-    border-right: nth($grid-s, $i) solid;
-  }
-  .br#{nth($u-gridscale, $i)} {
-    border-right: nth($grid-s, $i) solid !important;
-  }
-  %bb#{nth($u-gridscale, $i)} {
-    border-bottom: nth($grid-s, $i) solid;
-  }
-  .bb#{nth($u-gridscale, $i)} {
-    border-bottom: nth($grid-s, $i) solid !important;
-  }
-  %bl#{nth($u-gridscale, $i)} {
-    border-left: nth($grid-s, $i) solid;
-  }
-  .bl#{nth($u-gridscale, $i)} {
-    border-left: nth($grid-s, $i) solid !important;
-  }
+
+  %bt#{nth($u-gridscale, $i)} { border-top: nth($grid-s, $i) solid; }
+  .bt#{nth($u-gridscale, $i)} { border-top: nth($grid-s, $i) solid !important; }
+
+  %br#{nth($u-gridscale, $i)} { border-right: nth($grid-s, $i) solid; }
+  .br#{nth($u-gridscale, $i)} { border-right: nth($grid-s, $i) solid !important; }
+
+  %bb#{nth($u-gridscale, $i)} { border-bottom: nth($grid-s, $i) solid; }
+  .bb#{nth($u-gridscale, $i)} { border-bottom: nth($grid-s, $i) solid !important; }
+
+  %bl#{nth($u-gridscale, $i)} { border-left: nth($grid-s, $i) solid; }
+  .bl#{nth($u-gridscale, $i)} { border-left: nth($grid-s, $i) solid !important; }
 }
 
-%b-red {
-  border-color: $color-red;
+%b-- { border: none; }
+.b-- { border: none !important; }
+
+%bx-- {
+  border-left: none;
+  border-right: none;
 }
 
-.b-red {
-  border-color: $color-red !important;
+.bx-- {
+  border-left: none !important;
+  border-right: none !important;
 }
 
-%b-blue {
-  border-color: $color-blue;
+%by-- {
+  border-bottom: none;
+  border-top: none;
 }
 
-.b-blue {
-  border-color: $color-blue !important;
+.by-- {
+  border-bottom: none !important;
+  border-top: none !important;
 }
 
-%b-gold {
-  border-color: $color-gold;
+%bt-- { border-top: none; }
+.bt-- { border-top: none !important; }
+
+%br-- { border-right: none; }
+.br-- { border-right: none !important; }
+
+%bb-- { border-bottom: none; }
+.bb-- { border-bottom: none !important; }
+
+%bl-- { border-left: none; }
+.bl-- { border-left: none !important; }
+
+/*
+
+  BORDER COLOR
+
+  Base:
+    b
+
+  Modifiers:
+    t   top
+    r   right
+    b   bottom
+    l   left
+
+    if no modifier, value applies to all sides
+
+  Values:
+    -$colors
+    -transparent
+
+  Reset:
+    ---
+
+*/
+
+@for $i from 1 through length($color-s) {
+  %b-#{nth($color-s, $i)} { border-color: nth($colorvar-s, $i); }
+  .b-#{nth($color-s, $i)} { border-color: nth($colorvar-s, $i) !important; }
+
+  %bt-#{nth($color-s, $i)} { border-top-color: nth($colorvar-s, $i); }
+  .bt-#{nth($color-s, $i)} { border-top-color: nth($colorvar-s, $i) !important; }
+
+  %br-#{nth($color-s, $i)} { border-right-color: nth($colorvar-s, $i); }
+  .br-#{nth($color-s, $i)} { border-right-color: nth($colorvar-s, $i) !important; }
+
+  %bb-#{nth($color-s, $i)} { border-bottom-color: nth($colorvar-s, $i); }
+  .bb-#{nth($color-s, $i)} { border-bottom-color: nth($colorvar-s, $i) !important; }
+
+  %bl-#{nth($color-s, $i)} { border-left-color: nth($colorvar-s, $i); }
+  .bl-#{nth($color-s, $i)} { border-left-color: nth($colorvar-s, $i) !important; }
 }
 
-.b-gold {
-  border-color: $color-gold !important;
+/*
+
+  BORDER STYLE
+
+  Base:
+    b
+
+  Modifiers:
+    t   top
+    r   right
+    b   bottom
+    l   left
+
+    if no modifier, value applies to all sides
+
+  Values:
+    -solid
+    -dashed
+    -dotted
+
+  Reset:
+    ---
+
+*/
+
+$bs-s: 'solid', 'dashed', 'dotted';
+
+@for $i from 1 through length($bs-s) {
+  %b-#{nth($bs-s, $i)} { border-style: nth($bs-s, $i); }
+  .b-#{nth($bs-s, $i)} { border-color: nth($bs-s, $i) !important; }
+
+  %bt-#{nth($bs-s, $i)} { border-top-color: nth($bs-s, $i); }
+  .bt-#{nth($bs-s, $i)} { border-top-color: nth($bs-s, $i) !important; }
+
+  %br-#{nth($bs-s, $i)} { border-right-color: nth($bs-s, $i); }
+  .br-#{nth($bs-s, $i)} { border-right-color: nth($bs-s, $i) !important; }
+
+  %bb-#{nth($bs-s, $i)} { border-bottom-color: nth($bs-s, $i); }
+  .bb-#{nth($bs-s, $i)} { border-bottom-color: nth($bs-s, $i) !important; }
+
+  %bl-#{nth($bs-s, $i)} { border-left-color: nth($bs-s, $i); }
+  .bl-#{nth($bs-s, $i)} { border-left-color: nth($bs-s, $i) !important; }
 }
 
-%b-green {
-  border-color: $color-green;
-}
-
-.b-green {
-  border-color: $color-green !important;
-}
-
-%b-brightmint {
-  border-color: $color-brightmint;
-}
-
-.b-brightmint {
-  border-color: $color-brightmint !important;
-}
-
-%b-cream {
-  border-color: $color-cream;
-}
-
-.b-cream {
-  border-color: $color-cream !important;
-}
-
-%b-white {
-  border-color: $color-white;
-}
-
-.b-white {
-  border-color: $color-white !important;
-}
-
-%b-textblack {
-  border-color: $color-textblack;
-}
-
-.b-textblack {
-  border-color: $color-textblack !important;
-}
-
-%b-trueblack {
-  border-color: $color-trueblack;
-}
-
-.b-trueblack {
-  border-color: $color-trueblack !important;
-}
-
-%b-darkgray {
-  border-color: $color-darkgray;
-}
-
-.b-darkgray {
-  border-color: $color-darkgray !important;
-}
-
-%b-mediumgray {
-  border-color: $color-mediumgray;
-}
-
-.b-mediumgray {
-  border-color: $color-mediumgray !important;
-}
-
-%b-mediumgray-trans {
-  border-color: $color-mediumgray-trans;
-}
-
-.b-mediumgray-trans {
-  border-color: $color-mediumgray-trans !important;
-}
-
-%b-lightgray {
-  border-color: $color-lightgray;
-}
-
-.b-lightgray {
-  border-color: $color-lightgray !important;
-}
-
-%b-lightestgray {
-  border-color: $color-lightestgray;
-}
-
-.b-lightestgray {
-  border-color: $color-lightestgray !important;
-}
-
-// border-top
-%bt {
-  &-red {
-    border-top-color: $color-red;
-  }
-  &-blue {
-    border-top-color: $color-blue;
-  }
-  &-gold {
-    border-top-color: $color-gold;
-  }
-  &-green {
-    border-top-color: $color-green;
-  }
-  &-brightmint {
-    border-top-color: $color-brightmint;
-  }
-  &-cream {
-    border-top-color: $color-cream;
-  }
-  &-white {
-    border-top-color: $color-white;
-  }
-  &-textblack {
-    border-top-color: $color-textblack;
-  }
-  &-trueblack {
-    border-top-color: $color-trueblack;
-  }
-  &-darkgray {
-    border-top-color: $color-darkgray;
-  }
-  &-mediumgray {
-    border-top-color: $color-mediumgray;
-  }
-  &-mediumgray-trans {
-    border-top-color: $color-mediumgray-trans;
-  }
-  &-lightgray {
-    border-top-color: $color-lightgray;
-  }
-  &-lightestgray {
-    border-top-color: $color-lightestgray;
-  }
-}
-
-.bt {
-  &-red {
-    border-top-color: $color-red !important;
-  }
-  &-blue {
-    border-top-color: $color-blue !important;
-  }
-  &-gold {
-    border-top-color: $color-gold !important;
-  }
-  &-green {
-    border-top-color: $color-green !important;
-  }
-  &-brightmint {
-    border-top-color: $color-brightmint !important;
-  }
-  &-cream {
-    border-top-color: $color-cream !important;
-  }
-  &-white {
-    border-top-color: $color-white !important;
-  }
-  &-textblack {
-    border-top-color: $color-textblack !important;
-  }
-  &-trueblack {
-    border-top-color: $color-trueblack !important;
-  }
-  &-darkgray {
-    border-top-color: $color-darkgray !important;
-  }
-  &-mediumgray {
-    border-top-color: $color-mediumgray !important;
-  }
-  &-mediumgray-trans {
-    border-top-color: $color-mediumgray-trans !important;
-  }
-  &-lightgray {
-    border-top-color: $color-lightgray !important;
-  }
-  &-lightestgray {
-    border-top-color: $color-lightestgray !important;
-  }
-}
-
-// border-right
-%br {
-  &-red {
-    border-right-color: $color-red;
-  }
-  &-blue {
-    border-right-color: $color-blue;
-  }
-  &-gold {
-    border-right-color: $color-gold;
-  }
-  &-green {
-    border-right-color: $color-green;
-  }
-  &-brightmint {
-    border-right-color: $color-brightmint;
-  }
-  &-cream {
-    border-right-color: $color-cream;
-  }
-  &-white {
-    border-right-color: $color-white;
-  }
-  &-textblack {
-    border-right-color: $color-textblack;
-  }
-  &-trueblack {
-    border-right-color: $color-trueblack;
-  }
-  &-darkgray {
-    border-right-color: $color-darkgray;
-  }
-  &-mediumgray {
-    border-right-color: $color-mediumgray;
-  }
-  &-mediumgray-trans {
-    border-right-color: $color-mediumgray-trans;
-  }
-  &-lightgray {
-    border-right-color: $color-lightgray;
-  }
-  &-lightestgray {
-    border-right-color: $color-lightestgray;
-  }
-}
-
-.br {
-  &-red {
-    border-right-color: $color-red !important;
-  }
-  &-blue {
-    border-right-color: $color-blue !important;
-  }
-  &-gold {
-    border-right-color: $color-gold !important;
-  }
-  &-green {
-    border-right-color: $color-green !important;
-  }
-  &-brightmint {
-    border-right-color: $color-brightmint !important;
-  }
-  &-cream {
-    border-right-color: $color-cream !important;
-  }
-  &-white {
-    border-right-color: $color-white !important;
-  }
-  &-textblack {
-    border-right-color: $color-textblack !important;
-  }
-  &-trueblack {
-    border-right-color: $color-trueblack !important;
-  }
-  &-darkgray {
-    border-right-color: $color-darkgray !important;
-  }
-  &-mediumgray {
-    border-right-color: $color-mediumgray !important;
-  }
-  &-mediumgray-trans {
-    border-right-color: $color-mediumgray-trans !important;
-  }
-  &-lightgray {
-    border-right-color: $color-lightgray !important;
-  }
-  &-lightestgray {
-    border-right-color: $color-lightestgray !important;
-  }
-}
-
-// border bottom
-
-%bb {
-  &-red {
-    border-bottom-color: $color-red;
-  }
-  &-blue {
-    border-bottom-color: $color-blue;
-  }
-  &-gold {
-    border-bottom-color: $color-gold;
-  }
-  &-green {
-    border-bottom-color: $color-green;
-  }
-  &-brightmint {
-    border-bottom-color: $color-brightmint;
-  }
-  &-cream {
-    border-bottom-color: $color-cream;
-  }
-  &-white {
-    border-bottom-color: $color-white;
-  }
-  &-textblack {
-    border-bottom-color: $color-textblack;
-  }
-  &-trueblack {
-    border-bottom-color: $color-trueblack;
-  }
-  &-darkgray {
-    border-bottom-color: $color-darkgray;
-  }
-  &-mediumgray {
-    border-bottom-color: $color-mediumgray;
-  }
-  &-mediumgray-trans {
-    border-bottom-color: $color-mediumgray-trans;
-  }
-  &-lightgray {
-    border-bottom-color: $color-lightgray;
-  }
-  &-lightestgray {
-    border-bottom-color: $color-lightestgray;
-  }
-}
-
-.bb {
-  &-red {
-    border-bottom-color: $color-red !important;
-  }
-  &-blue {
-    border-bottom-color: $color-blue !important;
-  }
-  &-gold {
-    border-bottom-color: $color-gold !important;
-  }
-  &-green {
-    border-bottom-color: $color-green !important;
-  }
-  &-brightmint {
-    border-bottom-color: $color-brightmint !important;
-  }
-  &-cream {
-    border-bottom-color: $color-cream !important;
-  }
-  &-white {
-    border-bottom-color: $color-white !important;
-  }
-  &-textblack {
-    border-bottom-color: $color-textblack !important;
-  }
-  &-trueblack {
-    border-bottom-color: $color-trueblack !important;
-  }
-  &-darkgray {
-    border-bottom-color: $color-darkgray !important;
-  }
-  &-mediumgray {
-    border-bottom-color: $color-mediumgray !important;
-  }
-  &-mediumgray-trans {
-    border-bottom-color: $color-mediumgray-trans !important;
-  }
-  &-lightgray {
-    border-bottom-color: $color-lightgray !important;
-  }
-  &-lightestgray {
-    border-bottom-color: $color-lightestgray !important;
-  }
-}
-
-// border left
-
-%bl {
-  &-red {
-    border-left-color: $color-red;
-  }
-  &-blue {
-    border-left-color: $color-blue;
-  }
-  &-gold {
-    border-left-color: $color-gold;
-  }
-  &-green {
-    border-left-color: $color-green;
-  }
-  &-brightmint {
-    border-left-color: $color-brightmint;
-  }
-  &-cream {
-    border-left-color: $color-cream;
-  }
-  &-white {
-    border-left-color: $color-white;
-  }
-  &-textblack {
-    border-left-color: $color-textblack;
-  }
-  &-trueblack {
-    border-left-color: $color-trueblack;
-  }
-  &-darkgray {
-    border-left-color: $color-darkgray;
-  }
-  &-mediumgray {
-    border-left-color: $color-mediumgray;
-  }
-  &-mediumgray-trans {
-    border-left-color: $color-mediumgray-trans;
-  }
-  &-lightgray {
-    border-left-color: $color-lightgray;
-  }
-  &-lightestgray {
-    border-left-color: $color-lightestgray;
-  }
-}
-
-.bl {
-  &-red {
-    border-left-color: $color-red !important;
-  }
-  &-blue {
-    border-left-color: $color-blue !important;
-  }
-  &-gold {
-    border-left-color: $color-gold !important;
-  }
-  &-green {
-    border-left-color: $color-green !important;
-  }
-  &-brightmint {
-    border-left-color: $color-brightmint !important;
-  }
-  &-cream {
-    border-left-color: $color-cream !important;
-  }
-  &-white {
-    border-left-color: $color-white !important;
-  }
-  &-textblack {
-    border-left-color: $color-textblack !important;
-  }
-  &-trueblack {
-    border-left-color: $color-trueblack !important;
-  }
-  &-darkgray {
-    border-left-color: $color-darkgray !important;
-  }
-  &-mediumgray {
-    border-left-color: $color-mediumgray !important;
-  }
-  &-mediumgray-trans {
-    border-left-color: $color-mediumgray-trans !important;
-  }
-  &-lightgray {
-    border-left-color: $color-lightgray !important;
-  }
-  &-lightestgray {
-    border-left-color: $color-lightestgray !important;
-  }
-}
 /* stylelint-enable  */

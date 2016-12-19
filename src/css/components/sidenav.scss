@@ -87,7 +87,7 @@ $color-heading:     $color-primary-alt-light;
 
   li {
     border-top: 0;
-    font-size: $fs-sans-s5;
+    font-size: $sans-s5;
     list-style: none;
   }
 
@@ -105,7 +105,7 @@ $color-heading:     $color-primary-alt-light;
 .sidenav-header-text {
   color: $color-blue;
   display: inline-block;
-  font-size: $fs-sans-s2;
+  font-size: $sans-s2;
   letter-spacing: .15em;
   line-height: $lh-hed;
   padding: $grid-1 0;
@@ -220,7 +220,7 @@ $color-heading:     $color-primary-alt-light;
   padding-left: 0;
 
   a {
-    font-size: $fs-sans-s3;
+    font-size: $sans-s3;
     font-weight: 600;
 
     &:before {

@@ -26,7 +26,7 @@
   // <html> which effects all rem units.
   background-color: $color-textblack;
   color: $color-white;
-  font-size: $fs-sans-s2;
+  font-size: $sans-s2;
   font-weight: 600;
   padding-left: $grid-05;
   padding-top: 9px;
@@ -99,7 +99,7 @@ button,
 [type='image'] {
   border-radius: $rounded;
   display: inline-block;
-  font-size: $fs-sans-s3;
+  font-size: $sans-s3;
   font-weight: 500;
   height: $grid-4;
   min-width: 6rem;
@@ -161,7 +161,7 @@ input:focus {
   [type='search'] {
     border: none;
     color: $color-gray;
-    font-size: $fs-sans-s5;
+    font-size: $sans-s5;
     font-weight: 400;
     height: (43rem / $grid-type);
     padding: 0;

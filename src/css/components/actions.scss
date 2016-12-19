@@ -6,7 +6,7 @@
 
 .action-link {
   color: $color-blue;
-  font-size: $fs-sans-s2;
+  font-size: $sans-s2;
   font-weight: bold;
   text-decoration: underline;
 
@@ -20,7 +20,7 @@
 // Extra specificity due to WDS.
 .action {
   &.action-primary {
-    font-size: $fs-sans-s2;
+    font-size: $sans-s2;
   }
 
   &.action-cautious {
@@ -35,7 +35,7 @@
       background-color: transparent;
       box-shadow: inset 0 0 0 1px $color-lightgray;
       color: $color-lightgray;
-      font-size: $fs-sans-s2;
+      font-size: $sans-s2;
     }
   }
 

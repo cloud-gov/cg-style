@@ -60,13 +60,7 @@ $font-mono:                     'Roboto Mono', 'Bitstream Vera Sans Mono', 'Cons
 // utility class scale suffixes
 
 $u-breakpoints: '-xs', '-s', '-m', '-l', '-xl';
-$u-percentages: '5', '10', '20', '25', '30', '33', '40', '50', '60', '66', '70', '75', '80', '90', '100';
-$u-percentageSuffix: 'ct';
-$u-percentages-s: '5%', '10%', '20%', '25%', '30%', '33.3333333333%', '40%', '50%', '60%', '66.6666666666', '70%', '75%', '80%', '90%', '100%';
-$u-typescale: '-s1', '-s2', '-s3', '-s4', '-s5', '-s6', '-s7', '-s8', '-s9', '-s10';
-$u-pixels: '1px', '2px';
 $u-flexscale: '-f1', '-f2', '-f3', '-f4', '-f5', '-f6', '-f7', '-f8', '-f9', '-f10', '-f11';
-$u-gridscale: '05', '1', '105', '2', '3', '4', '5', '6', '7', '8', '9', '10', '15', '20', '25', '30', '40', '50';
 
 // spacing scale and grid
 // spacing is calculated on multiples of a base grid (here, 8px)
@@ -103,10 +97,6 @@ $grid-n3:             #{($grid-base * -3 / $grid-type)}rem;     // 24px
 $grid-n4:             #{($grid-base * -4 / $grid-type)}rem;     // 32px
 $grid-n5:             #{($grid-base * -5 / $grid-type)}rem;     // 40px
 
-$grid-s: $grid-05, $grid-1, $grid-105, $grid-2, $grid-3, $grid-4, $grid-5, $grid-6, $grid-7, $grid-8, $grid-9, $grid-10, $grid-15, $grid-20, $grid-25, $grid-30, $grid-40, $grid-50;
-$grid-n-multipliers: '05', '1', '105', '2', '3', '4', '5';
-$grid-n-s: $grid-n05, $grid-n1, $grid-n105, $grid-n2, $grid-n3, $grid-n4, $grid-n5;
-
 // widths
 $nav-width:          $grid-base-px * 75;          // 600px;
 $site-max-width:     $grid-base-px * 130;         // 1040px;
@@ -114,44 +104,44 @@ $text-max-width:     36em;
 $text-narrow-width:  17em;
 
 // type scale
-$fs-sans-s1:           (10rem / $grid-type);         // 10px;
-$fs-sans-s2:           (12rem / $grid-type);         // 12px;
-$fs-sans-s3:           (13rem / $grid-type);         // 13px;
-$fs-sans-s4:           (14rem / $grid-type);         // 14px;
-$fs-sans-s5:           (16rem / $grid-type);         // 16px;
-$fs-sans-s6:           (18rem / $grid-type);         // 18px;
-$fs-sans-s7:           (20rem / $grid-type);         // 20px;
-$fs-sans-s8:           (24rem / $grid-type);         // 24px;
-$fs-sans-s9:           (40rem / $grid-type);         // 40px;
-$fs-sans-s10:          (100rem / $grid-type);        // 100px;
+$sans-s1:           (10rem / $grid-type);         // 10px;
+$sans-s2:           (12rem / $grid-type);         // 12px;
+$sans-s3:           (13rem / $grid-type);         // 13px;
+$sans-s4:           (14rem / $grid-type);         // 14px;
+$sans-s5:           (16rem / $grid-type);         // 16px;
+$sans-s6:           (18rem / $grid-type);         // 18px;
+$sans-s7:           (20rem / $grid-type);         // 20px;
+$sans-s8:           (24rem / $grid-type);         // 24px;
+$sans-s9:           (40rem / $grid-type);         // 40px;
+$sans-s10:          (100rem / $grid-type);        // 100px;
 
-$fs-sans-s: $fs-sans-s1, $fs-sans-s2, $fs-sans-s3, $fs-sans-s4, $fs-sans-s5, $fs-sans-s6, $fs-sans-s7, $fs-sans-s8, $fs-sans-s9, $fs-sans-s10;
+$sans-s: $sans-s1, $sans-s2, $sans-s3, $sans-s4, $sans-s5, $sans-s6, $sans-s7, $sans-s8, $sans-s9, $sans-s10;
 
-$fs-serif-s1:          (10rem / $grid-type);         // 10px;
-$fs-serif-s2:          (13rem / $grid-type);         // 13px;
-$fs-serif-s3:          (14rem / $grid-type);         // 14px;
-$fs-serif-s4:          (15rem / $grid-type);         // 15px;
-$fs-serif-s5:          (17rem / $grid-type);         // 17px;
-$fs-serif-s6:          (19rem / $grid-type);         // 19px;
-$fs-serif-s7:          (23rem / $grid-type);         // 23px;
-$fs-serif-s8:          (27rem / $grid-type);         // 27px;
-$fs-serif-s9:          (43rem / $grid-type);         // 43px;
-$fs-serif-s10:         (108rem / $grid-type);        // 108px;
+$serif-s1:          (10rem / $grid-type);         // 10px;
+$serif-s2:          (13rem / $grid-type);         // 13px;
+$serif-s3:          (14rem / $grid-type);         // 14px;
+$serif-s4:          (15rem / $grid-type);         // 15px;
+$serif-s5:          (17rem / $grid-type);         // 17px;
+$serif-s6:          (19rem / $grid-type);         // 19px;
+$serif-s7:          (23rem / $grid-type);         // 23px;
+$serif-s8:          (27rem / $grid-type);         // 27px;
+$serif-s9:          (43rem / $grid-type);         // 43px;
+$serif-s10:         (108rem / $grid-type);        // 108px;
 
-$fs-serif-s: $fs-serif-s1, $fs-serif-s2, $fs-serif-s3, $fs-serif-s4, $fs-serif-s5, $fs-serif-s6, $fs-serif-s7, $fs-serif-s8, $fs-serif-s9, $fs-serif-s10;
+$serif-s: $serif-s1, $serif-s2, $serif-s3, $serif-s4, $serif-s5, $serif-s6, $serif-s7, $serif-s8, $serif-s9, $serif-s10;
 
-$fs-mono-s1:           (10rem / $grid-type);         // 10px;
-$fs-mono-s2:           (12rem / $grid-type);         // 12px;
-$fs-mono-s3:           (13rem / $grid-type);         // 13px;
-$fs-mono-s4:           (15rem / $grid-type);         // 15px;
-$fs-mono-s5:           (16rem / $grid-type);         // 16px;
-$fs-mono-s6:           (18rem / $grid-type);         // 18px;
-$fs-mono-s7:           (23rem / $grid-type);         // 23px;
-$fs-mono-s8:           (25rem / $grid-type);         // 25px;
-$fs-mono-s9:           (44rem / $grid-type);         // 44px;
-$fs-mono-s10:          (104rem / $grid-type);        // 104px;
+$mono-s1:           (10rem / $grid-type);         // 10px;
+$mono-s2:           (12rem / $grid-type);         // 12px;
+$mono-s3:           (13rem / $grid-type);         // 13px;
+$mono-s4:           (15rem / $grid-type);         // 15px;
+$mono-s5:           (16rem / $grid-type);         // 16px;
+$mono-s6:           (18rem / $grid-type);         // 18px;
+$mono-s7:           (23rem / $grid-type);         // 23px;
+$mono-s8:           (25rem / $grid-type);         // 25px;
+$mono-s9:           (44rem / $grid-type);         // 44px;
+$mono-s10:          (104rem / $grid-type);        // 104px;
 
-$fs-mono-s: $fs-mono-s1, $fs-mono-s2, $fs-mono-s3, $fs-mono-s4, $fs-mono-s5, $fs-mono-s6, $fs-mono-s7, $fs-mono-s8, $fs-mono-s9, $fs-mono-s10;
+$mono-s: $mono-s1, $mono-s2, $mono-s3, $mono-s4, $mono-s5, $mono-s6, $mono-s7, $mono-s8, $mono-s9, $mono-s10;
 
 $lh-single:    1;
 $lh-hed:       1.05;

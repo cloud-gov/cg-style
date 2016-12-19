@@ -48,7 +48,7 @@ table {
 
   tbody {
     display: flex;
-    font-size: $fs-sans-s4;
+    font-size: $sans-s4;
     line-height: $lh-body;
 
     @include media($medium-screen) {
