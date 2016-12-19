@@ -3,7 +3,7 @@
 // base utility classes, primarily for documentation and prototyping
 
 $u-percentages: '5', '10', '20', '25', '30', '33', '40', '50', '60', '66', '70', '75', '80', '90', '100';
-$u-percentageSuffix: 'ct';
+$u-percentage-suffix: 'ct';
 $u-percentages-s: '5%', '10%', '20%', '25%', '30%', '33.3333333333%', '40%', '50%', '60%', '66.6666666666', '70%', '75%', '80%', '90%', '100%';
 $u-pixels: '1px', '2px';
 $u-gridscale: '05', '1', '105', '2', '3', '4', '5', '6', '7', '8', '9', '10', '15', '20', '25', '30', '40', '50';
@@ -452,10 +452,10 @@ $fw-s: 100, 200, 300, 400, 500, 600, 700, 800, 900;
 */
 
 @for $i from 1 through length($u-percentages) {
-  %w#{nth($u-percentages, $i)}#{$u-percentageSuffix} {
+  %w#{nth($u-percentages, $i)}#{$u-percentage-suffix} {
     width: #{nth($u-percentages-s, $i)};
   }
-  .w#{nth($u-percentages, $i)}#{$u-percentageSuffix} {
+  .w#{nth($u-percentages, $i)}#{$u-percentage-suffix} {
     width: #{nth($u-percentages-s, $i)} !important;
   }
 }
@@ -536,10 +536,10 @@ $fw-s: 100, 200, 300, 400, 500, 600, 700, 800, 900;
 */
 
 @for $i from 1 through length($u-percentages) {
-  %h#{nth($u-percentages, $i)}#{$u-percentageSuffix} {
+  %h#{nth($u-percentages, $i)}#{$u-percentage-suffix} {
     height: #{nth($u-percentages-s, $i)};
   }
-  .h#{nth($u-percentages, $i)}#{$u-percentageSuffix} {
+  .h#{nth($u-percentages, $i)}#{$u-percentage-suffix} {
     height: #{nth($u-percentages-s, $i)} !important;
   }
 }
@@ -627,11 +627,11 @@ $fw-s: 100, 200, 300, 400, 500, 600, 700, 800, 900;
 */
 
 @for $i from 1 through length($u-percentages) {
-  %sq#{nth($u-percentages, $i)}#{$u-percentageSuffix} {
+  %sq#{nth($u-percentages, $i)}#{$u-percentage-suffix} {
     height: #{nth($u-percentages-s, $i)};
     width: #{nth($u-percentages-s, $i)};
   }
-  .sq#{nth($u-percentages, $i)}#{$u-percentageSuffix} {
+  .sq#{nth($u-percentages, $i)}#{$u-percentage-suffix} {
     height: #{nth($u-percentages-s, $i)} !important;
     width: #{nth($u-percentages-s, $i)} !important;
   }
@@ -1256,7 +1256,7 @@ $fw-s: 100, 200, 300, 400, 500, 600, 700, 800, 900;
   .bt#{nth($u-pixels, $i)} { border-top: #{nth($u-pixels, $i)} solid !important; }
 
   %br#{nth($u-pixels, $i)} { border-right: #{nth($u-pixels, $i)} solid; }
-  .br#{nth($u-pixels, $i)} { border-right: #{nth($u-pixels, $i)} solid important; }
+  .br#{nth($u-pixels, $i)} { border-right: #{nth($u-pixels, $i)} solid !important; }
 
   %bb#{nth($u-pixels, $i)} { border-bottom: #{nth($u-pixels, $i)} solid; }
   .bb#{nth($u-pixels, $i)} { border-bottom: #{nth($u-pixels, $i)} solid !important; }
