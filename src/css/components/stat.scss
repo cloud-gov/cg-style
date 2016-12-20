@@ -34,19 +34,19 @@ h5 + .stat {
 .stat-error {
   &::before {
     border-color: $color-error;
-}
+  }
 }
 
 .stat-warning {
   &::before {
     border-color: $color-warning;
-}
+  }
 }
 
-.stat-success{
+.stat-success {
   &::before {
     border-color: $color-finish;
-}
+  }
 }
 
 .stat-info {
