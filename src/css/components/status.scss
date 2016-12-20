@@ -24,6 +24,9 @@
 
 }
 
-.stat-success::before {
-  @extend .vertical-pill;
+.stat-success {
+  &::before {
+    @extend .status-pill;
+    height: 100%;
+}
 }
