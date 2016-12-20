@@ -721,22 +721,6 @@ $fw-s: 100, 200, 300, 400, 500, 600, 700, 800, 900;
     if no modifier, value applies to all sides
 
   Values:
-    Percentages:
-      5ct
-      10ct
-      20ct
-      25ct
-      30ct
-      33ct
-      40ct
-      50ct
-      60ct
-      66ct
-      70ct
-      75ct
-      80ct
-      90ct
-      100ct
     Grid:
       05
       1
@@ -926,22 +910,6 @@ $fw-s: 100, 200, 300, 400, 500, 600, 700, 800, 900;
     if no modifier, value applies to all sides
 
   Values:
-    Percentages:
-      5ct
-      10ct
-      20ct
-      25ct
-      30ct
-      33ct
-      40ct
-      50ct
-      60ct
-      66ct
-      70ct
-      75ct
-      80ct
-      90ct
-      100ct
     Grid:
       05
       1
@@ -1543,6 +1511,7 @@ $bs-s: 'solid', 'dashed', 'dotted';
     block
     inline
     inline-block
+    hide
 
   Reset:
     ---
@@ -1557,6 +1526,9 @@ $bs-s: 'solid', 'dashed', 'dotted';
 
 %inline-block { display: inline-block; }
 .inline-block { display: inline-block !important; }
+
+%hide { display: none; }
+.hide { display: none !important; }
 
 /*
 
@@ -1583,11 +1555,213 @@ $bs-s: 'solid', 'dashed', 'dotted';
 
 */
 
-$va-s: 'baseline', 'bottom', 'middle', 'sub', 'super', 'text-bottom', 'text-top', 'top';
+$va-s: baseline, bottom, middle, sub, super, text-bottom, text-top, top;
 
 @for $i from 1 through length($va-s) {
   %va-#{nth($va-s, $i)} { vertical-align: nth($va-s, $i); }
   .va-#{nth($va-s, $i)} { vertical-align: nth($va-s, $i) !important; }
 }
+
+/*
+
+  POSITION
+
+  Base:
+    pos
+
+  Modifiers:
+    ---
+
+  Values:
+    -absolute
+    -fixed
+    -relative
+    -static
+    -sticky
+
+  Reset:
+    inherit
+
+*/
+
+$pos-s: absolute, fixed, relative, static, sticky;
+
+@for $i from 1 through length($pos-s) {
+  %pos-#{nth($pos-s, $i)} { position: nth($pos-s, $i); }
+  .pos-#{nth($pos-s, $i)} { position: nth($pos-s, $i) !important; }
+}
+
+/*
+
+  MANUAL POSITION
+
+  Base:
+    ---
+
+  Modifiers:
+    top-
+    right-
+    bottom-
+    left-
+
+  Values:
+    Percentages:
+      5ct
+      10ct
+      20ct
+      25ct
+      30ct
+      33ct
+      40ct
+      50ct
+      60ct
+      66ct
+      70ct
+      75ct
+      80ct
+      90ct
+      100ct
+    Grid:
+      05
+      1
+      105
+      2
+      3
+      4
+      5
+      6
+      7
+      8
+      9
+      10
+      15
+      20
+      30
+      40
+      50
+    Pixel:
+      1px
+      2px
+    Negative Grid:
+      n05
+      n1
+      n105
+      n2
+      n3
+      n4
+      n5
+    Negative Pixel:
+      n1px
+      n2px
+
+  Reset:
+    auto
+
+*/
+
+@for $i from 1 through length($u-gridscale) {
+  %top-#{nth($u-gridscale, $i)} { top: nth($grid-s, $i); }
+  %right-#{nth($u-gridscale, $i)} { right: nth($grid-s, $i); }
+  %bottom-#{nth($u-gridscale, $i)} { bottom: nth($grid-s, $i); }
+  %left-#{nth($u-gridscale, $i)} { left: nth($grid-s, $i); }
+  .top-#{nth($u-gridscale, $i)} { top: nth($grid-s, $i) !important; }
+  .right-#{nth($u-gridscale, $i)} { right: nth($grid-s, $i) !important; }
+  .bottom-#{nth($u-gridscale, $i)} { bottom: nth($grid-s, $i) !important; }
+  .left-#{nth($u-gridscale, $i)} { left: nth($grid-s, $i) !important; }
+}
+
+@for $i from 1 through 7 {
+  %top-n#{nth($u-gridscale, $i)} { top: nth($grid-n-s, $i); }
+  %right-n#{nth($u-gridscale, $i)} { right: nth($grid-n-s, $i); }
+  %bottom-n#{nth($u-gridscale, $i)} { bottom: nth($grid-n-s, $i); }
+  %left-n#{nth($u-gridscale, $i)} { left: nth($grid-n-s, $i); }
+  .top-n#{nth($u-gridscale, $i)} { top: nth($grid-n-s, $i) !important; }
+  .right-n#{nth($u-gridscale, $i)} { right: nth($grid-n-s, $i) !important; }
+  .bottom-n#{nth($u-gridscale, $i)} { bottom: nth($grid-n-s, $i) !important; }
+  .left-n#{nth($u-gridscale, $i)} { left: nth($grid-n-s, $i) !important; }
+}
+
+@for $i from 1 through length($u-pixels) {
+  %top-#{nth($u-pixels, $i)} { top: #{nth($u-pixels, $i)}; }
+  %right-#{nth($u-pixels, $i)} { right: #{nth($u-pixels, $i)}; }
+  %bottom-#{nth($u-pixels, $i)} { bottom: #{nth($u-pixels, $i)}; }
+  %left-#{nth($u-pixels, $i)} { left: #{nth($u-pixels, $i)}; }
+  .top-#{nth($u-pixels, $i)} { top: #{nth($u-pixels, $i)} !important; }
+  .right-#{nth($u-pixels, $i)} { right: #{nth($u-pixels, $i)} !important; }
+  .bottom-#{nth($u-pixels, $i)} { bottom: #{nth($u-pixels, $i)} !important; }
+  .left-#{nth($u-pixels, $i)} { left: #{nth($u-pixels, $i)} !important; }
+}
+
+@for $i from 1 through length($u-pixels) {
+  %top-n#{nth($u-pixels, $i)} { top: -#{nth($u-pixels, $i)}; }
+  %right-n#{nth($u-pixels, $i)} { right: -#{nth($u-pixels, $i)}; }
+  %bottom-n#{nth($u-pixels, $i)} { bottom: -#{nth($u-pixels, $i)}; }
+  %left-n#{nth($u-pixels, $i)} { left: -#{nth($u-pixels, $i)}; }
+  .top-n#{nth($u-pixels, $i)} { top: -#{nth($u-pixels, $i)} !important; }
+  .right-n#{nth($u-pixels, $i)} { right: -#{nth($u-pixels, $i)} !important; }
+  .bottom-n#{nth($u-pixels, $i)} { bottom: -#{nth($u-pixels, $i)} !important; }
+  .left-n#{nth($u-pixels, $i)} { left: -#{nth($u-pixels, $i)} !important; }
+}
+
+@for $i from 1 through length($u-percentages) {
+  %top-#{nth($u-percentages, $i)}#{$u-percentage-suffix} { top: #{nth($u-percentages-s, $i)}; }
+  %right-#{nth($u-percentages, $i)}#{$u-percentage-suffix} { right: #{nth($u-percentages-s, $i)}; }
+  %bottom-#{nth($u-percentages, $i)}#{$u-percentage-suffix} { bottom: #{nth($u-percentages-s, $i)}; }
+  %left-#{nth($u-percentages, $i)}#{$u-percentage-suffix} { left: #{nth($u-percentages-s, $i)}; }
+  .top-#{nth($u-percentages, $i)}#{$u-percentage-suffix} { top: #{nth($u-percentages-s, $i)} !important; }
+  .right-#{nth($u-percentages, $i)}#{$u-percentage-suffix} { right: #{nth($u-percentages-s, $i)} !important; }
+  .bottom-#{nth($u-percentages, $i)}#{$u-percentage-suffix} { bottom: #{nth($u-percentages-s, $i)} !important; }
+  .left-#{nth($u-percentages, $i)}#{$u-percentage-suffix} { left: #{nth($u-percentages-s, $i)} !important; }
+}
+
+%top-0 { top: 0; }
+%right-0 { right: 0; }
+%bottom-0 { bottom: 0; }
+%left-0 { left: 0; }
+.top-0 { top: 0 !important; }
+.right-0 { right: 0 !important; }
+.bottom-0 { bottom: 0 !important; }
+.left-0 { left: 0 !important; }
+
+%top-- { top: auto; }
+%right-- { right: auto; }
+%bottom-- { bottom: auto; }
+%left-- { left: auto; }
+.top-- { top: auto !important; }
+.right-- { right: auto !important; }
+.bottom-- { bottom: auto !important; }
+.left-- { left: auto !important; }
+
+/*
+
+  WHITESPACE
+
+  Base:
+    ws
+
+  Modifiers:
+    ---
+
+  Values:
+    -normal
+    -nowrap
+    -pre
+    -pre-line
+    -pre-wrap
+
+  Reset:
+    normal
+
+*/
+
+$ws-s: normal, nowrap, pre, pre-line, pre-wrap;
+
+@for $i from 1 through length($ws-s) {
+  %ws-#{nth($ws-s, $i)} { white-space: nth($ws-s, $i); }
+  .ws-#{nth($ws-s, $i)} { white-space: nth($ws-s, $i) !important; }
+}
+
+%ws-- { white-space: normal; }
+.ws-- { white-space: normal !important; }
 
 /* stylelint-enable  */
