@@ -1,0 +1,13 @@
+
+@import '../override_vars.scss';
+@import '../core.scss';
+
+.vertical-pill {
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 2px;
+  content: '';
+  height: 75%;
+  left: 0;
+  position: absolute;
+}

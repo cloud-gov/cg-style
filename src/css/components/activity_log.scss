@@ -1,3 +1,4 @@
+
 @import '../core.scss';
 @import '../override_vars.scss';
 @import '../vars.scss';
@@ -35,32 +36,27 @@
   cursor: pointer;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: .5rem;
-  margin-top: .5rem;
-  padding-bottom: .5rem;
-  padding-left: 1rem;
+  margin: 0;
+  padding: .5rem 1rem;
   position: relative;
   width: 100%;
 
   &:first-child {
     border-top: 1px solid $color-lightgray;
-    padding-top: .5rem;
+
   }
 }
 
-.activity_log-item-error,
-.activity_log-item-success,
-.activity_log-item-warning {
-  .activity_log-item_text::before {
-    border-radius: 3px;
-    border-style: solid;
-    border-width: 2px;
-    content: '';
-    height: 100%;
-    left: -1rem;
-    position: absolute;
-    top: 0;
+.activity_log-item-error::before,
+.activity_log-item-success::before,
+.activity_log-item-warning::before{
+
+      @extend .vertical-pill;
   }
+
+  .activity_log-item-error,
+  .activity_log-item-success,
+  .activity_log-item-warning {
 
   .activity_log-item_text {
     font-family: $font-sans;
@@ -78,11 +74,11 @@
   }
 }
 
-.activity_log-item-warning .activity_log-item_text::before {
+.activity_log-item-warning::before {
   border-color: $color-gold;
 }
 
-.activity_log-item-success .activity_log-item_text::before {
+.activity_log-item-success::before {
   border-color: $color-green; //#2e8540;
 }
 
@@ -96,4 +92,3 @@
     padding: .8rem;
   }
 }
-

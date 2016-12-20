@@ -13,6 +13,7 @@ $input-font-size: $sans-s2;
   display: flex;
   justify-content: space-between;
   min-height: 2.5rem; // Leave some space for input element when editing a stat
+  position: relative;
   width: 100%;
 
   .error_message {
@@ -20,33 +21,32 @@ $input-font-size: $sans-s2;
   }
 }
 
-.stat-error,
-.stat-warning,
-.stat-success {
-  border-left-width: 4px;
-  padding-left: 0.5rem;
-}
-
 h5 + .stat {
   margin-top: 0.6rem;
 }
 
+.stat-error,
+.stat-warning,
+.stat-success {
+  padding-left: 1rem;
+}
+
 .stat-error {
-  border-left-color: $color-error;
+  border-color: $color-error;
 }
 
 .stat-warning {
   border-left-color: $color-warning;
 }
 
+.stat-success::before {
+  border-color: $color-finish;
+}
+
 .stat-info {
   font-size: 0.75rem;
   font-weight: 600;
   margin-right: 0.5rem;
-}
-
-.stat-success {
-  border-left-color: $color-finish;
 }
 
 .stat-primary {

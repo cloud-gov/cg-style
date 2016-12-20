@@ -23,3 +23,7 @@
   color: $color-error;
 
 }
+
+.stat-success::before {
+  @extend .vertical-pill;
+}
