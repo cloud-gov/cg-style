@@ -417,7 +417,7 @@ $fw-s: 100, 200, 300, 400, 500, 600, 700, 800, 900;
 
 */
 
-@for $i from 0 through length($u-flexscale) {
+@for $i from 0 through 11 {
   %order-#{$i} { order: $i; }
   .order-#{$i} { order: $i !important; }
 }
