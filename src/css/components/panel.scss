@@ -7,7 +7,7 @@ $panel-padding: $grid-3;
 
 .panel {
   @include clearfix;
-  min-height: 10rem;
+  min-height: 6rem;
   padding: .75rem 0 0;
 
   & + .panel {
@@ -16,6 +16,11 @@ $panel-padding: $grid-3;
 
   table {
     margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+  .tableWrapper:last-child {
+    margin-bottom: 2rem;
   }
 }
 
@@ -28,11 +33,11 @@ h4 + .panel {
 
 .panel-title {
   font-size: 1.3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .panel-group {
-  margin-bottom: .65rem;
+  margin-bottom: 0.65rem;
 }
 
 .panel-actions {
@@ -56,6 +61,7 @@ h4 + .panel {
 
 .panel-actions-right {
   float: right;
+  margin-bottom: -2rem;
 }
 
 .panel-header {
@@ -188,8 +194,4 @@ h4 + .panel {
   font-size: $sans-s4;
   font-weight: 600;
   padding-bottom: $grid-1;
-}
-
-.panel-controls {
-  float: right;
 }
