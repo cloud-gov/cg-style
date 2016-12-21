@@ -3,13 +3,16 @@
 @import '../override_vars.scss';
 @import '../core.scss';
 
-$panel-padding: $grid-3;
+$panel-padding: 1rem;
 
 .panel {
   @include clearfix;
-  background-color: $color-white;
-  margin-bottom: $grid-4;
-  padding: $grid-3 $grid-3 $grid-4;
+  min-height: 10rem;
+  padding: 0.75rem 0 0 0;
+
+  & + .panel {
+    margin-top: 1.5rem;
+  }
 }
 
 h1 + .panel,
@@ -22,27 +25,11 @@ h4 + .panel {
 .panel-title {
   font-size: $sans-s7;
   font-weight: 400;
-  line-height: $lh-single;
-}
-
-.panel-secondary {
-  font-size: $sans-s3;
-  font-weight: 400;
-  line-height: $lh-single;
-}
-
-.panel-section-title {
-  font-size: $sans-s3;
-  font-weight: 700;
-  line-height: $lh-single;
-}
-
-.panel-section-header {
-  padding-bottom: $grid-1;
+  margin-bottom: $grid-2;
 }
 
 .panel-group {
-  margin-bottom: .65rem;
+  margin-bottom: 0.65rem;
 }
 
 .panel-actions {
@@ -59,20 +46,16 @@ h4 + .panel {
     margin-right: 0;
 
     & + .action {
-      margin-left: .5rem;
+      margin-left: 0.5rem;
     }
   }
-}
-
-.panel-actions-right {
-  float: right;
 }
 
 .panel-header {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding-bottom: $grid-4;
+  padding: 0.5rem 0;
 
   h1, h2, h3, h4 {
     font-size: $sans-s7;
@@ -97,7 +80,6 @@ h4 + .panel {
     margin: 1rem -1rem -1rem;
     padding: 1rem;
     width: 100%;
-
   }
 
   > .panel-row {
@@ -115,52 +97,30 @@ h4 + .panel {
 }
 
 .panel-row-boxed {
-  background-color: $color-white;
   border: 1px solid $color-textblack;
-  margin-bottom: $panel-padding;
-  padding: $panel-padding;
+  margin-bottom: $grid-3;
+  padding: $grid-3;
 
   &:last-child {
     margin-bottom: 0;
   }
-
-}
-
-.panel-row-bordered {
-  border-top: 1px solid $color-lightgray;
-
-  &:last-child {
-    border-bottom: 1px solid $color-lightgray;
-    margin-bottom: 0;
-  }
-
 }
 
 .panel-row-space {
   margin-top: 1rem;
 }
 
-.panel-row-is_clickable {
-  cursor: pointer;
-  margin: -$panel-padding;
-  padding: $panel-padding;
-}
-
 .panel-form-replace {
-  &.panel-form-replace {
-    margin: -1rem 0;
-  }
+  margin: -.5rem 0 -.5rem 0;
 }
 
 .panel-block {
-  padding-bottom: calc(1.5rem / 2);
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: calc(1.5rem / 2);
+  $vertical-padding: $panel-padding / 2;
+  padding: $vertical-padding 0;
 }
 
 .panel-column {
-  flex-grow: 1;
+  flex: 1 0 0;
   font-size: $sans-s4;
   margin-right: 1rem;
 
@@ -174,8 +134,8 @@ h4 + .panel {
 .panel-column-error {
   border-left-color: $color-warning; // #e31c3d;
   border-left-style: solid;
-  border-left-width: $grid-05;
-  padding-left: $grid-1;
+  border-left-width: 5px;
+  padding-left: 0.5rem;
 }
 
 .panel-column-less {
@@ -196,8 +156,4 @@ h4 + .panel {
   font-size: $sans-s4;
   font-weight: 600;
   padding-bottom: $grid-1;
-}
-
-.panel-controls {
-  float: right;
 }
