@@ -3,15 +3,24 @@
 @import '../override_vars.scss';
 @import '../core.scss';
 
-$panel-padding: 1rem;
+$panel-padding: $grid-3;
 
 .panel {
   @include clearfix;
-  min-height: 10rem;
-  padding: 0.75rem 0 0 0;
+  min-height: 6rem;
+  padding: .75rem 0 0;
 
   & + .panel {
     margin-top: 1.5rem;
+  }
+
+  table {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+  .tableWrapper:last-child {
+    margin-bottom: 2rem;
   }
 }
 
@@ -25,7 +34,7 @@ h4 + .panel {
 .panel-title {
   font-size: $sans-s7;
   font-weight: 400;
-  margin-bottom: $grid-2;
+  margin-bottom: margin-bottom: $grid-2;
 }
 
 .panel-group {
@@ -46,18 +55,26 @@ h4 + .panel {
     margin-right: 0;
 
     & + .action {
-      margin-left: 0.5rem;
+      margin-left: .5rem;
     }
   }
+}
+
+.panel-actions-right {
+  float: right;
+  margin-bottom: -2rem;
 }
 
 .panel-header {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem 0;
+  padding: .5rem 0;
 
-  h1, h2, h3, h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     font-size: $sans-s7;
     font-weight: 400;
   }
@@ -80,6 +97,7 @@ h4 + .panel {
     margin: 1rem -1rem -1rem;
     padding: 1rem;
     width: 100%;
+
   }
 
   > .panel-row {
@@ -98,29 +116,50 @@ h4 + .panel {
 
 .panel-row-boxed {
   border: 1px solid $color-textblack;
-  margin-bottom: $grid-3;
-  padding: $grid-3;
+  margin-bottom: $panel-padding;
+  padding: $panel-padding;
 
   &:last-child {
     margin-bottom: 0;
   }
+
+}
+
+.panel-row-bordered {
+  border-top: 1px solid $color-lightgray;
+
+  &:last-child {
+    border-bottom: 1px solid $color-lightgray;
+    margin-bottom: 0;
+  }
+
 }
 
 .panel-row-space {
   margin-top: 1rem;
 }
 
+.panel-row-is_clickable {
+  cursor: pointer;
+  margin: -$panel-padding;
+  padding: $panel-padding;
+}
+
 .panel-form-replace {
-  margin: -.5rem 0 -.5rem 0;
+  &.panel-form-replace {
+    margin: -1rem 0;
+  }
 }
 
 .panel-block {
-  $vertical-padding: $panel-padding / 2;
-  padding: $vertical-padding 0;
+  padding-bottom: calc(1.5rem / 2);
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: calc(1.5rem / 2);
 }
 
 .panel-column {
-  flex: 1 0 0;
+  flex-grow: 1;
   font-size: $sans-s4;
   margin-right: 1rem;
 
@@ -135,7 +174,7 @@ h4 + .panel {
   border-left-color: $color-warning; // #e31c3d;
   border-left-style: solid;
   border-left-width: 5px;
-  padding-left: 0.5rem;
+  padding-left: .5rem;
 }
 
 .panel-column-less {
