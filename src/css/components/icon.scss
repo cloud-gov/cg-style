@@ -29,22 +29,21 @@
   top: -0.0625rem;
   vertical-align: middle;
   width: 1em;
+}
 
-  &-small {
-    @extend .icon;
-    height: $grid-2;
-    width: $grid-2;
-  }
-  &-medium {
-    @extend .icon;
-    height: $grid-3;
-    width: $grid-3;
-  }
-  &-large {
-    @extend .icon;
-    height: $grid-4;
-    width: $grid-4;
-  }
+.icon-small {
+  height: $grid-2;
+  width: $grid-2;
+}
+
+.icon-medium {
+  height: $grid-3;
+  width: $grid-3;
+}
+
+.icon-large {
+  height: $grid-4;
+  width: $grid-4;
 }
 
 .icon-alt {
