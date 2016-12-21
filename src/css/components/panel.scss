@@ -32,8 +32,9 @@ h4 + .panel {
 }
 
 .panel-title {
-  font-size: 1.3rem;
-  margin-bottom: 1rem;
+  font-size: $sans-s7;
+  font-weight: 400;
+  margin-bottom: $grid-2;
 }
 
 .panel-group {
@@ -74,8 +75,8 @@ h4 + .panel {
   h2,
   h3,
   h4 {
-    font-size: 1rem;
-    font-weight: 900;
+    font-size: $sans-s7;
+    font-weight: 400;
   }
 }
 
