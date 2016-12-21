@@ -7,21 +7,9 @@ $panel-padding: $grid-3;
 
 .panel {
   @include clearfix;
-  min-height: 6rem;
-  padding: .75rem 0 0;
-
-  & + .panel {
-    margin-top: 1.5rem;
-  }
-
-  table {
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-  }
-
-  .tableWrapper:last-child {
-    margin-bottom: 2rem;
-  }
+  background-color: $color-white;
+  margin-bottom: $grid-4;
+  padding: $grid-3 $grid-3 $grid-4;
 }
 
 h1 + .panel,
@@ -32,12 +20,29 @@ h4 + .panel {
 }
 
 .panel-title {
-  font-size: 1.3rem;
-  margin-bottom: 1rem;
+  font-size: $sans-s7;
+  font-weight: 400;
+  line-height: $lh-single;
+}
+
+.panel-secondary {
+  font-size: $sans-s3;
+  font-weight: 400;
+  line-height: $lh-single;
+}
+
+.panel-section-title {
+  font-size: $sans-s3;
+  font-weight: 700;
+  line-height: $lh-single;
+}
+
+.panel-section-header {
+  padding-bottom: $grid-1;
 }
 
 .panel-group {
-  margin-bottom: 0.65rem;
+  margin-bottom: .65rem;
 }
 
 .panel-actions {
@@ -61,21 +66,17 @@ h4 + .panel {
 
 .panel-actions-right {
   float: right;
-  margin-bottom: -2rem;
 }
 
 .panel-header {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: .5rem 0;
+  padding-bottom: $grid-4;
 
-  h1,
-  h2,
-  h3,
-  h4 {
-    font-size: 1rem;
-    font-weight: 900;
+  h1, h2, h3, h4 {
+    font-size: $sans-s7;
+    font-weight: 400;
   }
 }
 
@@ -114,6 +115,7 @@ h4 + .panel {
 }
 
 .panel-row-boxed {
+  background-color: $color-white;
   border: 1px solid $color-textblack;
   margin-bottom: $panel-padding;
   padding: $panel-padding;
@@ -172,8 +174,8 @@ h4 + .panel {
 .panel-column-error {
   border-left-color: $color-warning; // #e31c3d;
   border-left-style: solid;
-  border-left-width: 5px;
-  padding-left: .5rem;
+  border-left-width: $grid-05;
+  padding-left: $grid-1;
 }
 
 .panel-column-less {
@@ -194,4 +196,8 @@ h4 + .panel {
   font-size: $sans-s4;
   font-weight: 600;
   padding-bottom: $grid-1;
+}
+
+.panel-controls {
+  float: right;
 }
