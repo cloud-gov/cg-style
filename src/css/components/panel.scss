@@ -22,6 +22,13 @@ $panel-padding: $grid-3;
   .tableWrapper:last-child {
     margin-bottom: 2rem;
   }
+
+  h2 {
+    font-size: $sans-s3;
+    font-weight: 900;
+    margin-bottom: $grid-1;
+  }
+
 }
 
 h1 + .panel,
@@ -78,6 +85,7 @@ h4 + .panel {
     font-size: $sans-s7;
     font-weight: 400;
   }
+
 }
 
 .panel-row {
@@ -156,6 +164,7 @@ h4 + .panel {
   padding-left: 0;
   padding-right: 0;
   padding-top: calc(1.5rem / 2);
+
 }
 
 .panel-column {

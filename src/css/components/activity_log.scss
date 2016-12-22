@@ -1,3 +1,4 @@
+
 @import '../core.scss';
 @import '../override_vars.scss';
 @import '../vars.scss';
@@ -5,7 +6,7 @@
 .activity_log {
   list-style-type: none;
   margin-left: 0;
-  margin-top: 1rem;
+  margin-top: $grid-1;
   padding-left: 0;
   width: 100%;
 }
@@ -17,7 +18,6 @@
 
 .activity_log-item_timestamp {
   cursor: pointer;
-  padding-right: 1rem;
   text-align: right;
 }
 
@@ -35,31 +35,25 @@
   cursor: pointer;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: .5rem;
-  margin-top: .5rem;
-  padding-bottom: .5rem;
-  padding-left: 1rem;
+  margin: 0;
+  padding: $grid-1 0;
   position: relative;
   width: 100%;
 
   &:first-child {
     border-top: 1px solid $color-lightgray;
-    padding-top: .5rem;
   }
 }
 
 .activity_log-item-error,
 .activity_log-item-success,
 .activity_log-item-warning {
-  .activity_log-item_text::before {
-    border-radius: 3px;
-    border-style: solid;
-    border-width: 2px;
-    content: '';
-    height: 100%;
-    left: -1rem;
-    position: absolute;
-    top: 0;
+
+  padding-left: $grid-2;
+
+  &::before {
+    @extend .status-pill;
+    height: 75%;
   }
 
   .activity_log-item_text {
@@ -73,17 +67,22 @@
     color: $color-secondary;
   }
 
-  .activity_log-item_text::before {
+  &::before {
     border-color: $color-secondary; // #e31c3d;
   }
 }
 
-.activity_log-item-warning .activity_log-item_text::before {
-  border-color: $color-gold;
+.activity_log-item-warning {
+  &::before {
+    border-color: $color-gold;
+  }
 }
 
-.activity_log-item-success .activity_log-item_text::before {
-  border-color: $color-green; //#2e8540;
+.activity_log-item-success {
+  &::before {
+    border-color: $color-green; //#2e8540;
+  }
+
 }
 
 .activity_log-item_raw {
@@ -96,4 +95,3 @@
     padding: .8rem;
   }
 }
-
