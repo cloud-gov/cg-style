@@ -10,6 +10,15 @@ $panel-padding: $grid-3;
   background-color: $color-white;
   margin-bottom: $grid-4;
   padding: $grid-3 $grid-3 $grid-4;
+
+  table {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+  .tableWrapper:last-child {
+    margin-bottom: 2rem;
+  }
 }
 
 h1 + .panel,
@@ -42,7 +51,7 @@ h4 + .panel {
 }
 
 .panel-group {
-  margin-bottom: .65rem;
+  margin-bottom: 0.65rem;
 }
 
 .panel-actions {
@@ -66,6 +75,7 @@ h4 + .panel {
 
 .panel-actions-right {
   float: right;
+  margin-bottom: -2rem;
 }
 
 .panel-header {
@@ -74,7 +84,10 @@ h4 + .panel {
   justify-content: space-between;
   padding-bottom: $grid-4;
 
-  h1, h2, h3, h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     font-size: $sans-s7;
     font-weight: 400;
   }
@@ -196,8 +209,4 @@ h4 + .panel {
   font-size: $sans-s4;
   font-weight: 600;
   padding-bottom: $grid-1;
-}
-
-.panel-controls {
-  float: right;
 }
