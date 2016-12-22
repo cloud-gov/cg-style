@@ -59,6 +59,11 @@ h4 + .panel {
   }
 }
 
+.panel-actions {
+  display: block;
+  margin-top: 1rem;
+}
+
 .panel-actions-right {
   float: right;
   margin-bottom: -2rem;
@@ -79,8 +84,15 @@ h4 + .panel {
   }
 }
 
+.panel-row-header {
+  font-size: $sans-s2;
+  font-weight: 700;
+  margin-bottom: $grid-1;
+}
+
 .panel-row {
   $vertical-padding: $grid-105;
+  border-top: 1px solid $color-textblack;
   padding: $vertical-padding 0;
 
   // TODO react problem can't return just rows without wrapped div.
@@ -99,16 +111,20 @@ h4 + .panel {
 
   }
 
-  > .panel-row {
-    border-top: 1px solid $color-textblack;
-    display: block;
+  &:last-child {
+    padding-bottom: 0;
+  }
 
-    > .panel-row {
-      border-top: 1px solid $color-lightgray;
-      display: flex;
-      margin-top: $vertical-padding;
-      padding-bottom: 0;
-      padding-left: $grid-4;
+  > .panel-row {
+    border-top: 1px solid $color-lightgray;
+    display: block;
+    margin-bottom: $vertical-padding;
+    margin-left: $grid-4;
+    margin-top: $vertical-padding;
+    padding-bottom: 0;
+
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 }
@@ -118,10 +134,14 @@ h4 + .panel {
   margin-bottom: $panel-padding;
   padding: $panel-padding;
 
-  &:last-child {
-    margin-bottom: 0;
+  > .panel-row-is_clickable {
+    display: flex;
   }
 
+  &:last-child {
+    margin-bottom: 0;
+    padding-bottom: $panel-padding;
+  }
 }
 
 .panel-row-bordered {
