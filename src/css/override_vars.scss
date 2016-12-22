@@ -5,7 +5,7 @@ $color-blue:                    #056dd4;
 $color-brightmint:              #00df99;
 $color-cream:                   #f5f5f3;
 $color-gold:                    #f4b400;
-$color-green:                   #0daf00;
+$color-green:                   #0baf00; // dark option #438500
 $color-red:                     #be4900;
 
 $color-trueblack:               #000000;
@@ -60,7 +60,6 @@ $font-mono:                     'Roboto Mono', 'Bitstream Vera Sans Mono', 'Cons
 // utility class scale suffixes
 
 $u-breakpoints: '-xs', '-s', '-m', '-l', '-xl';
-$u-flexscale: '-f1', '-f2', '-f3', '-f4', '-f5', '-f6', '-f7', '-f8', '-f9', '-f10', '-f11';
 
 // spacing scale and grid
 // spacing is calculated on multiples of a base grid (here, 8px)
@@ -151,4 +150,4 @@ $lh-display:   1.65;
 
 // border radius
 $rounded:         2px;
-$rounded--:       0;
+$not-rounded:       0;

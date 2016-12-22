@@ -1,4 +1,4 @@
-title: icon-ui
+title: icon-square
 collated: true
 variants:
   - name: default
@@ -541,5 +541,197 @@ variants:
     context:
       iconStatus: error
       iconKind: service
+      iconSize: large
+      isReverse: true
+  - name: home-small
+    context:
+      iconKind: home
+      iconSize: small
+      isBorder: true
+  - name: home-medium
+    context:
+      iconKind: home
+      iconSize: medium
+      isBorder: true
+  - name: home-large
+    context:
+      iconKind: home
+      iconSize: large
+      isBorder: true
+  - name: home-white-small
+    context:
+      iconStatus: white
+      iconKind: home
+      iconSize: small
+      isBorder: true
+  - name: home-white-medium
+    context:
+      iconStatus: white
+      iconKind: home
+      iconSize: medium
+      isBorder: true
+  - name: home-white-large
+    context:
+      iconStatus: white
+      iconKind: home
+      iconSize: large
+      isBorder: true
+  - name: home-small-reverse
+    context:
+      iconKind: home
+      iconSize: small
+      isReverse: true
+  - name: home-medium-reverse
+    context:
+      iconKind: home
+      iconSize: medium
+      isReverse: true
+  - name: home-large-reverse
+    context:
+      iconKind: home
+      iconSize: large
+      isReverse: true
+  - name: home-disabled-small
+    context:
+      iconStatus: disabled
+      iconKind: home
+      iconSize: small
+      isBorder: true
+  - name: home-disabled-medium
+    context:
+      iconStatus: disabled
+      iconKind: home
+      iconSize: medium
+      isBorder: true
+  - name: home-disabled-large
+    context:
+      iconStatus: disabled
+      iconKind: home
+      iconSize: large
+      isBorder: true
+  - name: home-disabled-small-reverse
+    context:
+      iconStatus: disabled
+      iconKind: home
+      iconSize: small
+      isReverse: true
+  - name: home-disabled-medium-reverse
+    context:
+      iconStatus: disabled
+      iconKind: home
+      iconSize: medium
+      isReverse: true
+  - name: home-disabled-large-reverse
+    context:
+      iconStatus: disabled
+      iconKind: home
+      iconSize: large
+      isReverse: true
+  - name: home-active-small
+    context:
+      iconStatus: active
+      iconKind: home
+      iconSize: small
+      isBorder: true
+  - name: home-active-medium
+    context:
+      iconStatus: active
+      iconKind: home
+      iconSize: medium
+      isBorder: true
+  - name: home-active-large
+    context:
+      iconStatus: active
+      iconKind: home
+      iconSize: large
+      isBorder: true
+  - name: home-active-small-reverse
+    context:
+      iconStatus: active
+      iconKind: home
+      iconSize: small
+      isReverse: true
+  - name: home-active-medium-reverse
+    context:
+      iconStatus: active
+      iconKind: home
+      iconSize: medium
+      isReverse: true
+  - name: home-active-large-reverse
+    context:
+      iconStatus: active
+      iconKind: home
+      iconSize: large
+      isReverse: true
+  - name: home-ok-small
+    context:
+      iconStatus: ok
+      iconKind: home
+      iconSize: small
+      isBorder: true
+  - name: home-ok-medium
+    context:
+      iconStatus: ok
+      iconKind: home
+      iconSize: medium
+      isBorder: true
+  - name: home-ok-large
+    context:
+      iconStatus: ok
+      iconKind: home
+      iconSize: large
+      isBorder: true
+  - name: home-ok-small-reverse
+    context:
+      iconStatus: ok
+      iconKind: home
+      iconSize: small
+      isReverse: true
+  - name: home-ok-medium-reverse
+    context:
+      iconStatus: ok
+      iconKind: home
+      iconSize: medium
+      isReverse: true
+  - name: home-ok-large-reverse
+    context:
+      iconStatus: ok
+      iconKind: home
+      iconSize: large
+      isReverse: true
+  - name: home-error-small
+    context:
+      iconStatus: error
+      iconKind: home
+      iconSize: small
+      isBorder: true
+  - name: home-error-medium
+    context:
+      iconStatus: error
+      iconKind: home
+      iconSize: medium
+      isBorder: true
+  - name: home-error-large
+    context:
+      iconStatus: error
+      iconKind: home
+      iconSize: large
+      isBorder: true
+  - name: home-error-small-reverse
+    context:
+      iconStatus: error
+      iconKind: home
+      iconSize: small
+      isReverse: true
+  - name: home-error-medium-reverse
+    context:
+      iconStatus: error
+      iconKind: home
+      iconSize: medium
+      isReverse: true
+  - name: home-error-large-reverse
+    context:
+      iconStatus: error
+      iconKind: home
       iconSize: large
       isReverse: true
