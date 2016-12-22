@@ -182,6 +182,12 @@ h4 + .panel {
   min-width: 25%;
 }
 
+// TODO rename `-less` to something else
+.panel-column-shrink {
+  flex-grow: 0;
+  margin-right: 2rem;
+}
+
 .panel-new {
   background-color: $color-white;
   margin-top: $grid-4;

@@ -217,6 +217,11 @@ hr {
   opacity: 1;
 }
 
+.subtext {
+  color: $color-darkgray;
+  font-size: $sans-s2;
+}
+
 @for $i from 1 through length($sans-s) {
   .sans-s#{$i} {
     font-size: nth($sans-s, $i);
