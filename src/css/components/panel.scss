@@ -61,12 +61,12 @@ h4 + .panel {
 
 .panel-actions {
   display: block;
-  margin-top: 1rem;
+  margin-top: $grid-2;
 }
 
 .panel-actions-right {
   float: right;
-  margin-bottom: -2rem;
+  margin-bottom: $grid-4;
 }
 
 .panel-header {
@@ -108,7 +108,6 @@ h4 + .panel {
     margin: 1rem -1rem -1rem;
     padding: 1rem;
     width: 100%;
-
   }
 
   &:last-child {
@@ -155,7 +154,7 @@ h4 + .panel {
 }
 
 .panel-row-space {
-  margin-top: 1rem;
+  margin-top: $grid-2;
 }
 
 .panel-row-is_clickable {
@@ -205,7 +204,7 @@ h4 + .panel {
 // TODO rename `-less` to something else
 .panel-column-shrink {
   flex-grow: 0;
-  margin-right: 2rem;
+  margin-right: $grid-4;
 }
 
 .panel-new {
