@@ -6,10 +6,11 @@ body {
   font-feature-settings: 'kern';
   font-kerning: normal;
   font-size: $grid-type-px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
   font-variant-ligatures: common-ligatures;
   font-weight: 400;
   line-height: $lh-body;
-  text-rendering: optimizeLegibility;
 }
 
 a {
