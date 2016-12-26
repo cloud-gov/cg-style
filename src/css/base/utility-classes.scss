@@ -290,10 +290,10 @@ $fw-s: 100, 200, 300, 400, 500, 600, 700, 800, 900;
 
 /*
 
-  MEASURE
+  LINE LENGTH
 
   Base:
-    measure
+    ll
 
   Modifiers:
     ---
@@ -307,14 +307,14 @@ $fw-s: 100, 200, 300, 400, 500, 600, 700, 800, 900;
 
 */
 
-%measure-reading { max-width: $text-max-width; }
-.measure-reading { max-width: $text-max-width !important; }
+%ll-reading { max-width: $text-max-width; }
+.ll-reading { max-width: $text-max-width !important; }
 
-%measure-narrow { max-width: $text-narrow-width; }
-.measure-narrow { max-width: $text-narrow-width !important; }
+%ll-narrow { max-width: $text-narrow-width; }
+.ll-narrow { max-width: $text-narrow-width !important; }
 
-%measure-- { max-width: none; }
-.measure-- { max-width: none !important; }
+%ll-- { max-width: none; }
+.ll-- { max-width: none !important; }
 
 /*
 
