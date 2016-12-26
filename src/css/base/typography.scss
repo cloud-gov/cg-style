@@ -3,7 +3,7 @@
 
 body {
   color: $color-base;
-  font-feature-settings: 'kern';
+  font-feature-settings: 'kern' 1;
   font-kerning: normal;
   font-size: $grid-type-px;
   -moz-osx-font-smoothing: grayscale;
