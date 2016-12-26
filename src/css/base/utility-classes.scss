@@ -181,7 +181,7 @@ $u-typescale: '-s1', '-s2', '-s3', '-s4', '-s5', '-s6', '-s7', '-s8', '-s9', '-s
 */
 
 %ot-tnum { font-feature-settings: 'tnum' 1, 'kern' 1; }
-.ot-tnum { font-feature-settings: 'tnum' 1, 'kern' 1!important; }
+.ot-tnum { font-feature-settings: 'tnum' 1, 'kern' 1 !important; }
 
 %ot-alt { font-feature-settings: 'ss01' 1, 'kern' 1; }
 .ot-alt { font-feature-settings: 'ss01' 1, 'kern' 1 !important; }
