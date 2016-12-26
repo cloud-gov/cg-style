@@ -1193,40 +1193,6 @@ $fw-s: 100, 200, 300, 400, 500, 600, 700, 800, 900;
 
 /*
 
-  CLEARFIX
-
-  Base:
-    clearfix
-
-  Modifiers:
-    ---
-
-  Values:
-    ---
-
-  Reset:
-    ---
-
-*/
-
-%clearfix:after,
-%clearfix:before {
-  content: ' ';
-  display: table;
-}
-
-.clearfix:after,
-.clearfix:before {
-  content: ' ' !important;
-  display: table !important;
-}
-
-%clearfix:after { clear: both; }
-
-.clearfix:after { clear: both !important; }
-
-/*
-
   CLEAR
 
   Base:
