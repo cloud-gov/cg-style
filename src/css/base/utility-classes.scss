@@ -1730,4 +1730,101 @@ $ws-s: normal, nowrap, pre, pre-line, pre-wrap;
 %ws-- { white-space: normal; }
 .ws-- { white-space: normal !important; }
 
+/*
+
+  FLEX GRID
+
+  Base:
+    ---
+
+  Modifiers:
+    ---
+
+  Values:
+    ---
+
+  Reset:
+    ---
+
+  See documentation for usage.
+
+*/
+
+%row {
+  display: flex;
+}
+
+.row {
+  display: flex !important;
+}
+
+//align across the x-axis
+%row-center-x {
+  @extend %row;
+  align-items: center;
+}
+
+.row-center-x {
+  @extend .row;
+  align-items: center !important;
+}
+
+//align bottom (end of cross-axis)
+%row-end {
+  @extend %row;
+  align-items: flex-end;
+}
+
+.row-end {
+  @extend .row;
+  align-items: flex-end !important;
+}
+
+//align top (start of cross-axis)
+%row-start {
+  @extend %row;
+  align-items: flex-start !important;
+}
+
+.row-start {
+  @extend .row;
+  align-items: flex-start;
+}
+
+//align centered on the y-axis
+%row-center-y {
+  @extend %row;
+  justify-content: center;
+}
+
+.row-center-y {
+  @extend .row;
+  justify-content: center !important;
+}
+
+@for $i from 1 through 12 {
+  %col-f#{$i} {
+    flex: #{$i} 0 0;
+  }
+  .col-f#{$i} {
+    flex: #{$i} 0 0 !important;
+  }
+}
+
+%col-fill {
+  flex: 1;
+}
+
+.col-fill {
+  flex: 1 !important;
+}
+
+%col-fit {
+  flex: none;
+}
+
+.col-fit {
+  flex: none !important;
+}
+
 /* stylelint-enable  */
