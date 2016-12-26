@@ -59,8 +59,8 @@ $colorvar-s: $color-blue, $color-brightmint, $color-cream, $color-gold, $color-g
   .bg-#{nth($color-s, $i)} { background-color: nth($colorvar-s, $i) !important; }
 }
 
-%bg0 { background-color: transparent; }
-.bg0 { background-color: transparent !important; }
+%bg-- { background-color: transparent; }
+.bg-- { background-color: transparent !important; }
 
 /*
 
@@ -120,14 +120,14 @@ $u-typescale: '-s1', '-s2', '-s3', '-s4', '-s5', '-s6', '-s7', '-s8', '-s9', '-s
   }
 }
 
-%sans0 { font-size: $sans-s6; }
-.sans0 { font-size: $sans-s6 !important; }
+%sans-- { font-size: $sans-s6; }
+.sans-- { font-size: $sans-s6 !important; }
 
-%serif0 { font-size: $serif-s6; }
-.serif0 { font-size: $serif-s6 !important; }
+%serif-- { font-size: $serif-s6; }
+.serif-- { font-size: $serif-s6 !important; }
 
-%mono0 { font-size: $mono-s6; }
-.mono0 { font-size: $mono-s6 !important; }
+%mono-- { font-size: $mono-s6; }
+.mono-- { font-size: $mono-s6 !important; }
 
 /*
 
@@ -158,8 +158,8 @@ $u-typescale: '-s1', '-s2', '-s3', '-s4', '-s5', '-s6', '-s7', '-s8', '-s9', '-s
 %font-mono { font-family: $font-mono; }
 .font-mono { font-family: $font-mono !important; }
 
-%font0 { font-family: $font-sans; }
-.font0 { font-family: $font-sans !important; }
+%font-- { font-family: $font-sans; }
+.font-- { font-family: $font-sans !important; }
 
 /*
 
@@ -180,14 +180,14 @@ $u-typescale: '-s1', '-s2', '-s3', '-s4', '-s5', '-s6', '-s7', '-s8', '-s9', '-s
 
 */
 
-%ot-tnum { font-feature-settings: 'tnum', 'kern'; }
-.ot-tnum { font-feature-settings: 'tnum', 'kern' !important; }
+%ot-tnum { font-feature-settings: 'tnum' 1, 'kern' 1; }
+.ot-tnum { font-feature-settings: 'tnum' 1, 'kern' 1!important; }
 
-%ot-alt { font-feature-settings: 'ss01', 'kern'; }
-.ot-alt { font-feature-settings: 'ss01', 'kern' !important; }
+%ot-alt { font-feature-settings: 'ss01' 1, 'kern' 1; }
+.ot-alt { font-feature-settings: 'ss01' 1, 'kern' 1 !important; }
 
-%ot0 { font-feature-settings: 'kern'; }
-.ot0 { font-feature-settings: 'kern' !important; }
+%ot-- { font-feature-settings: 'kern' 1; }
+.ot-- { font-feature-settings: 'kern' 1 !important; }
 
 /*
 
@@ -222,8 +222,8 @@ $fw-s: 100, 200, 300, 400, 500, 600, 700, 800, 900;
   .fw#{nth($fw-s, $i)} { font-weight: nth($fw-s, $i) !important; }
 }
 
-%fw0 { font-weight: 500; }
-.fw0 { font-weight: 500 !important; }
+%fw-- { font-weight: 500; }
+.fw-- { font-weight: 500 !important; }
 
 /*
 
@@ -313,8 +313,8 @@ $fw-s: 100, 200, 300, 400, 500, 600, 700, 800, 900;
 %measure-narrow { max-width: $text-narrow-width; }
 .measure-narrow { max-width: $text-narrow-width !important; }
 
-%measure0 { max-width: none; }
-.measure0 { max-width: none !important; }
+%measure-- { max-width: none; }
+.measure-- { max-width: none !important; }
 
 /*
 
@@ -353,8 +353,8 @@ $fw-s: 100, 200, 300, 400, 500, 600, 700, 800, 900;
 %lh-display { line-height: $lh-display; }
 .lh-display { line-height: $lh-display !important; }
 
-%lh0 { line-height: $lh-body; }
-.lh0 { line-height: $lh-body !important; }
+%lh-- { line-height: $lh-body; }
+.lh-- { line-height: $lh-body !important; }
 
 /*
 
@@ -383,8 +383,8 @@ $fw-s: 100, 200, 300, 400, 500, 600, 700, 800, 900;
 %rd-pill { border-radius: 10em; }
 .rd-pill { border-radius: 10em !important; }
 
-%rd0 { border-radius: none; }
-.rd0 { border-radius: none !important; }
+%rd-- { border-radius: none; }
+.rd-- { border-radius: none !important; }
 
 /*
 
@@ -428,8 +428,8 @@ $fw-s: 100, 200, 300, 400, 500, 600, 700, 800, 900;
 %order-last { order: 99; }
 .order-last { order: 99 !important; }
 
-%order0 { order: auto; }
-.order0 { order: auto !important; }
+%order-- { order: auto; }
+.order-- { order: auto !important; }
 
 /*
 
@@ -512,8 +512,8 @@ $fw-s: 100, 200, 300, 400, 500, 600, 700, 800, 900;
   }
 }
 
-%w0 { width: auto; }
-.w0 { width: auto !important; }
+%w-- { width: auto; }
+.w-- { width: auto !important; }
 
 /*
 
@@ -596,8 +596,8 @@ $fw-s: 100, 200, 300, 400, 500, 600, 700, 800, 900;
   }
 }
 
-%h0 { height: auto; }
-.h0 { height: auto !important; }
+%h-- { height: auto; }
+.h-- { height: auto !important; }
 
 /*
 
@@ -693,12 +693,12 @@ $fw-s: 100, 200, 300, 400, 500, 600, 700, 800, 900;
   }
 }
 
-%sq0 {
+%sq-- {
   height: auto;
   width: auto;
 }
 
-.sq0 {
+.sq-- {
   height: auto !important;
   width: auto !important;
 }
@@ -1188,8 +1188,8 @@ $fw-s: 100, 200, 300, 400, 500, 600, 700, 800, 900;
 %float-right { float: right; }
 .float-right { float: right !important; }
 
-%float0 { float: none; }
-.float0 { float: none !important; }
+%float-- { float: none; }
+.float-- { float: none !important; }
 
 /*
 
@@ -1255,8 +1255,8 @@ $fw-s: 100, 200, 300, 400, 500, 600, 700, 800, 900;
 %clear-left { clear: left; }
 .clear-left { clear: left !important; }
 
-%clear0 { clear: none; }
-.clear0 { clear: none !important; }
+%clear-- { clear: none; }
+.clear-- { clear: none !important; }
 
 /*
 
