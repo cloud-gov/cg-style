@@ -13,6 +13,7 @@ $input-font-size: $sans-s2;
   display: flex;
   justify-content: space-between;
   min-height: 2.5rem; // Leave some space for input element when editing a stat
+  position: relative;
   width: 100%;
 
   .error_message {
@@ -20,70 +21,70 @@ $input-font-size: $sans-s2;
   }
 }
 
+h5 + .stat {
+  margin-top: $grid-1;
+}
+
 .stat-error,
 .stat-warning,
 .stat-success {
-  border-left-width: 4px;
-  padding-left: 0.5rem;
-}
-
-h5 + .stat {
-  margin-top: 0.6rem;
+  padding-left: $grid-2;
 }
 
 .stat-error {
-  border-left-color: $color-error;
+  &::before {
+    border-color: $color-error;
+  }
 }
 
 .stat-warning {
-  border-left-color: $color-warning;
-}
-
-.stat-info {
-  font-size: 0.75rem;
-  font-weight: 600;
-  margin-right: 0.5rem;
+  &::before {
+    border-color: $color-warning;
+  }
 }
 
 .stat-success {
-  border-left-color: $color-finish;
+  &::before {
+    border-color: $color-finish;
+  }
+}
+
+.stat-info {
+  font-size: $sans-s2;
+  font-weight: 600;
+  margin-right: $grid-1;
 }
 
 .stat-primary {
-  font-size: 1.25rem;
+  font-size: $sans-s6;
+  white-space: nowrap;
 }
 
 .stat-single_box {
-  $v-space: 0.65rem;
+  $v-space: $grid-2;
   background-color: $color-lightestgray;
   margin: -$v-space 1.8rem;
   padding: $v-space 0;
   text-align: center;
-
-  .stat-info {
-    display: inline-block;
-    margin-top: 3rem;
-    max-width: 5rem;
-  }
 }
 
 // Double classes to compete with specificity over input elements
 .stat-input {
   &.stat-input-text {
-    /* stylelint-disable declaration-block-no-ignored-properties */
+    // stylelint-disable declaration-block-no-ignored-properties
     display: inline;
     font-size: $input-font-size;
     margin: 0;
     width: 6rem;
-    /* stylelint-enable */
+    // stylelint-enable
   }
 
   &.stat-input-text-scale {
-    margin-top: 0.5rem;
+    margin-top: $grid-1;
   }
 
   &.stat-input-label {
     display: inline;
-    margin-left: 0.5rem;
+    margin-left: $grid-1;
   }
 }
