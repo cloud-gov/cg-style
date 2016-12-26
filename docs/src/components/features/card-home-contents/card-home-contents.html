@@ -1,7 +1,7 @@
 {% for org in organizations %}
   <div class="card">
-    <div class="card-home-contents-header row-center-x">
-      <h2 class="card-home-contents-title col-fill">
+    <div class="card-header row-center-x">
+      <h2 class="card-title col-fill">
         {% render '@icon-square--org-medium' %}
         <a href="#">{{ org.name }}</a>
       </h2>
@@ -12,7 +12,7 @@
     </div>
 
     {% if isOpen %}
-      <div class="card-home-contents-items">
+      <div class="card-items">
         {% render '@overview-row' %}
       </div>
     {% endif %}

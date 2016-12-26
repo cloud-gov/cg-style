@@ -1,14 +1,14 @@
 
 {% for org in organizations %}
-<div class="card-home-contents"> <!-- card-home-contents--quicklook -->
-  <div class="card-home-contents-header row-center-x"> <!-- card-home-contents-header -->
-    <h2 class="card-home-contents-title col-fill">
+<div class="card-home-contents"> <!-- card--quicklook -->
+  <div class="card-header row-center-x"> <!-- card-header -->
+    <h2 class="card-title col-fill">
       {% render '@icon-square--org-medium' %}
       <a href="#">{{ org.name }}</a>
     </h2>
-    <div class="panel-contents-status col-fit row"> <!-- card-home-contents-header-status -->
+    <div class="panel-contents-status col-fit row"> <!-- card-header-status -->
 
-      <div class="count_status count_status-none col-fit row-center-x"> <!-- card-home-contents-header-status-entity -->
+      <div class="count_status count_status-none col-fit row-center-x"> <!-- card-header-status-entity -->
         <div class="count_status-icon col-fit">
           {% render '@icon-square--space-medium' %}
         </div>
@@ -19,9 +19,9 @@
             <strong>0</strong> spaces
           {% endif %}
         </div>
-      </div><!-- /card-home-contents-header-status-entity -->
+      </div><!-- /card-header-status-entity -->
 
-      <span class="count_status {% if org.apps[0].name %}count_status-ok{% else %}count_status-none{% endif %} col-fit row-center-x"> <!-- card-home-contents-header-status-item -->
+      <span class="count_status {% if org.apps[0].name %}count_status-ok{% else %}count_status-none{% endif %} col-fit row-center-x"> <!-- card-header-status-item -->
 
         {% if org.apps[0].name %}
         <div class="count_status-icon col-fit">
@@ -42,17 +42,17 @@
             <strong>0</strong> apps
         </div>
         {% endif %}
-      </span><!-- /card-home-contents-header-status-item -->
+      </span><!-- /card-header-status-item -->
 
-    </div> <!-- /card-home-contents-header-status -->
-  </div> <!-- /card-home-contents-header -->
+    </div> <!-- /card-header-status -->
+  </div> <!-- /card-header -->
 
   {% if isOpen %}
-  <div class="card-home-contents-items">
+  <div class="card-items">
     {% render '@overview-row' %}
   </div>
   {% endif %}
 
-</div> <!-- /card-home-contents--quicklook -->
+</div> <!-- /card--quicklook -->
 
 {% endfor %}
