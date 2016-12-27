@@ -182,7 +182,7 @@ p, ul, ol, pre, div {
       text-decoration: none;
 
       &:visited {
-        border-bottom-style: dotted;
+        border-bottom-color: $color-mediumgray;
       }
     }
   }
