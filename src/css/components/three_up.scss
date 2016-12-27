@@ -8,6 +8,7 @@
 .three_up-part {
   margin-top: 4rem;
   padding-top: $grid-3;
+  border-top: 2px solid;
 
   @include media($medium-screen) {
     @include span-columns(4);
@@ -22,19 +23,15 @@
     margin-bottom: 1rem;
   }
 
-  &.bt2px {
-    border-top: 2px solid;
-  }
-
-  &.b-red {
+  &.part-3 {
     border-color: $color-red;
   }
 
-  &.b-green {
+  &.part-2 {
     border-color: $color-green;
   }
 
-  &.b-blue {
+  &.part-1 {
     border-color: $color-blue;
   }
 }
