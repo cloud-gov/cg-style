@@ -20,7 +20,7 @@
 .billboard-display_text {
   font-size: $sans-s9;
   font-weight: 600;
-  line-height: $leading-hed;
+  line-height: $lh-cap;
   padding-top: $grid-2;
 
   & + .billboard-second_text {
@@ -36,7 +36,7 @@
 .billboard-second_text {
   font-size: $sans-s8;
   font-weight: 300;
-  line-height: $leading-cap;
+  line-height: $lh-cap;
 
   @include media($medium-screen) {
     font-size: $sans-s9;

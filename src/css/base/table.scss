@@ -49,7 +49,7 @@ table {
   tbody {
     display: flex;
     font-size: $sans-s4;
-    line-height: $leading-body;
+    line-height: $lh-body;
 
     @include media($medium-screen) {
       display: table-row-group;

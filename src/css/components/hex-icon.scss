@@ -6,12 +6,17 @@
   color: $color-white;
   display: flex;
   font-size: 78px;
-  justify-content: center;
   height: 5rem;
+  justify-content: center;
   width: 4.35rem;
 
   & + h3 {
     margin-top: $grid-3;
+  }
+
+  .icon {
+    max-height: 2rem;
+    max-width: 2rem;
   }
 }
 

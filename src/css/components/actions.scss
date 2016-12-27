@@ -5,16 +5,15 @@
 @import '../../../node_modules/uswds/src/stylesheets/core/defaults.scss';
 
 .action-link {
-  color: $color-primary;
+  color: $color-blue;
   font-size: $sans-s2;
   font-weight: bold;
   text-decoration: underline;
 
-  &:visited { color: $color-primary; }
+  &:visited { color: $color-blue; }
 
   &:hover {
-    color: darken($color-primary, 20%);
-    text-decoration: none;
+    color: $color-textblack;
   }
 }
 
@@ -25,44 +24,104 @@
   }
 
   &.action-cautious {
-    background-color: $color-darkgray;
-
-    &:hover { color: $color-primary; }
+    background-color: $color-lightgray;
 
     &.action-link {
       background-color: transparent;
-      color: $color-gray;
+      color: $color-lightgray;
     }
 
     &.usa-button-outline {
       background-color: transparent;
-      color: $color-gray;
-      box-shadow: inset 0 0 0 1px $color-gray;
+      box-shadow: inset 0 0 0 1px $color-lightgray;
+      color: $color-lightgray;
       font-size: $sans-s2;
-
-      &:hover {
-        box-shadow: inset 0 0 0 1px $color-primary;
-      }
     }
   }
 
   &.action-warning {
     background-color: $color-warning;
 
+    &:hover {
+      background-color: $color-textblack;
+    }
+
     &.action-link {
       background-color: transparent;
       color: $color-warning;
+      &:hover {
+        color: $color-textblack;
+      }
     }
 
     &.usa-button-outline {
-      background-color: transparent;
-      color: $color-warning;
+      background-color: $color-white;
       box-shadow: inset 0 0 0 1px $color-warning;
+      color: $color-warning;
+
+      &:hover {
+        box-shadow: inset 0 0 0 1px $color-textblack;
+        color: $color-textblack;
+      }
     }
   }
 
   &.action-finish {
     background-color: $color-finish;
+
+    &:hover {
+      background-color: $color-textblack;
+      color: $color-white;
+    }
+
+    &.action-link {
+      background-color: transparent;
+      color: $color-finish;
+
+      &:hover {
+        color: $color-textblack;
+      }
+    }
+
+    &.usa-button-outline {
+      background-color: $color-white;
+      box-shadow: inset 0 0 0 1px $color-finish;
+      color: $color-finish;
+
+      &:hover {
+        box-shadow: inset 0 0 0 1px $color-textblack;
+        color: $color-textblack;
+      }
+    }
+  }
+
+  &.action-base {
+    background-color: $color-textblack;
+
+    &:hover {
+      background-color: $color-blue;
+      color: $color-white;
+    }
+
+    &.action-link {
+      background-color: transparent;
+      color: $color-textblack;
+
+      &:hover {
+        color: $color-blue;
+      }
+    }
+
+    &.usa-button-outline {
+      background-color: $color-white;
+      box-shadow: inset 0 0 0 1px $color-textblack;
+      color: $color-textblack;
+
+      &:hover {
+        box-shadow: inset 0 0 0 1px $color-blue;
+        color: $color-blue;
+      }
+    }
   }
 }
 
@@ -74,9 +133,9 @@
 }
 
 .actions-callout-inline-block {
-  display: inline-block;
   border: 1px solid;
   border-radius: 2px;
+  display: inline-block;
   font-weight: 600;
   margin: 0 .25rem;
   padding: 0.05em .25em .2em;

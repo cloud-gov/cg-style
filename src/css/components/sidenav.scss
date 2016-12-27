@@ -73,7 +73,7 @@ $color-heading:     $color-primary-alt-light;
 
   a {
     color: $color-blue;
-    line-height: $leading-hed;
+    line-height: $lh-hed;
     word-wrap: break-word;
 
     &:hover {
@@ -107,7 +107,7 @@ $color-heading:     $color-primary-alt-light;
   display: inline-block;
   font-size: $sans-s2;
   letter-spacing: .15em;
-  line-height: $leading-hed;
+  line-height: $lh-hed;
   padding: $grid-1 0;
   text-transform: uppercase;
 }

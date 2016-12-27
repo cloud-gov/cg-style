@@ -1,0 +1,43 @@
+title: icon-ui
+collated: true
+variants:
+  - name: default
+    context:
+      iconKind: chevron
+      iconOrientation: right
+  - name: chevron-down
+    context:
+      iconKind: chevron
+      iconOrientation: down
+  - name: chevron-up
+    context:
+      iconKind: chevron
+      iconOrientation: up
+  - name: chevron-left
+    context:
+      iconKind: chevron
+      iconOrientation: left
+  - name: chevron-right
+    context:
+      iconKind: chevron
+      iconOrientation: right
+  - name: chevron-down-white
+    context:
+      iconKind: chevron
+      iconOrientation: down
+      iconStatus: white
+  - name: chevron-up-white
+    context:
+      iconKind: chevron
+      iconOrientation: up
+      iconStatus: white
+  - name: chevron-left-white
+    context:
+      iconKind: chevron
+      iconOrientation: left
+      iconStatus: white
+  - name: chevron-right-white
+    context:
+      iconKind: chevron
+      iconOrientation: right
+      iconStatus: white

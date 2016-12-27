@@ -4,33 +4,24 @@
 @import '../core.scss';
 
 .count_status {
+  // are these first two strictly necessary? I'd prefer to see this pattern built as it is in the PL... Height in particular, seems rando. Inline block feels wrong.
   display: inline-block;
   height: 1.1rem;
   margin-left: $grid-3;
   position: relative;
   width: 7.5rem;
 
-  &:first-child {
-    margin-left: 0;
-  }
-
   &::after {
     background: $color-cream;
     content: '';
     display: block;
-    height: 0.5rem;
+    height: $grid-1;
+    left: 0;
     position: absolute;
-    top: calc(100% + 1.5rem);
+    right: 0;
+    top: calc(100% + #{$grid-2});
     width: 100%;
   }
-}
-
-.count_status-icon {
-  float: left;
-}
-
-.count_status-text {
-  float: right;
 }
 
 .count_status-ok,
@@ -59,5 +50,11 @@
   &::after {
     background: $color-cream;
   }
+}
 
+.count_status-text {
+  font-family: $font-sans;
+  font-size: $sans-s4;
+  line-height: $lh-single;
+  text-align: right;
 }

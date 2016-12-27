@@ -1,0 +1,26 @@
+
+<a class="usa-button trigger action {% if isOutline %}usa-button-outline {% endif %}action-{{ buttonStatus }} m0">
+  <div class="trigger-content row-center-x">
+    <div class="trigger-icon col-fit">
+      {% render '@icon-square--org-small' %}
+    </div>
+    <div class="trigger-text col-fill">
+      {{ buttonText }}
+    </div>
+    <div class="trigger-action col-fit">
+      {% if isOpen %}
+        {% if not isOutline %}
+          {% render '@icon-ui--chevron-up-white' %}
+        {% else %}
+          {% render '@icon-ui--chevron-up' %}
+        {% endif %}
+      {% else %}
+        {% if not isOutline %}
+          {% render '@icon-ui--chevron-down-white' %}
+        {% else %}
+          {% render '@icon-ui--chevron-down' %}
+        {% endif %}
+      {% endif %}
+    </div>
+  </div>
+</a>

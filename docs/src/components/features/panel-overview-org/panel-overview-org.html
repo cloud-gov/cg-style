@@ -1,0 +1,25 @@
+<article class="panel">
+  <header class="panel-header row-center-x mxn3 mtn3 mb3 p3 pb6 bb3 bb-cream">
+    <h1 class="panel-title col-fill">Organization overview</h1>
+    <div class="panel-secondary col-fit row-center-x">
+      {% render '@count-status--space'%}
+      {% render '@count-status--app'%}
+      {% render '@count-status--service'%}
+    </div>
+  </header>
+  <div class="panel-content">
+    <section class="panel-section">
+      {% if hasHeader %}
+        <header class="panel-section-header row-end">
+          <h2 class="panel-section-title col-fill">panelSectionTitle</h2>
+          <div class="panel-secondary col-fit">
+            <span class="panel-secondary-description">panelSecondaryDescription</span>
+          </div>
+        </header>
+      {% endif %}
+      <div class="panel-section-content">
+        {% render '@overview-row' %}
+      </div>
+    </section>
+  </div>
+</article>

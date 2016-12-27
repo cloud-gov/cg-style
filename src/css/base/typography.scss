@@ -3,9 +3,14 @@
 
 body {
   color: $color-base;
+  font-feature-settings: 'kern' 1;
+  font-kerning: normal;
   font-size: $grid-type-px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-variant-ligatures: common-ligatures;
   font-weight: 400;
-  line-height: $leading-body;
+  line-height: $lh-body;
 }
 
 a {
@@ -75,6 +80,11 @@ h1, h2, h3, h4, h5, h6 {
     color: $color-textblack;
     text-decoration: underline;
 
+    &:hover,
+    &:focus {
+      color: $color-blue;
+    }
+
     &:visited {
       color: $color-textblack;
       text-decoration: underline;
@@ -85,7 +95,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: $sans-s8;
   font-weight: 300;
-  line-height: $leading-hed;
+  line-height: $lh-hed;
 
   @include media($medium-screen) {
     font-size: $sans-s9;
@@ -140,7 +150,7 @@ h5 {
 p {
   font-family: $font-serif;
   font-size: $serif-s5;
-  line-height: $leading-body;
+  line-height: $lh-body;
   margin-bottom: 0;
 }
 
@@ -150,7 +160,7 @@ p {
   font-family: $font-sans;
   font-size: $sans-s8;
   font-weight: 300;
-  line-height: $leading-body;
+  line-height: $lh-body;
   margin-bottom: 0;
   margin-top: $grid-2;
   padding-bottom: $grid-2;

@@ -7,12 +7,9 @@ $panel-padding: $grid-3;
 
 .panel {
   @include clearfix;
-  min-height: 6rem;
-  padding: .75rem 0 0;
-
-  & + .panel {
-    margin-top: 1.5rem;
-  }
+  background-color: $color-white;
+  margin-bottom: $grid-4;
+  padding: $grid-3 $grid-3 $grid-4;
 
   table {
     margin-bottom: 1rem;
@@ -41,7 +38,23 @@ h4 + .panel {
 .panel-title {
   font-size: $sans-s7;
   font-weight: 400;
-  margin-bottom: $grid-2;
+  line-height: $lh-single;
+}
+
+.panel-secondary {
+  font-size: $sans-s3;
+  font-weight: 400;
+  line-height: $lh-single;
+}
+
+.panel-section-title {
+  font-size: $sans-s3;
+  font-weight: 700;
+  line-height: $lh-single;
+}
+
+.panel-section-header {
+  padding-bottom: $grid-1;
 }
 
 .panel-group {
@@ -81,7 +94,7 @@ h4 + .panel {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: .5rem 0;
+  padding-bottom: $grid-4;
 
   h1,
   h2,
@@ -138,6 +151,7 @@ h4 + .panel {
 }
 
 .panel-row-boxed {
+  background-color: $color-white;
   border: 1px solid $color-textblack;
   margin-bottom: $panel-padding;
   padding: $panel-padding;
@@ -201,8 +215,8 @@ h4 + .panel {
 .panel-column-error {
   border-left-color: $color-warning; // #e31c3d;
   border-left-style: solid;
-  border-left-width: 5px;
-  padding-left: .5rem;
+  border-left-width: $grid-05;
+  padding-left: $grid-1;
 }
 
 .panel-column-less {
