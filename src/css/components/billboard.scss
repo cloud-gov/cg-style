@@ -36,7 +36,7 @@
 .billboard-second_text {
   font-size: $sans-s8;
   font-weight: 300;
-  line-height: $leading-cap;
+  line-height: $lh-cap;
 
   @include media($medium-screen) {
     font-size: $sans-s9;
