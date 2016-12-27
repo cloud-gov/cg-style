@@ -17,6 +17,33 @@ fractal.set('project.title', 'cloud.gov design system');
 
 fractal.components.set('path', __dirname + '/docs/src/components');
 fractal.components.set('default.preview', '@preview');
+fractal.components.set('statuses', {
+  prototype: {
+    label: "Prototype",
+    description: "Code implementation is in exploratory phase, incomplete and not for use.",
+    color: "#FF3333"
+  },
+  wip: {
+    label: "WIP",
+    description: "Work in progress. Use with caution.",
+    color: "#FF9233"
+  },
+  beta: {
+    label: "Beta",
+    description: "When some design/accessibility reviews have been done and documentation is complete. The component is ready for use.",
+    color: "#056DD4"
+  },
+  ready: {
+    label: "Ready",
+    description: "Accessibility review finished, usability review finished, documentation complete.",
+    color: "#29CC29"
+  },
+  deprecated: {
+    label: "Deprecated",
+    description: "Component exists only for backwards compatibility and will be removed in the near future.",
+    color: "#CCC"
+  }
+});
 
 fractal.docs.set('path', __dirname + '/docs/src/docs');
 

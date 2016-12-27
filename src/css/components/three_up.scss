@@ -7,10 +7,11 @@
 
 .three_up-part {
   margin-top: 4rem;
+  padding-top: $grid-3;
 
   @include media($medium-screen) {
     @include span-columns(4);
-    margin-top: 0;
+    margin-top: $grid-3;
   }
 
   .hex_icon {
@@ -19,6 +20,22 @@
 
   .icon-container {
     margin-bottom: 1rem;
+  }
+
+  &.bt2px {
+    border-top: 2px solid;
+  }
+
+  &.b-red {
+    border-color: $color-red;
+  }
+
+  &.b-green {
+    border-color: $color-green;
+  }
+
+  &.b-blue {
+    border-color: $color-blue;
   }
 }
 
