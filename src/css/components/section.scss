@@ -43,12 +43,20 @@ $chevron-size: 4.865rem;
   }
 }
 
-.section-content,
+.section-content {
+  h1 + p {
+    margin-top: $grid-4;
+  }
+}
+
 .section-dark,
 .section-blue,
 .section-red {
-  h1 + p {
-    margin-top: $grid-5;
+  h1 + .section-displaytext {
+    margin-top: $grid-4;
+  }
+  h1 + .section-dek {
+    margin-top: $grid-2;
   }
 }
 
@@ -80,6 +88,11 @@ $chevron-size: 4.865rem;
 
   &:before {
     background-image: url('#{$static-img-path}/chevron-top.svg');
+    fill: $color-textblack;
+  }
+
+  .list-lined {
+    font-size: $sans-s7;
   }
 }
 
@@ -236,4 +249,36 @@ $chevron-size: 4.865rem;
   border-radius: 3px;
   margin: 1rem 0;
   padding: 0 1rem;
+}
+
+.section-title {
+  font-size: $sans-s8;
+  font-weight: 300;
+  line-height: $leading-cap;
+
+  @include media($medium-screen) {
+    font-size: $sans-s9;
+  }
+}
+
+.section-displaytext {
+  font-family: $font-sans;
+  font-size: $sans-s6;
+  font-weight: 400;
+  line-height: $leading-display;
+
+  @include media($medium-screen) {
+    font-size: $sans-s7;
+  }
+}
+
+.section-coltitle {
+  font-size: $sans-s7;
+  font-weight: 500;
+  margin-top: $grid-3;
+  padding-bottom: $grid-2;
+
+  @include media($medium-screen) {
+    font-size: $sans-s8;
+  }
 }
