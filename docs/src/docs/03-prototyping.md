@@ -17,21 +17,16 @@ See
 as an example.
 
 
-### What to avoid
+## Using main.css
 
-`docs/src/main.css` contains styles specifically for the pattern library. Styles
-here should only be used to help conveying the idea of the pattern. For example,
-you might have a layout component where on it's own is invisible. Adding border
-or background styles to `docs/src/main.css` might help present the pattern.
-Avoid overusing `main.css`.
+`docs/src/main.css` contains styles used exclusively in the pattern library itself. These styles are meant for the display of the pattern library chrome, and to complement patterns (typically base patterns) that require additional style and context to be organized and displayed in the pattern library. For example, you might have a layout component that is invisible on its own, like a column row or a color. Adding helper styles and elements (like borders, background colors, and labels) to `docs/src/main.css` might help present the pattern with better clarity. Avoid overusing `main.css` — try to present bare components with as little additional styling as necessary.
 
 
 ## Utility classes
 
-These low level variables are also expressed as utility classes. Utility classes
-allow rapid prototyping without the necessity of altering existing classes or
-creating new ones. It allows you to build new components without altering the
-production CSS.
+Low level base patterns and variables are also expressed as utility classes. Utility classes allow rapid prototyping without the necessity of altering existing classes or creating new ones. They allow you to build new components without altering the production CSS.
+
+**Utility classes should be used for prototyping only. Don’t use utility classes in production code.**
 
 
 ## Statuses
@@ -42,11 +37,11 @@ design an accessibility review.
 
 | Status | Description |
 | -------- | ---------------- |
-| Prototype | Code implementation is in exploratory phase, incomplete and not for use. |
-| WIP | Work in progress. Use with caution. |
-| Beta | When some design/accessibility reviews have been done and documentation is complete. The component is ready for use. |
-| Ready | Accessibility review finished, usability review finished, documentation complete. |
-| Deprecated | Component exists only for backwards compatibility and will be removed in the near future. |
+| **Prototype** | Pattern and code implementation is in an exploratory phase. These patterns may contain utility classes, require further development work, and are not for use. |
+| **WIP** | This pattern is a work in progress, may contain utility classes, and is not yet ready for production code. |
+| **Beta** | When some design/accessibility reviews have been done and documentation is complete. The component is ready for use. |
+| **Ready** | Accessibility review finished, usability review finished, documentation complete. |
+| **Deprecated** | Component exists only for backwards compatibility and will be removed in the near future. |
 
 
 ## Best practices
