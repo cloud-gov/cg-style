@@ -25,21 +25,23 @@ would affect the app from within the pattern library.
 
 
 ### Base
-
-The low level variables (rules, essentially) that patterns are built from. These
-include things like line height, width, color, typography, etc.
-
+the low level variables (rules, essentially) that patterns are built from.
+These low level variables are also expressed as utility classes. Utility
+classes allow rapid prototyping without the necessity of altering existing
+classes or creating new ones. It allows you to build new components without
+altering the production CSS.<br/>
+**Examples:** Height, width, color, typography, etc...
 
 ### Components
-
-An atomic element that conveys some meaning or concept.
-
+Components are small basic building blocks that are used to build larger
+features.<br/>
+**Examples:** Buttons, icons, loading action, etc...
 
 ### Features
-
-Complete groups of related functionality, built from components.
-
+Features are complete groups of functionality, built from multiple
+components.<br/>
+**Examples:** Panels and cards
 
 ### Pages
-
-Complete views built from features.
+Complete views built from features and components.<br/>
+**Examples:** Overview, dashboard, application page, etc...
