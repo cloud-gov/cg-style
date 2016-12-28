@@ -8,6 +8,7 @@
 .three_up-part {
   margin-top: 4rem;
   padding-top: $grid-3;
+  border-top: 2px solid;
 
   @include media($medium-screen) {
     @include span-columns(4);
@@ -21,22 +22,18 @@
   .icon-container {
     margin-bottom: 1rem;
   }
+}
 
-  &.bt2px {
-    border-top: 2px solid;
-  }
+.three_up-part-1 {
+  border-color: $color-blue;
+}
 
-  &.b-red {
-    border-color: $color-red;
-  }
+.three_up-part-2 {
+  border-color: $color-green;
+}
 
-  &.b-green {
-    border-color: $color-green;
-  }
-
-  &.b-blue {
-    border-color: $color-blue;
-  }
+.three_up-part-3 {
+  border-color: $color-red;
 }
 
 .section-content + .three_up {
