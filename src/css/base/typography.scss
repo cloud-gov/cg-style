@@ -3,13 +3,14 @@
 
 body {
   color: $color-base;
-  font-feature-settings: 'kern';
+  font-feature-settings: 'kern' 1;
   font-kerning: normal;
   font-size: $grid-type-px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
   font-variant-ligatures: common-ligatures;
   font-weight: 400;
   line-height: $lh-body;
-  text-rendering: optimizeLegibility;
 }
 
 a {
@@ -153,12 +154,11 @@ p {
   margin-bottom: 0;
 }
 
-.content-text h1 + p, // scope to docs
+.content-text h1 + p, // scope to docs content
 .page-dek,
-.section-subhed {
-  color: $color-mediumgray;
+.section-dek {
   font-family: $font-sans;
-  font-size: $sans-s7;
+  font-size: $sans-s8;
   font-weight: 300;
   line-height: $lh-body;
   margin-bottom: 0;
@@ -166,43 +166,45 @@ p {
   padding-bottom: $grid-2;
 }
 
-.section-subhed {
-  color: $color-mediumgray;
+// scope to docs content
+.content-text h1 + p {
+  font-size: $sans-s7;
 }
 
 //spacing after block elements
-p, ul, ol, pre {
+p, ul, ol, pre, div {
   & + h1,
   & + h2,
   & + h3,
   & + h4,
   & + h5 {
-    margin-top: $grid-4;
-  }
-
-  & + h2 {
-    margin-top: $grid-2;
+    margin-top: $grid-6;
   }
 }
 
-// constrain to docs content
-.content-text p,
-.content-text li {
-  a {
-    border-bottom: 1px solid;
-    padding-bottom: 2px;
-    text-decoration: none;
+// scope to docs content
+.content-text {
+  p,
+  li {
+    a {
+      border-bottom: 1px solid;
+      padding-bottom: 2px;
+      text-decoration: none;
 
-    &:visited {
-      border-bottom-style: dotted;
+      &:visited {
+        border-bottom-color: $color-mediumgray;
+      }
     }
   }
-}
 
-// constrain to docs content
-.content-text li {
-  font-family: $font-serif;
-  font-size: $serif-s5;
+  li {
+    font-family: $font-serif;
+    font-size: $serif-s5;
+  }
+
+  p + form {
+    margin-top: $grid-4;
+  }
 }
 
 blockquote {
@@ -224,4 +226,39 @@ hr {
 .anchorjs-link {
   font-size: $sans-s7;
   opacity: 1;
+}
+
+.subtext {
+  color: $color-darkgray;
+  font-size: $sans-s2;
+}
+
+@for $i from 1 through length($sans-s) {
+  .sans-s#{$i} {
+    font-size: nth($sans-s, $i);
+  }
+}
+
+@for $i from 1 through length($serif-s) {
+  .serif-s#{$i} {
+    font-size: nth($serif-s, $i);
+  }
+}
+
+@for $i from 1 through length($mono-s) {
+  .mono-s#{$i} {
+    font-size: nth($mono-s, $i);
+  }
+}
+
+.list-lined {
+  border-bottom: 1px solid;
+  list-style-type: none;
+  padding-left: 0;
+
+  li {
+    border-top: 1px solid;
+    margin: 0;
+    padding: $grid-2 0;
+  }
 }

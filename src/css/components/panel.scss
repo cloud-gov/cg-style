@@ -19,6 +19,13 @@ $panel-padding: $grid-3;
   .tableWrapper:last-child {
     margin-bottom: 2rem;
   }
+
+  .stat-header {
+    font-size: $sans-s3;
+    font-weight: 900;
+    margin-bottom: $grid-1;
+  }
+
 }
 
 h1 + .panel,
@@ -73,9 +80,14 @@ h4 + .panel {
   }
 }
 
+.panel-actions {
+  display: block;
+  margin-top: $grid-2;
+}
+
 .panel-actions-right {
   float: right;
-  margin-bottom: -2rem;
+  margin-bottom: $grid-4;
 }
 
 .panel-header {
@@ -91,10 +103,18 @@ h4 + .panel {
     font-size: $sans-s7;
     font-weight: 400;
   }
+
+}
+
+.panel-row-header {
+  font-size: $sans-s2;
+  font-weight: 700;
+  margin-bottom: $grid-1;
 }
 
 .panel-row {
   $vertical-padding: $grid-105;
+  border-top: 1px solid $color-textblack;
   padding: $vertical-padding 0;
 
   // TODO react problem can't return just rows without wrapped div.
@@ -110,19 +130,22 @@ h4 + .panel {
     margin: 1rem -1rem -1rem;
     padding: 1rem;
     width: 100%;
+  }
 
+  &:last-child {
+    padding-bottom: 0;
   }
 
   > .panel-row {
-    border-top: 1px solid $color-textblack;
+    border-top: 1px solid $color-lightgray;
     display: block;
+    margin-bottom: $vertical-padding;
+    margin-left: $grid-4;
+    margin-top: $vertical-padding;
+    padding-bottom: 0;
 
-    > .panel-row {
-      border-top: 1px solid $color-lightgray;
-      display: flex;
-      margin-top: $vertical-padding;
-      padding-bottom: 0;
-      padding-left: $grid-4;
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 }
@@ -133,10 +156,14 @@ h4 + .panel {
   margin-bottom: $panel-padding;
   padding: $panel-padding;
 
-  &:last-child {
-    margin-bottom: 0;
+  > .panel-row-is_clickable {
+    display: flex;
   }
 
+  &:last-child {
+    margin-bottom: 0;
+    padding-bottom: $panel-padding;
+  }
 }
 
 .panel-row-bordered {
@@ -150,7 +177,7 @@ h4 + .panel {
 }
 
 .panel-row-space {
-  margin-top: 1rem;
+  margin-top: $grid-2;
 }
 
 .panel-row-is_clickable {
@@ -170,6 +197,7 @@ h4 + .panel {
   padding-left: 0;
   padding-right: 0;
   padding-top: calc(1.5rem / 2);
+
 }
 
 .panel-column {
@@ -195,6 +223,12 @@ h4 + .panel {
   flex-grow: 0;
   flex-shrink: 1;
   min-width: 25%;
+}
+
+// TODO rename `-less` to something else
+.panel-column-shrink {
+  flex-grow: 0;
+  margin-right: $grid-4;
 }
 
 .panel-new {
