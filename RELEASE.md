@@ -24,7 +24,7 @@ If you planning a cg-style upgrade and are unsure how you'd like to version it, 
 ## Steps
 0. Decide on a "main idea" for the release, what the release is being done for. Look at previous releases for examples.
 0. Decide on whether the release should be a patch, minor or major version update, based on [semver](http://semver.org/#summary).
-0. Run `npm run release`. Provide the version number you decided on from above and the "main idea" when prompted. Try and keep it short and sweet, say under 60 characters. If you are curious, here is more [documentation](#how-the-release-script-works) about what the `release` script is doing.
+0. Run `npm run release`. Provide the version number you decided on from above and the "main idea" when prompted. Try and keep it short and sweet, say under 50 characters. If you are curious, here is more [documentation](#how-the-release-script-works) about what the `release` script is doing.
 0. There will now be tags in the [18f/cg-style](https://github.com/18F/cg-style/tags) repo. Edit the tag you just created and provide a bit more context for the release. Make sure to clearly articulate what has changed and why. Create a link titled `Changelog` that uses the Github compare url to compare the current release tag with the last, such as `/compare/0.3.4...0.4.0`.
 0. Open pull requests in both repos from the release branch back into `master`. Remember, the version number should be the only thing that changed.
 0. When the PR is merged, the CI service notices that there is a tag on the commit and publishes the node module.
