@@ -1,6 +1,6 @@
 ---
 title: Prototyping new patterns
-status: beta
+status: ready
 ---
 
 The pattern library can be used to [develop new

@@ -46,19 +46,14 @@ fractal.components.set('statuses', {
 });
 
 fractal.docs.set('statuses', {
-  wip: {
-    label: "WIP",
-    description: "Work in progress. There way be gaps in this documentation.",
+  draft: {
+    label: "draft",
+    description: "Work in progress. There may be gaps in this documentation.",
     color: "#f4b400"
-  },
-  beta: {
-    label: "Beta",
-    description: "First pass of document complete. Under review.",
-    color: "#056dd4"
   },
   ready: {
     label: "Ready",
-    description: "Reviewed and considered complete.",
+    description: "Reviewed and considered reasonably complete.",
     color: "#0baf00"
   }
 });

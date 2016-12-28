@@ -1,6 +1,6 @@
 ---
 title: How to use this pattern library
-status: wip
+status: draft
 ---
 
 The pattern library is for all sorts of folks.
