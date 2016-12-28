@@ -285,8 +285,8 @@ $fw-s: 100, 200, 300, 400, 500, 600, 700, 800, 900;
 %ls-loose { letter-spacing: .1em; }
 .ls-loose { letter-spacing: .1em !important; }
 
-%ls-vloose { letter-spacing: .15em; }
-.ls-vloose { letter-spacing: .15em !important; }
+%ls-xloose { letter-spacing: .15em; }
+.ls-xloose { letter-spacing: .15em !important; }
 
 /*
 
@@ -1562,13 +1562,13 @@ $pos-s: absolute, fixed, relative, static, sticky;
   MANUAL POSITION
 
   Base:
-    ---
+    top
+    right
+    bottom
+    left
 
   Modifiers:
-    top-
-    right-
-    bottom-
-    left-
+    ---
 
   Values:
     Percentages:
