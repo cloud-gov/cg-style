@@ -22,18 +22,18 @@
   .icon-container {
     margin-bottom: 1rem;
   }
+}
 
-  &.part-3 {
-    border-color: $color-red;
-  }
+.three_up-part-1 {
+  border-color: $color-blue;
+}
 
-  &.part-2 {
-    border-color: $color-green;
-  }
+.three_up-part-2 {
+  border-color: $color-green;
+}
 
-  &.part-1 {
-    border-color: $color-blue;
-  }
+.three_up-part-3 {
+  border-color: $color-red;
 }
 
 .section-content + .three_up {
