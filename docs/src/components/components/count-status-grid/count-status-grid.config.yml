@@ -1,5 +1,5 @@
 title: count-status-grid
-status: wip
+status: prototype
 context:
   entityKind: space
   status: alt
