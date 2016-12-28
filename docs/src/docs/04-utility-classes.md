@@ -110,6 +110,7 @@ These scales are a numerical value prefixed (or suffixed) to avoid ambiguity:
 
 ### Colors
 
+
 ``` yaml
 base:
 modifiers:
@@ -132,7 +133,6 @@ reset (--):
 example:
   .green
 ```
-
 
 ### Background color
 

@@ -1,12 +1,7 @@
 ---
-title: cloud.gov design system
+title: Overview
 status: draft
 ---
-
-Welcome to the cloud.gov design system!
-
-## Principles 
-
 
 ## Purpose
 
