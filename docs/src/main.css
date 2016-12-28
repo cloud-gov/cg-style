@@ -419,3 +419,7 @@ table tbody td {
   font-family: '18Franklin-webfont';
   font-weight: 400;
 }
+
+.Status-dot {
+  border-width: 4px;
+}
