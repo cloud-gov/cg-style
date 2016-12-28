@@ -6,8 +6,8 @@ status: draft
 ## Purpose
 
 - Document best practices.
-- _When, where, why_ and not just _how_ to use these patterns.
-- A test bed for prototyping and building new patterns.
+- Outline **when**, **where**, **why**, and not just **how** to use these patterns.
+- Provide a testing area for prototyping and building new patterns.
 
 
 ## Hierarchy
