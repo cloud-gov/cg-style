@@ -101,7 +101,7 @@ These scales are a numerical value prefixed (or suffixed) to avoid ambiguity:
 | **grid scale**            | `{#}`  _no prefix_               | `bt05`     | border-top: $grid * 0.5   |
 | **negative grid scale**   | `n{#}`                         | `mtn05`    | margin-top: $grid * -0.5  |
 | **pixel scale**           | `{#}px`                        | `pt1px`    | padding-top: 1px          |
-| **negative pixel scale**  | `n{#}px`                       | `mxn1px`   | margin-left, -right: 1px  |
+| **negative pixel scale**  | `n{#}px`                       | `mxn1px`   | margin-left, -right: -1px  |
 | **percentage scale**      | `{#}ct`                        | `w33ct`    | width: 33.33333333%       |
 | **flex scale**            | `f{#}`                         | `col-f3`   | flex: 3 0 0               |
 | **type scale**            | `s{#}`                         | `sans-s6`  | 18Franklin scale 6 (18px) |
