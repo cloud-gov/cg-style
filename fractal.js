@@ -45,6 +45,24 @@ fractal.components.set('statuses', {
   }
 });
 
+fractal.docs.set('statuses', {
+  wip: {
+    label: "WIP",
+    description: "Work in progress. There way be gaps in this documentation.",
+    color: "#f4b400"
+  },
+  beta: {
+    label: "Beta",
+    description: "First pass of document complete. Under review.",
+    color: "#056dd4"
+  },
+  ready: {
+    label: "Ready",
+    description: "Reviewed and considered complete.",
+    color: "#0baf00"
+  }
+});
+
 fractal.docs.set('path', __dirname + '/docs/src/docs');
 
 fractal.web.set('static.path', __dirname + '/docs/assets');
