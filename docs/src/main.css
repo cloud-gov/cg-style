@@ -227,7 +227,7 @@ body {
 }
 
 .coltest .pattern-name {
-  font-family: '18Franklin';
+  font-family: '18Franklin-webfont';
   font-weight: 600;
   font-size: 13px;
   line-height: 1;
@@ -285,7 +285,7 @@ body {
   vertical-align: middle;
   font-size: 13px;
   font-weight: bold;
-  font-family: '18Franklin';
+  font-family: '18Franklin-webfont';
   color: #333;
 }
 
@@ -298,7 +298,7 @@ body {
   vertical-align: middle;
   font-size: 13px;
   font-weight: bold;
-  font-family: '18Franklin';
+  font-family: '18Franklin-webfont';
   color: #333;
 }
 
@@ -328,7 +328,7 @@ body {
 p { text-align: left; }
 
 .Prose h1 {
-  font-family: '18Franklin';
+  font-family: '18Franklin-webfont';
   font-weight: bold;
   font-size: 24px;
   line-height: 1.05;
@@ -336,25 +336,86 @@ p { text-align: left; }
 }
 
 .Prose h2 {
-  font-family: '18Franklin';
+  font-family: '18Franklin-webfont';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.05;
+  letter-spacing: normal;
+  margin-bottom: .5em;
+  border-top: 1px solid #333;
+  padding-top: 16px;
+}
+
+.Prose h3 {
+  font-family: '18Franklin-webfont';
   font-weight: 300;
   font-size: 24px;
   line-height: 1.05;
   letter-spacing: normal;
   margin-bottom: .5em;
-}
-
-.Prose h3 {
-  font-family: '18Franklin';
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.05;
-  letter-spacing: normal;
-  margin-bottom: .5em;
   color: #333;
   opacity: 1;
+  margin-top: 1.5em;
 }
 
 body._hasBackground {
   background-color: #f5f5f3;
+}
+
+.Prose table {
+  margin: 2em 0;
+}
+
+.Prose code,
+.Prose code pre {
+  font-family: 'Roboto Mono';
+}
+
+.Prose code {
+  background-color: #f5f5f3;
+}
+
+.Prose code pre {
+  font-family: 'Roboto Mono';
+  background-color: transparent;
+  width: 100%;
+  display: block;
+}
+
+.Prose th {
+  font-family: '18Franklin-webfont';
+  font-weight: 700;
+  background-color: #f5f5f3;
+  border-color: transparent;
+}
+
+.Prose code.lang-yaml {
+  display: block;
+  border-radius: 2px;
+}
+
+.Prose code.lang-yaml pre {
+  margin: 0;
+  padding: 16px;
+}
+
+.Document-header {
+  padding-bottom: 24px;
+  padding-top: 16px;
+  border-bottom: none;
+}
+
+.Document-title {
+  font-family: '18Franklin-webfont';
+  font-size: 40px;
+}
+
+table tbody td {
+  border-color: #d3d3d3;
+}
+
+.Prose ul,
+.Prose ol {
+  font-family: '18Franklin-webfont';
+  font-weight: 400;
 }
