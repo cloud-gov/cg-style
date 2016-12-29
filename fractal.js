@@ -21,27 +21,40 @@ fractal.components.set('statuses', {
   prototype: {
     label: "Prototype",
     description: "Code implementation is in exploratory phase, incomplete and not for use.",
-    color: "#FF3333"
+    color: "#be4900"
   },
   wip: {
     label: "WIP",
     description: "Work in progress. Use with caution.",
-    color: "#FF9233"
+    color: "#f4b400"
   },
   beta: {
     label: "Beta",
     description: "When some design/accessibility reviews have been done and documentation is complete. The component is ready for use.",
-    color: "#056DD4"
+    color: "#056dd4"
   },
   ready: {
     label: "Ready",
     description: "Accessibility review finished, usability review finished, documentation complete.",
-    color: "#29CC29"
+    color: "#0baf00"
   },
   deprecated: {
     label: "Deprecated",
     description: "Component exists only for backwards compatibility and will be removed in the near future.",
-    color: "#CCC"
+    color: "#8e8e8e"
+  }
+});
+
+fractal.docs.set('statuses', {
+  draft: {
+    label: "draft",
+    description: "Work in progress. There may be gaps in this documentation.",
+    color: "#f4b400"
+  },
+  ready: {
+    label: "Ready",
+    description: "Reviewed and considered reasonably complete.",
+    color: "#0baf00"
   }
 });
 

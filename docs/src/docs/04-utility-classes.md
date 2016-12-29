@@ -1,6 +1,6 @@
 ---
 title: Using utility classes
-status: draft
+status: ready
 ---
 
 Low level base patterns and variables are also expressed as utility classes. Utility classes are static, single-purpose, presentational classes that control only one or two rules. Build the overall style of a component by combining and chaining together multiple utility classes.
