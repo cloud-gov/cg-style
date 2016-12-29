@@ -31,7 +31,7 @@ $panel-padding: $grid-3;
 // TODO this is a hack, panel-row borders need to be reconciled, panel-row vs
 // panel-row-bordered
 .panel-row-clean {
-  border: none !important;
+  border: none !important; // stylelint-disable-line declaration-no-important
 }
 
 h1 + .panel,
