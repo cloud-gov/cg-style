@@ -1,5 +1,5 @@
-<div class="count_status count_status-{{ status }} col-fit row-center-x">
-  <div class="col-fit">
+<div class="count_status count_status-{{ status }}">
+  <div class="count_status-icon">
     {% if status == 'alt' %}
       {% set iconVariant = entityKind + '-medium' %}
     {% else %}
@@ -7,7 +7,7 @@
     {% endif %}
     {% render '@icon-square--' + iconVariant %}
   </div>
-  <div class="count_status-text col-fill">
+  <div class="count_status-text">
     <strong>{{ entityCount }}</strong>
     {{ entityKind }}{% if entityCount != '1' %}s{% endif %}
   </div>

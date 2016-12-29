@@ -1,11 +1,11 @@
 title: count-status
-status: wip
+status: beta
+default: app
 context:
   entityKind: space
   status: alt
   entityCount: '1'
 variants:
-  - name: default
   - name: space
     context:
       entityKind: space
