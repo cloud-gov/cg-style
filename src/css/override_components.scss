@@ -55,6 +55,7 @@
       max-width: 1224px;
       padding-left: $grid-4;
       padding-right: $grid-4;
+
       @include media($large-screen) {
         padding-left: $grid-4;
         padding-right: $grid-4;
