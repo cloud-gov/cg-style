@@ -131,9 +131,6 @@ h4 + .panel {
     width: 100%;
   }
 
-  &:last-child {
-  }
-
   > .panel-row {
     border-top: 1px solid $color-lightgray;
     display: block;
