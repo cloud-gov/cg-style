@@ -4,9 +4,8 @@
 @import '../core.scss';
 
 .count_status {
-  // are these first two strictly necessary? I'd prefer to see this pattern built as it is in the PL... Height in particular, seems rando. Inline block feels wrong.
-  display: inline-block;
-  height: 1.1rem;
+  align-items: center;
+  display: flex;
   margin-left: $grid-3;
   position: relative;
   width: 7.5rem;
@@ -52,9 +51,19 @@
   }
 }
 
+.count_status-icon {
+  flex: none;
+}
+
 .count_status-text {
+  flex: 1;
   font-family: $font-sans;
   font-size: $sans-s4;
   line-height: $lh-single;
   text-align: right;
+}
+
+.count_status_container {
+  display: flex;
+  float: right;
 }
