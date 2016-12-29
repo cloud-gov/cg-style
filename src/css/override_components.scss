@@ -32,6 +32,9 @@
   padding-top: 9px;
 
   .usa-disclaimer-stage {
+    @include media($medium-screen) {
+      display: block;
+    }
     margin-top: 0;
   }
 
@@ -42,6 +45,21 @@
     color: $color-lightgray;
     font-weight: 400;
     text-decoration: underline;
+  }
+}
+
+// kludge for targeting dashboard
+.js-app {
+  .usa-disclaimer {
+    .grid {
+      max-width: 1224px;
+      padding-left: $grid-4;
+      padding-right: $grid-4;
+      @include media($large-screen) {
+        padding-left: $grid-4;
+        padding-right: $grid-4;
+      }
+    }
   }
 }
 
