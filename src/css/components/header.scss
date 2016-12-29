@@ -16,8 +16,7 @@
   padding-bottom: $grid-3;
 }
 
-// kludge for targeting dashboard
-.js-app {
+.header-wide {
   .header-wrap {
     max-width: 1224px;
     padding-left: $grid-4;

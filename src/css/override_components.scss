@@ -49,17 +49,15 @@
 }
 
 // kludge for targeting dashboard
-.js-app {
-  .usa-disclaimer {
-    .grid {
-      max-width: 1224px;
+.disclaimer-wide {
+  .grid {
+    max-width: 1224px;
+    padding-left: $grid-4;
+    padding-right: $grid-4;
+
+    @include media($large-screen) {
       padding-left: $grid-4;
       padding-right: $grid-4;
-
-      @include media($large-screen) {
-        padding-left: $grid-4;
-        padding-right: $grid-4;
-      }
     }
   }
 }
