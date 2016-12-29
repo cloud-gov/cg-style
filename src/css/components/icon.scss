@@ -24,8 +24,13 @@
 .icon {
   display: inline-block;
   fill: transparent;
-  position: relative;
+  height: 1em;
+  max-height: 2rem;
+  max-width: 2rem;
+  min-height: 20px;
+  min-width: 20px;
   stroke: currentColor;
+  position: relative;
   top: -0.0625rem;
   vertical-align: middle;
   width: 1em;
@@ -131,7 +136,9 @@ $default-spacing: 0.65em;
   border-radius: $rounded;
   border-style: solid;
   border-width: 1px;
-  padding: $grid-05;
+  height: 1.35em;
+  padding: 0 0.1em;
+  width: 1.35em;
 
   &.icon-small {
     padding: 2px;
