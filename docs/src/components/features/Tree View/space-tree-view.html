@@ -1,0 +1,45 @@
+<div class="panel-row">
+    <h3 class="contents-primary">  {% render '@icon-square--space-medium' %}   <a href="#">spaceName</a></h3>
+    <div class="panel-row">
+      <div>
+        <span class="panel-column">
+    <h3 class="contents-secondary">
+      {% render '@icon-square--app-ok-medium' %}
+      <span class="contents-path">spaceName /</span>
+        <span><a href="#">appName</a>  </span>
+        </h3>
+        </span>
+        <span class="panel-column panel-column-less">
+        {% render '@status--running' %}
+    </span>
+  </div>
+    </div>
+    <div class="panel-row">
+      <div>
+        <span class="panel-column">
+    <h3 class="contents-secondary">
+        {% render '@icon-square--app-medium' %}
+      <span class="contents-path">spaceName /</span>
+        <span><a href="#">appName</a>  </span>
+        </h3>
+        </span>
+        <span class="panel-column panel-column-less">
+        {% render '@status--stopped' %}
+    </span>
+    </div>
+  </div>
+    <div class="panel-row">
+      <div>
+        <span class="panel-column">
+    <h3 class="contents-secondary">
+        {% render '@icon-square--app-error-medium' %}
+      <span class="contents-path">spaceName /</span>
+        <span><a href="#">appName</a>  </span>
+        </h3>
+        </span>
+        <span class="panel-column panel-column-less">
+        {% render '@status--error' %}
+    </span>
+    </div>
+  </div>
+</div>

@@ -23,8 +23,8 @@ fractal.components.set('statuses', {
     description: "Code implementation is in exploratory phase, incomplete and not for use.",
     color: "#be4900"
   },
-  wip: {
-    label: "WIP",
+  draft: {
+    label: "Draft",
     description: "Work in progress. Use with caution.",
     color: "#f4b400"
   },
