@@ -15,7 +15,7 @@
 .main_content {
   &.content-no_sidebar {
     margin: 0 auto;
-    max-width: $dashboard-no_sidebar;
+    max-width: $no-sidebar-max-width;
     padding: 0 $grid-2;
   }
 }
