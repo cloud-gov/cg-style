@@ -240,3 +240,9 @@ h4 + .panel {
   font-weight: 600;
   padding-bottom: $grid-1;
 }
+
+.grid.panel-overview-header {
+  border-bottom: $grid-05 solid $color-cream;
+  margin: (-$grid-3) (-$grid-3) $grid-3 (-$grid-3);
+  padding: $grid-3 $grid-3 $grid-4;
+}
