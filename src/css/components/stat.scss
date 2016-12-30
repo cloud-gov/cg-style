@@ -28,7 +28,13 @@ h5 + .stat {
 .stat-error,
 .stat-warning,
 .stat-success {
+
   padding-left: $grid-2;
+
+  &::before {
+    @extend .status-pill; 
+    height: 100%;
+  }
 }
 
 .stat-error {
@@ -39,7 +45,7 @@ h5 + .stat {
 
 .stat-warning {
   &::before {
-    border-color: $color-warning;
+    border-color: $color-gold;
   }
 }
 

@@ -1,0 +1,16 @@
+title: Status Pill
+collated: true
+status: wip
+variants:
+  - name: default
+    context:
+      text: "success"
+      modifier: success
+  - name: warning
+    context:
+      text: "warning"
+      modifier: warning
+  - name: error
+    context:
+      text: "error"
+      modifier: error

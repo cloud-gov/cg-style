@@ -372,7 +372,7 @@ body._hasBackground {
 }
 
 .Prose code {
-  background-color: #f5f5f3;
+  background-color: rgba(165, 234, 255, 0.22);
 }
 
 .Prose code pre {
