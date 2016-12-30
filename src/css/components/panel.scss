@@ -156,7 +156,7 @@ h4 + .panel {
   background-color: $color-white;
   border: 1px solid $color-textblack;
   margin-bottom: $panel-padding;
-  padding: $panel-padding;
+  padding: 1.4rem $panel-padding;
 
   > .panel-row-is_clickable {
     display: flex;
