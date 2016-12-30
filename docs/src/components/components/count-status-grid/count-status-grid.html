@@ -1,0 +1,31 @@
+<div class="sans-s4 lh-single w15 ml3 col-fit row-center-x pos-relative">
+  <div class="col-fit">
+    {% if status == 'alt' %}
+      {% set iconVariant = entityKind + '-medium' %}
+    {% else %}
+      {% set iconVariant = entityKind + '-' + status + '-medium' %}
+    {% endif %}
+    {% render '@icon-square--' + iconVariant %}
+  </div>
+  <div class="count_status-text col-fill">
+    <strong>{{ entityCount }}</strong>
+    {{ entityKind }}{% if entityCount != '1' %}s{% endif %}
+  </div>
+  <div class="statusbar pos-absolute bottom-n3 h1 left-0 right-0 mrn1px row bg-cream">
+    {# for i in range(0, appsErrors|length) #}
+      {# display a red bar #}
+      <span class="bar col-f1 mr1px h1 bg-red"></span>
+    {# endfor #}
+    {# for i in range(0, appsStopped|length) #}
+      {# display a black bar #}
+      <span class="bar col-f1 mr1px h1 bg-textblack"></span>
+      <span class="bar col-f1 mr1px h1 bg-textblack"></span>
+    {# endfor #}
+    {# for i in range(0, appsErrors|length) #}
+      {# display a green bar #}
+      <span class="bar col-f1 mr1px h1 bg-green"></span>
+      <span class="bar col-f1 mr1px h1 bg-green"></span>
+      <span class="bar col-f1 mr1px h1 bg-green"></span>
+    {# endfor #}
+  </div>
+</div>
