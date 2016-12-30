@@ -10,10 +10,16 @@
   @include clearfix;
   margin: 0 auto;
   max-width: $site-max-width;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: $grid-5;
   padding-bottom: $grid-3;
+  padding-left: $grid-2;
+  padding-right: $grid-2;
+  padding-top: $grid-5;
+}
+
+.header-no_sidebar {
+  .header-wrap {
+    max-width: $no-sidebar-max-width;
+  }
 }
 
 .header-title {
@@ -24,8 +30,8 @@
 .header-side {
 
   float: left;
-  width: 100%;
   position: relative;
+  width: 100%;
 
   @include media($medium-screen) {
 
