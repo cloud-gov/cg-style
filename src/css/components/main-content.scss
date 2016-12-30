@@ -13,14 +13,14 @@
 }
 
 .main_content {
-  &.content-dashboard {
+  &.content-no_sidebar {
     margin: 0 auto;
-    max-width: $dashboard-max-width;
+    max-width: $dashboard-no_sidebar;
     padding: 0 $grid-2;
   }
 }
 
-.content-dashboard {
+.content-no_sidebar {
   .content {
     margin: 0;
     max-width: none;
