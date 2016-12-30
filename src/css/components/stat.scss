@@ -32,8 +32,7 @@ h5 + .stat {
   padding-left: $grid-2;
 
   &::before {
-    @extend .status-pill;
-     
+    @extend .status-pill; 
     height: 100%;
   }
 }
