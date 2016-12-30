@@ -369,6 +369,7 @@ body._hasBackground {
 .Prose code,
 .Prose code pre {
   font-family: 'Roboto Mono';
+  background-color: transparent;
 }
 
 .Prose code {
@@ -378,7 +379,6 @@ body._hasBackground {
 .Prose code pre {
   font-family: 'Roboto Mono';
   background-color: transparent;
-  width: 100%;
   display: block;
 }
 

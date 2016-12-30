@@ -1,16 +1,19 @@
 title: Status Pill
 collated: true
-status: wip
+status: ready
 variants:
   - name: default
     context:
       text: "success"
       modifier: success
+      patternbreak: "<br/>"
   - name: warning
     context:
       text: "warning"
       modifier: warning
+      patternbreak: "<br/>"
   - name: error
     context:
       text: "error"
       modifier: error
+      patternbreak: "<br/>"

@@ -1,30 +1,39 @@
 title: Status
-context:
-  text: "status message"
+collated: true
+default: started
 variants:
-  - name: default
   - name: started
     context:
       text: "started"
       modifier: started
+      patternbreak: "<br/>"
   - name: running
     context:
       text: "running"
       modifier: running
+      patternbreak: "<br/>"
   - name: ok
     context:
+      text: "ok"
       modifier: ok
+      patternbreak: "<br/>"
   - name: stopped
     context:
       text: "stopped"
       modifier: stopped
+      patternbreak: "<br/>"
   - name: inactive
     context:
+      text: "inactive"
       modifier: inactive
+      patternbreak: "<br/>"
   - name: crashed
     context:
       text: "crashed"
       modifier: crashed
+      patternbreak: "<br/>"
   - name: error
     context:
+      text: "error"
       modifier: error
+      patternbreak: "<br/>"
