@@ -1,0 +1,23 @@
+title: count-status-grid
+status: prototype
+context:
+  entityKind: space
+  status: alt
+  entityCount: '1'
+variants:
+  - name: default
+  - name: space
+    context:
+      entityKind: space
+      status: alt
+      entityCount: '3'
+  - name: app
+    context:
+      entityKind: app
+      status: error
+      entityCount: '6'
+  - name: service
+    context:
+      entityKind: service
+      status: alt
+      entityCount: '0'
