@@ -10,7 +10,7 @@ $panel-padding: $grid-3;
   background-color: $color-white;
   margin-bottom: $grid-4;
   // TODO make padding and margins consistent
-  padding: $grid-3 0 0 0;
+  padding: $grid-3 $grid-3 $grid-4;
 
   table {
     margin-bottom: 1rem;
