@@ -7,5 +7,5 @@ data. Links should be used for navigation.
 
 ## Use
 
-To use the **action** component, add the class `action` to a button or add the
+To use the **action** component, add the class `action` to a `<button>` element or add the
 classes `action action-link` for links.
