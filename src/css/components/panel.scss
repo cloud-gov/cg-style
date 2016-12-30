@@ -155,7 +155,8 @@ h4 + .panel {
 .panel-row-boxed {
   background-color: $color-white;
   border: 1px solid $color-textblack;
-  margin-bottom: $panel-padding;
+  border-radius: $rounded;
+  margin-bottom: $grid-2;
   padding: 1.4rem $panel-padding;
 
   > .panel-row-is_clickable {
@@ -165,6 +166,10 @@ h4 + .panel {
   &:last-child {
     margin-bottom: 0;
     padding-bottom: $panel-padding;
+  }
+
+  .panel-row {
+    padding-bottom: 0;
   }
 }
 
