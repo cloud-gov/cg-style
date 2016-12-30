@@ -10,10 +10,16 @@
   @include clearfix;
   margin: 0 auto;
   max-width: $site-max-width;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: $grid-2;
+  padding-right: $grid-2;
   padding-top: $grid-5;
   padding-bottom: $grid-3;
+}
+
+.header-dashboard {
+  .header-wrap {
+    max-width: $dashboard-max-width;
+  }
 }
 
 .header-title {

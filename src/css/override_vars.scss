@@ -97,10 +97,11 @@ $grid-n4:             #{($grid-base * -4 / $grid-type)}rem;     // 32px
 $grid-n5:             #{($grid-base * -5 / $grid-type)}rem;     // 40px
 
 // widths
-$nav-width:          $grid-base-px * 75;          // 600px;
-$site-max-width:     $grid-base-px * 130;         // 1040px;
-$text-max-width:     36em;
-$text-narrow-width:  17em;
+$nav-width:             $grid-base-px * 75;          // 600px;
+$site-max-width:        $grid-base-px * 130;         // 1040px;
+$dashboard-max-width:   $grid-base-px * 111;         // 888px;
+$text-max-width:        36em;
+$text-narrow-width:     17em;
 
 // type scale
 $sans-s1:           (10rem / $grid-type);         // 10px;

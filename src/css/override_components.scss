@@ -54,6 +54,13 @@
   }
 }
 
+.disclaimer-dashboard {
+  .grid {
+    max-width: $dashboard-max-width;
+    padding: 0 $grid-2;
+  }
+}
+
 .usa-sidenav-list {
   margin-left: -$grid-1;
 

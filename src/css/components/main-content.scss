@@ -11,3 +11,24 @@
     padding: $grid-4;
   }
 }
+
+.main_content {
+  &.content-dashboard {
+    margin: 0 auto;
+    max-width: $dashboard-max-width;
+    padding: 0 $grid-2;
+  }
+}
+
+.content-dashboard {
+  .content {
+    margin: 0;
+    max-width: none;
+    padding: $grid-4 0;
+    width: auto;
+  }
+
+  .grid {
+    max-width: none;
+  }
+}
