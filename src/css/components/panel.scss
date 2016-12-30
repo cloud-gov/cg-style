@@ -9,6 +9,7 @@ $panel-padding: $grid-3;
   @include clearfix;
   background-color: $color-white;
   margin-bottom: $grid-4;
+  // TODO make padding and margins consistent
   padding: $grid-3 $grid-3 $grid-4;
 
   table {
@@ -87,11 +88,6 @@ h4 + .panel {
   }
 }
 
-.panel-actions {
-  display: block;
-  margin-top: $grid-2;
-}
-
 .panel-actions-right {
   float: right;
   margin-bottom: $grid-4;
@@ -101,14 +97,16 @@ h4 + .panel {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding-bottom: $grid-4;
+  margin-top: $grid-4;
+  padding-bottom: $grid-1;
 
+  // TODO remove elements from this rule.
   h1,
   h2,
   h3,
   h4 {
-    font-size: $sans-s7;
-    font-weight: 400;
+    font-size: $sans-s2;
+    font-weight: 700;
   }
 
 }
@@ -139,10 +137,6 @@ h4 + .panel {
     width: 100%;
   }
 
-  &:last-child {
-    padding-bottom: 0;
-  }
-
   > .panel-row {
     border-top: 1px solid $color-lightgray;
     display: block;
@@ -153,6 +147,7 @@ h4 + .panel {
 
     &:last-child {
       margin-bottom: 0;
+      padding-bottom: 0;
     }
   }
 }
@@ -250,4 +245,10 @@ h4 + .panel {
   font-size: $sans-s4;
   font-weight: 600;
   padding-bottom: $grid-1;
+}
+
+.grid.panel-overview-header {
+  border-bottom: $grid-05 solid $color-cream;
+  margin: (-$grid-3) (-$grid-3) $grid-3 (-$grid-3);
+  padding: $grid-3 $grid-3 $grid-4;
 }

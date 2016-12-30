@@ -24,26 +24,31 @@
 .icon {
   display: inline-block;
   fill: transparent;
-  position: relative;
+  height: 1.5em;
+  max-height: $grid-4;
+  max-width: $grid-4;
+  min-height: $grid-2;
+  min-width: $grid-2;
   stroke: currentColor;
+  position: relative;
   top: -0.0625rem;
   vertical-align: middle;
-  width: 1em;
-}
+  width: 1.5em;
 
-.icon-small {
-  height: $grid-2;
-  width: $grid-2;
-}
+  &.icon-small {
+    height: $grid-2;
+    width: $grid-2;
+  }
 
-.icon-medium {
-  height: $grid-3;
-  width: $grid-3;
-}
+  &.icon-medium {
+    height: $grid-3;
+    width: $grid-3;
+  }
 
-.icon-large {
-  height: $grid-4;
-  width: $grid-4;
+  &.icon-large {
+    height: $grid-4;
+    width: $grid-4;
+  }
 }
 
 .icon-alt {
@@ -131,10 +136,20 @@ $default-spacing: 0.65em;
   border-radius: $rounded;
   border-style: solid;
   border-width: 1px;
-  padding: $grid-05;
+  height: 1.5em;
+  padding: 0 0.275em;
+  width: 1.5em;
 
   &.icon-small {
     padding: 2px;
+  }
+
+  &.icon-medium {
+    padding: 4px;
+  }
+
+  &.icon-large {
+    padding: 6px;
   }
 
   &.icon-ok {
