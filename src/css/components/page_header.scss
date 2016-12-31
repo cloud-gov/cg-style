@@ -1,0 +1,15 @@
+@import '../override_vars.scss';
+@import '../core.scss';
+
+.page-header {
+  @extend %row;
+  margin: 0 $grid-3 $grid-3;
+}
+
+.page-header-title {
+  @extend %col-fill;
+}
+
+.page-header-actions {
+  @extend %col-fit;
+}
