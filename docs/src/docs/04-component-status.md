@@ -3,8 +3,6 @@ title: Component Status
 status: ready
 ---
 
-## Component Status
-
 We use statuses to indicate how vetted each component is. A component might go
 through these statuses as it is implemented until finally it receives a complete
 design an accessibility review.
