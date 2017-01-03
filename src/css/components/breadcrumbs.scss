@@ -1,0 +1,23 @@
+
+@import '../override_vars.scss';
+@import '../core.scss';
+
+.breadcrumbs {
+  font-size: $sans-s3;
+  line-height: $lh-single;
+  margin: 0 $grid-3 $grid-3;
+}
+
+.breadcrumbs-item {
+  display: inline-block;
+
+  // Breadcrumb separator
+  &::after {
+    color: $color-lightgray;
+    content: '/';
+    display: inline;
+    font-size: $sans-s6;
+    line-height: $lh-single;
+    padding: 0 $grid-1;
+  }
+}
