@@ -99,7 +99,7 @@ $grid-n5:             #{($grid-base * -5 / $grid-type)}rem;     // 40px
 // widths
 $nav-width:             $grid-base-px * 75;          // 600px;
 $site-max-width:        $grid-base-px * 130;         // 1040px;
-$no-sidebar-max-width:  $grid-base-px * 122;         // 976px;
+$no-sidebar-max-width:  $grid-base-px * 126;         // 976px + 32px outer margin;
 $text-max-width:        36em;
 $text-narrow-width:     17em;
 
