@@ -47,7 +47,7 @@ fractal.components.set('statuses', {
 
 fractal.docs.set('statuses', {
   draft: {
-    label: "draft",
+    label: "Draft",
     description: "Work in progress. There may be gaps in this documentation.",
     color: "#f4b400"
   },
