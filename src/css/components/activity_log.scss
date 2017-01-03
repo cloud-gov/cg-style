@@ -64,11 +64,11 @@
 
 .activity_log-item-error {
   .activity_log-item_timestamp {
-    color: $color-secondary;
+    color: $color-error;
   }
 
   &::before {
-    border-color: $color-secondary; // #e31c3d;
+    border-color: $color-error; // #e31c3d;
   }
 }
 
@@ -80,7 +80,7 @@
 
 .activity_log-item-success {
   &::before {
-    border-color: $color-green; //#2e8540;
+    border-color: $color-ok; //#2e8540;
   }
 
 }

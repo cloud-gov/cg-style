@@ -40,7 +40,7 @@ All currently available main icons are as follows:
 - i-user
 - i-user_researched
 
-## Icon color variances
+## Color variances
 
 - icon-alt
 

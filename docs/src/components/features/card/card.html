@@ -1,20 +1,19 @@
 {% for org in organizations %}
-  <div class="card">
-    <div class="card-header row-center-x">
-      <h2 class="card-title col-fill">
+<div class="panel-row-boxed">
+    <div class="panel-row-is_clickable">
+        <div class="panel-column">
+            <h2 class="card-title-primary">
         {% render '@icon-square--org-medium' %}
         <a href="#">{{ org.name }}</a>
       </h2>
-      <div class="panel-contents-status col-fit row">
-        {% render '@count-status--space'%}
-        {% render '@count-status--app'%}
-      </div>
+        </div>
+        <div class="panel-column">
+            <div class="count_status_container">
+                <div class="panel-contents-status col-fit row">
+                    {% render '@count-status--space'%} {% render '@count-status--app'%}
+                </div>
+            </div>
+        </div>
     </div>
-
-    {% if isOpen %}
-      <div class="card-items">
-        {% render '@overview-row' %}
-      </div>
-    {% endif %}
-  </div>
+</div>
 {% endfor %}

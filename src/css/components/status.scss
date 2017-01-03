@@ -21,12 +21,4 @@
 .status-crashed,
 .status-error {
   color: $color-error;
-
-}
-
-.stat-success {
-  &::before {
-    @extend .status-pill;
-    height: 100%;
-  }
 }

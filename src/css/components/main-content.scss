@@ -11,3 +11,24 @@
     padding: $grid-4;
   }
 }
+
+.main_content {
+  &.content-no_sidebar {
+    margin: 0 auto;
+    max-width: $no-sidebar-max-width;
+    padding: 0 $grid-2;
+  }
+}
+
+.content-no_sidebar {
+  .content {
+    margin: 0;
+    max-width: none;
+    padding: $grid-4 0;
+    width: auto;
+  }
+
+  .grid {
+    max-width: none;
+  }
+}
