@@ -66,6 +66,8 @@ h4 + .panel {
 }
 
 .panel-group {
+  @include clearfix;
+
   margin-bottom: 0.65rem;
 }
 
