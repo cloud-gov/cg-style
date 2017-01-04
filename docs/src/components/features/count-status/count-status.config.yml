@@ -1,5 +1,5 @@
 title: count-status
-status: beta
+status: draft
 default: app
 context:
   entityKind: space
