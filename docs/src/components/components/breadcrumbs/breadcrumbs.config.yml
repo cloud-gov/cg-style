@@ -2,7 +2,7 @@ title: Breadcrumbs
 status: beta
 context:
   breadcrumbs:
-  - text: Overview
+  - text: overview
   - text: my-org
-  - text: my-dev-space
+  - text: my-space
   - text: my-app
