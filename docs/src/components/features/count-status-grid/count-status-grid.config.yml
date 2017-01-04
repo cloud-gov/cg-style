@@ -1,42 +1,47 @@
 title: count-status-grid
 status: prototype
 context:
-  entityKind: space
+  entityType: space
   status: alt
   entityCount: 1
 variants:
   - name: default
   - name: space
     context:
-      entityKind: space
+      entityType: space
       entityCount: 3
+  - name: app-none
+    context:
+      entityType: app
+      entityCount: 0
+      errors: 0
   - name: app-ok
     context:
-      entityKind: app
+      entityType: app
       entityCount: 4
       errors: 0
   - name: app-error
     context:
-      entityKind: app
+      entityType: app
       entityCount: 6
       errors: 2
-  - name: app-error-packed
+  - name: app-error-xxl
     context:
-      entityKind: app
+      entityType: app
       entityCount: 16
       errors: 1
   - name: service-none
     context:
-      entityKind: service
+      entityType: service
       entityCount: 0
       errors: 0
   - name: service-ok
     context:
-      entityKind: service
+      entityType: service
       entityCount: 3
       errors: 0
   - name: service-error
     context:
-      entityKind: service
+      entityType: service
       entityCount: 3
       errors: 2
