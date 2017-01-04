@@ -3,21 +3,40 @@ status: prototype
 context:
   entityKind: space
   status: alt
-  entityCount: '1'
+  entityCount: 1
 variants:
   - name: default
   - name: space
     context:
       entityKind: space
-      status: alt
-      entityCount: '3'
-  - name: app
+      entityCount: 3
+  - name: app-ok
     context:
       entityKind: app
-      status: error
-      entityCount: '6'
-  - name: service
+      entityCount: 4
+      errors: 0
+  - name: app-error
+    context:
+      entityKind: app
+      entityCount: 6
+      errors: 2
+  - name: app-error-packed
+    context:
+      entityKind: app
+      entityCount: 16
+      errors: 1
+  - name: service-none
     context:
       entityKind: service
-      status: alt
-      entityCount: '0'
+      entityCount: 0
+      errors: 0
+  - name: service-ok
+    context:
+      entityKind: service
+      entityCount: 3
+      errors: 0
+  - name: service-error
+    context:
+      entityKind: service
+      entityCount: 3
+      errors: 2

@@ -493,6 +493,42 @@ variants:
       iconKind: service
       iconSize: large
       isBorder: true
+  - name: service-ok-small
+    context:
+      iconStatus: ok
+      iconKind: service
+      iconSize: small
+      isBorder: true
+  - name: service-ok-medium
+    context:
+      iconStatus: ok
+      iconKind: service
+      iconSize: medium
+      isBorder: true
+  - name: service-ok-large
+    context:
+      iconStatus: ok
+      iconKind: service
+      iconSize: large
+      isBorder: true
+  - name: service-ok-small-reverse
+    context:
+      iconStatus: ok
+      iconKind: service
+      iconSize: small
+      isReverse: true
+  - name: service-ok-medium-reverse
+    context:
+      iconStatus: ok
+      iconKind: service
+      iconSize: medium
+      isReverse: true
+  - name: service-ok-large-reverse
+    context:
+      iconStatus: ok
+      iconKind: service
+      iconSize: large
+      isReverse: true
   - name: service-small-reverse
     context:
       iconKind: service
