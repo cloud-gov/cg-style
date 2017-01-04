@@ -20,7 +20,7 @@ $color-heading:     $color-primary-alt-light;
   position: relative;
 
   @include media($medium-screen) {
-    padding: $grid-4 $grid-2;
+    padding: $grid-4 $grid-2 0 $grid-2;
   }
 }
 
