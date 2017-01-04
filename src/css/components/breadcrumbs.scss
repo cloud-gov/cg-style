@@ -8,6 +8,7 @@
   line-height: $lh-single;
   margin-bottom: $grid-4;
   margin-top: -$grid-2;
+  padding-left: 0;
 }
 
 .breadcrumbs-item {
@@ -30,5 +31,4 @@
 .breadcrumbs-item-link {
   border-bottom: 1px solid;
   display: inline-block;
-  padding-bottom: .15em;
 }
