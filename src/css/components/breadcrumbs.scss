@@ -26,8 +26,7 @@
   }
 }
 
-.breadcrumbs-item-link,
-.breadcrumbs-item-link_text {
+.breadcrumbs-item-link {
   @extend %bb1px;
   @extend %inline-block;
   padding-bottom: .15em;
