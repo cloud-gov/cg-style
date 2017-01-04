@@ -3,7 +3,13 @@
 
 .footer {
   @include clearfix;
+  padding-top: 2rem;
   margin-bottom: 4rem;
+
+  &.grid {
+    padding-left: $grid-2;
+    padding-right: $grid-2;
+  }
 }
 
 .footer-no_sidebar {
