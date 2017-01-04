@@ -1,10 +1,8 @@
-<article class="panel">
-  <header class="panel-header row-center-x mxn3 mtn3 mb3 p3 pb6 bb3 bb-cream">
-    <h1 class="panel-title col-fill">Organization overview</h1>
-    <div class="panel-secondary col-fit row-center-x">
-      {% render '@count-status--space'%}
-      {% render '@count-status--app'%}
-      {% render '@count-status--service'%}
+<section class="panel">
+  <header class="panel-header row-center-x">
+    <h1 class="panel-title col-fill">Your organizations</h1>
+    <div class="panel-secondary col-fit">
+      <span class="panel-secondary-description"></span>
     </div>
   </header>
   <div class="panel-content">
@@ -16,10 +14,10 @@
             <span class="panel-secondary-description">panelSecondaryDescription</span>
           </div>
         </header>
-      {% endif %}
+        {% endif %}
       <div class="panel-section-content">
-        {% render '@space-tree-view' %}
+        {% render '@card' %}
       </div>
     </section>
   </div>
-</article>
+</section>
