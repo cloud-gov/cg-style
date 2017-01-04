@@ -3,9 +3,11 @@
 @import '../core.scss';
 
 .breadcrumbs {
-  font-size: $sans-s3;
+  font-size: $sans-s5;
+  font-weight: 400;
   line-height: $lh-single;
-  margin: 0 $grid-3 $grid-3;
+  margin-bottom: $grid-4;
+  margin-top: -$grid-2;
 }
 
 .breadcrumbs-item {
@@ -13,15 +15,19 @@
 
   // Breadcrumb separator
   &::after {
-    color: $color-lightgray;
+    color: $color-mediumgray-trans;
     content: '/';
     display: inline;
     font-size: $sans-s6;
     line-height: $lh-single;
     padding: 0 $grid-1;
+    position: relative;
+    top: 2px;
   }
 }
 
-.breadcrumbs-item-link_text {
-  text-decoration: underline;
+.breadcrumbs-item-link {
+  border-bottom: 1px solid;
+  display: inline-block;
+  padding-bottom: .15em;
 }

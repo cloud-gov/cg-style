@@ -109,6 +109,7 @@ button,
   font-size: $sans-s3;
   font-weight: 500;
   height: $grid-4;
+  margin: $grid-1 $grid-1 $grid-1 0;
   min-width: 6rem;
   padding: 0 $grid-2;
   text-decoration: none;
@@ -190,5 +191,11 @@ input:focus {
     right: 0;
     top: $grid-05;
     width: $grid-4;
+  }
+}
+
+.usa-disclaimer-stage {
+  @include media($medium-screen) {
+    display: block;
   }
 }

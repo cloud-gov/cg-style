@@ -2,14 +2,19 @@
 @import '../core.scss';
 
 .page-header {
-  @extend %row;
-  margin: 0 $grid-3 $grid-3;
+  display: flex;
+  margin: 0 0 $grid-4;
 }
 
 .page-header-title {
-  @extend %col-fill;
+  flex: 1;
+
+  .icon-large {
+    top: -3px;
+  }
 }
 
 .page-header-actions {
-  @extend %col-fit;
+  flex: none;
+  margin-right: -$grid-1;
 }
