@@ -193,3 +193,9 @@ input:focus {
     width: $grid-4;
   }
 }
+
+.usa-disclaimer-stage {
+  @include media($medium-screen) {
+    display: block;
+  }
+}
