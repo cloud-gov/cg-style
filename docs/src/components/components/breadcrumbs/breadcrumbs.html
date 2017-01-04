@@ -1,7 +1,7 @@
-<div class="breadcrumbs">
+<ol class="breadcrumbs">
   {% for breadcrumb in breadcrumbs %}
-  <div class="breadcrumbs-item">
-    <a class="breadcrumbs-item-link" href="#">{% render '@icon-square--' + breadcrumb.icon + '-small' %} {{ breadcrumb.text }}</a>
-  </div>
+  <li class="breadcrumbs-item">
+    <a class="breadcrumbs-item-link" href="#">{{ breadcrumb.text }}</a>
+  </li>
   {% endfor %}
-</div>
+</ol>
