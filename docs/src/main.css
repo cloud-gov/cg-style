@@ -423,3 +423,8 @@ table tbody td {
 .Status-dot {
   border-width: 4px;
 }
+
+.Tree-entityLink .Status {
+  margin: 0 8px 0 0;
+  order: -1;
+}
