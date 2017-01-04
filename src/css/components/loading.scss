@@ -2,7 +2,6 @@
 $z-foreground: 200;
 
 .loading {
-  background: white;
   height: 100%;
   left: 0;
   position: relative;
@@ -20,8 +19,8 @@ $indicator-size: 3.5rem;
 .loading-indicator {
   left: calc(50% - #{$indicator-size});
   position: absolute;
-  top: 10rem;
-  width: 3.5rem;
+  top: calc(50% - #{$indicator-size});
+  width: $indicator-size;
 }
 
 .loading-inactive {

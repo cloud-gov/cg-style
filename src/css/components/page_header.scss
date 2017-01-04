@@ -3,7 +3,7 @@
 
 .page-header {
   @extend %row;
-  margin: 0 $grid-3 $grid-3;
+  margin: 0 0 $grid-4;
 }
 
 .page-header-title {
@@ -12,4 +12,5 @@
 
 .page-header-actions {
   @extend %col-fit;
+  margin-right: -$grid-1;
 }

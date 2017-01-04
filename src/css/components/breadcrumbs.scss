@@ -3,25 +3,31 @@
 @import '../core.scss';
 
 .breadcrumbs {
-  font-size: $sans-s3;
-  line-height: $lh-single;
-  margin: 0 $grid-3 $grid-3;
+  @extend %fw400;
+  @extend %sans-s5;
+  @extend %lh-single;
+  @extend %mb2;
 }
 
 .breadcrumbs-item {
-  display: inline-block;
+  @extend %inline-block;
 
   // Breadcrumb separator
   &::after {
-    color: $color-lightgray;
+    color: $color-mediumgray-trans;
     content: '/';
     display: inline;
     font-size: $sans-s6;
     line-height: $lh-single;
     padding: 0 $grid-1;
+    position: relative;
+    top: 2px;
   }
 }
 
+.breadcrumbs-item-link,
 .breadcrumbs-item-link_text {
-  text-decoration: underline;
+  @extend %bb1px;
+  @extend %inline-block;
+  padding-bottom: .15em;
 }
