@@ -2,11 +2,7 @@ title: Breadcrumbs
 status: beta
 context:
   breadcrumbs:
-  - text: ''
-    icon: home
+  - text: Overview
   - text: my-org
-    icon: org
   - text: my-dev-space
-    icon: space
   - text: my-app
-    icon: app

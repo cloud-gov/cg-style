@@ -6,10 +6,12 @@
   font-size: $sans-s3;
   line-height: $lh-single;
   margin: 0 $grid-3 $grid-3;
+  padding-left: 0;
 }
 
 .breadcrumbs-item {
   display: inline-block;
+  margin-bottom: 0;
 
   // Breadcrumb separator
   &::after {

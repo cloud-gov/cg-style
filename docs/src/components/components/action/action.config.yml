@@ -1,5 +1,5 @@
 title: Action
-status: draft
+status: beta
 collated: true
 variants:
   - name: default
@@ -8,7 +8,7 @@ variants:
       isOutline: false
       isLink: false
       buttonStatus: primary
-      buttonText: default
+      buttonText: primary
   - name: base
     context:
       isDefault: true
@@ -23,13 +23,6 @@ variants:
       isLink: false
       buttonStatus: warning
       buttonText: warning
-  - name: active
-    context:
-      isDefault: true
-      isOutline: false
-      isLink: false
-      buttonStatus: primary
-      buttonText: active
   - name: disabled
     context:
       isDefault: true
@@ -43,7 +36,15 @@ variants:
       isOutline: false
       isLink: false
       buttonStatus: finish
-      buttonText: finish-outline
+      buttonText: finish
+  - name: primary-outline
+    context:
+      isDefault: false
+      isOutline: true
+      isLink: false
+      buttonStatus: primary
+      buttonStyle: outline
+      buttonText: primary-outline
   - name: base-outline
     context:
       isDefault: false
@@ -60,14 +61,6 @@ variants:
       buttonStatus: warning
       buttonStyle: outline
       buttonText: warning-outline
-  - name: active-outline
-    context:
-      isDefault: false
-      isOutline: true
-      isLink: false
-      buttonStatus: primary
-      buttonStyle: outline
-      buttonText: active-outline
   - name: disabled-outline
     context:
       isDefault: false
@@ -84,6 +77,14 @@ variants:
       buttonStatus: finish
       buttonStyle: outline
       buttonText: finish-outline
+  - name: primary-link
+    context:
+      isDefault: false
+      isOutline: false
+      isLink: true
+      buttonStatus: primary
+      buttonStyle: link
+      buttonText: primary-link
   - name: base-link
     context:
       isDefault: false
@@ -100,14 +101,6 @@ variants:
       buttonStatus: warning
       buttonStyle: link
       buttonText: warning-outline
-  - name: active-link
-    context:
-      isDefault: false
-      isOutline: false
-      isLink: true
-      buttonStatus: primary
-      buttonStyle: link
-      buttonText: primary-link
   - name: disabled-link
     context:
       isDefault: false

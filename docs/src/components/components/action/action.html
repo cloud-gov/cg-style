@@ -1,9 +1,9 @@
 {% if isDefault %}
-<button class="action action-{{ buttonStatus }}">{{ buttonText }}</button>
+<button class="usa-button action action-{{ buttonStatus }} usa-button-{{ buttonStatus }}">{{ buttonText }}</button>
 {% endif %}
 
 {% if isOutline %}
-<button class="action usa-button-outline action-{{ buttonStatus }}">{{ buttonText }}</button>
+<button class="usa-button usa-button-outline action action-{{ buttonStatus }}">{{ buttonText }}</button>
 {% endif %}
 
 {% if isLink %}
