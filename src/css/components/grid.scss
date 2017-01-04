@@ -2,11 +2,13 @@
   margin-left: auto;
   margin-right: auto;
   padding: 0 $gutter;
+
   &::after {
     clear: both;
     content: '';
     display: block;
- }
+  }
+
   @include media($large-screen) {
     padding: 0;
   }
