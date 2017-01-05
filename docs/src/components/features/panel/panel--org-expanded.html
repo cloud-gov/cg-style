@@ -1,10 +1,14 @@
 <section class="panel">
-  <header class="panel-header row-center-x mxn3 mtn3 mb3 p3 pb6 bb3 bb-cream">
-    <h1 class="panel-title col-fill">Organization overview</h1>
-    <div class="panel-secondary col-fit row-center-x">
-      {% render '@count-status--space'%}
-      {% render '@count-status--app'%}
-      {% render '@count-status--service'%}
+  <header class="panel-overview-header grid">
+    <div class="grid-width-8">
+      <h1 class="panel-title">Organization overview</h1>
+    </div>
+    <div class="grid-width-4">
+      <div class="count_status_container">
+        {% render '@count-status--space'%}
+        {% render '@count-status--app'%}
+        {% render '@count-status--service'%}
+      </div>
     </div>
   </header>
   <div class="panel-content">
