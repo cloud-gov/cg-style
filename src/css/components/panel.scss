@@ -9,7 +9,6 @@ $panel-padding: $grid-3;
   @include clearfix;
   background-color: $color-white;
   margin-bottom: $grid-4;
-  // TODO make padding and margins consistent
   padding: $grid-3 $grid-3 $grid-4;
 
   table {
@@ -35,14 +34,14 @@ $panel-padding: $grid-3;
   border: none !important; // stylelint-disable-line declaration-no-important
 }
 
-h1 + .panel,
-h2 + .panel,
-h3 + .panel,
-h4 + .panel {
-  margin-top: 2rem;
+.panel-header {
+  align-items: flex-end;
+  display: flex;
+  padding-bottom: $grid-1;
 }
 
 .panel-title {
+  flex: 1 0 0;
   font-size: $sans-s7;
   font-weight: 400;
   line-height: $lh-single;
@@ -50,9 +49,13 @@ h4 + .panel {
 }
 
 .panel-secondary {
+  flex: none;
+  font-family: $font-sans;
   font-size: $sans-s3;
   font-weight: 400;
   line-height: $lh-single;
+  margin: 0 0 $grid-3 0;
+  padding: 0;
 }
 
 .panel-section-title {
@@ -99,12 +102,6 @@ h4 + .panel {
   margin-bottom: $grid-4;
 }
 
-.panel-header {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: $grid-1;
-}
 
 .panel-row-header {
   font-size: $sans-s2;
