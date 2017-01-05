@@ -1,6 +1,10 @@
 
 @import 'override_vars.scss';
 
+.usa-footer-primary-section {
+  background-color: $color-background-light;
+}
+
 .usa-nav-secondary {
   @include media($medium-screen) {
     position: static;
