@@ -1,40 +1,17 @@
 title: Status
 status: beta
 collated: true
-default: started
+default: inactive
 variants:
-  - name: started
-    context:
-      text: "started"
-      modifier: started
-      patternbreak: "<br/>"
-  - name: running
-    context:
-      text: "running"
-      modifier: running
-      patternbreak: "<br/>"
-  - name: ok
-    context:
-      text: "ok"
-      modifier: ok
-      patternbreak: "<br/>"
-  - name: stopped
-    context:
-      text: "stopped"
-      modifier: stopped
-      patternbreak: "<br/>"
   - name: inactive
     context:
-      text: "inactive"
       modifier: inactive
-      patternbreak: "<br/>"
-  - name: crashed
+  - name: ok
     context:
-      text: "crashed"
-      modifier: crashed
-      patternbreak: "<br/>"
+      modifier: ok
+  - name: warning
+    context:
+      modifier: warning
   - name: error
     context:
-      text: "error"
       modifier: error
-      patternbreak: "<br/>"
