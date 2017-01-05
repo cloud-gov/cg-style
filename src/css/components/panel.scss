@@ -56,6 +56,11 @@ $panel-padding: $grid-3;
   line-height: $lh-single;
   margin: 0 0 $grid-3 0;
   padding: 0;
+
+  a {
+    font-weight: 600;
+    text-decoration: underline;
+  }
 }
 
 .panel-section-title {
