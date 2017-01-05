@@ -1,8 +1,14 @@
 title: icon-ui
 status: draft
 collated: true
+default: chevron-left
+
 variants:
-  - name: default
+  - name: chevron-left
+    context:
+      iconKind: chevron
+      iconOrientation: left
+  - name: chevron-right
     context:
       iconKind: chevron
       iconOrientation: right
@@ -14,31 +20,23 @@ variants:
     context:
       iconKind: chevron
       iconOrientation: up
-  - name: chevron-left
-    context:
-      iconKind: chevron
-      iconOrientation: left
-  - name: chevron-right
-    context:
-      iconKind: chevron
-      iconOrientation: right
-  - name: chevron-down-white
-    context:
-      iconKind: chevron
-      iconOrientation: down
-      iconStatus: white
-  - name: chevron-up-white
-    context:
-      iconKind: chevron
-      iconOrientation: up
-      iconStatus: white
   - name: chevron-left-white
     context:
       iconKind: chevron
       iconOrientation: left
-      iconStatus: white
+      iconWhite: true
   - name: chevron-right-white
     context:
       iconKind: chevron
       iconOrientation: right
-      iconStatus: white
+      iconWhite: true
+  - name: chevron-down-white
+    context:
+      iconKind: chevron
+      iconOrientation: down
+      iconWhite: true
+  - name: chevron-up-white
+    context:
+      iconKind: chevron
+      iconOrientation: up
+      iconWhite: true
