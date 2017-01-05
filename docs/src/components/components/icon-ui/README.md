@@ -1,7 +1,7 @@
 # Icon Ui
 
-The **icon ui** component is used to assist the user interface to help the user
-infer actions to take or that will happen within the interface.
+The **icon ui** component is used to assist the user and make the
+components easier to understand. 
 
 ## Use
 
