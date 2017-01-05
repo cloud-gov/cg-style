@@ -17,7 +17,8 @@ This component accepts the following values:
 - **errors** (the number of entities in an error state)
 
 ### Variants shown
-- **default** A space count 
+- **default** A space count of 1
+- **space** A multiple space count
 - **app-none** An app count with no apps
 - **app-ok** An app count with no apps in error
 - **app-error** An app count with some apps in error
