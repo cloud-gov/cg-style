@@ -31,3 +31,65 @@
     }
   }
 }
+
+.col,
+.row {
+  position: relative;
+}
+
+.row {
+  // hack for react containing div requirement
+  // targets unclassed divs
+  > div:not([class]) {
+    align-items: center;
+    display: flex;
+    flex: 1 0 0;
+  }
+
+  &.row-start {
+    > div:not([class]) {
+      align-items: flex-start;
+    }
+  }
+
+  &.row-end {
+    > div:not([class]) {
+      align-items: flex-end;
+    }
+  }
+}
+
+.col-flex-1 {
+  flex: 1 0 0;
+}
+
+.col-flex-2 {
+  flex: 2 0 0;
+}
+
+.col-flex-none {
+  flex: none;
+}
+
+$gutter: $grid-4;
+$gutterOffset: $grid-2; // $gutter / 2
+
+.col-gutters {
+  margin-bottom: -$gutterOffset;
+  margin-top: -$gutterOffset;
+
+  & > .row {
+    padding-bottom: $gutterOffset;
+    padding-top: $gutterOffset;
+  }
+}
+
+.row-gutters {
+  margin-left: -$gutterOffset;
+  margin-right: -$gutterOffset;
+
+  & > .col {
+    padding-left: $gutterOffset;
+    padding-right: $gutterOffset;
+  }
+}
