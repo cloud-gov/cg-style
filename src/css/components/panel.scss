@@ -99,11 +99,14 @@ $panel-padding: $grid-3;
 .panel-row {
   $vertical-padding: $grid-05;
   align-items: center;
+  border-top: 1px solid $color-lightgray;
   display: flex;
+  flex-wrap: wrap;
   font-size: $sans-s4;
   line-height: $lh-cap;
   min-height: $grid-6;
   padding: $vertical-padding 0;
+  width: 100%;
 
   form {
     background-color: $color-background-light;
@@ -115,6 +118,10 @@ $panel-padding: $grid-3;
 
   .panel-actions {
     margin-top: 0;
+  }
+
+  &:last-child {
+    border-bottom: 1px solid $color-lightgray;
   }
 }
 

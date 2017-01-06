@@ -38,6 +38,8 @@
 }
 
 .row {
+  flex-wrap: wrap;
+
   // hack for react containing div requirement
   // targets unclassed divs
   > div:not([class]) {
@@ -55,6 +57,20 @@
   &.row-end {
     > div:not([class]) {
       align-items: flex-end;
+    }
+  }
+
+  &.tree-level-one {
+    border-color: $color-textblack;
+    width: 100%;
+  }
+
+  &.tree-level-two {
+    margin-left: $grid-4;
+    width: 100%;
+
+    .panel-row:last-child {
+      border-bottom: none;
     }
   }
 }
