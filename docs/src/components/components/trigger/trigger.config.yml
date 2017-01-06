@@ -1,12 +1,9 @@
 title: trigger
 status: prototype
 collated: true
+default: base
 variants:
-  - name: default
-    context:
-      isDefault: true
-      buttonStatus: primary
-      buttonText: default
+
   - name: base
     context:
       isDefault: true
@@ -31,7 +28,7 @@ variants:
     context:
       isDefault: true
       buttonStatus: finish
-      buttonText: finish-outline
+      buttonText: finish
   - name: base-outline
     context:
       isOutline: true
