@@ -172,18 +172,6 @@ $panel-padding: $grid-3;
   padding-left: $grid-1;
 }
 
-.panel-column-less {
-  flex-grow: 0;
-  flex-shrink: 1;
-  min-width: 25%;
-}
-
-// TODO rename `-less` to something else
-.panel-column-shrink {
-  flex-grow: 0;
-  margin-right: $grid-4;
-}
-
 .panel-new {
   background-color: $color-white;
   margin-top: $grid-4;
