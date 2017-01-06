@@ -166,12 +166,6 @@ $panel-padding: $grid-3;
   padding: $panel-padding;
 }
 
-.panel-form-replace {
-  &.panel-form-replace {
-    margin: -1rem 0;
-  }
-}
-
 .panel-block {
   padding-bottom: calc(1.5rem / 2);
   padding-left: 0;
@@ -232,6 +226,18 @@ $panel-padding: $grid-3;
 }
 
 // a couple random panel styles
+
+.route-form-actions {
+
+  .panel-actions {
+    display: block;
+    text-align: left;
+
+    button:first-child {
+      margin-left: 0;
+      }
+    }
+}
 
 .route-link {
   font-size: $sans-s4;
