@@ -125,27 +125,6 @@ $panel-padding: $grid-3;
   }
 }
 
-.card {
-  background-color: $color-white;
-  border: 1px solid $color-textblack;
-  border-radius: $rounded;
-  margin-bottom: $grid-2;
-  padding: 1.4rem $panel-padding;
-
-  > .panel-row-is_clickable {
-    display: flex;
-  }
-
-  &:last-child {
-    margin-bottom: 0;
-    padding-bottom: $panel-padding;
-  }
-
-  .panel-row:last-child {
-    padding-bottom: 0;
-  }
-}
-
 .panel-row-bordered {
   border-top: 1px solid $color-lightgray;
 
