@@ -100,6 +100,8 @@ $panel-padding: $grid-3;
   $vertical-padding: $grid-05;
   align-items: center;
   display: flex;
+  font-size: $sans-s4;
+  line-height: $lh-cap;
   min-height: $grid-6;
   padding: $vertical-padding 0;
 
@@ -222,6 +224,13 @@ $panel-padding: $grid-3;
   padding: $grid-3 $grid-3 $grid-4;
 }
 
+// a couple random panel styles
+
 .route-link {
   font-size: $sans-s4;
+}
+
+.instance-cost {
+  font-size: $sans-s3;
+  font-weight: 500;
 }
