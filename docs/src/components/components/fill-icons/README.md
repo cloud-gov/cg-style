@@ -69,3 +69,4 @@ icon has to be made up of only fills and likely cannot include any white section
 that overlap with other sections. Due to this limitation, there are currently
 some fill icons in the cloud.gov system that are not yet optimized to be colored,
 such as the `org` icon.
+
