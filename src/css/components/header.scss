@@ -22,6 +22,14 @@
   }
 }
 
+.header-wide {
+  .header-wrap {
+    max-width: 1224px;
+    padding-left: $grid-4;
+    padding-right: $grid-4;
+  }
+}
+
 .header-title {
   float: left;
   margin-bottom: .6rem;
