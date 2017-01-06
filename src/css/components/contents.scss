@@ -25,3 +25,21 @@
 .contents-tree {
   border-bottom: 1px solid $color-textblack;
 }
+
+.contents-tree-column {
+  min-width: 144px;
+  padding-left: $grid-8;
+  text-align: right;
+
+  .subtext {
+    line-height: $lh-single;
+  }
+}
+
+.contents-tree-value {
+  display: block;
+  font-size: $sans-s5;
+  font-weight: 400;
+  line-height: $lh-single;
+  padding-bottom: $grid-05;
+}
