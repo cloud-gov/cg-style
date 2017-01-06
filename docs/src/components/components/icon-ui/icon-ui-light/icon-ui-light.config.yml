@@ -1,25 +1,10 @@
-title: icon-ui
+title: Icon Ui Light
 status: beta
 collated: true
-default: chevron-left
+default: chevron-left-white
+preview: '@preview-bg-dark'
 
 variants:
-  - name: chevron-left
-    context:
-      iconKind: chevron
-      iconOrientation: left
-  - name: chevron-right
-    context:
-      iconKind: chevron
-      iconOrientation: right
-  - name: chevron-down
-    context:
-      iconKind: chevron
-      iconOrientation: down
-  - name: chevron-up
-    context:
-      iconKind: chevron
-      iconOrientation: up
   - name: chevron-left-white
     context:
       iconKind: chevron

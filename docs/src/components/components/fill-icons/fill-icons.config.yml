@@ -18,24 +18,6 @@ variants:
       iconKind: org
       iconSize: large
       isBorder: false
-  - name: org-white-small
-    context:
-      iconStatus: white
-      iconKind: org
-      iconSize: small
-      isBorder: false
-  - name: org-white-medium
-    context:
-      iconStatus: white
-      iconKind: org
-      iconSize: medium
-      isBorder: false
-  - name: org-white-large
-    context:
-      iconStatus: white
-      iconKind: org
-      iconSize: large
-      isBorder: false
   - name: org-active-small
     context:
       iconStatus: active
