@@ -28,16 +28,9 @@ $panel-padding: $grid-3;
 
 }
 
-// TODO this is a hack, panel-row borders need to be reconciled, panel-row vs
-// panel-row-bordered
-.panel-row-clean {
-  border: none !important; // stylelint-disable-line declaration-no-important
-}
-
 .panel-header {
   align-items: flex-end;
   display: flex;
-  padding-bottom: $grid-1;
 }
 
 .panel-title {
@@ -45,7 +38,7 @@ $panel-padding: $grid-3;
   font-size: $sans-s7;
   font-weight: 400;
   line-height: $lh-single;
-  margin-bottom: $grid-3;
+  margin-bottom: $grid-7;
 }
 
 .panel-secondary {
@@ -54,7 +47,7 @@ $panel-padding: $grid-3;
   font-size: $sans-s3;
   font-weight: 400;
   line-height: $lh-single;
-  margin: 0 0 $grid-3 0;
+  margin: 0 0 $grid-7 0;
   padding: 0;
 
   a {
@@ -76,37 +69,22 @@ $panel-padding: $grid-3;
 .panel-group {
   @include clearfix;
 
-  margin-bottom: 0.65rem;
-
   & + .panel-group {
     margin-top: $grid-4;
   }
 }
 
 .panel-actions {
+  margin-top: $grid-4;
+
   > * {
-    margin-right: 2rem;
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-
-  .action {
-    margin-left: 0;
-    margin-right: 0;
-
-    & + .action {
-      margin-left: .5rem;
-    }
+    margin-left: $grid-2;
   }
 }
 
 .panel-actions-right {
   float: right;
-  margin-bottom: $grid-4;
 }
-
 
 .panel-row-header {
   font-size: $sans-s2;
@@ -116,15 +94,9 @@ $panel-padding: $grid-3;
 
 .panel-row {
   $vertical-padding: $grid-105;
-  border-top: 1px solid $color-textblack;
+  align-items: center;
+  display: flex;
   padding: $vertical-padding 0;
-
-  // TODO react problem can't return just rows without wrapped div.
-  > div {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-  }
 
   form {
     background-color: $color-background-light;
@@ -134,18 +106,9 @@ $panel-padding: $grid-3;
     width: 100%;
   }
 
-  > .panel-row {
-    border-top: 1px solid $color-lightgray;
-    display: block;
-    margin-bottom: $vertical-padding;
-    margin-left: $grid-4;
-    margin-top: $vertical-padding;
+  &:last-child {
+    margin-bottom: 0;
     padding-bottom: 0;
-
-    &:last-child {
-      margin-bottom: 0;
-      padding-bottom: 0;
-    }
   }
 }
 
@@ -167,6 +130,46 @@ $panel-padding: $grid-3;
 
   .panel-row:last-child {
     padding-bottom: 0;
+  }
+}
+
+.col,
+.row {
+  position: relative;
+}
+
+.col-flex-1 {
+  flex: 1 0 0;
+}
+
+.col-flex-2 {
+  flex: 2 0 0;
+}
+
+.col-flex-none {
+  flex: none;
+}
+
+$gutter: $grid-4;
+$gutterOffset: $grid-2; // $gutter / 2
+
+.col-gutters {
+  margin-bottom: -$gutterOffset;
+  margin-top: -$gutterOffset;
+
+  & > .row {
+    padding-bottom: $gutterOffset;
+    padding-top: $gutterOffset;
+  }
+}
+
+.row-gutters {
+  margin-left: -$gutterOffset;
+  margin-right: -$gutterOffset;
+
+  & > .col {
+    padding-left: $gutterOffset;
+    padding-right: $gutterOffset;
   }
 }
 
