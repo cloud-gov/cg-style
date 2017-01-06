@@ -1,12 +1,8 @@
-title: icon-square
+title: Icon Square
 status: beta
 collated: true
+default: org-small
 variants:
-  - name: default
-    context:
-      iconKind: org
-      iconSize: small
-      isBorder: false
   - name: org-small
     context:
       iconKind: org

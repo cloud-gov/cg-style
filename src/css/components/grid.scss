@@ -1,4 +1,5 @@
 .grid {
+  @include outer-container;
   margin-left: auto;
   margin-right: auto;
   padding: 0 $gutter;

@@ -1,8 +1,9 @@
 title: Action
 status: beta
 collated: true
+default: primary
 variants:
-  - name: default
+  - name: primary
     context:
       isDefault: true
       isOutline: false
