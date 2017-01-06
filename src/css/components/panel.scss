@@ -75,7 +75,7 @@ $panel-padding: $grid-3;
 }
 
 .panel-actions {
-  margin-top: $grid-6;
+  margin-top: $grid-4;
 
   .action {
     margin: 0 $grid-2 0 0;
@@ -220,4 +220,8 @@ $panel-padding: $grid-3;
   border-bottom: $grid-05 solid $color-cream;
   margin: (-$grid-3) (-$grid-3) $grid-3 (-$grid-3);
   padding: $grid-3 $grid-3 $grid-4;
+}
+
+.route-link {
+  font-size: $sans-s4;
 }
