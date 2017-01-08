@@ -1,13 +1,31 @@
 
 $z-foreground: 200;
 
-.loading {
-  height: 33.3333333%;
-  left: 0;
+main {
+  min-height: calc(100% - 20rem);
   position: relative;
+}
+
+.loading {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
   top: 0;
   width: 100%;
   z-index: $z-foreground;
+}
+
+.loading-container {
+  display: block;
+  height: $grid-9;
+  position: relative;
+  width: 100%;
+
+  & + .loading-container {
+    display: none;
+  }
 }
 
 .loading-relative {
