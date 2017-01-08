@@ -22,8 +22,48 @@
   color: $color-mediumgray;
 }
 
-.contents-tree {
-  border-bottom: 1px solid $color-textblack;
+.contents-tree-app,
+.contents-tree-space,
+.contents-tree-org {
+  width: 100%;
+}
+
+.contents-tree-space {
+  > .panel-row {
+    border-top: 1px solid $color-textblack;
+  }
+
+  .contents-tree-app {
+    margin-left: $grid-4;
+
+    &:last-child {
+      .panel-row:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+
+  &:last-child {
+    border-bottom: 1px solid;
+  }
+}
+
+.card {
+  .contents-tree-space:last-child {
+    border: none;
+  }
+}
+
+.contents-tree-app {
+  .panel-row:last-child {
+    border-bottom: none;
+  }
+
+  &:last-child {
+    .panel-row:last-child {
+      border-bottom: 1px solid $color-lightgray;
+    }
+  }
 }
 
 .contents-tree-column {
