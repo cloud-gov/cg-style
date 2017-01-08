@@ -29,7 +29,7 @@
 }
 
 .contents-tree-space {
-  > .panel-row {
+  > .panel-entry {
     border-top: 1px solid $color-textblack;
   }
 
@@ -37,7 +37,7 @@
     margin-left: $grid-4;
 
     &:last-child {
-      .panel-row:last-child {
+      .panel-entry:last-child {
         border-bottom: none;
       }
     }
@@ -55,12 +55,12 @@
 }
 
 .contents-tree-app {
-  .panel-row:last-child {
+  .panel-entry:last-child {
     border-bottom: none;
   }
 
   &:last-child {
-    .panel-row:last-child {
+    .panel-entry:last-child {
       border-bottom: 1px solid $color-lightgray;
     }
   }

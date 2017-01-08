@@ -96,7 +96,7 @@ $panel-padding: $grid-3;
   margin-bottom: $grid-1;
 }
 
-.panel-row {
+.panel-entry {
   $vertical-padding: $grid-05;
   align-items: center;
   border-top: 1px solid $color-lightgray;
@@ -123,20 +123,12 @@ $panel-padding: $grid-3;
   &:last-child {
     border-bottom: 1px solid $color-lightgray;
   }
-}
 
-.panel-row-bordered {
-  border-top: 1px solid $color-lightgray;
-
-  &:last-child {
-    border-bottom: 1px solid $color-lightgray;
-    margin-bottom: 0;
+  > div:not([class]) {
+    align-items: center;
+    display: flex;
+    flex: 1 0 0;
   }
-
-}
-
-.panel-row-space {
-  margin-top: $grid-2;
 }
 
 .panel-row-is_clickable {
@@ -150,7 +142,6 @@ $panel-padding: $grid-3;
   padding-left: 0;
   padding-right: 0;
   padding-top: calc(1.5rem / 2);
-
 }
 
 .panel-column {
