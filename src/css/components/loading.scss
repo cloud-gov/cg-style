@@ -31,9 +31,9 @@ $z-foreground: 200;
   height: 3rem;
   left: calc(50% - 7.5rem);
   position: absolute;
+  text-align: center;
   top: calc(50% - 1.5rem);
   width: 15rem;
-  text-align: center;
 
   .loading-indicator {
     display: block;
@@ -62,9 +62,7 @@ $z-foreground: 200;
 
 .loading-inline-text {
   width: 120px;
-
 }
-
 
 .loading-inactive {
   display: none;
