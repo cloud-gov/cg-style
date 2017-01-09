@@ -27,11 +27,31 @@ $z-foreground: 200;
   top: auto;
 }
 
-.loading-indicator {
-  left: calc(50% - 30px);
+.loading-information {
+  height: 3rem;
+  left: calc(50% - 7.5rem);
   position: absolute;
-  top: calc(50% - 6px);
-  width: 60px;
+  top: calc(50% - 1.5rem);
+  width: 15rem;
+  text-align: center;
+
+  .loading-indicator {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 7.5rem;
+  }
+
+  .loading-text {
+    color: $color-primary;
+    font-size: $sans-s4;
+    font-weight: 600;
+    margin-top: $grid-2;
+    text-align: center;
+  }
+}
+
+.loading-indicator {
 
   .loading-inline-dot {
     height: $grid-105;
@@ -39,6 +59,12 @@ $z-foreground: 200;
     width: $grid-105;
   }
 }
+
+.loading-inline-text {
+  width: 120px;
+
+}
+
 
 .loading-inactive {
   display: none;
