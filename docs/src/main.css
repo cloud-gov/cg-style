@@ -271,7 +271,6 @@ body {
   overflow: hidden;
   background-color: #d3d3d3;
   height: 16px;
-  width: 100%;
   border-radius: 2px;
   vertical-align: middle;
 }
@@ -280,7 +279,6 @@ body {
   overflow: hidden;
   background-color: #d3d3d3;
   height: 32px;
-  width: 100%;
   border-radius: 2px;
   vertical-align: middle;
   font-size: 13px;
@@ -293,7 +291,6 @@ body {
   overflow: hidden;
   background-color: #d3d3d3;
   height: 16px;
-  width: 100%;
   border-radius: 2px;
   vertical-align: middle;
   font-size: 13px;
@@ -306,7 +303,6 @@ body {
   overflow: hidden;
   background-color: #d3d3d3;
   height: 8px;
-  width: 100%;
   border-radius: 2px;
   vertical-align: middle;
 }

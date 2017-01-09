@@ -39,6 +39,7 @@
 }
 
 .row {
+  align-items: center;
   flex-wrap: wrap;
 
   // hack for react containing div requirement
