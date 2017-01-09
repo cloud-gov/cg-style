@@ -1,3 +1,0 @@
-# Space Tree View
-
-Needs documentation...
