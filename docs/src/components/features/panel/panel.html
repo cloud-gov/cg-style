@@ -1,37 +1,40 @@
-<section class="panel">
-    <header class="panel-header row-center-x">
+<!-- `div` should be `section` -->
+<div class="panel">
+
+  <!-- `div` should be `header` -->
+  <div class="panel-header">
     <h1 class="panel-title">Panel title</h1>
+    <p class="panel-helpertext">Helper text</p>
+  </div>
+
+  <!-- `div` should be `section` -->
+  <div class="panel-content">
+
+    <!-- `div` should be `section` -->
+    <div class="panel-group">
+      <header class="panel-group-header">
+        <h2 class="panel-row-header">Panel row header</h2>
       </header>
-    <div class="panel-rows">
-        <section class="panel-group">
-            <header class="panel-header">
-                <h2 class="panel-row-header">Group header</h2>
-                <span>Secondary information</span>
-            </header>
-            <div class="panel-row">
-                <div class="panel-column">
-                    <span>Cloud.gov</span>
-                </div>
-                <div class="panel-column">
-                    <span>Cloud.gov</span>
-                </div>
-                <div class="panel-column">
-                    <span>Cloud.gov</span>
-                </div>
-            </div>
-            <div class="panel-row">
-                <div class="panel-column">
-                    <span>Cloud.gov</span>
-                </div>
-            </div>
-        </section>
-        <section class="panel-group">
-            <div class="panel-row">
-                <div class="panel-controls">
-                    <button class="action action-finish" type="submit">OK</button>
-                    <button class="action action-primary usa-button-outline" type="button">Cancel</button>
-                </div>
-            </div>
-        </section>
+
+      <div class="panel-entry">
+        <div>
+          <span class="col col-flex-1">
+            <span>panel entry</span>
+          </span>
+        </div>
+      </div>
+      <div class="panel-entry">
+        <div>
+          <span class="col col-flex-1">
+            <span>panel entry</span>
+          </span>
+        </div>
+      </div>
     </div>
-</section>
+
+    <div class="panel-actions panel-actions-right">
+      <button class="action action-primary usa-button-outline" type="button">Cancel</button>
+      <button class="action action-finish" type="submit">OK</button>
+    </div>
+  </div> <!-- .panel-content -->
+</div> <!-- .panel -->
