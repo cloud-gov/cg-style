@@ -24,6 +24,10 @@ code {
   background: #f5f5f3;
 }
 
+.Browser-panel {
+  background: #fff;
+}
+
 .Tree-title,
 .Tree-collectionLabel {
   color: #333;

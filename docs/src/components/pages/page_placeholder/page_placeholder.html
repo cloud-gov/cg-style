@@ -3,14 +3,14 @@
 <div class="card"> <!-- card--quicklook -->
   <div class="card-header row-center-x"> <!-- card-header -->
     <h2 class="card-title col-fill">
-      {% render '@icon-square--org-medium' %}
+      {% render '@fill-icons--org-medium' %}
       <a href="#">{{ org.name }}</a>
     </h2>
     <div class="panel-contents-status col-fit row"> <!-- card-header-status -->
 
       <div class="count_status count_status-none col-fit row-center-x"> <!-- card-header-status-entity -->
         <div class="count_status-icon col-fit">
-          {% render '@icon-square--space-medium' %}
+          {% render '@fill-icons--space-medium' %}
         </div>
         <div class="count_status-text col-fill">
           {% if org.spaces[0].name %}
@@ -25,7 +25,7 @@
 
         {% if org.apps[0].name %}
         <div class="count_status-icon col-fit">
-          {% render '@icon-square--app-ok-medium' %}
+          {% render '@fill-icons--app-ok-medium' %}
         </div>
         <div class="count_status-text col-fill">
           {% if org.apps[0].name %}
@@ -36,7 +36,7 @@
         </div>
         {% else %}
         <div class="count_status-icon col-fit">
-          {% render '@icon-square--app-disabled-medium' %}
+          {% render '@fill-icons--app-disabled-medium' %}
         </div>
         <div class="count_status-text col-fill">
             <strong>0</strong> apps

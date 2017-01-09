@@ -66,7 +66,4 @@ the svg code for the icon must:
 
 In order to make the fill icons correctly color based on their color class, the
 icon has to be made up of only fills and likely cannot include any white sections
-that overlap with other sections. Due to this limitation, there are currently
-some fill icons in the cloud.gov system that are not yet optimized to be colored,
-such as the `org` icon.
-
+that overlap with other sections.
