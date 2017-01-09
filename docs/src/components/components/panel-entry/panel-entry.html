@@ -1,0 +1,23 @@
+<div class="panel-entry">
+  <div class="col col-flex-1">
+    <span class="fw600">Panel entry content</span>
+  </div>
+  <div class="col col-flex-0">
+    <div class="panel-actions panel-actions-right">
+      {% render '@action' %}
+    </div>
+  </div>
+</div>
+
+<div class="panel-entry">
+  <div class="col col-flex-1">
+    <div class="fw600">Panel entry content</div>
+    <div class="pt2px">Subhed</div>
+  </div>
+  <div class="col col-flex-0">
+    <div class="panel-actions panel-actions-right">
+      {% render '@action--base-outline' %}
+      {% render '@action--warning' %}
+    </div>
+  </div>
+</div>
