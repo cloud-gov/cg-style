@@ -6,12 +6,24 @@
     <div>
       <span class="panel-column">
         <h3 class="contents-secondary">
-          <span>{% render '@icon-square--app-ok-medium' %}</span>
+          {% if status == 'ok' %}
+            <span>{% render '@icon-square--app-ok-medium' %}</span>
+          {% elseif status == "error" %}
+            <span>{% render '@icon-square--app-error-medium' %}</span>
+          {% else %}
+            <span>{% render '@icon-square--app-medium' %}</span>
+          {% endif %}
           <span><a href="#">appName</a>  </span>
         </h3>
       </span>
       <span class="col col-flex-0 contents-tree-column">
-        {% render '@status--ok' %}
+        {% if status == 'ok' %}
+          {% render '@status--ok' %}
+        {% elseif status == "error" %}
+          {% render '@status--error' %}
+        {% else %}
+          {% render '@status--inactive' %}
+        {% endif %}
       </span>
     </div>
   </div>
