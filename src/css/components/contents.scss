@@ -1,5 +1,6 @@
 @import '../override_vars.scss';
 @import '../core.scss';
+@import 'grid.scss';
 
 .contents-primary,
 .contents-secondary {
@@ -67,6 +68,8 @@
 }
 
 .contents-tree-column {
+  @extend .col;
+  @extend .col-flex-0;
   min-width: 144px;
   padding-left: $grid-8;
   text-align: right;
