@@ -19,14 +19,6 @@ variants:
       buttonStatus: base
       buttonStyle: link
       buttonText: base-link
-  - name: warning-link
-    context:
-      isDefault: false
-      isOutline: false
-      isLink: true
-      buttonStatus: warning
-      buttonStyle: link
-      buttonText: warning-outline
   - name: disabled-link
     context:
       isDefault: false
@@ -35,6 +27,14 @@ variants:
       buttonStatus: cautious
       buttonStyle: link
       buttonText: disabled-link
+  - name: warning-link
+    context:
+      isDefault: false
+      isOutline: false
+      isLink: true
+      buttonStatus: warning
+      buttonStyle: link
+      buttonText: warning-outline
   - name: finish-link
     context:
       isDefault: false

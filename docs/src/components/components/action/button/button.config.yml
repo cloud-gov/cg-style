@@ -17,13 +17,6 @@ variants:
       isLink: false
       buttonStatus: base
       buttonText: base
-  - name: warning
-    context:
-      isDefault: true
-      isOutline: false
-      isLink: false
-      buttonStatus: warning
-      buttonText: warning
   - name: disabled
     context:
       isDefault: true
@@ -31,6 +24,13 @@ variants:
       isLink: false
       buttonStatus: cautious
       buttonText: disabled
+  - name: warning
+    context:
+      isDefault: true
+      isOutline: false
+      isLink: false
+      buttonStatus: warning
+      buttonText: warning
   - name: finish
     context:
       isDefault: true
@@ -38,4 +38,3 @@ variants:
       isLink: false
       buttonStatus: finish
       buttonText: finish
-      

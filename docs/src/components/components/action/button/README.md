@@ -15,8 +15,8 @@ based on status.
 
 | Class   | Description |
 | ------   | -----------|
-| `action-primary usa-button-primary` | When to use |
-| `action-base usa-button-base`       | When to use |
-| `action-warning usa-button-warning`  | When to use |
-| `action-cautious usa-button-cautious`    | When to use |
-| `action-finish usa-button-finish`    | When to use |
+| `action-primary usa-button-primary` | Use for the most important action the user can take in that section of the page. |
+| `action-base usa-button-base`       | Use for standard actions the user can take and options like cancel. |
+| `action-cautious usa-button-base`       | Use for actions that are currently disabled for the user. |
+| `action-warning usa-button-warning`  | Use for actions that can have critical impact on the user like delete.|
+| `action-finish usa-button-finish`    | Use for actions that complete a process for the user. |
