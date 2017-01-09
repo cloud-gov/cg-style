@@ -12,7 +12,7 @@ As a best practice, control padding and margins within a `Row` or `Col` with the
 | Property | Values | Description |
 |----------|--------|-------------|
 | **gutters** | boolean | `Col` child components will get 32px horizontal gutter |
-| **valign** | `top`, `center`, `bottom` | the vertical alignment of elements in the `Row` |
+| **valign** | `top`, `center`, `bottom`, `stretch` | the vertical alignment of elements in the `Row` |
 
 ### Defaults
 
