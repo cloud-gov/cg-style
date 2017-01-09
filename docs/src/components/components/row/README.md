@@ -1,13 +1,13 @@
 # Row and Col
 
-Rows `<Row>` and columns `<Col>` are the fundamental structural components used to build more complicated components.
+**Rows** `<Row>` and **columns** `<Col>` are the fundamental structural components used to build more complicated components.
 
-**Rows** are parent units to **Columns**
+Rows are parent units to Columns. `Row`s tend to be horizontal elements, with `Col`s as subsections.
 
 As a best practice, control padding and margins within a `Row` or `Col` with the child elements, not with the `Row` or `Col`.
 
 ### Props
-Row accepts the following properties
+`Row` accepts the following properties
 
 | Property | Values | Description |
 |----------|--------|-------------|
