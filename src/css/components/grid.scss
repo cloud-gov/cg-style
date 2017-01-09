@@ -50,15 +50,21 @@
     flex: 1 0 0;
   }
 
-  &.row-start {
+  &.row-top {
     > div:not([class]) {
       align-items: flex-start;
     }
   }
 
-  &.row-end {
+  &.row-bottom {
     > div:not([class]) {
       align-items: flex-end;
+    }
+  }
+
+  &.row-stretch {
+    > div:not([class]) {
+      align-items: stretch;
     }
   }
 }
@@ -105,4 +111,8 @@ $gutter-offset: $grid-2; // $gutter / 2
 
 .row.row-bottom {
   align-items: flex-end;
+}
+
+.row.row-stretch {
+  align-items: stretch;
 }
