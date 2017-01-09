@@ -1,0 +1,16 @@
+<div class="panel">
+  <div class="grid panel-overview-header">
+    <div class="grid-width-6">
+      <h1 class="panel-title">Organization overview</h1></div>
+    <div class="grid-width-6">
+      <div class="count_status_container">
+        {% render '@count-status--space'%}
+        {% render '@count-status--app'%}
+        {% render '@count-status--service'%}
+      </div>
+    </div>
+  </div>
+  <div class="panel-content">
+    {% render '@contents-tree-space' %}
+  </div>
+</div>
