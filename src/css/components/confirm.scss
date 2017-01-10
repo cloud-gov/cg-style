@@ -13,7 +13,7 @@
   clear: left;
   display: block;
   float: left;
-  padding: 1rem;
+  padding: $grid-2;
 }
 
 .confirm-over {
@@ -21,8 +21,7 @@
   background-color: $color-lightestgray;
   border: 0;
   justify-content: space-between;
-  padding: 0.5rem;
-
+  padding: $grid-2;
 }
 
 .confirm-block {
