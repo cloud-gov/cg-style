@@ -13,7 +13,7 @@ const customTheme = mandelbrot({
   ]
 });
 
-fractal.set('project.title', 'cloud.gov design system');
+fractal.set('project.title', 'cloud.gov pattern library');
 
 fractal.components.set('path', __dirname + '/docs/src/components');
 fractal.components.set('default.preview', '@preview');
