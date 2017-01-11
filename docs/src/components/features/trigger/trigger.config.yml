@@ -1,9 +1,8 @@
-title: trigger
+title: Trigger
 status: prototype
 collated: true
 default: base
 variants:
-
   - name: base
     context:
       isDefault: true
