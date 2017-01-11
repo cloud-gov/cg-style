@@ -26,7 +26,8 @@ $panel-padding: $grid-3;
     font-weight: 900;
     margin-bottom: $grid-1;
   }
-// TODO remove route form after abstracting into a component
+
+  // TODO remove route form after abstracting into a component
   .route-form {
     background-color: $color-lightestgray;
 
