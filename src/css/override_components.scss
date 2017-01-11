@@ -136,7 +136,8 @@ button,
 } /* stylelint-enable */
 
 .usa-button-disabled {
-  color: $color-textblack;
+  color: $color-white;
+  background: $color-lightgray;
 }
 
 a:focus,
