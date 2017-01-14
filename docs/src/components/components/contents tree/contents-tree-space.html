@@ -1,0 +1,22 @@
+{# ContentsTreeSpace #}
+<div class="contents-tree-space">
+
+    {# PanelEntry #}
+    <div class="panel-entry">
+      <h3 class="contents-primary">
+        <span>{% render '@fill-icons--space-medium' %}</span>
+        <a href="#">spaceName</a>
+      </h3>
+    </div>
+    {# /PanelEntry #}
+
+    {# Row #}
+    <div class="row">
+      {% render '@contents-tree-app--ok' %}
+      {% render '@contents-tree-app--inactive' %}
+      {% render '@contents-tree-app--error' %}
+    </div>
+    {# /Row #}
+
+</div>
+{# /ContentsTreeSpace#}

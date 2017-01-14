@@ -8,5 +8,6 @@ body {
 
 main {
   background-color: transparent;
+  min-height: calc(100% - 22rem);
   position: relative;
 }

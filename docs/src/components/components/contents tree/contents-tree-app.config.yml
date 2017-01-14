@@ -1,0 +1,15 @@
+title: ContentsTreeApp (Contents tree / app contents)
+status: prototype
+
+collated: true
+default: ok
+variants:
+  - name: ok
+    context:
+      status: ok
+  - name: error
+    context:
+      status: error
+  - name: inactive
+    context:
+      status: inactive

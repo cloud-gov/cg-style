@@ -32,3 +32,87 @@
     }
   }
 }
+
+.col,
+.row {
+  position: relative;
+}
+
+.row {
+  align-items: center;
+  flex-wrap: wrap;
+
+  // hack for react containing div requirement
+  // targets unclassed divs
+  > div:not([class]) {
+    align-items: center;
+    display: flex;
+    flex: 1 0 0;
+  }
+
+  &.row-top {
+    > div:not([class]) {
+      align-items: flex-start;
+    }
+  }
+
+  &.row-bottom {
+    > div:not([class]) {
+      align-items: flex-end;
+    }
+  }
+
+  &.row-stretch {
+    > div:not([class]) {
+      align-items: stretch;
+    }
+  }
+}
+
+.col-flex-1 {
+  flex: 1 0 0;
+}
+
+.col-flex-2 {
+  flex: 2 0 0;
+}
+
+.col-flex-none,
+.col-flex-0 {
+  flex: none;
+}
+
+$gutter: $grid-4;
+$gutter-offset: $grid-2; // $gutter / 2
+
+.col-gutters {
+  margin-bottom: -$gutter-offset;
+  margin-top: -$gutter-offset;
+
+  & > .row {
+    padding-bottom: $gutter-offset;
+    padding-top: $gutter-offset;
+  }
+}
+
+.row-gutters {
+  margin-left: -$gutter-offset;
+  margin-right: -$gutter-offset;
+
+  & > .col {
+    padding-left: $gutter-offset;
+    padding-right: $gutter-offset;
+  }
+}
+
+.row.row-top {
+  align-items: flex-start;
+}
+
+.row.row-bottom {
+  align-items: flex-end;
+}
+
+.row.row-stretch {
+  align-items: stretch;
+}

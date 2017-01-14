@@ -12,7 +12,7 @@ $input-font-size: $sans-s2;
   border-left-width: 0;
   display: flex;
   justify-content: space-between;
-  min-height: 2.5rem; // Leave some space for input element when editing a stat
+  min-height: $grid-4;
   position: relative;
   width: 100%;
 
@@ -57,21 +57,38 @@ h5 + .stat {
 
 .stat-info {
   font-size: $sans-s2;
-  font-weight: 600;
+  font-weight: 500;
   margin-right: $grid-1;
 }
 
 .stat-primary {
   font-size: $sans-s6;
+  font-weight: 400;
   white-space: nowrap;
 }
 
 .stat-single_box {
   $v-space: $grid-2;
-  background-color: $color-lightestgray;
-  margin: -$v-space 1.8rem;
-  padding: $v-space 0;
+  background-color: $color-cream;
+  border-radius: $rounded;
+  bottom: 0;
+  left: calc(50% - #{$grid-8});
+  margin: -$v-space 0;
+  padding: $v-space;
+  position: absolute;
+  right: calc(50% - #{$grid-8});
   text-align: center;
+  top: 0;
+
+  .subtext {
+    bottom: $v-space;
+    font-size: $sans-s3;
+    font-weight: 400;
+    left: $v-space;
+    line-height: $lh-cap;
+    position: absolute;
+    right: $v-space;
+  }
 }
 
 // Double classes to compete with specificity over input elements

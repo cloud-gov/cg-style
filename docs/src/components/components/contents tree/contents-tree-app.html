@@ -1,0 +1,33 @@
+{# ContentsTreeApp #}
+<div class="contents-tree-app">
+
+  {# PanelEntry #}
+  <div class="panel-entry">
+    <div>
+      <span class="panel-column">
+        <h3 class="contents-secondary">
+          {% if status == 'ok' %}
+            <span>{% render '@fill-icons--app-ok-medium' %}</span>
+          {% elseif status == "error" %}
+            <span>{% render '@fill-icons--app-error-medium' %}</span>
+          {% else %}
+            <span>{% render '@fill-icons--app-medium' %}</span>
+          {% endif %}
+          <span><a href="#">appName</a>  </span>
+        </h3>
+      </span>
+      <span class="col col-flex-0 contents-tree-column">
+        {% if status == 'ok' %}
+          {% render '@status--ok' %}
+        {% elseif status == "error" %}
+          {% render '@status--error' %}
+        {% else %}
+          {% render '@status--inactive' %}
+        {% endif %}
+      </span>
+    </div>
+  </div>
+  {# /PanelEntry #}
+
+</div>
+{# /ContentsTreeApp #}

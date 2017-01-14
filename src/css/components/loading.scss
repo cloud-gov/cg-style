@@ -2,25 +2,66 @@
 $z-foreground: 200;
 
 .loading {
-  height: 50%;
+  bottom: 0;
+  height: 100%;
   left: 0;
-  position: relative;
+  position: absolute;
+  right: 0;
   top: 0;
   width: 100%;
   z-index: $z-foreground;
+}
+
+.loading-container {
+  display: block;
+  height: $grid-9;
+  position: relative;
+  width: 100%;
+
+  & + .loading-container {
+    display: none;
+  }
 }
 
 .loading-relative {
   top: auto;
 }
 
-$indicator-size: 3.5rem;
+.loading-information {
+  height: 3rem;
+  left: calc(50% - 7.5rem);
+  position: absolute;
+  text-align: center;
+  top: calc(50% - 1.5rem);
+  width: 15rem;
+
+  .loading-indicator {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 7.5rem;
+  }
+
+  .loading-text {
+    color: $color-primary;
+    font-size: $sans-s4;
+    font-weight: 600;
+    margin-top: $grid-2;
+    text-align: center;
+  }
+}
 
 .loading-indicator {
-  left: calc(50% - #{$indicator-size});
-  position: absolute;
-  top: calc(50% - #{$indicator-size});
-  width: $indicator-size;
+
+  .loading-inline-dot {
+    height: $grid-105;
+    margin: 0 $grid-05;
+    width: $grid-105;
+  }
+}
+
+.loading-inline-text {
+  width: 120px;
 }
 
 .loading-inactive {
@@ -30,11 +71,12 @@ $indicator-size: 3.5rem;
 .loading-inline {
   display: inline-block;
   font-size: 24px;
-  height: 8px;
+  height: $grid-1;
   line-height: 0;
   margin-bottom: 2px;
-  margin-left: 8px;
+  margin-left: $grid-1;
   vertical-align: middle;
+  white-space: nowrap;
 }
 
 .loading-inline-dot {
@@ -44,14 +86,15 @@ $indicator-size: 3.5rem;
   animation-name: blink;
 
   background-color: $color-primary;
-  border-radius: 8px;
+  border-radius: $grid-1;
   color: $color-primary;
   display: inline-block;
-  height: 8px;
+  height: $grid-1;
+  margin: 0 $grid-05;
   overflow: hidden;
   text-indent: -10000px;
-  width: 8px;
   vertical-align: middle;
+  width: $grid-1;
 
   &:nth-child(2) {
     animation-delay: .2s;
@@ -68,9 +111,9 @@ $indicator-size: 3.5rem;
 
 .loading-inline-text {
   color: $color-primary;
-  font-size: 0.875rem;
-  font-weight: bold;
-  margin-left: 1rem;
+  font-size: $sans-s4;
+  font-weight: 600;
+  margin-left: $grid-2;
 }
 
 @keyframes blink {

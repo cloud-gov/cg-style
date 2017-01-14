@@ -9,7 +9,6 @@ $panel-padding: $grid-3;
   @include clearfix;
   background-color: $color-white;
   margin-bottom: $grid-4;
-  // TODO make padding and margins consistent
   padding: $grid-3 $grid-3 $grid-4;
 
   table {
@@ -29,30 +28,32 @@ $panel-padding: $grid-3;
 
 }
 
-// TODO this is a hack, panel-row borders need to be reconciled, panel-row vs
-// panel-row-bordered
-.panel-row-clean {
-  border: none !important; // stylelint-disable-line declaration-no-important
-}
-
-h1 + .panel,
-h2 + .panel,
-h3 + .panel,
-h4 + .panel {
-  margin-top: 2rem;
+.panel-header {
+  align-items: flex-end;
+  display: flex;
 }
 
 .panel-title {
+  flex: 1 0 0;
   font-size: $sans-s7;
   font-weight: 400;
   line-height: $lh-single;
-  margin-bottom: $grid-3;
+  margin-bottom: $grid-5;
 }
 
-.panel-secondary {
+.panel-helpertext {
+  flex: none;
+  font-family: $font-sans;
   font-size: $sans-s3;
   font-weight: 400;
   line-height: $lh-single;
+  margin: 0 0 $grid-5 0;
+  padding: 0;
+
+  a {
+    font-weight: 600;
+    text-decoration: underline;
+  }
 }
 
 .panel-section-title {
@@ -68,42 +69,25 @@ h4 + .panel {
 .panel-group {
   @include clearfix;
 
-  margin-bottom: 0.65rem;
-
   & + .panel-group {
     margin-top: $grid-4;
   }
 }
 
 .panel-actions {
-  > * {
-    margin-right: 2rem;
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
+  margin-top: $grid-4;
 
   .action {
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0 $grid-2 0 0;
+  }
 
-    & + .action {
-      margin-left: .5rem;
+  &.panel-actions-right {
+    float: right;
+
+    .action {
+      margin: 0 0 0 $grid-2;
     }
   }
-}
-
-.panel-actions-right {
-  float: right;
-  margin-bottom: $grid-4;
-}
-
-.panel-header {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: $grid-1;
 }
 
 .panel-row-header {
@@ -112,17 +96,17 @@ h4 + .panel {
   margin-bottom: $grid-1;
 }
 
-.panel-row {
-  $vertical-padding: $grid-105;
-  border-top: 1px solid $color-textblack;
+.panel-entry {
+  $vertical-padding: $grid-05;
+  align-items: center;
+  border-top: 1px solid $color-lightgray;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: $sans-s4;
+  line-height: $lh-cap;
+  min-height: $grid-6;
   padding: $vertical-padding 0;
-
-  // TODO react problem can't return just rows without wrapped div.
-  > div {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-  }
+  width: 100%;
 
   form {
     background-color: $color-background-light;
@@ -132,54 +116,19 @@ h4 + .panel {
     width: 100%;
   }
 
-  > .panel-row {
-    border-top: 1px solid $color-lightgray;
-    display: block;
-    margin-bottom: $vertical-padding;
-    margin-left: $grid-4;
-    margin-top: $vertical-padding;
-    padding-bottom: 0;
-
-    &:last-child {
-      margin-bottom: 0;
-      padding-bottom: 0;
-    }
+  .panel-actions {
+    margin-top: 0;
   }
-}
-
-.panel-row-boxed {
-  background-color: $color-white;
-  border: 1px solid $color-textblack;
-  border-radius: $rounded;
-  margin-bottom: $grid-2;
-  padding: 1.4rem $panel-padding;
-
-  > .panel-row-is_clickable {
-    display: flex;
-  }
-
-  &:last-child {
-    margin-bottom: 0;
-    padding-bottom: $panel-padding;
-  }
-
-  .panel-row:last-child {
-    padding-bottom: 0;
-  }
-}
-
-.panel-row-bordered {
-  border-top: 1px solid $color-lightgray;
 
   &:last-child {
     border-bottom: 1px solid $color-lightgray;
-    margin-bottom: 0;
   }
 
-}
-
-.panel-row-space {
-  margin-top: $grid-2;
+  > div:not([class]) {
+    align-items: center;
+    display: flex;
+    flex: 1 0 0;
+  }
 }
 
 .panel-row-is_clickable {
@@ -188,18 +137,11 @@ h4 + .panel {
   padding: $panel-padding;
 }
 
-.panel-form-replace {
-  &.panel-form-replace {
-    margin: -1rem 0;
-  }
-}
-
 .panel-block {
   padding-bottom: calc(1.5rem / 2);
   padding-left: 0;
   padding-right: 0;
   padding-top: calc(1.5rem / 2);
-
 }
 
 .panel-column {
@@ -221,18 +163,6 @@ h4 + .panel {
   padding-left: $grid-1;
 }
 
-.panel-column-less {
-  flex-grow: 0;
-  flex-shrink: 1;
-  min-width: 25%;
-}
-
-// TODO rename `-less` to something else
-.panel-column-shrink {
-  flex-grow: 0;
-  margin-right: $grid-4;
-}
-
 .panel-new {
   background-color: $color-white;
   margin-top: $grid-4;
@@ -247,8 +177,22 @@ h4 + .panel {
   padding-bottom: $grid-1;
 }
 
-.grid.panel-overview-header {
+.panel-overview-header {
   border-bottom: $grid-05 solid $color-cream;
   margin: (-$grid-3) (-$grid-3) $grid-3 (-$grid-3);
   padding: $grid-3 $grid-3 $grid-4;
+}
+
+// a couple random panel styles
+
+.route-form-actions {
+
+  .panel-actions {
+    display: block;
+    text-align: left;
+
+    button:first-child {
+      margin-left: 0;
+    }
+  }
 }
