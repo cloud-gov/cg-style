@@ -27,6 +27,20 @@ $panel-padding: $grid-3;
     margin-bottom: $grid-1;
   }
 
+  // TODO remove route form after abstracting into a component
+  .route-form {
+    background-color: $color-lightestgray;
+
+    label {
+      color: $color-blue;
+    }
+
+    .route-form-preview {
+      font-size: inherit;
+      padding-left: 0;
+    }
+  }
+
 }
 
 // TODO this is a hack, panel-row borders need to be reconciled, panel-row vs
@@ -127,9 +141,9 @@ h4 + .panel {
   form {
     background-color: $color-background-light;
     flex-grow: 1;
-    margin: 1rem -1rem -1rem;
-    padding: 1rem;
-    width: 100%;
+    margin: 0;
+    padding: $grid-2;
+    display: block;
   }
 
   > .panel-row {
@@ -189,9 +203,7 @@ h4 + .panel {
 }
 
 .panel-form-replace {
-  &.panel-form-replace {
-    margin: -1rem 0;
-  }
+  margin: 0 0 $grid-4;
 }
 
 .panel-block {

@@ -135,6 +135,11 @@ button,
   }
 } /* stylelint-enable */
 
+.usa-button-disabled {
+  color: $color-white;
+  background: $color-lightgray;
+}
+
 a:focus,
 input:focus {
   box-shadow: 0 0 0 4px rgba(255, 221, 0, 0.55);
@@ -142,8 +147,8 @@ input:focus {
 }
 
 .usa-label {
-  font-size: 0.7rem;
-  padding: 0.2rem 0.4rem;
+  font-size: $sans-s1;
+  padding: $grid-05 $grid-1;
   vertical-align: middle;
 }
 
