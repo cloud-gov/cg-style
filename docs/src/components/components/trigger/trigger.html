@@ -1,26 +1,27 @@
-
-<a class="usa-button trigger action {% if isOutline %}usa-button-outline {% endif %}action-{{ buttonStatus }} m0">
-  <div class="trigger-content row-center-x">
-    <div class="trigger-icon col-fit">
+{% if buttonStatus == 'primary' %}
+<button class="usa-button trigger action {% if isOutline %}usa-button-outline {% endif %}action-{{ buttonStatus }}">
+  <span class="trigger-content row-center-x">
+    <span class="trigger-icon col-fit">
       {% render '@fill-icons--org-small' %}
-    </div>
-    <div class="trigger-text col-fill">
-      {{ buttonText }}
-    </div>
-    <div class="trigger-action col-fit">
-      {% if isOpen %}
-        {% if not isOutline %}
-          {% render '@icon-ui--chevron-up-white' %}
+    </span>
+    <span class="trigger-text col-fill">
+        {{ buttonText }}
+      </span>
+      <span class="trigger-action col-fit">
+        {% if isOpen %}
+          {% if not isOutline %}
+            {% render '@icon-ui--chevron-up-white' %}
+          {% else %}
+            {% render '@icon-ui--chevron-up' %}
+          {% endif %}
         {% else %}
-          {% render '@icon-ui--chevron-up' %}
+          {% if not isOutline %}
+            {% render '@icon-ui--chevron-down-white' %}
+          {% else %}
+            {% render '@icon-ui--chevron-down' %}
+          {% endif %}
         {% endif %}
-      {% else %}
-        {% if not isOutline %}
-          {% render '@icon-ui--chevron-down-white' %}
-        {% else %}
-          {% render '@icon-ui--chevron-down' %}
-        {% endif %}
-      {% endif %}
-    </div>
-  </div>
-</a>
+      </span>
+  </span>
+</button>
+{% endif %}
