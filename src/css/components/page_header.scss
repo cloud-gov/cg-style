@@ -23,6 +23,7 @@
 }
 
 .page-header-actions {
-  flex: none;
+  display: flex;
+  flex-direction: row;
   margin-right: -$grid-1;
 }
