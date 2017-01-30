@@ -15,6 +15,11 @@
   &:hover {
     color: $color-textblack;
   }
+
+  &.usa-button {
+    padding-bottom: 0.55rem;
+    padding-top: 0.55rem;
+  }
 }
 
 // Extra specificity due to WDS.

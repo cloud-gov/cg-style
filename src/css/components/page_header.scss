@@ -4,6 +4,14 @@
 .page-header {
   display: flex;
   margin: 0 0 $grid-4;
+
+  // Keeps all inline content centered at all times.
+  &:before {
+    content: '\200B';
+    display: inline-block;
+    line-height: 1;
+    vertical-align: middle;
+  }
 }
 
 .page-header-title {
@@ -15,6 +23,7 @@
 }
 
 .page-header-actions {
-  flex: none;
+  display: flex;
+  flex-direction: row;
   margin-right: -$grid-1;
 }
