@@ -21,32 +21,6 @@ $panel-padding: $grid-3;
   }
 }
 
-.panel-actions {
-  display: block;
-
-  > * {
-    margin-right: 2rem;
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-
-  .action {
-    margin-left: 0;
-    margin-right: 0;
-
-    & + .action {
-      margin-left: .5rem;
-    }
-  }
-}
-
-.panel-actions-right {
-  float: right;
-  margin-bottom: $grid-4;
-}
-
 .panel-header {
   align-items: center;
   display: flex;
