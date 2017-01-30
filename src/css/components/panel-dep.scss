@@ -11,36 +11,6 @@ $panel-padding: $grid-3;
   border: none !important; // stylelint-disable-line declaration-no-important
 }
 
-h1 + .panel,
-h2 + .panel,
-h3 + .panel,
-h4 + .panel {
-  margin-top: 2rem;
-}
-
-.panel-title {
-  font-size: $sans-s7;
-  font-weight: 400;
-  line-height: $lh-single;
-  margin-bottom: $grid-3;
-}
-
-.panel-secondary {
-  font-size: $sans-s3;
-  font-weight: 400;
-  line-height: $lh-single;
-}
-
-.panel-section-title {
-  font-size: $sans-s3;
-  font-weight: 700;
-  line-height: $lh-single;
-}
-
-.panel-section-header {
-  padding-bottom: $grid-1;
-}
-
 .panel-group {
   @include clearfix;
 
@@ -52,6 +22,8 @@ h4 + .panel {
 }
 
 .panel-actions {
+  display: block;
+
   > * {
     margin-right: 2rem;
 
@@ -205,12 +177,6 @@ h4 + .panel {
 .panel-column-shrink {
   flex-grow: 0;
   margin-right: $grid-4;
-}
-
-.panel-new {
-  background-color: $color-white;
-  margin-top: $grid-4;
-  padding: $grid-4;
 }
 
 .panel-new-date {
