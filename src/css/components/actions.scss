@@ -20,6 +20,10 @@
     padding-bottom: 0.55rem;
     padding-top: 0.55rem;
   }
+
+  & + .action {
+    margin-left: $grid-1;
+  }
 }
 
 // Extra specificity due to WDS.
