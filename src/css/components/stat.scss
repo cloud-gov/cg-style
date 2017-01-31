@@ -25,6 +25,12 @@ h5 + .stat {
   margin-top: $grid-1;
 }
 
+.stat-header {
+  font-size: $sans-s3;
+  font-weight: 900;
+  margin-bottom: $grid-1;
+}
+
 .stat-error,
 .stat-warning,
 .stat-success {
