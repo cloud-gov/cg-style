@@ -40,6 +40,18 @@ $panel-padding: $grid-3;
   flex-direction: row;
   justify-content: flex-start;
   margin: 0;
+
+  p, span {
+    font-size: 0.9rem;
+  }
+}
+
+* + .panel-actions {
+  margin-top: $grid-1;
+}
+
+.panel-actions + * {
+  margin-top: $grid-2;
 }
 
 .panel-actions-right {
