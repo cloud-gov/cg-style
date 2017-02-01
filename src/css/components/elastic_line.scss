@@ -1,0 +1,20 @@
+
+@import '../override_vars.scss';
+@import '../core.scss';
+@import '../../../node_modules/uswds/src/stylesheets/core/defaults.scss';
+
+.elastic_line {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.elastic_line-item {
+  & + .elastic_line-item {
+    margin-left: $grid-3;
+  }
+}
+
+.elastic_line-actions {
+  margin-left: auto;
+}
