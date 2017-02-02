@@ -30,7 +30,7 @@ $color-border: $color-textblack;
       }
     }
 
-    + .complex_list-item {
+    & + .complex_list-item {
       margin-top: $grid-2;
     }
   }
@@ -50,7 +50,8 @@ $color-border: $color-textblack;
 
 }
 
-.complex_list-item {
+.complex_list-item,
+.complex_list-empty {
   border-color: $color-textblack;
   border-bottom-style: solid;
   border-bottom-width: 0;
