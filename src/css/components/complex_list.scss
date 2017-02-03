@@ -9,6 +9,8 @@ $color-border: $color-textblack;
   margin-bottom: $grid-1;
 
   & + .complex_list {
+    margin-bottom: 0;
+
     .complex_list-header {
       margin-top: $grid-4;
     }
@@ -26,7 +28,6 @@ $color-border: $color-textblack;
       &:last-child {
         border-bottom-width: 0;
         margin-bottom: 0;
-        padding-bottom: 0;
       }
     }
 
