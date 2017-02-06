@@ -6,15 +6,14 @@
 $input-font-size: $sans-s2;
 
 .stat {
-  align-items: center;
+  @include clearfix;
   border-left-color: transparent;
   border-left-style: solid;
   border-left-width: 0;
-  display: flex;
-  justify-content: space-between;
+  margin-top: 0.625rem;
   min-height: 2.5rem; // Leave some space for input element when editing a stat
   position: relative;
-  width: 100%;
+  width: 14rem;
 
   .error_message {
     font-size: $input-font-size;
@@ -28,18 +27,30 @@ h5 + .stat {
 .stat-header {
   font-size: $sans-s3;
   font-weight: 900;
-  margin-bottom: $grid-1;
+  margin-bottom: $grid-105;
+}
+
+.stat-group {
+  display: flex;
+
+  & + .stat-group {
+    margin-top: 1.75rem;
+  }
 }
 
 .stat-error,
 .stat-warning,
 .stat-success {
-
   padding-left: $grid-2;
 
   &::before {
     @extend .status-pill;
-    height: 100%;
+    height: 2.5rem;
+    top: 1.25rem;
+  }
+
+  .stat-header {
+    margin-left: -$grid-2;
   }
 }
 
@@ -62,22 +73,41 @@ h5 + .stat {
 }
 
 .stat-info {
+  float: right;
   font-size: $sans-s2;
   font-weight: 600;
   margin-right: $grid-1;
+  margin-top: 0.2rem;
+  width: 8rem;
 }
 
 .stat-primary {
+  float: left;
   font-size: $sans-s6;
+  min-height: 2rem;
   white-space: nowrap;
+  width: 4rem;
 }
 
 .stat-single_box {
   $v-space: $grid-2;
   background-color: $color-lightestgray;
   margin: -$v-space 1.8rem;
+  min-height: 10rem;
   padding: $v-space 0;
+  position: relative;
   text-align: center;
+
+  .stat-info,
+  .stat-primary {
+    float: none;
+  }
+}
+
+.stat-bottom {
+  bottom: 1rem;
+  left: 2%;
+  position: absolute;
 }
 
 // Double classes to compete with specificity over input elements
@@ -87,6 +117,8 @@ h5 + .stat {
     display: inline;
     font-size: $input-font-size;
     margin: 0;
+    padding-bottom: 0.3rem;
+    padding-top: 0.3rem;
     width: 6rem;
     // stylelint-enable
   }

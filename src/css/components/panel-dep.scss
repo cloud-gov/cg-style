@@ -13,6 +13,10 @@ $panel-padding: $grid-3;
 
 .panel-group {
   @include clearfix;
+}
+
+.panel-section {
+  @include clearfix;
 
   margin-bottom: 0.65rem;
 
