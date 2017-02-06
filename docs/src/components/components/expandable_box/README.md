@@ -1,3 +1,3 @@
-# Card
+# Expandable box
 
 Needs documentation...
