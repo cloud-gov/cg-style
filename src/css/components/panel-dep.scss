@@ -30,6 +30,10 @@ $panel-padding: $grid-3;
   display: flex;
   justify-content: space-between;
   padding-bottom: $grid-1;
+
+  .error-inline {
+    width: auto;
+  }
 }
 
 .panel-row-header {
