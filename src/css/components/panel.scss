@@ -62,3 +62,23 @@ $panel-padding: $grid-3;
   justify-content: space-between;
 }
 
+.panel-group {
+  @include clearfix;
+}
+
+// TODO remove when marketplace UI updated.
+.panel-section {
+  @include clearfix;
+
+  margin-bottom: 0.65rem;
+
+  & + .panel-group {
+    margin-top: $grid-4;
+  }
+}
+
+.grid.panel-overview-header {
+  border-bottom: $grid-05 solid $color-cream;
+  margin: (-$grid-3) (-$grid-3) $grid-3 (-$grid-3);
+  padding: $grid-3 $grid-3 $grid-4;
+}
