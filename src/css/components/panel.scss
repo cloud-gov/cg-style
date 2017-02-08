@@ -21,11 +21,6 @@ $panel-padding: $grid-3;
   font-weight: 400;
   line-height: $lh-single;
   margin-bottom: 0;
-
-  // TODO change from panel-rows once removed
-  + .panel-rows {
-    margin-top: $grid-2;
-  }
 }
 
 .panel-header {
