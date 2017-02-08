@@ -78,6 +78,7 @@ h5 + .stat {
   font-weight: 600;
   margin-right: $grid-1;
   margin-top: 0.2rem;
+  text-align: right;
   width: 8rem;
 }
 
@@ -92,7 +93,7 @@ h5 + .stat {
 .stat-single_box {
   $v-space: $grid-2;
   background-color: $color-lightestgray;
-  margin: -$v-space 1.8rem;
+  margin: -0.4rem 1.8rem;
   min-height: 10rem;
   padding: $v-space 0;
   position: relative;
@@ -119,7 +120,8 @@ h5 + .stat {
     margin: 0;
     padding-bottom: 0.3rem;
     padding-top: 0.3rem;
-    width: 6rem;
+    width: 3rem;
+    vertical-align: middle;
     // stylelint-enable
   }
 
