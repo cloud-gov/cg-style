@@ -10,10 +10,11 @@ $input-font-size: $sans-s2;
   border-left-color: transparent;
   border-left-style: solid;
   border-left-width: 0;
+  margin-right: $grid-1;
   margin-top: 0.625rem;
   min-height: 2.5rem; // Leave some space for input element when editing a stat
   position: relative;
-  width: 14rem;
+  width: 13.5rem;
 
   .error_message {
     font-size: $input-font-size;
@@ -50,7 +51,7 @@ h5 + .stat {
   }
 
   .stat-header {
-    margin-left: -$grid-2;
+    margin-left: -$grid-1;
   }
 }
 
@@ -120,7 +121,7 @@ h5 + .stat {
     margin: 0;
     padding-bottom: 0.3rem;
     padding-top: 0.3rem;
-    width: 3rem;
+    width: 5rem;
     vertical-align: middle;
     // stylelint-enable
   }
