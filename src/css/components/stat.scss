@@ -127,7 +127,8 @@ h5 + .stat {
   }
 
   &.stat-input-text-scale {
-    margin-top: $grid-1;
+    margin-bottom: $grid-1;
+    margin-top: -$grid-1;
   }
 
   &.stat-input-label {
