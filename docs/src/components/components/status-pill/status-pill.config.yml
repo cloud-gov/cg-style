@@ -7,14 +7,11 @@ variants:
     context:
       text: "success"
       modifier: success
-      patternbreak: "<br/>"
   - name: warning
     context:
       text: "warning"
       modifier: warning
-      patternbreak: "<br/>"
   - name: error
     context:
       text: "error"
       modifier: error
-      patternbreak: "<br/>"
