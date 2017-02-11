@@ -79,6 +79,10 @@ fieldset div {
   padding-bottom: .25rem;
 }
 
+.error_input {
+  outline: 2px solid $color-error;
+}
+
 .error_message {
   @extend .usa-input-error-message;
   color: $color-error;
@@ -96,6 +100,17 @@ fieldset div {
   margin: 0 0.25rem;
   width: 40%;
   vertical-align: middle;
+}
+
+.error {
+  input {
+    @extend .error_input;
+
+    &:focus,
+    &:active {
+      @extend .error_input;
+    }
+  }
 }
 
 .button-cancel {
