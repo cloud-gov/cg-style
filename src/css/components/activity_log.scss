@@ -11,34 +11,30 @@
   width: 100%;
 }
 
+.activity_log-item_line {
+  cursor: pointer;
+  font-family: $font-mono;
+  font-size: $sans-s3;
+  padding: $grid-1 0 $grid-1 $grid-2;
+  position: relative; // For status-pill anchoring
+}
+
 .activity_log-item_text {
-  position: relative;
   word-wrap: break-word;
 }
 
 .activity_log-item_timestamp {
-  cursor: pointer;
   text-align: right;
-}
 
-.activity_log-item_text,
-.activity_log-item_timestamp {
-  flex-grow: 1;
-  font-family: $font-mono;
-  font-size: $sans-s3;
-  max-width: initial;
+  // Override specificity of .panel span
+  .activity_log-item_line & {
+    font-family: $font-mono;
+  }
 }
 
 .activity_log-item {
-  align-items: center;
   border-bottom: 1px solid $color-lightgray;
-  cursor: pointer;
-  display: flex;
-  flex-wrap: wrap;
   margin: 0;
-  padding: $grid-1 0;
-  position: relative;
-  width: 100%;
 
   &:first-child {
     border-top: 1px solid $color-lightgray;
@@ -48,50 +44,36 @@
 .activity_log-item-error,
 .activity_log-item-success,
 .activity_log-item-warning {
-
-  padding-left: $grid-2;
-
-  &::before {
-    @extend .status-pill !optional;
-    height: 75%;
-  }
-
-  .activity_log-item_text {
-    font-family: $font-sans;
-    font-weight: 600;
+  // Override specificity of .panel span
+  .activity_log-item_line {
+    .activity_log-item_text {
+      font-family: $font-sans;
+      font-weight: 600;
+    }
   }
 }
 
 .activity_log-item-error {
-  .activity_log-item_timestamp {
-    color: $color-error;
-  }
+  .activity_log-item_line {
+    // Space above/below the status-pill
+    // Keeping height based on offset keeps the pill vertically aligned
+    $offset: 5px;
 
-  &::before {
-    border-color: $color-error; // #e31c3d;
+    &::before {
+      @extend .status-pill !optional;
+      border-color: $color-error; // #e31c3d;
+      height: calc(100% - #{2 * $offset});
+      top: $offset;
+    }
   }
-}
-
-.activity_log-item-warning {
-  &::before {
-    border-color: $color-gold;
-  }
-}
-
-.activity_log-item-success {
-  &::before {
-    border-color: $color-ok; //#2e8540;
-  }
-
 }
 
 .activity_log-item_raw {
-  flex-grow: 2;
+  margin-bottom: $grid-2;
   max-width: 60rem;
   min-width: 50rem;
 
   pre {
-    background-color: $color-gray-lightest;
     padding: .8rem;
   }
 }
