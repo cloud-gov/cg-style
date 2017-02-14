@@ -112,8 +112,9 @@ button,
   display: inline-block;
   font-size: $sans-s3;
   font-weight: 500;
-  height: $grid-4;
+  height: auto;
   margin: $grid-1 $grid-1 $grid-1 0;
+  min-height: $grid-4;
   min-width: 6rem;
   padding: 0 $grid-2;
   text-decoration: none;
