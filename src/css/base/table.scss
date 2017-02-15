@@ -16,11 +16,7 @@ table {
     border-top: 1px solid;
     padding: .8em 1.25em;
     padding-left: 0;
-    text-align: right;
-
-    &:first-child {
-      text-align: left;
-    }
+    text-align: left;
   }
 
   /* stylelint-disable selector-no-qualifying-type */
@@ -32,6 +28,7 @@ table {
   th:last-child,
   td:last-child {
     padding-right: 0;
+    text-align: right;
   }
 
   thead tr {
