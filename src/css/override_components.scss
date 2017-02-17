@@ -121,20 +121,9 @@ button,
   vertical-align: middle;
 
   &:hover {
-    background-color: $color-textblack;
+    background-color: inherit;
   }
-
-  /* stylelint-disable selector-no-qualifying-type */
-  &.usa-button-outline {
-    box-shadow: inset 0 0 0 1px $color-blue;
-
-    &:hover {
-      background-color: $color-white;
-      box-shadow: inset 0 0 0 1px $color-textblack;
-      color: $color-textblack;
-    }
-  }
-} /* stylelint-enable */
+}
 
 .usa-button-disabled {
   color: $color-white;

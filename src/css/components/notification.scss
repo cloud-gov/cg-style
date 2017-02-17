@@ -73,7 +73,17 @@ $font-size: $sans-s4;
 }
 
 .notification-warning {
-  background-color: $color-red;
+  background-color: $color-gold;
+
+  .notification-message,
+  .notification-action,
+  .notification-dismiss {
+    color: $color-textblack;
+  }
+
+  .notification-dismiss {
+    background-image: url('#{$static-img-path}/close.svg');
+  }
 }
 
 .notification-info {

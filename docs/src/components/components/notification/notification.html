@@ -3,7 +3,9 @@
   <div class="notification-wrap">
     <p class="notification-message">{{ message }}</p>
     {% if actionText %}
-    <a href="#" class="notification-action action action-link">{{ actionText }}</a>
+    <button href="#" class="notification-action action action-outline action-white">
+      {{ actionText }}
+    </button>
     {% endif %}
     <a href="#" class="notification-dismiss" title="Dismiss notification">
       <span class="usa-sr-only">Close</span>
