@@ -1,0 +1,12 @@
+
+<div class="notification notification-{{ status }}">
+  <div class="notification-wrap">
+    <p class="notification-message">{{ message }}</p>
+    {% if actionText %}
+    <a href="#" class="notification-action action action-link">{{ actionText }}</a>
+    {% endif %}
+    <a href="#" class="notification-dismiss" title="Dismiss notification">
+      <span class="usa-sr-only">Close</span>
+    </a>
+  </div>
+</div>
