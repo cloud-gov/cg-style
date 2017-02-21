@@ -99,6 +99,7 @@
   margin-top: 0;
 }
 
+// TODO remove once usa-button deprecated
 .usa-button,
 .usa-button-primary,
 .usa-button:visited,
@@ -120,8 +121,8 @@ button,
   text-decoration: none;
   vertical-align: middle;
 
-  &:hover {
-    background-color: inherit;
+  &.usa-button-outline {
+    box-shadow: inset 0 0 0 1px;
   }
 }
 

@@ -24,10 +24,22 @@
   }
 }
 
+// TODO remove once usa-button deprecated
+.usa-button {
+  &:hover {
+    background: $color-textblack;
+  }
+}
+
 .action {
   &:hover {
     background: $color-textblack;
   }
+}
+
+a.action {
+  padding-bottom: 0.55rem;
+  padding-top: 0.55rem;
 }
 
 .action-primary {
@@ -47,7 +59,7 @@
 }
 
 .action-finish {
-  @include button-color($color-finish, $color-textblack);
+  @include button-color($color-textgreen, $color-textblack);
 }
 
 .action-white {
@@ -74,8 +86,6 @@
   font-size: inherit;
   font-weight: bold;
   text-decoration: underline;
-
-  &:visited { color: $color-blue; }
 
   &:hover {
     background-color: transparent;

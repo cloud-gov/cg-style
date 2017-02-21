@@ -11,6 +11,10 @@ $font-size: $sans-s4;
   min-height: 2.3rem;
   padding: $grid-1 0;
   width: 100%;
+
+  +.notification {
+    border-top: 2px solid white;
+  }
 }
 
 .notification-wrap {
@@ -19,6 +23,7 @@ $font-size: $sans-s4;
   justify-content: flex-start;
   margin: 0 auto;
   max-width: $site-max-width;
+  padding: 0 $grid-2;
 }
 
 .header-no_sidebar {

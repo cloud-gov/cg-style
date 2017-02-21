@@ -17,6 +17,7 @@
     justify-content: flex-end;
   }
   .action {
+    &.action-outline,
     &.usa-button-outline {
       margin: -.25rem 0 0 0;
       padding: .55rem 1rem;
