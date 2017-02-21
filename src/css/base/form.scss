@@ -75,8 +75,15 @@ select {
 }
 
 fieldset div {
-  padding-top: .75rem;
-  padding-bottom: .25rem;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.form_text-inline {
+  input,
+  label {
+    display: inline;
+  }
 }
 
 .error_input {

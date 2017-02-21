@@ -12,12 +12,13 @@ $input-font-size: $sans-s2;
   border-left-width: 0;
   margin-right: $grid-1;
   margin-top: 0.625rem;
-  min-height: 2.5rem; // Leave some space for input element when editing a stat
+  min-height: 2.5rem; // Leave some space for input + error element when editing a stat
   position: relative;
   width: 13.5rem;
 
   .error_message {
     font-size: $input-font-size;
+    position: absolute; // Avoid error message shifting the height of the element
   }
 }
 
@@ -99,10 +100,15 @@ h5 + .stat {
   padding: $v-space 0;
   position: relative;
   text-align: center;
+  width: auto;
 
   .stat-info,
   .stat-primary {
     float: none;
+  }
+
+  .error_message {
+    width: 100%; // full width so text appears centered with everything else
   }
 }
 
