@@ -4,7 +4,8 @@
 @import '../../../node_modules/uswds/src/stylesheets/core/utilities.scss';
 @import '../../../node_modules/uswds/src/stylesheets/core/defaults.scss';
 
-@mixin button-color($main_color, $hover_color) {
+/* stylelint-disable plugin/name-format */
+@mixin button-color ($main_color, $hover_color) {
   background-color: $main_color;
 
   &:hover {
@@ -23,6 +24,7 @@
     }
   }
 }
+/* stylelint-enable */
 
 // TODO remove once usa-button deprecated
 .usa-button {
@@ -37,10 +39,12 @@
   }
 }
 
+/* stylelint-disable selector-no-qualifying-type */
 a.action {
   padding-bottom: 0.55rem;
   padding-top: 0.55rem;
 }
+/* stylelint-enable */
 
 .action-primary {
   @include button-color($color-primary, $color-textblack);
@@ -97,7 +101,6 @@ a.action {
     margin-left: $grid-1;
   }
 }
-
 
 /* TODO refactor "actions" into own components */
 .actions-large {
