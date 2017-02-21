@@ -133,8 +133,8 @@
 /* TODO refactor "actions" into own components */
 .actions-large {
   background-color: $color-secondary-lightest;
-  margin: -2rem;
-  padding: 3rem 2rem;
+  margin: (-$grid-4) (-$grid-3); // These match the .panel padding
+  padding: $grid-6 $grid-4;
 }
 
 .actions-callout-inline-block {
