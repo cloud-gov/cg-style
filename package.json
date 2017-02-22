@@ -13,7 +13,7 @@
     "build-prefix": "postcss --use autoprefixer css/cloudgov-style.css -o ./css/cloudgov-style.css",
     "build-img": "mkdir -p ./img && npm run copy-img && npm run svg",
     "build-library": "npm run build-library-assets && fractal build && cp nginx.conf docs/build/",
-    "build-library-assets": "npm run clean && npm run build-css && npm run compile-css && npm run build-font && npm run build-img && npm run copy-library-assets",
+    "build-library-assets": "npm run clean && npm run build-css && npm run build-font && npm run build-img && npm run copy-library-assets",
     "check-publish": "publish",
     "compile-css": "cleancss ./css/cloudgov-style.css -o ./css/cloudgov-style-min.css",
     "compile-js": "uglifyjs ./js/cloudgov-style.js -o ./js/cloudgov-style-min.js",
