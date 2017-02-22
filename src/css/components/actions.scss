@@ -4,129 +4,101 @@
 @import '../../../node_modules/uswds/src/stylesheets/core/utilities.scss';
 @import '../../../node_modules/uswds/src/stylesheets/core/defaults.scss';
 
+/* stylelint-disable plugin/name-format */
+@mixin button-color ($main_color, $hover_color) {
+  background-color: $main_color;
+
+  &:hover {
+    background-color: $hover_color;
+  }
+
+  &.action-link,
+  &.action-outline,
+  &.usa-button-outline {
+    color: $main_color;
+
+    &:focus,
+    &:active,
+    &:hover {
+      color: $hover_color;
+    }
+  }
+}
+/* stylelint-enable */
+
+// TODO remove once usa-button deprecated
+.usa-button {
+  &:hover {
+    background: $color-textblack;
+  }
+}
+
+.action {
+  &:hover {
+    background: $color-textblack;
+  }
+}
+
+/* stylelint-disable selector-no-qualifying-type */
+a.action {
+  padding-bottom: 0.55rem;
+  padding-top: 0.55rem;
+}
+/* stylelint-enable */
+
+.action-primary {
+  @include button-color($color-primary, $color-textblack);
+}
+
+.action-base {
+  @include button-color($color-textblack, $color-primary);
+}
+
+.action-cautious {
+  @include button-color($color-lightgray, $color-lightgray);
+}
+
+.action-warning {
+  @include button-color($color-warning, $color-textblack);
+}
+
+.action-finish {
+  @include button-color($color-textgreen, $color-textblack);
+}
+
+.action-white {
+  @include button-color(white, $color-primary);
+}
+
+.action-outline {
+  box-shadow: inset 0 0 0 1px;
+  background-color: transparent;
+
+  &.action-outline {
+    &:focus,
+    &:hover,
+    &:active {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 1px;
+    }
+  }
+}
+
 .action-link {
+  background-color: transparent;
   color: $color-blue;
   font-size: inherit;
   font-weight: bold;
   text-decoration: underline;
 
-  &:visited { color: $color-blue; }
-
   &:hover {
+    background-color: transparent;
     color: $color-textblack;
   }
 
-  &.usa-button {
-    padding-bottom: 0.55rem;
-    padding-top: 0.55rem;
-  }
-
+  & + .action-link,
   & + .action {
     margin-left: $grid-1;
-  }
-}
-
-// Extra specificity due to WDS.
-.action {
-
-  &.action-cautious {
-    background-color: $color-lightgray;
-
-    &.action-link {
-      background-color: transparent;
-      color: $color-lightgray;
-    }
-
-    &.usa-button-outline {
-      background-color: transparent;
-      box-shadow: inset 0 0 0 1px $color-lightgray;
-      color: $color-lightgray;
-    }
-  }
-
-  &.action-warning {
-    background-color: $color-warning;
-
-    &:hover {
-      background-color: $color-textblack;
-    }
-
-    &.action-link {
-      background-color: transparent;
-      color: $color-warning;
-      &:hover {
-        color: $color-textblack;
-      }
-    }
-
-    &.usa-button-outline {
-      background-color: $color-white;
-      box-shadow: inset 0 0 0 1px $color-warning;
-      color: $color-warning;
-
-      &:hover {
-        box-shadow: inset 0 0 0 1px $color-textblack;
-        color: $color-textblack;
-      }
-    }
-  }
-
-  &.action-finish {
-    background-color: $color-finish;
-
-    &:hover {
-      background-color: $color-textblack;
-      color: $color-white;
-    }
-
-    &.action-link {
-      background-color: transparent;
-      color: $color-finish;
-
-      &:hover {
-        color: $color-textblack;
-      }
-    }
-
-    &.usa-button-outline {
-      background-color: $color-white;
-      box-shadow: inset 0 0 0 1px $color-finish;
-      color: $color-finish;
-
-      &:hover {
-        box-shadow: inset 0 0 0 1px $color-textblack;
-        color: $color-textblack;
-      }
-    }
-  }
-
-  &.action-base {
-    background-color: $color-textblack;
-
-    &:hover {
-      background-color: $color-blue;
-      color: $color-white;
-    }
-
-    &.action-link {
-      background-color: transparent;
-      color: $color-textblack;
-
-      &:hover {
-        color: $color-blue;
-      }
-    }
-
-    &.usa-button-outline {
-      background-color: $color-white;
-      box-shadow: inset 0 0 0 1px $color-textblack;
-      color: $color-textblack;
-
-      &:hover {
-        box-shadow: inset 0 0 0 1px $color-blue;
-        color: $color-blue;
-      }
-    }
   }
 }
 
