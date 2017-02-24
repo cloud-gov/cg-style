@@ -1,6 +1,6 @@
 @import '../core.scss';
 
-.usa-button.trigger {
+.trigger {
   padding: 0 $grid-1;
 }
 
@@ -19,7 +19,7 @@
   margin-right: $grid-1;
 }
 
-.usa-button-outline .trigger-icon {
+.action-outline .trigger-icon {
   background-color: transparent;
 }
 
@@ -28,39 +28,39 @@
   line-height: $lh-single;
 }
 
-.action.usa-button-outline:hover {
+.action.action-outline:hover {
   .trigger-icon .icon-fill {
     fill: $color-textblack;
   }
 }
 
-.action-base.usa-button-outline:hover {
+.action-base.action-outline:hover {
   .trigger-icon .icon-fill {
     fill: $color-blue;
   }
 }
 
-.action-warning.usa-button-outline {
+.action-warning.action-outline {
   .trigger-icon .icon-fill,
   .trigger-action .icon-fill {
     fill: $color-red;
   }
 }
 
-.action-primary.usa-button-outline {
+.action-primary.action-outline {
   .trigger-icon .icon-fill {
     fill: $color-blue;
   }
 }
 
-.action-finish.usa-button-outline {
+.action-finish.action-outline {
   .trigger-icon .icon-fill,
   .trigger-action .icon-fill {
     fill: $color-green;
   }
 }
 
-.action-cautious.usa-button-outline {
+.action-cautious.action-outline {
   .trigger-icon .icon-fill,
   .trigger-action .icon-fill {
     fill: $color-lightgray;
