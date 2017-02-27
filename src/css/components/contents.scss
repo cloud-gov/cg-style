@@ -21,3 +21,11 @@
 .contents-path {
   color: $color-darkgray;
 }
+
+.contents-date {
+  color: $color-red;
+  display: block;
+  font-size: $sans-s4;
+  font-weight: 600;
+  padding-bottom: $grid-1;
+}

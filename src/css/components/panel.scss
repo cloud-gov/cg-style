@@ -21,18 +21,13 @@ $panel-padding: $grid-3;
   font-weight: 400;
   line-height: $lh-single;
   margin-bottom: 0;
-
-  // TODO change from panel-rows once removed
-  + .panel-rows {
-    margin-top: $grid-2;
-  }
 }
 
 .panel-header {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding-bottom: $grid-1;
+  padding-bottom: $grid-2;
 }
 
 .panel-actions {
@@ -62,3 +57,17 @@ $panel-padding: $grid-3;
   justify-content: space-between;
 }
 
+.panel-group {
+  @include clearfix;
+}
+
+// TODO remove when marketplace UI updated.
+.panel-section {
+  @include clearfix;
+
+  margin-bottom: 0.65rem;
+
+  & + .panel-group {
+    margin-top: $grid-4;
+  }
+}
