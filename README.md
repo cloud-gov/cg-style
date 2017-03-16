@@ -18,7 +18,7 @@ Once installed, all the assets from cg-style have to be consumed by your project
 cp ./node_modules/cloudgov-style/js/* ./public/js
 cp ./node_modules/cloudgov-style/css/* ./public/css
 cp -R ./node_modules/cloudgov-style/img/**/* ./public/img
-cp -R ./node_modules/cloudgov-style/font/**/* ./public/font
+cp -R ./node_modules/cloudgov-style/fonts/**/* ./public/fonts
 ```
 
 ```html
