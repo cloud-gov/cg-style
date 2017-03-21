@@ -4,21 +4,22 @@
 @import '../core.scss';
 
 .panel-documentation {
-  border: 1px solid $color-lightgray;
-  margin: $grid-2 0 $grid-4 0;
-  padding: $grid-2;
+  border: 2px solid $color-lightgray;
+  margin: $grid-4 0 $grid-4 0;
+  padding: $grid-5;
 
   p, ul, li, span {
     font-family: $font-sans;
-    font-size: 0.9rem;
+    font-size: 0.875rem;
     line-height: $lh-display;
     max-width: 900px;
 
+    & + h1,
     & + h2,
     & + h3,
     & + h4,
     & + h5 {
-      margin-top: $grid-3;
+      margin-top: $grid-105;
     }
 
     & + ul {

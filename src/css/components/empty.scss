@@ -1,0 +1,13 @@
+
+@import '../../../node_modules/uswds/src/stylesheets/core/defaults.scss';
+@import '../override_vars.scss';
+@import '../core.scss';
+
+.empty {
+  text-align: center;
+
+  p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
