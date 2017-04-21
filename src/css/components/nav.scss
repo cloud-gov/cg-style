@@ -16,9 +16,9 @@
     flex-direction: row;
     justify-content: flex-end;
   }
+
   .action {
-    &.action-outline,
-    &.usa-button-outline {
+    &.action-outline {
       margin: -.25rem 0 0 0;
       padding: .55rem 1rem;
     }

@@ -8,7 +8,7 @@ data.
 ## Use
 
 To use the **button outline** component, add the classes
-`usa-button usa-button-outline action` to a
+`action action-outline` to a
 `<button>` element.
 
 In addition, add any of the following classes to the button to style the button

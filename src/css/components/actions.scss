@@ -13,8 +13,7 @@
   }
 
   &.action-link,
-  &.action-outline,
-  &.usa-button-outline {
+  &.action-outline {
     color: $main_color;
 
     &:focus,
@@ -25,13 +24,6 @@
   }
 }
 /* stylelint-enable */
-
-// TODO remove once usa-button deprecated
-.usa-button {
-  &:hover {
-    background: $color-textblack;
-  }
-}
 
 .action {
   &:hover {
