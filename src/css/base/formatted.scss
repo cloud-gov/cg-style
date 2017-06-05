@@ -17,6 +17,8 @@ pre {
     padding: 0;
     line-height: $lh-body;
     display: inline;
+    overflow: auto;
+    word-wrap: normal;
   }
 }
 
