@@ -84,3 +84,12 @@ $indicator-size: 3.5rem;
     opacity: .2;
   }
 }
+
+.saving.saving-relative {
+  float: right;
+  background: #fad980;
+  padding: 2px 9px;
+  font-family: Georgia, Cambria, Times New Roman, Times, serif;
+  font-size: 1rem;
+  font-style: italic;
+}
