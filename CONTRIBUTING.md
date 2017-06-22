@@ -25,7 +25,7 @@ If using cloudgov-style on a new project or a project that isn't already using c
 0. In the companion site repo, import cg style into the main sass file: `@import "../node_modules/cloudgov-style/css/cg_style.scss";`.
 0. In the companion site repo, run sass to build the *cloudgov-style* repo into the css. This is best done through a script in package.json: `"build": "node-sass static_src/main.scss static/css/main.css"`
 
-When writing styling code, make changes in the *cloudgov-style* repo, run `npm run watch` in the *cloudgov-style* repo, run `npm run build` in the companion site repo, and changes should be built. Alternatively, both repos have a watch task which can be run with `npm run watch` to allow changes to propegate automatically.
+When writing styling code, make changes in the *cloudgov-style* repo, run `npm run watch` in the *cloudgov-style* repo, run `npm run build` in the companion site repo, and changes should be built. Alternatively, both repos have a watch task which can be run with `npm run watch` to allow changes to propagate automatically.
 
 ## Running pattern library locally
 
@@ -37,7 +37,7 @@ First, you'll perform a build step to create the site and test the build process
 npm run build-library
 ```
 
-Now you can run you local server by running the following command:
+Now you can run your local server by running the following command:
 
 ```sh
 npm run start
