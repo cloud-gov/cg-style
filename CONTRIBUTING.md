@@ -99,11 +99,11 @@ observed unless they are overridden here.
 
 ### Architecture
 
-The structure of the parts of the style will be modular. Small, resusable pieces
-that have one function and are not dependant on one-another. Components should
-be given easy to understand names.
+The structure of the parts of the style will be modular. Small, reusable pieces
+that have one function and are not dependent on one another. Components should
+be given names that are easy to understand.
 
-- CSS: each component should be a class with it's name as the first part.
+- CSS: each component should be a class with its name as the first part.
 - CSS: the css components will have the following structure:
 ```
 /base
