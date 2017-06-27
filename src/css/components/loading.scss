@@ -85,11 +85,14 @@ $indicator-size: 3.5rem;
   }
 }
 
-.saving.saving-relative {
-  float: right;
+.saving {
   background: $color-notice;
   padding: 2px 9px;
   font-family: Georgia, Cambria, Times New Roman, Times, serif;
   font-size: 1rem;
   font-style: italic;
+}
+
+.saving-relative {
+  float: right;
 }
