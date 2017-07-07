@@ -3,10 +3,6 @@
 @import '../override_vars.scss';
 @import '../core.scss';
 
-.status {
-  text-transform: capitalize;
-}
-
 .status-started,
 .status-running,
 .status-ok {
