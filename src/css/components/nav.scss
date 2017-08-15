@@ -27,8 +27,8 @@
 
 .nav-link {
   color: $color-textblack;
-  font-size: $sans-s5;
-  font-weight: 400;
+  font-size: $sans-s3;
+  font-weight: 500;
   padding-bottom: .2rem;
   padding-left: 0;
   padding-top: .2rem;
@@ -37,7 +37,14 @@
     &:hover {
       color: $color-primary;
     }
+    &[href *= ".io"] {
+      padding-right: 22px;
+      background: url('#{$static-img-path}/external-link-gray.png') right center no-repeat;
+      background: url('#{$static-img-path}/external-link-gray.svg') right center no-repeat;
+      background-size: 15px 15px;
+    }
   }
+
 
   & + .nav-link {
     padding-left: 0;
@@ -46,7 +53,8 @@
   }
 
   @include media($medium-screen) {
-    font-size: inherit;
+    // font-size: inherit;
+    font-size: $sans-s3;
     padding-bottom: 0;
     padding-right: 0;
     padding-top: 0;

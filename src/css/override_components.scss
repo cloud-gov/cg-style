@@ -185,8 +185,8 @@ input:focus {
 
   [type='submit'] {
     background-color: #ffffff;
-    background-image: url('#{$static-img-path}/search.png');
-    background-image: url('#{$static-img-path}/search.svg');
+    background-image: url('#{$static-img-path}/i-search.png');
+    background-image: url('#{$static-img-path}/i-search.svg');
     height: $grid-4;
     min-width: 0;
     position: absolute;
