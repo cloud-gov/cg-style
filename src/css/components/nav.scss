@@ -37,7 +37,7 @@
     &:hover {
       color: $color-primary;
     }
-    &[href *= ".io"] {
+    &.external-link {
       padding-right: 1.375rem;
       background: url('#{$static-img-path}/external-link-grey.png') right center no-repeat;
       background: url('#{$static-img-path}/external-link-grey.svg') right center no-repeat;
