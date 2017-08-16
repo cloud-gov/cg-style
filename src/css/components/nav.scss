@@ -32,20 +32,18 @@
   padding-bottom: .2rem;
   padding-left: 0;
   padding-top: .2rem;
+  .external-link {
+    padding-right: 1.375rem;
+    background: url('#{$static-img-path}/external-link-gray.png') right center no-repeat;
+    background: url('#{$static-img-path}/external-link-gray.svg') right center no-repeat;
+    background-size: 15px 15px;
+    }
   a {
     color: $color-textblack;
     &:hover {
       color: $color-primary;
     }
-    &.external-link {
-      padding-right: 1.375rem;
-      background: url('#{$static-img-path}/external-link-grey.png') right center no-repeat;
-      background: url('#{$static-img-path}/external-link-grey.svg') right center no-repeat;
-      background-size: 15px 15px;
-    }
   }
-
-
   & + .nav-link {
     padding-left: 0;
 
