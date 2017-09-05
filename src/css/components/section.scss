@@ -116,6 +116,14 @@ $chevron-size: 4.865rem;
   background-color: $color-cream;
   color: $color-textblack;
 
+  &.section-first {
+    background-image: none;
+    &:after {
+      display: none;
+      background-image: none;
+    }
+  }
+
   a,
   a:active,
   a:hover,
@@ -123,7 +131,8 @@ $chevron-size: 4.865rem;
     color: $color-red;
     text-decoration: underline;
   }
-
+  // these seem to just override the definitions immediately above it
+  // why keep both?
   a:active,
   a:hover {
     color: $color-textblack;
@@ -234,6 +243,9 @@ $chevron-size: 4.865rem;
   &:before {
     display: none;
   }
+  &:after {
+    display: none;
+  }
 }
 
 .section-icon {
@@ -245,7 +257,7 @@ $chevron-size: 4.865rem;
 }
 
 .section-card {
-  border: 1px solid #bababa; // having trouble referencing $color-lightgray;
+  border: 1px solid #bababa; // having trouble referencing $color-lightgray
   border-radius: 3px;
   margin: 1rem 0;
   padding: 0 1rem;
