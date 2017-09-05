@@ -116,20 +116,15 @@ $chevron-size: 4.865rem;
   background-color: $color-cream;
   color: $color-textblack;
 
-  &.section-first {
-    background-image: none;
-    &:after {
-      display: none;
-      background-image: none;
-    }
-  }
-
   a,
   a:active,
   a:hover,
   a:visited {
-    color: $color-red;
-    text-decoration: underline;
+    // color: $color-red;
+    // text-decoration: underline;
+    color: $color-blue;
+    text-decoration: none;
+    border-bottom: 1px solid $color-blue;
   }
   // these seem to just override the definitions immediately above it
   // why keep both?
@@ -180,6 +175,11 @@ $chevron-size: 4.865rem;
   @include media($medium-screen) {
     background-position-x: 108%;
   }
+}
+
+.section-light-sans {
+  background: $color-white;
+  padding-top: 5rem;
 }
 
 .section-light {
@@ -240,10 +240,40 @@ $chevron-size: 4.865rem;
 }
 
 .section-first {
-  &:before {
-    display: none;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  .section-lede {
+    padding-bottom: 5rem;
   }
-  &:after {
+  .section-sidebar {
+    h1 {
+      font-size: $sans-s6;
+      font-weight: 500;
+      font-family: $font-sans;
+      line-height: $lh-body;
+      a {
+        border: none;
+      }
+    }
+    p {
+      font-family: $font-sans;
+      font-size: $sans-s4;
+      a {
+        &.button {
+          margin-top: 1rem;
+          display: inline-block;
+          padding: 1rem 2rem;
+          border: 1px solid $color-primary;
+          color: $color-textblack;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+  }
+  &:before {
     display: none;
   }
 }
