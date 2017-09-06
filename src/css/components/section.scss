@@ -254,6 +254,9 @@ $chevron-size: 4.865rem;
       a {
         border: none;
       }
+      &+p {
+        margin-top: 1.5rem;
+      }
     }
     p {
       font-family: $font-sans;
