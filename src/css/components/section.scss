@@ -120,14 +120,11 @@ $chevron-size: 4.865rem;
   a:active,
   a:hover,
   a:visited {
-    // color: $color-red;
-    // text-decoration: underline;
     color: $color-blue;
     text-decoration: none;
     border-bottom: 1px solid $color-blue;
   }
-  // these seem to just override the definitions immediately above it
-  // why keep both?
+
   a:active,
   a:hover {
     color: $color-textblack;
