@@ -233,6 +233,25 @@ hr {
   font-size: $sans-s2;
 }
 
+.subhead-rule {
+  font-size: $sans-s4;
+  font-weight: 700;
+  font-family: $font-sans;
+  padding-right: 2rem;
+  overflow: hidden;
+  &:after {
+    content: '';
+    display: inline-block;
+    height: 0.5em;
+    vertical-align: bottom;
+    width: 100%;
+    margin-right: -100%;
+    margin-left: 10px;
+    border-top: 1px solid $color-darkgray;
+    top: -10px;
+  }
+}
+
 @for $i from 1 through length($sans-s) {
   .sans-s#{$i} {
     font-size: nth($sans-s, $i);

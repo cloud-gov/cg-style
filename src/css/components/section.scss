@@ -120,8 +120,9 @@ $chevron-size: 4.865rem;
   a:active,
   a:hover,
   a:visited {
-    color: $color-red;
-    text-decoration: underline;
+    color: $color-blue;
+    text-decoration: none;
+    border-bottom: 1px solid $color-blue;
   }
 
   a:active,
@@ -171,6 +172,11 @@ $chevron-size: 4.865rem;
   @include media($medium-screen) {
     background-position-x: 108%;
   }
+}
+
+.section-light-sans {
+  background: $color-white;
+  padding-top: 5rem;
 }
 
 .section-light {
@@ -231,6 +237,40 @@ $chevron-size: 4.865rem;
 }
 
 .section-first {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  .section-lede {
+    padding-bottom: 5rem;
+  }
+  .section-sidebar {
+    h1 {
+      font-size: $sans-s6;
+      font-weight: 500;
+      font-family: $font-sans;
+      line-height: $lh-body;
+      a {
+        border: none;
+      }
+      & + p {
+        margin-top: 1.5rem;
+      }
+    }
+    p {
+      font-family: $font-sans;
+      font-size: $sans-s4;
+      .button {
+        margin-top: 1rem;
+        display: inline-block;
+        padding: 1rem 2rem;
+        border: 1px solid $color-primary;
+        color: $color-textblack;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+  }
   &:before {
     display: none;
   }
@@ -245,7 +285,7 @@ $chevron-size: 4.865rem;
 }
 
 .section-card {
-  border: 1px solid #bababa; // having trouble referencing $color-lightgray;
+  border: 1px solid #bababa; // having trouble referencing $color-lightgray
   border-radius: 3px;
   margin: 1rem 0;
   padding: 0 1rem;
