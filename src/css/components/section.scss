@@ -258,16 +258,14 @@ $chevron-size: 4.865rem;
     p {
       font-family: $font-sans;
       font-size: $sans-s4;
-      a {
-        &.button {
-          margin-top: 1rem;
-          display: inline-block;
-          padding: 1rem 2rem;
-          border: 1px solid $color-primary;
-          color: $color-textblack;
-          &:hover {
-            cursor: pointer;
-          }
+      .button {
+        margin-top: 1rem;
+        display: inline-block;
+        padding: 1rem 2rem;
+        border: 1px solid $color-primary;
+        color: $color-textblack;
+        &:hover {
+          cursor: pointer;
         }
       }
     }
