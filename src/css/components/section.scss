@@ -251,7 +251,7 @@ $chevron-size: 4.865rem;
       a {
         border: none;
       }
-      &+p {
+      & + p {
         margin-top: 1.5rem;
       }
     }
