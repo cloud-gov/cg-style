@@ -1,7 +1,7 @@
 
 machine:
   node:
-    version: 6
+    version: 8
   environment:
     CF_ORG: cloud-gov
     CF_SPACE: cg-style
