@@ -25,9 +25,3 @@ deployment:
       - npm run build-library
       - scripts/deploy-library.sh cg-style
 
-  npm:
-    tag: /[0-9]+(\.[0-9]+)*/
-    owner: 18F
-    commands:
-      - echo -e "$NPM_USERNAME\n$NPM_PASSWORD\n$NPM_EMAIL" | npm login
-      - npm run check-publish
