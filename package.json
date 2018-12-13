@@ -1,6 +1,6 @@
 {
   "name": "cloudgov-style",
-  "version": "2.10.0",
+  "version": "2.11.0",
   "description": "The global style of cloud.gov",
   "main": "src/js/main.js",
   "scripts": {
