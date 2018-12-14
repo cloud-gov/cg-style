@@ -58,7 +58,6 @@ Use these exact strings (keeping this spelling, capitalization, punctuation, and
 * **New Relic**
 * **OAuth**
 * **OWASP ZAP**
-* **PagerDuty**
 * **Platform as a Service** (or **PaaS**)
 * **React** (when talking about the library)
 * **Riemann**
