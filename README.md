@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/18F/cg-style.svg?style=svg)](https://circleci.com/gh/18F/cg-style)
+
 # cg-style
 This repository houses cg-style or cloudgov-style, a shared style library for the cloud.gov product ecosystem. Cloudgov-style was built on top of the [US Web Design Standards](https://github.com/18F/web-design-standards).
 
