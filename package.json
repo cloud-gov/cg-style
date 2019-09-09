@@ -56,7 +56,7 @@
     "@18f/stylelint-rules": "^2.0.0",
     "autoprefixer": "^6.6.1",
     "browserify": "^13.3.0",
-    "clean-css": "^3.4.23",
+    "clean-css": "^4.1.11",
     "cross-spawn": "^4.0.0",
     "gulp": "^3.9.0",
     "gulp-cli": "^1.2.0",
