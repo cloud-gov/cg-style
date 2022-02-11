@@ -63,7 +63,7 @@
     "gulp-insert": "^0.5.0",
     "gulp-sass": "^2.3.1",
     "gulp-svg-sprite": "^1.2.19",
-    "node-sass": "^3.13.1",
+    "node-sass": "^7.0.0",
     "npm-run-all": "^3.1.2",
     "postcss": "^5.2.10",
     "postcss-cli": "^2.3.3",
